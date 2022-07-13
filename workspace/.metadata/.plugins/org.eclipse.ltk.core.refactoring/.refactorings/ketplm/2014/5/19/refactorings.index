@@ -1,0 +1,39 @@
+1399424497747	Delete element
+1399437346440	Move file
+1399437350003	Delete element
+1399437932001	Rename resource 'com-shared-message_en.properties'
+1399437935238	Rename resource 'com-shared-message_zh.properties'
+1399437938120	Rename resource 'com-shared-message_ko.properties'
+1399440875398	Copy file
+1399507648474	Move file
+1399507652060	Delete element
+1399516445693	Delete elements
+1399516563015	Rename resource 'datasource-context.xml'
+1399516568534	Rename resource 'transaction-context.xml'
+1399517192733	Move folder
+1399522588204	Delete element
+1399523033507	Delete elements
+1399523444944	Delete element
+1399523604360	Delete element
+1399523658013	Delete element
+1399523720763	Delete element
+1399524114444	Delete element
+1399524428542	Delete element
+1399524451734	Move folder
+1399525687543	Delete element
+1399529548992	Rename type 'WTPartMaster'
+1399529752305	Move file
+1399541793280	Copy folders
+1399541826508	Rename package 'mvc'
+1399542406847	Rename resource 'custom.xml'
+1399542414749	Rename resource 'datasource.xml'
+1399542421382	Rename resource 'transaction.xml'
+1399542456820	Rename resource 'context-custom.xml'
+1399542535053	Rename resource 'servlet.xml'
+1399544303283	Delete element
+1399544574681	Encapsulate field 'email'
+1399544809733	Rename package 'config.tiles'
+1399544828908	Rename resource 'servlet-custom.xml'
+1399544888466	Delete element
+1399547938905	Delete element
+1399615374760	Rename local variable 'ctx'

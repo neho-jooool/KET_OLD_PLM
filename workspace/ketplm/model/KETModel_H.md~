@@ -1,0 +1,3582 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"3A3A53D40271"
+    enforceClosureAutoLoad 	FALSE
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	FALSE
+	gridX      	3
+	gridY      	3
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	3
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"340479F90050"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"340479F9007E"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"340479F9004F"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"340479F90051"
+	logical_models 	(list unit_reference_list
+	    (object Class_Category "3rd"
+		quid       	"3BB8D93801F4"
+		stereotype 	"assembly"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "Java"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Java\\Java-Mod.cat"
+			quid       	"3BB8D95B0242")
+		    (object Class_Category "Mail"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Mail\\Mail.cat"
+			quid       	"3BCB24DC0399")
+		    (object Class_Category "Servlet"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Servlet\\Servlet.cat"
+			quid       	"3BCB24FB0167")
+		    (object Class_Category "Activation"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Activation\\Activation.cat"
+			quid       	"3BCC714601D4")
+		    (object Class_Category "Java3D"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Java3D\\Java3D.cat"
+			quid       	"3BCC78BF0242")
+		    (object Class_Category "Jndi"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Jndi\\Jndi.cat"
+			quid       	"3BCB24AB00CB")
+		    (object Class_Category "Jms"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Jms\\Jms.cat"
+			quid       	"3BCB24B7000F")
+		    (object Class_Category "Xml"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$3rd\\Xml\\Xml.cat"
+			quid       	"3BC4B55F002E"))
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "wnc"
+		quid       	"4141F0320242"
+		stereotype 	"assembly"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "Foundation"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$wnc\\Foundation\\src\\wnc\\Foundation\\Foundation.cat"
+			quid       	"014413295500")
+		    (object Class_Category "CommonCore"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"$wnc\\CommonCore\\src\\wnc\\CommonCore\\CommonCore.cat"
+			quid       	"3989DFDC0149"))
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "e3ps"
+		is_unit    	TRUE
+		is_loaded  	FALSE
+		file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.cat"
+		quid       	"4C7394300399")
+	    (object Class_Category "customization"
+		quid       	"5359C88B0099"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "projectaux"
+			is_unit    	TRUE
+			is_loaded  	FALSE
+			file_name  	"D:\\ket\\workspace\\ketplm\\model\\customization.projectaux.cat"
+			quid       	"37F382A5029F"))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Main"
+			quid       	"5359C97403D4"
+			title      	"Main"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object CategoryView "Logical View::customization::projectaux" @1
+				location   	(834, 716)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@1
+				    location   	(690, 632)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"projectaux")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"37F382A5029F"
+				width      	300
+				height     	180)))))
+	    (object Class_Category "ext"
+		quid       	"53ACD6AB00B8"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "ket"
+			quid       	"53ACD6C20007"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class_Category "sample"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.sample.cat"
+				quid       	"53ACD6CA0180")
+			    (object Class_Category "project"
+				quid       	"53BDF85103A9"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class_Category "gate"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.project.gate.cat"
+					quid       	"53BDF8600076")
+				    (object Class_Category "program"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.project.program.cat"
+					quid       	"53C88C8201D7")
+				    (object Class_Category "trycondition"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.project.trycondition.cat"
+					quid       	"53CCF7890348")
+				    (object Class_Category "cost"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.project.cost.cat"
+					quid       	"541A5FB9023E"))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Main"
+					quid       	"53C899E602E2"
+					title      	"Main"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object CategoryView "Logical View::ext::ket::project::gate" @2
+						location   	(419, 291)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@2
+						    location   	(275, 207)
+						    fill_color 	13434879
+						    nlines     	2
+						    max_width  	288
+						    justify    	0
+						    label      	"gate")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"53BDF8600076"
+						width      	300
+						height     	180)
+					    (object CategoryView "Logical View::ext::ket::project::program" @3
+						location   	(844, 284)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@3
+						    location   	(700, 200)
+						    fill_color 	13434879
+						    nlines     	2
+						    max_width  	288
+						    justify    	0
+						    label      	"program")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"53C88C8201D7"
+						width      	300
+						height     	180)
+					    (object CategoryView "Logical View::ext::ket::project::trycondition" @4
+						location   	(1266, 287)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@4
+						    location   	(1122, 203)
+						    fill_color 	13434879
+						    nlines     	2
+						    max_width  	288
+						    justify    	0
+						    label      	"trycondition")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"53CCF7890348"
+						width      	300
+						height     	180)
+					    (object CategoryView "Logical View::ext::ket::project::cost" @5
+						location   	(1656, 281)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@5
+						    location   	(1512, 197)
+						    fill_color 	13434879
+						    nlines     	2
+						    max_width  	288
+						    justify    	0
+						    label      	"cost")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"541A5FB9023E"
+						width      	300
+						height     	180)))))
+			    (object Class_Category "dqm"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.dqm.cat"
+				quid       	"53C74B14026F")
+			    (object Class_Category "edm"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.edm.cat"
+				quid       	"53C764A00331")
+			    (object Class_Category "part"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.part.cat"
+				quid       	"53C8A59F017E")
+			    (object Class_Category "wfm"
+				quid       	"53EC1B5D038C"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class_Category "entity"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"D:\\ket\\workspace\\ketplm\\model\\ext.ket.wfm.entity.cat"
+					quid       	"53EC1B950040"))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Main"
+					quid       	"53EC1B87023F"
+					title      	"Main"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object CategoryView "Logical View::ext::ket::wfm::entity" @6
+						location   	(416, 328)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@6
+						    location   	(272, 244)
+						    fill_color 	13434879
+						    nlines     	2
+						    max_width  	288
+						    justify    	0
+						    label      	"entity")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"53EC1B950040"
+						width      	300
+						height     	180)))))
+			    (object Class_Category "arm"
+				quid       	"54362673005A"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class "AnalysisRequest"
+					quid       	"543628F90317"
+					class_attributes 	(list class_attribute_list
+					    (object ClassAttribute "AnalysisRequestNo"
+						quid       	"5436291F00A9"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "ProjectNo"
+						quid       	"543629BA008B"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "customerChargeName"
+						quid       	"543629DF02DF"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "partNo"
+						quid       	"54362A0601D6"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "AnalysisContent"
+						quid       	"54362A1F019F"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "DesignSpec"
+						quid       	"54362A370214"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "RequestedTerm"
+						quid       	"54362A55030D"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public")
+					    (object ClassAttribute "Etc"
+						quid       	"54362A73000F"
+						type       	"String"
+						quidu      	"3784E5160158"
+						exportControl 	"Public"))))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Main"
+					quid       	"543626C1034E"
+					title      	"Main"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "Logical View::ext::ket::arm::AnalysisRequest" @7
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2093, 1084)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@7
+						    location   	(1795, 828)
+						    fill_color 	13434879
+						    nlines     	1
+						    max_width  	596
+						    justify    	0
+						    label      	"AnalysisRequest")
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"543628F90317"
+						compartment 	(object Compartment
+						    Parent_View 	@7
+						    location   	(1795, 889)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    icon_style 	"Icon"
+						    fill_color 	13434879
+						    anchor     	2
+						    nlines     	9
+						    max_width  	600
+						    justify    	1)
+						width      	614
+						height     	536
+						annotation 	8
+						autoResize 	TRUE))))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Main"
+				quid       	"53ACD75E0268"
+				title      	"Main"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object CategoryView "Logical View::ext::ket::sample" @8
+					location   	(372, 265)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@8
+					    location   	(228, 181)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	288
+					    justify    	0
+					    label      	"sample")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"53ACD6CA0180"
+					width      	300
+					height     	180)
+				    (object CategoryView "Logical View::ext::ket::dqm" @9
+					location   	(1159, 259)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@9
+					    location   	(1015, 175)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	288
+					    justify    	0
+					    label      	"dqm")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"53C74B14026F"
+					width      	300
+					height     	180)
+				    (object CategoryView "Logical View::ext::ket::edm" @10
+					location   	(766, 272)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@10
+					    location   	(622, 188)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	288
+					    justify    	0
+					    label      	"edm")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"53C764A00331"
+					width      	300
+					height     	180)
+				    (object CategoryView "Logical View::ext::ket::project" @11
+					location   	(1559, 268)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@11
+					    location   	(1415, 184)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	288
+					    justify    	0
+					    label      	"project")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"53BDF85103A9"
+					width      	300
+					height     	180)
+				    (object CategoryView "Logical View::ext::ket::part" @12
+					location   	(1974, 265)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@12
+					    location   	(1830, 181)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	288
+					    justify    	0
+					    label      	"part")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"53C8A59F017E"
+					width      	300
+					height     	180)
+				    (object CategoryView "Logical View::ext::ket::wfm" @13
+					location   	(391, 584)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@13
+					    location   	(247, 500)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	288
+					    justify    	0
+					    label      	"wfm")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"53EC1B5D038C"
+					width      	300
+					height     	180))))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Main"
+			quid       	"53ACD7570003"
+			title      	"Main"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object CategoryView "Logical View::ext::ket" @14
+				location   	(378, 287)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@14
+				    location   	(234, 203)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	288
+				    justify    	0
+				    label      	"ket")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"53ACD6C20007"
+				width      	300
+				height     	180))))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "SystemGeneration"
+		quid       	"3BA0D31C0293"
+		title      	"SystemGeneration"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	2019
+		items      	(list diagram_item_list
+		    (object CategoryView "Logical View::wnc::Foundation" @15
+			location   	(869, 615)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@15
+			    location   	(725, 564)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"Foundation")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@15
+			    location   	(725, 514)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	288
+			    justify    	0
+			    label      	"<<module>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"014413295500"
+			width      	300
+			height     	214)
+		    (object CategoryView "Logical View::e3ps" @16
+			location   	(1397, 1087)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@16
+			    location   	(1253, 1003)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"e3ps")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4C7394300399"
+			width      	300
+			height     	180)
+		    (object CategoryView "Logical View::customization" @17
+			location   	(875, 1093)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@17
+			    location   	(731, 1009)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"customization")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5359C88B0099"
+			width      	300
+			height     	180)
+		    (object CategoryView "Logical View::ext" @18
+			location   	(347, 1084)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@18
+			    location   	(203, 1000)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"ext")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"53ACD6AB00B8"
+			width      	300
+			height     	180)))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"340479F90051"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"340479F9007D"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list)))
+	category   	"Logical View"
+	quidu      	"44E5C66803AE")
+    process_structure 	(object Processes
+	quid       	"340479F90052"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"340479F9007F"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	attributes 	(list Attribute_Set
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"roseId"
+		value      	"753117540")
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"propertyId"
+		value      	"20020924")
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"default__Category"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Category"
+			value      	("Category_Set" 101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Category_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Client"
+				value      	100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Common"
+				value      	101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Server"
+				value      	102)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Implementation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Specification-Title"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Specification-Version"
+			value      	"1.0")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Specification-Vendor"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Customizable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ThirdParty"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"UnitTest"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GlobalDependent"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Jars"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CmIdentification"
+			value      	(value Text "$Header: D:\\CRS_PLM_CVS/plm/src/e3ps/KETModel.mdl,v 1.2 2010-09-20 00:57:59 smkim Exp $"))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CopyrightNotice"
+			value      	(value Text 
+|bcwti
+|
+|Copyright (c) 2008 Parametric Technology Corporation (PTC). All Rights Reserved.
+|
+|This software is the confidential and proprietary information of PTC and is subject to the terms of a software license agreement. You shall not disclose such confidential information and shall use it only in accordance with the terms of the license agreement.
+|
+|ecwti
+			))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CodeGenerationName"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1800))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType"
+			value      	("PrimitiveType_Set" 2000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	2000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BigDecimal"
+				value      	2001)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"boolean"
+				value      	2002)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte"
+				value      	2003)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte[]"
+				value      	2004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"char"
+				value      	2013)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"double"
+				value      	2005)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"float"
+				value      	2006)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"int"
+				value      	2007)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"long"
+				value      	2014)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"short"
+				value      	2015)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Date"
+				value      	2008)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Time"
+				value      	2009)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Timestamp"
+				value      	2010)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Types.BLOB"
+				value      	2011)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"String"
+				value      	2012)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StaticInitBeforeFields"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels"
+			value      	("GenAttributeLabels_Set" 1600))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1600)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1601)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1602)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Datastore Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PackageName"
+			value      	"<Use Class Name>PK")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableName"
+			value      	"<Use Class Name>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"RemoveEventParticipant"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex1"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex2"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex3"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex4"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex5"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex6"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex7"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex8"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex9"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex10"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex11"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex12"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex13"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex14"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex15"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex16"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex17"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex18"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex19"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex20"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique1"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique2"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique3"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique4"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique5"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnType"
+			value      	("ColumnType_Set" 7000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Default Mapping>"
+				value      	7000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BLOB"
+				value      	7004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SEQUENCE"
+				value      	7018)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALLBLOB"
+				value      	7019)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"INLINEBLOB"
+				value      	7020)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Oracle Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize"
+			value      	("TableSize_Set" 7101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TINY"
+				value      	7100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALL"
+				value      	7101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"MEDIUM"
+				value      	7102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LARGE"
+				value      	7103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"HUGE"
+				value      	7104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"IndexTableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StandardIcon"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"OpenIcon"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"EnumeratedType__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CodeGenerationName"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1800))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType"
+			value      	("PrimitiveType_Set" 2012))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"String"
+				value      	2012)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ExplicitOrder"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StandardIcon"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"OpenIcon"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"System__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	("Deprecated_Set" 1180))))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CodeGenerationName"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1805))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType"
+			value      	("PrimitiveType_Set" 2000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	2000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BigDecimal"
+				value      	2001)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"boolean"
+				value      	2002)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte"
+				value      	2003)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte[]"
+				value      	2004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"char"
+				value      	2013)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"double"
+				value      	2005)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"float"
+				value      	2006)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"int"
+				value      	2007)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"long"
+				value      	2014)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"short"
+				value      	2015)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Date"
+				value      	2008)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Time"
+				value      	2009)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Timestamp"
+				value      	2010)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Types.BLOB"
+				value      	2011)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"String"
+				value      	2012)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StaticInitBeforeFields"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels"
+			value      	("GenAttributeLabels_Set" 1602))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1600)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1601)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1602)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1152))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"Sequence__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ObjectName"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Seed"
+			value      	"1")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Increment"
+			value      	"1")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	("Deprecated_Set" 1180))))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1802))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels"
+			value      	("GenAttributeLabels_Set" 1602))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1600)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1601)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1602)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1152))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"Struct__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ObjectName"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	("Deprecated_Set" 1180))))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1802))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels"
+			value      	("GenAttributeLabels_Set" 1602))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1600)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1601)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1602)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1152))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"Table__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ObjectName"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	("Deprecated_Set" 1180))))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1802))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels"
+			value      	("GenAttributeLabels_Set" 1602))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1600)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1601)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1602)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1152))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Datastore Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PackageName"
+			value      	"<Use Class Name>PK")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableName"
+			value      	"<Use Class Name>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex1"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex2"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex3"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex4"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex5"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex6"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex7"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex8"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex9"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex10"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex11"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex12"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex13"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex14"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex15"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex16"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex17"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex18"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex19"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeIndex20"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique1"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique2"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique3"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique4"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"CompositeUnique5"
+			value      	"+")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Oracle Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize"
+			value      	("TableSize_Set" 7101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TINY"
+				value      	7100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALL"
+				value      	7101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"MEDIUM"
+				value      	7102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LARGE"
+				value      	7103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"HUGE"
+				value      	7104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"IndexTableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"OracleOptions"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- SQLServer Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SQLServerOptions"
+			value      	"")))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"Array__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ObjectName"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ArrayType"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Extendable"
+				value      	1103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	("Deprecated_Set" 1180))))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable"
+			value      	("Serializable_Set" 1802))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Serializable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1800)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Serializable"
+				value      	1801)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable"
+				value      	1803)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Externalizable (Basic)"
+				value      	1805)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Evolvable"
+				value      	1804)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"None"
+				value      	1802)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels"
+			value      	("GenAttributeLabels_Set" 1602))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenAttributeLabels_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1600)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1601)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1602)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1152))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SuperClass"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Datastore Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PackageName"
+			value      	"<Use Class Name>PK")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableName"
+			value      	"<Use Class Name>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Storage"
+			value      	("Storage_Set" 1700))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Storage_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1700)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LinkTable"
+				value      	1701)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ForeignKey"
+				value      	1702)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"RemoveEventParticipant"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Oracle Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize"
+			value      	("TableSize_Set" 7101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TINY"
+				value      	7100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALL"
+				value      	7101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"MEDIUM"
+				value      	7102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LARGE"
+				value      	7103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"HUGE"
+				value      	7104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"IndexTableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Stereotype"
+			value      	("Stereotype_Set" 4100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Stereotype_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	""
+				value      	4100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Date"
+				value      	4101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"PartNumber"
+				value      	4102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ChangeRequestNumber"
+				value      	4103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ChangeOrderNumber"
+				value      	4104)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ChangeActivityNumber"
+				value      	4105)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Abstract"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable"
+			value      	("Mutable_Set" 5000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Attribute Type Mutability>"
+				value      	5000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TRUE"
+				value      	5001)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"FALSE"
+				value      	5002)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StringCase"
+			value      	("StringCase_Set" 5100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StringCase_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	5100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LowerCase"
+				value      	5101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"UpperCase"
+				value      	5102)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"LowerLimit"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"UpperLimit"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Changeable"
+			value      	("Changeable_Set" 5200))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Changeable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	5200)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ViaOtherMeans"
+				value      	5201)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Frozen"
+				value      	5202)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Viewable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"WriteAccess"
+			value      	("WriteAccess_Set" 4000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"WriteAccess_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Export Control>"
+				value      	4000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	4002)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Protected"
+				value      	4003)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	4004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Implementation"
+				value      	4005)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Dependency"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Transient"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Volatile"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Persistent"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenerateAccessors"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Bind"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Constrain"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ReferenceType"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"AutoNavigate"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"AccessType"
+			value      	("AccessType_Set" 1900))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"AccessType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Class Type>"
+				value      	1900)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Primitive Type>"
+				value      	1901)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType"
+			value      	("PrimitiveType_Set" 2000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	2000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BigDecimal"
+				value      	2001)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"boolean"
+				value      	2002)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte"
+				value      	2003)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte[]"
+				value      	2004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"double"
+				value      	2005)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"float"
+				value      	2006)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"int"
+				value      	2007)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Date"
+				value      	2008)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Time"
+				value      	2009)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Timestamp"
+				value      	2010)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Types.BLOB"
+				value      	2011)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"String"
+				value      	2012)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GetExceptions"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SetExceptions"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GetSynchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SetSynchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ContainerClass"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ContainerSemantics"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DelegatedInterface"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"BeforeStaticInitializer"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Datastore Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnName"
+			value      	"<Use Role Name>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnType"
+			value      	("ColumnType_Set" 7000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Default Mapping>"
+				value      	7000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BLOB"
+				value      	7004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SEQUENCE"
+				value      	7018)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALLBLOB"
+				value      	7019)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"INLINEBLOB"
+				value      	7020)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Index"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Unique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Updatable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Owner"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Cascade"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Oracle Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize"
+			value      	("TableSize_Set" 7101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TINY"
+				value      	7100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALL"
+				value      	7101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"MEDIUM"
+				value      	7102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LARGE"
+				value      	7103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"HUGE"
+				value      	7104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Stereotype"
+			value      	("Stereotype_Set" 4100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Stereotype_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	""
+				value      	4100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Date"
+				value      	4101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"PartNumber"
+				value      	4102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ChangeRequestNumber"
+				value      	4103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ChangeOrderNumber"
+				value      	4104)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ChangeActivityNumber"
+				value      	4105)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Abstract"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DerivedFrom"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable"
+			value      	("Mutable_Set" 5000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Attribute Type Mutability>"
+				value      	5000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TRUE"
+				value      	5001)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"FALSE"
+				value      	5002)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StringCase"
+			value      	("StringCase_Set" 5100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"StringCase_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	5100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LowerCase"
+				value      	5101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"UpperCase"
+				value      	5102)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"LowerLimit"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"UpperLimit"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Required"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Changeable"
+			value      	("Changeable_Set" 5200))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Changeable_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	5200)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"ViaOtherMeans"
+				value      	5201)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Frozen"
+				value      	5202)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Viewable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"WriteAccess"
+			value      	("WriteAccess_Set" 4000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"WriteAccess_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Export Control>"
+				value      	4000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	4002)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Protected"
+				value      	4003)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	4004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Implementation"
+				value      	4005)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Transient"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Volatile"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Persistent"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GenerateAccessors"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Bind"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Constrain"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"AccessType"
+			value      	("AccessType_Set" 1900))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"AccessType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Class Type>"
+				value      	1900)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Primitive Type>"
+				value      	1901)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType"
+			value      	("PrimitiveType_Set" 2000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"PrimitiveType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	2000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BigDecimal"
+				value      	2001)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"boolean"
+				value      	2002)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte"
+				value      	2003)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"byte[]"
+				value      	2004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"double"
+				value      	2005)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"float"
+				value      	2006)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"int"
+				value      	2007)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Date"
+				value      	2008)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Time"
+				value      	2009)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Timestamp"
+				value      	2010)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"java.sql.Types.BLOB"
+				value      	2011)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"String"
+				value      	2012)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GetExceptions"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SetExceptions"
+			value      	"")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"GetSynchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SetSynchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"BeforeStaticInitializer"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Datastore Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnName"
+			value      	"<Use Attribute Name>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnType"
+			value      	("ColumnType_Set" 7000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"ColumnType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Use Default Mapping>"
+				value      	7000)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"BLOB"
+				value      	7004)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SEQUENCE"
+				value      	7018)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALLBLOB"
+				value      	7019)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"INLINEBLOB"
+				value      	7020)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Index"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Unique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Updatable"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Oracle Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSpaceName"
+			value      	"<Use Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize"
+			value      	("TableSize_Set" 7101))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"TableSize_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"TINY"
+				value      	7100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"SMALL"
+				value      	7101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"MEDIUM"
+				value      	7102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"LARGE"
+				value      	7103)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"HUGE"
+				value      	7104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultBoolean_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1150)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"True"
+				value      	1151)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"False"
+				value      	1152)))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"constant__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Static"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Final"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"BeforeStaticInitializer"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable"
+			value      	("Mutable_Set" 5000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"WriteAccess_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Implementation"
+				value      	4005)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"constantEnumeratedType__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Static"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Final"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"BeforeStaticInitializer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- UI Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Display"
+			value      	"<Default>")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"DefaultValue"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Mutable"
+			value      	("Mutable_Set" 5000))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"WriteAccess_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Implementation"
+				value      	4005)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Localizable"
+			value      	("DefaultBoolean_Set" 1150))))
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI"
+			value      	("SupportedAPI_Set" 1100))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"SupportedAPI_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1100)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Private"
+				value      	1101)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Public"
+				value      	1102)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"Deprecated"
+				value      	1104)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated"
+			value      	("Deprecated_Set" 1180))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Deprecated_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"<Default>"
+				value      	1180)
+			    (object Attribute
+				tool       	"Windchill"
+				name       	"deprecated"
+				value      	1181)))
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"--- Java Properties ---"
+			value      	"-----------------------------------")
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Abstract"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Static"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Native"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"Synchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Windchill"
+			name       	"RemoteInvocation"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"framework"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Rose Model Integrator"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Rose Web Publisher"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Version Control"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Windchill"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Pattern applied"
+			value      	"False"))))
+	quid       	"449190B30177"))

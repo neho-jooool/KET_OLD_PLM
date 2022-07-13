@@ -1,0 +1,83 @@
+/*
+body {
+	font: 0.8em, arial, helvetica, sans-serif;
+}
+*/
+#tabHeader {	
+	padding:0;
+	margin:0;
+	font: 0.8em;/* , arial, helvetica, sans-serif;*/
+}
+
+#tabHeader ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+
+#tabHeader a:hover {
+	background: #ddf;
+	font-weight: bold;
+	color:black;
+}
+
+.tabUnselected {
+	float: left;
+	border: 1px solid #bbb;
+	border-bottom-color: #5F9EA0;
+	/* border-bottom-width: 0; */
+	margin: 0 3px 0 0;
+}
+
+.tabSelected {
+	float: left;
+	border: 1px solid #5F9EA0;
+	border-bottom-width: 0;
+	margin: 0 3px 0 0;
+}
+
+.tabUnselectedA {
+	/* display: block; */
+
+	background: #eee;
+	padding: 0.27em 1em;
+	width: 8em;
+	text-decoration: none;
+	text-align: center;
+
+	/* font-weight: bold; */
+	color: black;
+}
+
+.tabSelectedA {
+	/* position: relative; */
+	/* display: block; */
+
+	background: #5F9EA0;	
+	padding: 0.3em 1em;
+	width: 10em;
+	text-decoration: none;
+	text-align: center;
+
+	font-weight: bold;
+	color: white;
+}
+
+#tabContent {
+	padding: 0 1em;
+	border: 5px solid #5F9EA0;
+	border-right-width:0;
+	border-bottom-width:0;
+	border-left-width:0;
+}
+
+.tabSubDiv {
+	width:100%;
+	border:1px solid #5F9EA0;
+	padding:0px;
+	margin:1px 1px 5px;
+
+	overflow-x:hidden;
+	overflow-y:auto;
+}

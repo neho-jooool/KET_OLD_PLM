@@ -1,0 +1,11 @@
+call javagen e3ps.access.** false true true true true
+call javagen e3ps.bom.** false true true true true
+call javagen e3ps.common.** false true true false true
+call javagen e3ps.dms.** false true true true true
+call javagen e3ps.ecm.** false true true true true
+call javagen e3ps.edm.** false true true true true
+call javagen e3ps.ews.** false true true true true
+call javagen e3ps.groupware.** false true true true true
+call javagen e3ps.part.** false true true true true
+call javagen e3ps.project.** false true true true true
+call javagen e3ps.wfm.** false true true true true

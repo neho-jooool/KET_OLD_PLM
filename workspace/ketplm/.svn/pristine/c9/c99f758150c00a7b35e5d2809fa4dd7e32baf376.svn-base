@@ -1,0 +1,52 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()	
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()	
+# <key>.order=					getOrder()	
+# <key>.selectable=				isSelectable()	
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.argComment<n>=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.constant=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.customizable=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.deprecated=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+
+# Entry Contents
+PAST1.value=PAST1
+PAST1.shortDescription=PAST1
+PAST1.order=1
+
+PAST2.value=PAST2
+PAST2.shortDescription=PAST2
+PAST2.order=2
+
+PAST3.value=PAST3
+PAST3.shortDescription=PAST3
+PAST3.order=3
+
+PAST4.value=PAST4
+PAST4.shortDescription=PAST4
+PAST4.order=4
+
+PAST5.value=PAST5
+PAST5.shortDescription=PAST5
+PAST5.order=5
+
+PAST6.value=PAST6
+PAST6.shortDescription=PAST6
+PAST6.order=6
+
+PAST7.value=PAST7
+PAST7.shortDescription=PAST7
+PAST7.order=7
+
+PAST8.value=PAST8
+PAST8.shortDescription=PAST8
+PAST8.order=8

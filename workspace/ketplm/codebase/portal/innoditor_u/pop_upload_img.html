@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta http-equiv="Pragma" content="No-Cache" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>이노디터(InnoDitor) 이미지 업로드</title>
+<link rel="stylesheet" type="text/css" href="./css/ko/uploadstyle.css" />
+
+<script language="javascript" type="text/javascript" src="./js/browser.js"></script>
+<script language="javascript" type="text/javascript" src="./js/uploadimage.js"></script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+// customer 셋팅 변수
+var g_strUploadPath_Image = "/z_experience/upload_tran_u.asp";
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+function fnImageSend()
+{
+	var strImageURL = "";
+
+	if(1 == g_nSelectedTabIndex)
+	{
+		if(null == g_objUploadObject)
+		{
+			alert("이미지 업로드를 먼저 하세요");
+			return;
+		}
+
+		strImageURL = g_objUploadObject.src;
+	}
+	else
+	{
+		if(null == g_objLoadURLObject)
+		{
+			alert("이미지 URL 입력 후 미리보기를 먼저 하세요");
+			return;
+		}
+
+		strImageURL = g_objLoadURLObject.src;
+	}
+
+
+	// V2.0.9.4 이미지 전달시 alt 속성을 필수로 설정 추가
+	if("" == document.getElementById("txtAlt").value)
+	{
+		alert("풍선도움말(ALT)을 입력하세요");
+		document.getElementById("txtAlt").focus();
+		return;
+	}
+
+
+	if("" != document.getElementById("txtWidth").value)
+	{
+		if(isNaN(document.getElementById("txtWidth").value))
+		{
+			alert("숫자만 입력 가능합니다");
+			document.getElementById("txtWidth").focus();
+			return;
+		}
+	}
+
+	if("" != document.getElementById("txtHeight").value)
+	{
+		if(isNaN(document.getElementById("txtHeight").value))
+		{
+			alert("숫자만 입력 가능합니다");
+			document.getElementById("txtHeight").focus();
+			return;
+		}
+	}
+
+	if("" != document.getElementById("txtBorder").value)
+	{
+		if(isNaN(document.getElementById("txtBorder").value))
+		{
+			alert("숫자만 입력 가능합니다");
+			document.getElementById("txtBorder").focus();
+			return;
+		}
+	}
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// 이노디터 제공 기본 방식 - start
+/*
+	var arrReturnValue = new Array();
+	arrReturnValue[0] = strImageURL;
+	arrReturnValue[1] = document.getElementById("txtAlt").value;
+	arrReturnValue[2] = document.getElementById("txtWidth").value;
+	arrReturnValue[3] = document.getElementById("txtHeight").value;
+	arrReturnValue[4] = document.getElementById("txtBorder").value;
+*/
+	// 이노디터 제공 기본 방식 - end
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// 이노디터 제공 확장 방식 - start
+	var strALT = document.getElementById("txtAlt").value;
+	var strWidth = document.getElementById("txtWidth").value;
+	var strHeight = document.getElementById("txtHeight").value;
+	var strBorder = document.getElementById("txtBorder").value;
+
+	var strImageHTML = "";
+	strImageHTML += "<img src='" + strImageURL + "' alt='" + strALT + "' width='" + strWidth + "' height='" + strHeight + "' border='" + strBorder + "' />";
+
+	var arrReturnValue = new Array();
+	arrReturnValue[0] = "";
+	arrReturnValue[1] = "";
+	arrReturnValue[2] = "";
+	arrReturnValue[3] = "";
+	arrReturnValue[4] = "";
+	arrReturnValue[5] = strImageHTML;// 이미지 관련 HTML 직접 설정 -> [0] ~ [4] 배열값에는 전달값 필요없음
+	// 이노디터 제공 사용자정의 방식 - end
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	if(g_browserCHK.wk || g_browserCHK.op)
+	{
+		// Chrome  / Safari / Opera
+		opener.fnSetImageReturnValue(arrReturnValue);
+	}
+	else if(g_browserCHK.ie || g_browserCHK.ff)
+	{
+		// IE  /  FireFox
+		window.returnValue = arrReturnValue;
+	}
+
+
+/*
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	// 부모창의 고객사 정의 함수를 추가적으로 호출하고자 하는 경우
+	if((null != window.dialogArguments) && ("undefined" != window.dialogArguments))
+	{
+		var objParentWindow = window.dialogArguments;
+		objParentWindow.fnParentFunction();// 이노디터를 포함하고 있는 window에 정의되어 있는 함수명이어야 함
+	}
+	///////////////////////////////////////////////////////////////////////////////////////////////
+//*/
+
+	window.close();
+}
+//]]>
+</script>
+</head>
+
+<body onload="javascript:fnAdjustPage();">
+
+<div style="width:598px;height:550px;border:1px solid #e2e2e2;">
+	<div style="margin-left:16px;margin-right:16px;">
+
+		<div style="margin-top:10px;"><img alt="이미지업로드창" src="./image/editwin/ko/pop_upload_image_title.gif" /></div>
+
+		<!-- 탭 선택 이미지 영역 -->
+		<div style="height:27px;margin-top:12px;border-bottom:1px solid #d2d2d2;">
+			<div style="display:inline;">
+				<a href="javascript:fnTabClick(1);"><img id="imgTab_1" alt="이미지업로드" src="./image/editwin/ko/pop_upload_tab_image_1_r.gif" onmouseover="javascript:fnTabMouseOver(this,1);" onmouseout="javascript:fnTabMouseOut(this,1);" /></a>
+			</div>
+			<div style="display:inline;">
+				<a href="javascript:fnTabClick(2);"><img id="imgTab_2" alt="외부링크걸기" src="./image/editwin/ko/pop_upload_tab_image_2.gif" onmouseover="javascript:fnTabMouseOver(this,2);" onmouseout="javascript:fnTabMouseOut(this,2);" /></a>
+			</div>
+		</div>
+
+		<div style="margin-top:2px;">
+
+			<!-- 외부링크 UI Set 영역 -->
+			<div id="imgLoadArea" style="display:none;width:550px;">
+				<div style="display:inline;float:left;vertical-align:top;">
+					<input type="text" title="이미지 url" id="txtLoadURL" name="txtLoadURL" class="form" style="width:398px" maxlength="512" />
+				</div>
+				<div style="display:inline;">
+					<div style="height:22px;margin-left:7px;display:inline;float:left;">
+						<a href="javascript:fnLoadURLImage();"><img alt="url" src="./image/editwin/ko/btn_url_load.gif" /></a>
+					</div>
+				</div>
+			</div>
+
+			<div style="height:2px;"></div>
+
+			<!-- 이미지 보여주기 영역(main) -->
+			<div style="display:inline;float:left;width:410px;">
+				<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td id="img_main" align="center" style="width:400px;height:410px;border:1px solid #c4cad1;background-color:#ffffff;background-image:url(./image/editwin/pop_upload_thumnail_bg.gif);">
+						<img alt="업로드를 해주세요" src="./image/editwin/ko/pop_upload_image_main_title_1.gif" />
+					</td>
+				</tr>
+				</table>
+			</div>
+			<div style="display:inline;float:left;width:2px;"></div>
+			<div style="display:inline;float:left;vertical-align:top;">
+
+				<!-- 이미지 업로드 UI Set 영역 -->
+				<div id="imgPreviewArea" style="height:230px;">
+
+					<!-- 이미지 보여주기 영역(preview) -->
+					<div id="img_preview" style="width:150px;height:150px;border:1px solid #c4cad1;background-color:#ffffff;background-image:url(./image/editwin/pop_upload_thumnail_bg.gif);text-align:center;">
+						<img alt="미리보기" src="./image/editwin/ko/pop_upload_image_preview_title.gif" style="margin-top:60px;" />
+					</div>
+
+					<!-- 파일선택, 업로드 버튼 영역 -->
+					<form name="frmUpload" method="post" action="" enctype="multipart/form-data" onsubmit="return false">
+					<div style="margin-top:10px;">
+						<div style="width:70px;height:20px;margin-left:7px;display:inline;float:left;">
+							<div class="UploadFileContainer"><input type="file" title="파일선택" id="fileUpload" name="fileUpload" class="UploadFile" onfocus="javascript:fnFired_Focus_File(this);" onblur="javascript:fnFired_Blur_File(this);" style="cursor:pointer;" /></div>
+							<input type="hidden" name="hdnUploadType" value="1" />
+						</div>
+						<div style="display:inline;">
+							<a href="javascript:fnUploadFile();"><img alt="업로드" src="./image/editwin/ko/btn_upload.gif" /></a>
+						</div>
+					</div>
+					<div style="margin-top:4px;text-align:center;">
+						JPG, GIF, PNG 파일<br />
+						(1024K 이하만 가능)
+					</div>
+					</form>
+
+				</div>
+
+				<div id="imgPreviewDummy" style="display:none;height:230px;"></div>
+
+				<div style="width:150px;height:1px;border-top:1px solid #dedede;"></div>
+
+				<!-- 풍선도움말 입력부분 -->
+				<div style="margin-top:10px;">
+					<div>
+						<b>풍선도움말(필수)</b>
+					</div>
+					<div>
+						<input id="txtAlt" title="풍선도움말" name="txtAlt" type="text" class="form" style="width:150px" maxlength="50" />
+					</div>
+				</div>
+
+				<!-- 이미지 크기 입력부분 -->
+				<div style="margin-top:10px;">
+					<div>
+						<b>이미지 크기(선택)</b>
+					</div>
+					<div style="margin-top:4px;clear:both;">
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="chkSameRatio" title="동일 비율 적용" name="chkSameRatio" type="checkbox" class="form" value="1" style="background-color:transparent;border:0px solid #FFFFFF;" checked="checked" />
+						</div>
+						<div style="display:inline;">동일 비율 적용</div>
+					</div>
+					<div style="margin-top:4px;clear:both;">
+						<div style="display:inline;float:left;width:70px;">너비(width)</div>
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="txtWidth" title="너비" name="txtWidth" type="text" class="form" style="width:40px;text-align:right" maxlength="5" value="0" onkeyup="javascript:fnKeyUpWidthHeight(1);" />
+						</div>
+						<div style="display:inline;">(px)</div>
+					</div>
+					<div style="margin-top:4px;clear:both;">
+						<div style="display:inline;float:left;width:70px;">높이(height)</div>
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="txtHeight" title="높이" name="txtHeight" type="text" class="form" style="width:40px;text-align:right" maxlength="5" value="0" onkeyup="javascript:fnKeyUpWidthHeight(2);" />
+						</div>
+						<div style="display:inline;">(px)</div>
+					</div>
+				</div>
+
+				<!-- 테두리 입력부분 -->
+				<div style="margin-top:10px;">
+					<div>
+						<b>테두리(선택)</b>
+					</div>
+					<div style="margin-top:4px;">
+						<div style="display:inline;float:left;width:90px;">테두리(border)</div>
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="txtBorder" title="테두리" name="txtBorder" type="text" class="form" style="width:20px;text-align:right" maxlength="2" value="0" />
+						</div>
+						<div style="display:inline;">(px)</div>
+					</div>
+				</div>
+
+				<!-- 적용,취소 버튼 영역 -->
+				<div style="margin-top:10px;text-align:center;">
+					<div style="display:inline;">
+						<a href="javascript:fnImageSend();"><img alt="적용" src="./image/editwin/ko/btn_apply.gif" /></a>
+					</div>
+					<div style="display:inline;">
+						<a href="javascript:window.close();"><img alt="취소" src="./image/editwin/ko/btn_cancel.gif" /></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Upload Form Action Area : Start -->
+<iframe name="ifrmUpload" src="" style="display:none" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<!-- Upload Form Action Area : End -->
+
+<div id="uploadStatus" style="display:none">
+	<div class="UploadStatus" style="top:0px;left:0px;width:600px;height:230px"></div>
+	<div class="UploadStatus" style="top:230px;left:0px;width:160px;height:80px"></div>
+	<div class="UploadStatusBar" style="top:230px;left:160px;width:280px;height:80px"><img alt="업로드 진행중" src="./image/editwin/ko/pop_upload_status.gif" /></div>
+	<div class="UploadStatus" style="top:230px;left:440px;width:160px;height:80px"></div>
+	<div class="UploadStatus" style="top:310px;left:0px;width:600px;height:220px"></div>
+</div>
+
+</body> 
+</html>

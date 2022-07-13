@@ -1,0 +1,29 @@
+/*
+ * @(#) Attributes.java  Create on 2005. 3. 18.
+ * Copyright (c) e3ps. All rights reserverd
+ */
+package e3ps.bom.common.iba;
+
+import java.util.Hashtable;
+
+import e3ps.common.jdf.config.Config;
+import e3ps.common.jdf.config.ConfigImpl;
+
+
+public class IBAAttributes
+{
+    public final static Hashtable PART = IBAUtil.getIBAAttributes("PartAttributes");
+//    public final static Hashtable PART = IBAUtil.getIBAAttributes("KET_PART_ATTRIBUTES");
+    public final static Hashtable DRAWING = IBAUtil.getIBAAttributes("CADAttr");
+    public final static Hashtable ALL = IBAUtil.getIBAAttributes();
+    
+    public final static String[] PART_DEFAULT_ATTR;
+    public final static String[] DRW_DEFAULT_ATTR;
+    
+    static
+    {
+        Config conf = ConfigImpl.getInstance();
+        PART_DEFAULT_ATTR = conf.getArray("part.displayAttrs");
+        DRW_DEFAULT_ATTR = conf.getArray("drawing.dev.displayAttrs");
+    }
+}

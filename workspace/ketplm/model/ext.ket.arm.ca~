@@ -1,0 +1,2431 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "arm"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"543B60910345"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "entity"
+	    quid       	"543B60D602B7"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "KETAnalysisRequestMaster"
+		    quid       	"543B6AE6028A"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"543B6DB50093"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+			    quidu      	"353FA84903E3"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "analysisRequestNo"
+			    quid       	"543B6B050036"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "projectNo"
+			    quid       	"543B6B1503A5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "analysisTitle"
+			    quid       	"543B6B1D0270"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "customerChargeName"
+			    quid       	"543B6B2B00A5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "partNo"
+			    quid       	"543B6B3C0367"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "startDate"
+			    quid       	"5456DDDC0303"
+			    documentation 	"해석의뢰시작일"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "endDate"
+			    quid       	"5456DDF5028D"
+			    documentation 	"해석의뢰완료일"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")))
+		(object Class "KETAnalysisMasterInfoLink"
+		    quid       	"543CB6B20080"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"543CE86703A7"
+			    supplier   	"Logical View::wnc::Foundation::wt::fc::ObjectToObjectLink"
+			    quidu      	"36095EC90148")))
+		(object Class "KETAnalysisProjectLink"
+		    quid       	"544F20E6017C"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"544F212D014A"
+			    supplier   	"Logical View::wnc::Foundation::wt::fc::ObjectToObjectLink"
+			    quidu      	"36095EC90148")))
+		(object Class "KETAnalysisRequestInfo"
+		    quid       	"5486CFF40323"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"5486D0700182"
+			    supplier   	"Logical View::wnc::Foundation::wt::content::FormatContentHolder"
+			    quidu      	"35228E240177")
+			(object Inheritance_Relationship
+			    quid       	"5486D07400E0"
+			    supplier   	"Logical View::wnc::Foundation::wt::enterprise::Managed"
+			    quidu      	"35291AE0022A"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "webEditor"
+			    quid       	"5486D0A00377"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "webEditorText"
+			    quid       	"5486D0D80188"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "designSpec"
+			    quid       	"5486D0F100D3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "requestedTerm"
+			    quid       	"5486D0FB03CF"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "etc"
+			    quid       	"5486D10B0396"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")))
+		(object Association "KETClientUser"
+		    quid       	"543B6E8D01C5"
+		    roles      	(list role_list
+			(object Role "ketClientUser"
+			    quid       	"543B6E8F001E"
+			    label      	"ketClientUser"
+			    supplier   	"Logical View::wnc::Foundation::wt::org::WTUser"
+			    quidu      	"33F8A95400CA"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$0"
+			    quid       	"543B6E8F0055"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A")))
+		(object Association "KETClientDepartment"
+		    quid       	"543B6E9200AF"
+		    roles      	(list role_list
+			(object Role "ketClientDepartment"
+			    quid       	"543B6E9301CA"
+			    label      	"ketClientDepartment"
+			    supplier   	"Logical View::e3ps::groupware::company::Department"
+			    quidu      	"40B6AB370285"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$1"
+			    quid       	"543B6E9301E8"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A")))
+		(object Association "KETChargeUser"
+		    quid       	"543B6E98023D"
+		    roles      	(list role_list
+			(object Role "ketChargeUser"
+			    quid       	"543B6E99030D"
+			    label      	"ketChargeUser"
+			    supplier   	"Logical View::wnc::Foundation::wt::org::WTUser"
+			    quidu      	"33F8A95400CA"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$2"
+			    quid       	"543B6E990349"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A")))
+		(object Association "KETChargeDepartment"
+		    quid       	"543B6E9C0268"
+		    roles      	(list role_list
+			(object Role "ketChargeDepartment"
+			    quid       	"543B6E9E0058"
+			    label      	"ketChargeDepartment"
+			    supplier   	"Logical View::e3ps::groupware::company::Department"
+			    quidu      	"40B6AB370285"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$3"
+			    quid       	"543B6E9E0074"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A")))
+		(object Association "KETAnalysisCustDeptLink"
+		    quid       	"544762DB039D"
+		    documentation 	"고객처"
+		    roles      	(list role_list
+			(object Role "custDept"
+			    quid       	"544762DD016B"
+			    label      	"custDept"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"544762DD01CE"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"
+			    is_aggregate 	TRUE)))
+		(object Association "KETAnalysisCarTypeLink"
+		    quid       	"5447636F01E5"
+		    documentation 	"차종"
+		    roles      	(list role_list
+			(object Role "carType"
+			    quid       	"5447637000FB"
+			    label      	"carType"
+			    supplier   	"Logical View::e3ps::project::outputtype::OEMProjectType"
+			    quidu      	"4AFA9E810335"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"54476370010B"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"
+			    is_aggregate 	TRUE)))
+		(object Association "KETAnalysisProcessLink"
+		    quid       	"544DE59F0189"
+		    roles      	(list role_list
+			(object Role "process"
+			    quid       	"544DE5A001B7"
+			    label      	"process"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"544DE5A00205"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$4"
+		    quid       	"544F162A02BC"
+		    roles      	(list role_list
+			(object Role "project"
+			    quid       	"544F162B01D5"
+			    label      	"project"
+			    supplier   	"Logical View::e3ps::project::E3PSProject"
+			    quidu      	"47BEA53E008C"
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"544F162B01F4"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"))
+		    AssociationClass 	"Logical View::ext::ket::arm::entity::KETAnalysisProjectLink")
+		(object Association "KETAnalysisUsageLink"
+		    quid       	"544F2CFA0095"
+		    documentation 	"해석구분"
+		    roles      	(list role_list
+			(object Role "usage"
+			    quid       	"544F2CFB003F"
+			    label      	"usage"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"544F2CFB00A2"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"
+			    is_aggregate 	TRUE)))
+		(object Association "KETAnalysisDivisionLink"
+		    quid       	"544F2CFD022B"
+		    documentation 	"해석용도"
+		    roles      	(list role_list
+			(object Role "division"
+			    quid       	"544F2CFE02B9"
+			    label      	"division"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"544F2CFE031B"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$5"
+		    quid       	"5486D01A0047"
+		    roles      	(list role_list
+			(object Role "info"
+			    quid       	"5486D01A03E0"
+			    label      	"info"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestInfo"
+			    quidu      	"5486CFF40323"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)
+			(object Role "master"
+			    quid       	"5486D01A03E2"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster"
+			    quidu      	"543B6AE6028A"
+			    client_cardinality 	(value cardinality "0..1")))
+		    AssociationClass 	"Logical View::ext::ket::arm::entity::KETAnalysisMasterInfoLink"))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Main"
+		    quid       	"543B60ED00FD"
+		    title      	"Main"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	763
+		    origin_y   	710
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    location   	(2073, 146)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(1931, 71)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	284
+				justify    	0
+				label      	"WTDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"353FA84903E3"
+			    width      	302
+			    height     	174
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::arm::entity::KETAnalysisMasterInfoLink" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1501, 1638)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1240, 1587)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	522
+				justify    	0
+				label      	"KETAnalysisMasterInfoLink")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"543CB6B20080"
+			    width      	540
+			    height     	126
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::ObjectToObjectLink" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(676, 1642)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(484, 1614)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	384
+				justify    	0
+				label      	"ObjectToObjectLink")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@3
+				location   	(484, 1564)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	384
+				justify    	0
+				label      	"<<Abstract>>")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"36095EC90148"
+			    width      	402
+			    height     	180
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @4
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"543CE86703A7"
+			    client     	@2
+			    supplier   	@3
+			    vertices   	(list Points
+				(1230, 1639)
+				(877, 1641))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::ObjectToObjectLink" @5
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(3431, 602)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@5
+				location   	(3237, 574)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	388
+				justify    	0
+				label      	"ObjectToObjectLink")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@5
+				location   	(3237, 524)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	388
+				justify    	0
+				label      	"<<Abstract>>")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"36095EC90148"
+			    width      	406
+			    height     	180
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::arm::entity::KETAnalysisProjectLink" @6
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2917, 600)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@6
+				location   	(2686, 549)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	462
+				justify    	0
+				label      	"KETAnalysisProjectLink")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"544F20E6017C"
+			    width      	480
+			    height     	126
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @7
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"544F212D014A"
+			    client     	@6
+			    supplier   	@5
+			    vertices   	(list Points
+				(3157, 600)
+				(3227, 601))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::enterprise::Managed" @8
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1982, 2107)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@8
+				location   	(1721, 1925)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	522
+				justify    	0
+				label      	"Managed")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@8
+				location   	(1721, 1875)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	522
+				justify    	0
+				label      	"<<Abstract>>")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"35291AE0022A"
+			    compartment 	(object Compartment
+				Parent_View 	@8
+				location   	(1721, 2030)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	6
+				max_width  	525
+				justify    	1)
+			    width      	540
+			    height     	488
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::content::FormatContentHolder" @9
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(3043, 1648)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@9
+				location   	(2820, 1541)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	446
+				justify    	0
+				label      	"FormatContentHolder")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@9
+				location   	(2820, 1491)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	446
+				justify    	0
+				label      	"<<Interface>>")
+			    icon       	"Interface"
+			    icon_style 	"Label"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"35228E240177"
+			    compartment 	(object Compartment
+				Parent_View 	@9
+				location   	(2820, 1646)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	3
+				max_width  	450
+				justify    	1)
+			    width      	464
+			    height     	338
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::org::WTUser" @10
+			    ShowCompartmentStereotypes 	TRUE
+			    location   	(678, 340)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@10
+				location   	(556, 259)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	245
+				justify    	0
+				label      	"WTUser")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"33F8A95400CA"
+			    width      	263
+			    height     	187
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::groupware::company::Department" @11
+			    ShowCompartmentStereotypes 	TRUE
+			    location   	(681, 553)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@11
+				location   	(560, 478)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	242
+				justify    	0
+				label      	"Department")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"40B6AB370285"
+			    width      	260
+			    height     	174
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::org::WTUser" @12
+			    ShowCompartmentStereotypes 	TRUE
+			    location   	(681, 765)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@12
+				location   	(590, 691)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	182
+				justify    	0
+				label      	"WTUser")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"33F8A95400CA"
+			    width      	200
+			    height     	172
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::groupware::company::Department" @13
+			    ShowCompartmentStereotypes 	TRUE
+			    location   	(681, 981)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@13
+				location   	(556, 902)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	250
+				justify    	0
+				label      	"Department")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"40B6AB370285"
+			    width      	268
+			    height     	182
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @14
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1602, 1442)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@14
+				location   	(1467, 1393)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::project::outputtype::OEMProjectType" @15
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2435, 1458)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@15
+				location   	(2258, 1409)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	354
+				justify    	0
+				label      	"OEMProjectType")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4AFA9E810335"
+			    width      	372
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @16
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1996, 1452)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@16
+				location   	(1861, 1403)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::project::E3PSProject" @17
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2909, 1019)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@17
+				location   	(2684, 840)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"E3PSProject")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47BEA53E008C"
+			    compartment 	(object Compartment
+				Parent_View 	@17
+				location   	(2684, 945)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	5
+				max_width  	453
+				justify    	1)
+			    width      	468
+			    height     	382
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @18
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1206, 1439)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@18
+				location   	(1071, 1390)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @19
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(824, 1445)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@19
+				location   	(689, 1396)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::arm::entity::KETAnalysisRequestMaster" @20
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2074, 643)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@20
+				location   	(1773, 412)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	602
+				justify    	0
+				label      	"KETAnalysisRequestMaster")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"543B6AE6028A"
+			    compartment 	(object Compartment
+				Parent_View 	@20
+				location   	(1773, 473)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	8
+				max_width  	606
+				justify    	1)
+			    width      	620
+			    height     	486
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @21
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"543B6DB50093"
+			    client     	@20
+			    supplier   	@1
+			    vertices   	(list Points
+				(2073, 399)
+				(2073, 233))
+			    line_style 	0)
+			(object AssociationViewNew "KETClientUser" @22
+			    location   	(1286, 470)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @23
+				Parent_View 	@22
+				location   	(1286, 411)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETClientUser"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"543B6E8D01C5"
+			    roleview_list 	(list RoleViews
+				(object RoleView "ketClientUser" @24
+				    Parent_View 	@22
+				    location   	(-745, -405)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @25
+					Parent_View 	@24
+					location   	(953, 349)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	277
+					justify    	0
+					label      	"+ketClientUser"
+					pctDist    	0.718891
+					height     	49
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E8F001E"
+				    client     	@22
+				    supplier   	@10
+				    vertices   	(list Points
+					(1286, 470)
+					(809, 367))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$0" @26
+				    Parent_View 	@22
+				    location   	(-745, -405)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @27
+					Parent_View 	@26
+					location   	(1676, 513)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	219
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E8F0055"
+				    client     	@22
+				    supplier   	@20
+				    vertices   	(list Points
+					(1286, 470)
+					(1763, 573))
+				    line_style 	0)))
+			(object AssociationViewNew "KETClientDepartment" @28
+			    location   	(1287, 591)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @29
+				Parent_View 	@28
+				location   	(1411, 555)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETClientDepartment"
+				pctDist    	2.583333
+				height     	37
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"543B6E9200AF"
+			    roleview_list 	(list RoleViews
+				(object RoleView "ketClientDepartment" @30
+				    Parent_View 	@28
+				    location   	(-744, -284)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @31
+					Parent_View 	@30
+					location   	(986, 521)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	400
+					justify    	0
+					label      	"+ketClientDepartment"
+					pctDist    	0.640633
+					height     	52
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E9301CA"
+				    client     	@28
+				    supplier   	@11
+				    vertices   	(list Points
+					(1287, 591)
+					(811, 561))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$1" @32
+				    Parent_View 	@28
+				    location   	(-744, -284)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E9301E8"
+				    client     	@28
+				    supplier   	@20
+				    vertices   	(list Points
+					(1287, 591)
+					(1763, 621))
+				    line_style 	0)))
+			(object AssociationViewNew "KETChargeUser" @33
+			    location   	(1272, 712)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @34
+				Parent_View 	@33
+				location   	(1272, 653)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETChargeUser"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"543B6E98023D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "ketChargeUser" @35
+				    Parent_View 	@33
+				    location   	(-759, -163)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @36
+					Parent_View 	@35
+					location   	(928, 709)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	295
+					justify    	0
+					label      	"+ketChargeUser"
+					pctDist    	0.696820
+					height     	34
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E99030D"
+				    client     	@33
+				    supplier   	@12
+				    vertices   	(list Points
+					(1272, 712)
+					(781, 755))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$2" @37
+				    Parent_View 	@33
+				    location   	(-759, -163)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E990349"
+				    client     	@33
+				    supplier   	@20
+				    vertices   	(list Points
+					(1272, 712)
+					(1763, 669))
+				    line_style 	0)))
+			(object AssociationViewNew "KETChargeDepartment" @38
+			    location   	(1289, 831)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @39
+				Parent_View 	@38
+				location   	(1323, 789)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	556
+				justify    	0
+				label      	"KETChargeDepartment"
+				pctDist    	1.083333
+				height     	43
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"543B6E9C0268"
+			    roleview_list 	(list RoleViews
+				(object RoleView "ketChargeDepartment" @40
+				    Parent_View 	@38
+				    location   	(-742, -44)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @41
+					Parent_View 	@40
+					location   	(946, 892)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	420
+					justify    	0
+					label      	"+ketChargeDepartment"
+					pctDist    	0.714345
+					height     	23
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E9E0058"
+				    client     	@38
+				    supplier   	@13
+				    vertices   	(list Points
+					(1289, 831)
+					(815, 946))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$3" @42
+				    Parent_View 	@38
+				    location   	(-742, -44)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"543B6E9E0074"
+				    client     	@38
+				    supplier   	@20
+				    vertices   	(list Points
+					(1289, 831)
+					(1763, 716))
+				    line_style 	0)))
+			(object AssociationViewNew "KETAnalysisCustDeptLink" @43
+			    location   	(1782, 1133)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @44
+				Parent_View 	@43
+				location   	(1782, 1074)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	691
+				justify    	0
+				label      	"KETAnalysisCustDeptLink"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"544762DB039D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "custDept" @45
+				    Parent_View 	@43
+				    location   	(-249, 258)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @46
+					Parent_View 	@45
+					location   	(1703, 1351)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	411
+					justify    	0
+					label      	"+custDept"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544762DD016B"
+				    client     	@43
+				    supplier   	@14
+				    vertices   	(list Points
+					(1782, 1133)
+					(1637, 1380))
+				    line_style 	0
+				    label      	(object SegLabel @47
+					Parent_View 	@45
+					location   	(1606, 1329)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))
+				(object RoleView "master" @48
+				    Parent_View 	@43
+				    location   	(-249, 258)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @49
+					Parent_View 	@48
+					location   	(1864, 915)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544762DD01CE"
+				    client     	@43
+				    supplier   	@20
+				    vertices   	(list Points
+					(1782, 1133)
+					(1928, 886))
+				    line_style 	0)))
+			(object AssociationViewNew "KETAnalysisCarTypeLink" @50
+			    location   	(2293, 1141)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @51
+				Parent_View 	@50
+				location   	(2293, 1082)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	469
+				justify    	0
+				label      	"KETAnalysisCarTypeLink"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5447636F01E5"
+			    roleview_list 	(list RoleViews
+				(object RoleView "carType" @52
+				    Parent_View 	@50
+				    location   	(262, 266)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @53
+					Parent_View 	@52
+					location   	(2421, 1328)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	172
+					justify    	0
+					label      	"+carType"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5447637000FB"
+				    client     	@50
+				    supplier   	@15
+				    vertices   	(list Points
+					(2293, 1141)
+					(2406, 1396))
+				    line_style 	0
+				    label      	(object SegLabel @54
+					Parent_View 	@52
+					location   	(2346, 1392)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))
+				(object RoleView "master" @55
+				    Parent_View 	@50
+				    location   	(262, 266)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @56
+					Parent_View 	@55
+					location   	(2166, 955)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"54476370010B"
+				    client     	@50
+				    supplier   	@20
+				    vertices   	(list Points
+					(2293, 1141)
+					(2180, 886))
+				    line_style 	0)))
+			(object AssociationViewNew "KETAnalysisProcessLink" @57
+			    location   	(2024, 1138)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @58
+				Parent_View 	@57
+				location   	(2024, 1079)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	472
+				justify    	0
+				label      	"KETAnalysisProcessLink"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"544DE59F0189"
+			    roleview_list 	(list RoleViews
+				(object RoleView "process" @59
+				    Parent_View 	@57
+				    location   	(-7, 263)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @60
+					Parent_View 	@59
+					location   	(2047, 1343)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	178
+					justify    	0
+					label      	"+process"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544DE5A001B7"
+				    client     	@57
+				    supplier   	@16
+				    vertices   	(list Points
+					(2024, 1138)
+					(2000, 1390))
+				    line_style 	0
+				    label      	(object SegLabel @61
+					Parent_View 	@59
+					location   	(1949, 1360)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))
+				(object RoleView "master" @62
+				    Parent_View 	@57
+				    location   	(-7, 263)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @63
+					Parent_View 	@62
+					location   	(2003, 934)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544DE5A00205"
+				    client     	@57
+				    supplier   	@20
+				    vertices   	(list Points
+					(2024, 1138)
+					(2049, 886))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$4" @64
+			    location   	(2529, 848)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"544F162A02BC"
+			    roleview_list 	(list RoleViews
+				(object RoleView "project" @65
+				    Parent_View 	@64
+				    location   	(498, -27)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @66
+					Parent_View 	@65
+					location   	(2661, 863)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	146
+					justify    	0
+					label      	"+project"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544F162B01D5"
+				    client     	@64
+				    supplier   	@17
+				    vertices   	(list Points
+					(2529, 848)
+					(2674, 912))
+				    line_style 	0)
+				(object RoleView "master" @67
+				    Parent_View 	@64
+				    location   	(498, -27)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @68
+					Parent_View 	@67
+					location   	(2431, 759)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544F162B01F4"
+				    client     	@64
+				    supplier   	@20
+				    vertices   	(list Points
+					(2529, 848)
+					(2384, 782))
+				    line_style 	0)))
+			(object AssocAttachView "" @69
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    client     	@6
+			    supplier   	@64
+			    vertices   	(list Points
+				(2810, 663)
+				(2529, 846))
+			    line_style 	0)
+			(object AssociationViewNew "KETAnalysisUsageLink" @70
+			    location   	(1538, 1131)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @71
+				Parent_View 	@70
+				location   	(1538, 1072)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETAnalysisUsageLink"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"544F2CFA0095"
+			    roleview_list 	(list RoleViews
+				(object RoleView "usage" @72
+				    Parent_View 	@70
+				    location   	(-536, 488)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @73
+					Parent_View 	@72
+					location   	(1298, 1298)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	136
+					justify    	0
+					label      	"+usage"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544F2CFB003F"
+				    client     	@70
+				    supplier   	@18
+				    vertices   	(list Points
+					(1538, 1131)
+					(1271, 1377))
+				    line_style 	0
+				    label      	(object SegLabel @74
+					Parent_View 	@72
+					location   	(1335, 1393)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "master" @75
+				    Parent_View 	@70
+				    location   	(-536, 488)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @76
+					Parent_View 	@75
+					location   	(1724, 906)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544F2CFB00A2"
+				    client     	@70
+				    supplier   	@20
+				    vertices   	(list Points
+					(1538, 1131)
+					(1805, 886))
+				    line_style 	0)))
+			(object AssociationViewNew "KETAnalysisDivisionLink" @77
+			    location   	(1340, 1112)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @78
+				Parent_View 	@77
+				location   	(1340, 1053)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETAnalysisDivisionLink"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"544F2CFD022B"
+			    roleview_list 	(list RoleViews
+				(object RoleView "division" @79
+				    Parent_View 	@77
+				    location   	(-734, 469)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @80
+					Parent_View 	@79
+					location   	(980, 1294)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	156
+					justify    	0
+					label      	"+division"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544F2CFE02B9"
+				    client     	@77
+				    supplier   	@19
+				    vertices   	(list Points
+					(1340, 1112)
+					(917, 1383))
+				    line_style 	0
+				    label      	(object SegLabel @81
+					Parent_View 	@79
+					location   	(988, 1401)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "master" @82
+				    Parent_View 	@77
+				    location   	(-734, 469)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @83
+					Parent_View 	@82
+					location   	(1656, 862)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"544F2CFE031B"
+				    client     	@77
+				    supplier   	@20
+				    vertices   	(list Points
+					(1340, 1112)
+					(1763, 841))
+				    line_style 	0)))
+			(object ClassView "Class" "Logical View::ext::ket::arm::entity::KETAnalysisRequestInfo" @84
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(3041, 2110)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@84
+				location   	(2804, 1929)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	474
+				justify    	0
+				label      	"KETAnalysisRequestInfo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5486CFF40323"
+			    compartment 	(object Compartment
+				Parent_View 	@84
+				location   	(2804, 1990)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	6
+				max_width  	463
+				justify    	1)
+			    width      	492
+			    height     	386
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$5" @85
+			    location   	(2221, 1618)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5486D01A0047"
+			    roleview_list 	(list RoleViews
+				(object RoleView "info" @86
+				    Parent_View 	@85
+				    location   	(147, 975)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @87
+					Parent_View 	@86
+					location   	(2642, 1975)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	104
+					justify    	0
+					label      	"+info"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5486D01A03E0"
+				    client     	@85
+				    supplier   	@84
+				    vertices   	(list Points
+					(2221, 1618)
+					(2241, 1750)
+					(2794, 1998))
+				    line_style 	0
+				    label      	(object SegLabel @88
+					Parent_View 	@86
+					location   	(2748, 1919)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "master" @89
+				    Parent_View 	@85
+				    location   	(147, 975)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @90
+					Parent_View 	@89
+					location   	(2090, 1039)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	154
+					justify    	0
+					label      	"+master"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5486D01A03E2"
+				    client     	@85
+				    supplier   	@20
+				    vertices   	(list Points
+					(2221, 1618)
+					(2109, 886))
+				    line_style 	0
+				    label      	(object SegLabel @91
+					Parent_View 	@89
+					location   	(2173, 952)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))))
+			(object AssocAttachView "" @92
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    client     	@85
+			    supplier   	@2
+			    vertices   	(list Points
+				(2220, 1618)
+				(1771, 1657))
+			    line_style 	0)
+			(object InheritView "" @93
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5486D0700182"
+			    client     	@84
+			    supplier   	@9
+			    vertices   	(list Points
+				(3041, 1916)
+				(3042, 1817))
+			    line_style 	0)
+			(object InheritView "" @94
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5486D07400E0"
+			    client     	@84
+			    supplier   	@8
+			    vertices   	(list Points
+				(2794, 2109)
+				(2252, 2107))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"543B60CB028A"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Logical View::ext::ket::arm::entity" @95
+		    location   	(428, 534)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@95
+			location   	(284, 450)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"entity")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"543B60D602B7"
+		    width      	300
+		    height     	180)))))

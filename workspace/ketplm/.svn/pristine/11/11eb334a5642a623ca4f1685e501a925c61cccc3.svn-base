@@ -1,0 +1,728 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "entity"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4CA5414A0128"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "KETNewPartList"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"CompositeUnique1"
+		    value      	(value Text "+ partNumber")))
+	    quid       	"4C90533901C5"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C90535A0271"
+		    supplier   	"Logical View::wnc::Foundation::wt::enterprise::Simple"
+		    quidu      	"35291AB7025D"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "partNumber"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Required"
+			    value      	TRUE))
+		    quid       	"4C9060CB0157"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "partName"
+		    quid       	"4C9060E00213"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "rawMaterial"
+		    quid       	"4C9060EB00BB"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "customer"
+		    quid       	"4C9060FA0128"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "register"
+		    quid       	"4C9061030119"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "regDate"
+		    quid       	"4C90610B030D"
+		    type       	"Date"
+		    exportControl 	"Public")
+		(object ClassAttribute "modifier"
+		    quid       	"4C906119007D"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "modDate"
+		    quid       	"4C90612002FD"
+		    type       	"Date"
+		    exportControl 	"Public")
+		(object ClassAttribute "description"
+		    quid       	"4C90612C00AB"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "del"
+		    quid       	"4CD396A0034B"
+		    type       	"Boolean"
+		    quidu      	"3784E79701E4"
+		    exportControl 	"Public")))
+	(object Association "KETNewPartListTypeLink"
+	    quid       	"4CC61F3F0242"
+	    roles      	(list role_list
+		(object Role "newparttype"
+		    quid       	"4CC61F400196"
+		    label      	"newparttype"
+		    supplier   	"Logical View::e3ps::common::code::NumberCode"
+		    quidu      	"4795C7D70323"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)
+		(object Role "newpartlist"
+		    quid       	"4CC61F4001C5"
+		    label      	"newpartlist"
+		    supplier   	"Logical View::e3ps::part::entity::KETNewPartList"
+		    quidu      	"4C90533901C5"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "KETNewPartProductLink"
+	    quid       	"4CC63927004E"
+	    roles      	(list role_list
+		(object Role "newproduct"
+		    quid       	"4CC639270252"
+		    label      	"newproduct"
+		    supplier   	"Logical View::e3ps::common::code::NumberCode"
+		    quidu      	"4795C7D70323"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)
+		(object Role "newpartlist"
+		    quid       	"4CC6392702CF"
+		    label      	"newpartlist"
+		    supplier   	"Logical View::e3ps::part::entity::KETNewPartList"
+		    quidu      	"4C90533901C5"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "KETNewPartDieLink"
+	    quid       	"4CC639CF03D8"
+	    roles      	(list role_list
+		(object Role "newdie"
+		    quid       	"4CC639D1007D"
+		    label      	"newdie"
+		    supplier   	"Logical View::e3ps::common::code::NumberCode"
+		    quidu      	"4795C7D70323"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)
+		(object Role "newpartlist"
+		    quid       	"4CC639D10119"
+		    label      	"newpartlist"
+		    supplier   	"Logical View::e3ps::part::entity::KETNewPartList"
+		    quidu      	"4C90533901C5"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "NewPartList"
+	    quid       	"4C9053090222"
+	    title      	"NewPartList"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::enterprise::Simple" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1793, 205)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	TRUE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1665, 123)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	256
+			justify    	0
+			label      	"Simple")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(1665, 73)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	253
+			justify    	0
+			label      	"<<Abstract>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"35291AB7025D"
+		    width      	274
+		    height     	288
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2831, 875)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(2696, 800)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	270
+			justify    	0
+			label      	"NumberCode")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4795C7D70323"
+		    width      	288
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(643, 872)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(508, 797)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	270
+			justify    	0
+			label      	"NumberCode")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4795C7D70323"
+		    width      	288
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1790, 1728)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1655, 1653)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	270
+			justify    	0
+			label      	"NumberCode")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4795C7D70323"
+		    width      	288
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::part::entity::KETNewPartList" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1792, 874)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1589, 568)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	406
+			justify    	0
+			label      	"KETNewPartList")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C90533901C5"
+		    width      	424
+		    height     	636
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C90535A0271"
+		    client     	@5
+		    supplier   	@1
+		    vertices   	(list Points
+			(1792, 555)
+			(1792, 349))
+		    line_style 	0)
+		(object AssociationViewNew "KETNewPartListTypeLink" @7
+		    location   	(2345, 874)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @8
+			Parent_View 	@7
+			location   	(2346, 753)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	469
+			justify    	0
+			label      	"KETNewPartListTypeLink"
+			pctDist    	0.533333
+			height     	122
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CC61F3F0242"
+		    roleview_list 	(list RoleViews
+			(object RoleView "newparttype" @9
+			    Parent_View 	@7
+			    location   	(1600, -104)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(2568, 838)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	242
+				justify    	0
+				label      	"+newparttype"
+				pctDist    	0.653959
+				height     	36
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC61F400196"
+			    client     	@7
+			    supplier   	@2
+			    vertices   	(list Points
+				(2345, 874)
+				(2686, 874))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(2633, 922)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.843366
+				height     	48
+				orientation 	1))
+			(object RoleView "newpartlist" @12
+			    Parent_View 	@7
+			    location   	(1600, -104)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @13
+				Parent_View 	@12
+				location   	(2133, 825)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	240
+				justify    	0
+				label      	"+newpartlist"
+				pctDist    	0.621701
+				height     	49
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC61F4001C5"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(2345, 874)
+				(2004, 874))
+			    line_style 	0)))
+		(object AssociationViewNew "KETNewPartProductLink" @14
+		    location   	(1183, 872)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @15
+			Parent_View 	@14
+			location   	(1189, 765)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"KETNewPartProductLink"
+			pctDist    	0.600000
+			height     	108
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CC63927004E"
+		    roleview_list 	(list RoleViews
+			(object RoleView "newproduct" @16
+			    Parent_View 	@14
+			    location   	(-594, -257)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @17
+				Parent_View 	@16
+				location   	(929, 845)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	238
+				justify    	0
+				label      	"+newproduct"
+				pctDist    	0.641414
+				height     	27
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC639270252"
+			    client     	@14
+			    supplier   	@3
+			    vertices   	(list Points
+				(1183, 872)
+				(787, 872))
+			    line_style 	0
+			    label      	(object SegLabel @18
+				Parent_View 	@16
+				location   	(827, 926)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "newpartlist" @19
+			    Parent_View 	@14
+			    location   	(-594, -257)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @20
+				Parent_View 	@19
+				location   	(1434, 834)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	234
+				justify    	0
+				label      	"+newpartlist"
+				pctDist    	0.633592
+				height     	39
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC6392702CF"
+			    client     	@14
+			    supplier   	@5
+			    vertices   	(list Points
+				(1183, 872)
+				(1579, 873))
+			    line_style 	0)))
+		(object AssociationViewNew "KETNewPartDieLink" @21
+		    location   	(1790, 1416)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @22
+			Parent_View 	@21
+			location   	(1555, 1416)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	382
+			justify    	0
+			label      	"KETNewPartDieLink"
+			pctDist    	-3.433333
+			height     	0
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CC639CF03D8"
+		    roleview_list 	(list RoleViews
+			(object RoleView "newdie" @23
+			    Parent_View 	@21
+			    location   	(-2, 542)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @24
+				Parent_View 	@23
+				location   	(1707, 1597)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	222
+				justify    	0
+				label      	"+newdie"
+				pctDist    	0.810127
+				height     	84
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC639D1007D"
+			    client     	@21
+			    supplier   	@4
+			    vertices   	(list Points
+				(1790, 1416)
+				(1790, 1640))
+			    line_style 	0
+			    label      	(object SegLabel @25
+				Parent_View 	@23
+				location   	(1850, 1601)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.827004
+				height     	60
+				orientation 	0))
+			(object RoleView "newpartlist" @26
+			    Parent_View 	@21
+			    location   	(-2, 542)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @27
+				Parent_View 	@26
+				location   	(1678, 1258)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	224
+				justify    	0
+				label      	"+newpartlist"
+				pctDist    	0.708321
+				height     	114
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC639D10119"
+			    client     	@21
+			    supplier   	@5
+			    vertices   	(list Points
+				(1790, 1416)
+				(1790, 1192))
+			    line_style 	0)))))))

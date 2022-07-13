@@ -1,0 +1,269 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "manage"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5A8F69D301A3"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "BomEditorACL"
+	    quid       	"5A8A4E2200DB"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"5A8A4E990309"
+		    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+		    quidu      	"3432A8740232"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "columnKey"
+		    quid       	"5A8A4E32039E"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "displayName"
+		    quid       	"5A8A4E5203B9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "description"
+		    quid       	"5A8A4E570131"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "taskCode"
+		    quid       	"5A8A4F1E0235"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "viewable"
+		    quid       	"5A8A4E5F0163"
+		    type       	"boolean"
+		    exportControl 	"Public")
+		(object ClassAttribute "editor"
+		    quid       	"5A8A4E73026B"
+		    type       	"boolean"
+		    exportControl 	"Public")))
+	(object Class "BomEditorACLFromType"
+	    quid       	"5A8CCE1C021B"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"5A8CCE4E00DF"
+		    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+		    quidu      	"3432A8740232"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "columnKey"
+		    quid       	"5A8CCE44039A"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "displayName"
+		    quid       	"5A8CCE44039F"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "description"
+		    quid       	"5A8CCE4403A3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "typeId"
+		    quid       	"5A8CCE65006B"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "necessary"
+		    quid       	"5A8CCEE302C9"
+		    type       	"boolean"
+		    exportControl 	"Public")
+		(object ClassAttribute "disabled"
+		    quid       	"5A8CCF32038F"
+		    type       	"boolean"
+		    initv      	"false"
+		    exportControl 	"Public"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "원가BOMACL"
+	    quid       	"5A8A4DE4011E"
+	    title      	"원가BOMACL"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	1660
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1410, 637)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1227, 505)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	366
+			justify    	0
+			label      	"Persistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(1227, 455)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	366
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3432A8740232"
+		    compartment 	(object Compartment
+			Parent_View 	@1
+			location   	(1227, 610)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	4
+			max_width  	363
+			justify    	1)
+		    width      	384
+		    height     	388
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::ext::ket::cost::entity::manage::BomEditorACL" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1407, 1201)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1190, 995)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	434
+			justify    	0
+			label      	"BomEditorACL")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5A8A4E2200DB"
+		    compartment 	(object Compartment
+			Parent_View 	@2
+			location   	(1190, 1056)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	431
+			justify    	1)
+		    width      	452
+		    height     	436
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5A8A4E990309"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(1407, 982)
+			(1408, 831))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::ext::ket::cost::entity::manage::BomEditorACLFromType" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(680, 1212)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(421, 1006)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	518
+			justify    	0
+			label      	"BomEditorACLFromType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5A8CCE1C021B"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(421, 1067)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	516
+			justify    	1)
+		    width      	536
+		    height     	436
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @5
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5A8CCE4E00DF"
+		    client     	@4
+		    supplier   	@1
+		    vertices   	(list Points
+			(948, 999)
+			(1217, 786))
+		    line_style 	0)))))

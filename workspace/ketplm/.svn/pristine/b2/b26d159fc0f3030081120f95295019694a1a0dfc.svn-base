@@ -1,0 +1,48 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()	
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()	
+# <key>.order=					getOrder()	
+# <key>.selectable=				isSelectable()	
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.argComment<n>=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.constant=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.customizable=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.deprecated=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+
+# Entry Contents
+PRODUCT.value=\u4ea7\u54c1
+PRODUCT.shortDescription=\u4ea7\u54c1
+PRODUCT.order=1
+
+MOLD.value=\u6a21\u5177
+MOLD.shortDescription=\u6a21\u5177
+MOLD.order=2
+
+CUSTOMER.value=\u987e\u5ba2
+CUSTOMER.shortDescription=\u987e\u5ba2
+CUSTOMER.order=3
+
+QUALITY.value=\u54c1\u8d28
+QUALITY.shortDescription=\u54c1\u8d28
+QUALITY.order=4
+
+COST.value=\u8d39\u7528
+COST.shortDescription=\u8d39\u7528
+COST.order=5
+
+SCHEDULE.value=\u65e5\u7a0b
+SCHEDULE.shortDescription=\u65e5\u7a0b
+SCHEDULE.order=6
+
+ETC.value=\u5176\u5b83
+ETC.shortDescription=\u5176\u5b83
+ETC.order=7

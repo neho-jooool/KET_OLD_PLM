@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+body {
+	font-size: 9pt;
+	color: #555555;
+	font-family: 굴림;
+
+	margin:0px;
+
+	background-color:#f7f7f7;
+}
+
+img {
+	border:0px;
+}
+
+a:link {color:#555555;text-decoration:none;}
+a:visited {color:#555555;text-decoration:none;}
+a:active {color:#555555;text-decoration:none;}
+a:hover {color:#555555;text-decoration:none;}
+
+.form
+{
+	font-size: 9pt;
+	color: #666666;
+	font-family: 굴림;
+	background-color: #ffffff;
+	border: 1px solid #D0D0D0;
+}
+
+.UploadFileContainer
+{
+	position:absolute;
+	width:63px;
+	height:20px;
+	clip:rect(0 63 20 0);
+	background-image:url("../../image/editwin/ko/btn_file_select.gif");
+	z-index:10002;
+}
+
+.UploadFile
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:63px;
+	height:20px;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+
+.UploadStatus
+{
+	z-index:10046;
+	position:absolute;
+	background-color: #ffffff;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+
+.UploadStatusBar
+{
+	z-index:10046;
+	position:absolute;
+	background-color: #ffffff;
+}

@@ -1,0 +1,7 @@
+ <script language="javascript">
+   
+ alert('asdfasdf');
+ parent.parent.opener.location.href = '/plm/ext/wfm/workflow/listWorkItem.do';
+ //parent.hideProcessing();
+   
+ </script>

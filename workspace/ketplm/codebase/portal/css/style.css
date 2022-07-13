@@ -1,0 +1,711 @@
+/** CSS Document **/
+
+/** Basic **/
+body {font-family: "Arial", "돋움"; font-size: 12px; color: #333333; line-height:16px;}
+
+/** 이미지 **/
+img {border-width: 0px;}
+
+/** Body scrollbar **/
+body {
+	scrollbar-face-color: #DCDCDC; 
+	scrollbar-shadow-color:#FFFFFF; 
+	scrollbar-highlight-color:#FFFFFF; 
+	scrollbar-3dlight-color: #BBBBBB;
+	scrollbar-darkshadow-color: #BBBBBB; 
+	scrollbar-track-color: #EFEFEF; 
+	scrollbar-arrow-color: #626262; 
+}
+
+
+
+/** General Define **/
+td {color : #333333 ; Font-Family:"Arial", "돋움"; Font-Size: 12px; Line-height:16px; text-decoration: none; word-break:normal;}
+a:link {text-decoration: none ; color: #446998;}
+a:visited {text-decoration: none ; color: #6986B3;}
+a:active {text-decoration: none ; color: #BD9D64;}
+a:hover {text-decoration: none ; color: #BD9D64;}
+
+
+/**** Navigation ****/
+
+.side   {color : #333333 ; Font-Family: "Arial", "굴림"; Font-Size: 10px ; text-decoration: none;} 
+
+a.side:link     {color: #333333; font-family:"Arial", "굴림"; font-size:10px; text-decoration: none;}
+a.side:visited  {color: #333333; font-family:"Arial", "굴림"; font-size:10px; text-decoration: none;}
+a.side:active   {color: #333333; font-family:"Arial", "굴림"; font-size:10px; text-decoration: none;}
+a.side:hover    {color: #333333; font-family:"Arial", "굴림"; font-size:10px; text-decoration: none;}
+
+.box    {font-family: "Arial", "돋움"; font-size:11px; color:#666666; background-color:#ffffff; border:1x solid; border-color:#9A9A9A;}
+
+.topmenu{color : #666666 ; Font-Family: "Arial", "굴림"; Font-Size: 11px ; text-decoration: none;} 
+
+a.topmenu:link     {color: #666666; font-family:"Arial", "굴림"; font-size:11px; text-decoration: none;}
+a.topmenu:visited  {color: #666666; font-family:"Arial", "굴림"; font-size:11px; text-decoration: none;}
+a.topmenu:active   {color: #375E99; font-family:"Arial", "굴림"; font-size:11px; text-decoration: none;}
+a.topmenu:hover    {color: #375E99; font-family:"Arial", "굴림"; font-size:11px; text-decoration: none;}
+
+
+
+/**** main page ****/
+
+/* 타이틀 */
+.title_default{color: #3C3C3C;  font-size:15px;font-family: "돋움","Arial"; text-decoration: none; font-weight:bold;}
+.title_subtext{color: #825247; font-family: "돋움","Arial",; font-size:12px; text-decoration: none;}
+.title_sub{color: #666666; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+.title_subsub{
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #828282;
+	font-weight: bold;
+
+}
+
+/** 경로표시 **/
+.location {font-family: "Arial", "돋움"; font-size: 11px; color: #666666;  text-decoration: none;
+}
+a.location :link {text-decoration: none ; color: #666666;}
+a.location:visited {text-decoration: none ; color: #666666;}
+a.location:active {text-decoration: underline ; color: #666666; font-weight: bold;}
+a.location:hover {text-decoration: underline ; color: #666666;}
+
+
+
+
+/**** footer ****/
+.footer {color : #9A9A9A ; Font-Family:"Arial", "돋움"; Font-Size:11px ; Line-height:15px; text-decoration: none;}
+a.footer:link { text-decoration: none ; color: #5D6A81}
+a.footer:visited { text-decoration: none ; color: #5D6A81}
+a.footer:hover { text-decoration: underline ; color: #5D6A81}
+
+
+------------------------ Contents Area -------------------------
+
+
+/** 검색 **/
+.search_bg {background-color: #EFEFEF;}
+.search_bg_in{background-color: #F4F4F2;}
+.search_line{background-color: #CCCCCC;}
+
+
+
+/** 링크메뉴 **/
+.link_menu {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #999999; text-decoration: none;}
+.link_menu a:link {text-decoration: none ; color: #000000;}
+.link_menu a:visited {text-decoration: none ; color: #000000;}
+.link_menu a:active {text-decoration: underline ; color: #A7023E;}
+.link_menu a:hover {text-decoration: underline ; color: #A7023E;}
+
+/** 메인화면 인포메이션 텍스트 **/
+.main_text {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #666666; text-decoration: none;}
+.main_text a:link {text-decoration: none ; color: #737700; font-weight: bold;}
+.main_text a:visited {text-decoration: none ; color: #737700; font-weight: bold;}
+.main_text a:active {text-decoration: none ; color: #737700; font-weight: bold;}
+.main_text a:hover {text-decoration: underline ; color: #737700; font-weight: bold;}
+
+
+/** 버튼 **/
+.button_attach{
+	cursor:hand;
+	font-family: "Verdana", "돋움";
+	font-weight:none; 
+	font-size:11px; 
+	color:#3E3A17;
+	height:20px;
+	Width: 65px; 
+	margin:0px; 
+	background:#D8D6C3;
+	border-width: 1px;	
+	border-style: solid; 
+	border-color: #C3C1AD #93917D #93917D #C3C1AD;
+}
+
+.button_text{cursor:hand;font-family: "Verdana", "돋움";font-weight:none; font-size:12px; color:#000000;}
+
+.button_default{
+	cursor:hand;
+	font-family: "Verdana", "돋움";font-weight:none; font-size:11px; color:#000000;
+	height:20px;Width: 65px; margin:0px; background:#F0EFEB;
+	border-width: 1px;border-style: solid; border-color:  #C1C1C1 #7C7C7C #7C7C7C #C1C1C1 ;
+}
+
+.button_default_100{
+	cursor:hand;
+	font-family: "Verdana", "돋움";	font-weight:none; font-size:11px; color:#000000;
+	height:20px;Width: 100px; margin:0px; background:#F0EFEB;
+	border-width: 1px;border-style: solid; border-color: #929290 #929290 #929290 #929290;
+}
+
+
+.button_default_sm{
+	cursor:hand;
+	font-family: "Verdana", "돋움";font-weight:none; font-size:11px; color:#000000;
+	height:20px;Width: 43px; margin:0px; background:#F0EFEB;
+	border-width: 1px;border-style: solid; border-color:  #C1C1C1 #7C7C7C #7C7C7C #C1C1C1 ;
+}
+
+.button_navigation{
+	cursor:hand;
+	font-family: "Verdana", "돋움";font-weight:none; font-size:11px; color:#527584;
+	height:20px;Width: 65px; margin:0px; background:#E7EBEF;
+	border-width: 1px;border-style: solid; border-color: #B5C7CE #849EAD #849EAD #B5C7CE;
+}
+.button_default_long{
+	cursor:hand;
+	font-family: "Verdana", "돋움";	font-weight:none; font-size:11px; color:#000000;
+	height:20px;Width: 100%; margin:0px; background:#F0EFEB;
+	border-width: 1px;border-style: solid; border-color: #929290 #929290 #929290 #929290;
+}
+
+.button_small{
+	cursor:hand;
+	font-family: "Verdana", "돋움";font-weight:none; font-size:11px; color:#3A4153;
+	height:16px;Width: 55px; margin:0px; background:#EFEFDE;
+	border-width: 1px;border-style: solid; border-color: #C1C1C1 #7C7C7C #7C7C7C #C1C1C1;
+}
+
+.button_small_long{
+	cursor:hand;
+	font-family: "Verdana", "돋움";font-weight:none; font-size:11px; color:#3A4153;
+	height:17px;Width: 100%; margin:0px; background:#EFEFDE;
+	border-width: 1px;border-style: solid; border-color: #C1C1C1 #7C7C7C #7C7C7C #C1C1C1;
+}
+
+.button_long{
+	cursor:hand;
+	font-family: "Verdana", "돋움";font-weight:none; font-size:11px; color:#3A4153;
+	height:16px;Width: 120px; margin:0px; background:#F0EFF7;
+	border-width: 1px;border-style: solid; border-color: #BDBDBD;
+}
+
+
+/* 사이트 맵 링크 표시 */
+.sitemap_font {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #333333; text-decoration: none;}
+.sitemap_font a:link {text-decoration: none ; color: #333333;}
+.sitemap_font a:visited {text-decoration: none ; color: #6A6A6A;}
+.sitemap_font a:active {text-decoration: none; color: #114798; } 
+.sitemap_font a:hover {text-decoration: none;color: #114798;}
+
+.sitemap_font_02depth {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #333333; text-decoration: none;}
+.sitemap_font_02depth a:link {text-decoration: none ; color: #333333;}
+.sitemap_font_02depth a:visited {text-decoration: none ; color: #6A6A6A;}
+.sitemap_font_02depth a:active {color: #114798; text-decoration: none;}
+.sitemap_font_02depth a:hover {color: #114798; text-decoration: none;}
+
+
+
+
+
+/* 입력폼 */
+.input_textfield {
+	height: 21px;
+	width: 100%;
+	padding: 2px 0px 0px 3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+.input_textfield_number {
+	height: 21px;
+	width: 100%;
+    padding-right:3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+	text-align: right;
+} 
+
+.input_textfield_lineno{
+	height: 21px;
+	width: 100%;
+	padding: 2px 0px 0px 3px;
+	border: 0px solid #FFFFFF;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+		
+} 
+
+.input_textfield_short {
+	height: 21px;
+	width: 170px;
+	padding: 2px 0px 0px 3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+
+.input_textfield_date {
+	height: 21px;
+	width: 70px;
+	padding: 2px 0px 0px 3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+
+.input_textfield_idpw {
+	height: 21px;
+	width: 100px;
+	padding: 2px 0px 0px 3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+
+.input_textfield_dimmed{
+	height: 21px;
+	width: 100%;
+	padding: 2px 0px 0px 3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #E8E8E8;
+	margin: 0px;
+}
+.input_textarea {
+	width: 100%;
+	padding: 2px 0px 0px 3px;
+	border: 1px solid #B9B9B9;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+.input_textarea_lineno {
+	width: 100%;
+	padding: 2px 0px 0px 3px;
+	border: 0px solid #FFFFFF;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+.input_combobox {
+	height: 18px;
+	width: 100%;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+} 
+.input_combobox_dimmed {
+	height: 15px;
+	width: 100%;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #E8E8E8;
+} 
+.input_listbox_default {
+	width: 100%;
+	padding: 2px;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin: 0px;
+} 
+
+.input_listbox_shuttle {
+	width: 100%;
+	padding: 2px;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+	background-color: #F8F7EE;
+	margin: 0px;
+} 
+
+/* 정렬 */
+.sort{font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #A28F87;}
+.sort a:link {text-decoration: none ; color: #A28F87;}
+.sort a:visited {text-decoration: none ; color: #A28F87;}
+.sort a:active {text-decoration: none ; color: #A28F87;}
+.sort a:hover {text-decoration: none ; color: #0E136C;}
+
+
+/* 지시문 */
+.instruction {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #557A9B;}
+
+
+/* 테이블 */
+.table_search{
+    background-color: #F4F4F4;
+	font-size: 12px;
+	text-align: right;
+}
+
+.table_bg {
+	background-color: #D4D4D4;
+}
+
+.table_bg_in{
+	background-color: #DCD5C2;
+}
+.table_bg_white {
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	
+	background-color: #FFFFFF;
+	height: 24px;
+}
+.table_bg_differ {
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	background-color: #f0f8ff;
+	height: 24px;
+}
+.table_bg_red {
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	
+	background-color: #ff0000;
+	height: 24px;
+}
+
+.table_bg_gray {
+	font-family: "Arial", "돋움";
+	font-size: 12px;	
+	background-color: #FAFAFA;
+	height: 24px;
+}
+
+/* [부품승인] 2008-02-29, LG CNS */
+.table_bg_mrm_subsum {
+	background-color: #EAEAEA;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	height: 24px;
+}
+
+.table_font_red {
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+	color:#ff0000;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	height: 24px;
+}
+
+.table_header_right_pms {
+	height: 26px;
+	background-color: #E6EDEF;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_right_bom {
+	height: 26px;
+	background-color: #ECF6F5;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_right_ecm {
+	height: 26px;
+	background-color: #F4F6FC;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_right_edm {
+	height: 26px;
+	background-color: #E6F1F5;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_right_ept {
+	height: 26px;
+	background-color: #EFF4FA;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_right_wfm {
+	height: 26px;
+	background-color: #EFF4FA;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_right_dms {
+	height: 26px;
+	background-color: #E9F2E1;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+/* [부품승인] 2008-02-28, LG CNS */
+.table_header_right_mrm {
+	height: 26px;
+	background-color: #F6F4E6;
+	text-align: right;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_left_ept {
+	height: 26px;
+	background-color: #EFF4FA;
+	text-align: left;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+.table_header_pms {
+	height: 26px;
+	background-color: #E6EDEF;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_bom {
+	height: 26px;
+	background-color: #ECF6F5;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_ecm {
+	height: 26px;
+	background-color: #F4F6FC;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_edm {
+	height: 26px;
+	background-color: #E6F1F5;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_ept {
+	height: 26px;
+	background-color: #EFF4FA;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_wfm {
+	height: 26px;
+	background-color: #EFF4FA;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_dms {
+	height: 26px;
+	background-color: #E9F2E1;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+
+}
+/* [부품승인] 2008-02-28, LG CNS */
+.table_header_mrm {
+	height: 26px;
+	background-color: #F6F4E6;
+	text-align: center;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+
+}
+.table_header_bright {
+	height: 26px;
+	background-color: #FFFFFF;
+	font-family: "Arial", "돋움";
+	font-size: 12px;
+}
+
+.table_top_dms{
+	height: 1px;
+	background-color: #88C485
+
+}
+.table_top_pms{
+	height: 1px;
+	background-color: #628DD6
+
+}
+.table_top_bom{
+	height: 1px;
+	background-color: #6DAFA3
+
+}
+.table_top_ecm{
+	height: 1px;
+	background-color: #767DB3
+
+}
+.table_top_edm{
+	height: 1px;
+	background-color: #59ADC3
+
+}
+.table_top_ept{
+	height: 1px;
+	background-color: #5793C8
+
+}
+.table_top_wfm{
+	height: 1px;
+	background-color: #5793C8
+
+}
+/* [부품승인] 2008-02-28, LG CNS */
+.table_top_mrm{
+	height: 1px;
+	background-color: #C2B441
+
+}
+.table_bott{
+	height: 4px;
+	background-color: #F1F1F1
+
+}
+
+.table_color_bright {
+	background-color: #F4F5F0;
+}
+
+.table_color_gray {
+	background-color: #F5F5F5;
+	font-family: "Arial", "돋움"; 
+	font-size: 12px; 
+	color: #999999;
+}
+
+.table_color_gray2 {
+	background-color: #F5F5F5;
+	font-family: "Arial", "돋움"; 
+	font-size: 12px; 
+	color: #333333;
+}
+
+/* 테이블 정보 */
+.tableinfo_total {
+	font-family: "Arial", "돋움"; 
+	font-size: 11px; 
+	color: #004C56; 
+	text-decoration: none;
+}
+
+
+/*팝업*/
+.popup_title{ font-family: "Verdana", "돋움"; font-size: 14px; color: #0054A6; text-decoration: none; font-weight: bold; }
+
+/*팝업,알림정보*/
+.popup_font_blue{ font-family: "Verdana", "돋움"; font-size: 11px; color: #2E3192; }
+
+/* 페이지번호 */
+.pagenumber_td {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #000000; text-decoration: none;}
+.pagenumber_td a:link {text-decoration: none ; color: #9E0B0E;}
+.pagenumber_td a:visited {text-decoration: none ; color: #000000;}
+.pagenumber_td a:active {text-decoration: none ; color: #9E0B0E;}
+.pagenumber_td a:hover {text-decoration: none ; color: #843A4E;}
+
+.pagenumber_text {
+	font-family: "Arial", "돋움";
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* 폰트 설정 */
+.font_red { font-family: "Arial", "돋움"; font-size: 12px; color: #AC0606; }
+.font_red_bold { font-family: "Arial", "돋움"; font-size: 12px; color: #AC0606; font-weight: bold;}
+.font_red_bold a:link {text-decoration: none ; color: #AC0606;}
+.font_red_bold a:visited {text-decoration: none ; color: #AC0606;}
+.font_red_bold a:active {text-decoration: none ; color: #6A6A6A;}
+.font_red_bold a:hover {text-decoration: none ; color: #000063;}
+.font_small { font-family: "돋움"; font-size: 11px; color: #333333; }
+.font_or_bold { font-family: "Arial", "돋움"; font-size: 12px; color: #FF6403; font-weight: bold;}
+
+/* [부품승인] 2008-02-26, LG CNS */
+.font_blue { font-family: "Arial", "돋움"; font-size: 12px; color:#2E3199; font-weight: bold; }
+
+
+/* 프로세스 단계 */
+.train {font-family: "Arial", "돋움"; font-size: 11px; line-height: 16px; color: #666666; text-decoration: none; font-weight: bold;}
+.train a:link {text-decoration: none ; color: #666666;}
+.train a:visited {text-decoration: none ; color: #666666;}
+.train a:active {text-decoration: none ; color: #666666;}
+.train a:hover {text-decoration: underline ; color: #004A80;}
+
+/* 탭 */
+.tab1 {font-family: "돋움","Arial";font-size: 12px;color: #5F76B7;font-weight: bold;}
+
+.tab_disabled  {font-family:  "돋움","Arial";font-size: 12px;color: #B5B5B5;font-weight: bold;}
+a.tab:link    {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+a.tab:visited {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+a.tab:active  {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+a.tab:hover   {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+
+.tab2 {font-family: "돋움","Arial";font-size: 13px;color: #666666;font-weight: bold;}
+.tab_disabled  {font-family:  "돋움","Arial";font-size: 13px;color: #B5B5B5;font-weight: bold;}
+a.tab:link    {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+a.tab:visited {color: #ABABAB; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+a.tab:active  {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+a.tab:hover   {color: #888888; font-family: "돋움","Arial"; font-size:12px; text-decoration: none; font-weight:bold;}
+
+

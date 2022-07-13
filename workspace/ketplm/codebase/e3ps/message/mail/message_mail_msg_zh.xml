@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <entry key="msg.mail.ProjectModuleEventListener.Please_register_Performance_management_objectives_of_the_project">请输入项目业绩管理目标信息。</entry>
+  <entry key="msg.mail.ProjectModuleEventListener.Task_has_been_delayed">Task在迟延。</entry>
+  <entry key="msg.mail.ProjectHelper.PLM.notice.mail">PLM提醒邮件</entry>
+  <entry key="msg.mail.ProjectHelper.Development_person">开发负责人</entry>
+  <entry key="msg.mail.ProjectHelper.Mold development_person">模具负责人</entry>
+  <entry key="msg.mail.ProjectHelper.project_status_is_please_refer_to_your_work">项目已{0}。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.project_person_in_charge_is_assighed_please_refer_to_the_business">你被指定为项目{0}负责人。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.the_project_is_approved._please_refer_to_the_your_work">项目已得批准，改成进行状态。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.the_project_schedule_is_changed._please_refer_to_the_your_work">项目日程已更改，改成进行状态。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.project.mold_try_complete">模具Try已完成。</entry>
+  <entry key="msg.mail.ProjectHelper.mold_try_of_the_item_is_completed_please_refer_to_your_work">上述Item已完成模具Try。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.mold_development_person">模具开发负责人</entry>
+  <entry key="msg.mail.ProjectHelper.development_task_is_assigned_to_your_approval_list_of_workspace">开发负责人的指定作业在待审批箱。</entry>
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_in_charge_of_development">你被指定为项目开发负责人。</entry>
+  <entry key="msg.mail.ProjectHelper.the_project_has_been_created._please_refer_to_your_work">项目已生成。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_in_charge_of_mold_development">你被指定为项目模具开发负责人。</entry>
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_project_pm">你被指定为项目PM。</entry>
+
+  <entry key="msg.mail.ProjectHelper.issue_has_been_registered">已注册新的Issue。</entry>
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_registered._please_refer_to_the_business">已注册项目Issue({0})。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_registered_in_issue">已注册Issue({0})的解决方案。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_registered_in_project_issue_please_refer_to_the_business">已注册项目Issue({0})的解决方案。请参考。</entry>
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_issue">你被委托为Issue({0})负责人。</entry>
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_project_issue">你被委托为{0}项目Issue({1})负责人</entry>
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_completed_in_issue">Issue({0})的解决方案已完成处理。</entry>
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_completed_in_project_issue_please_refer_to_the_business">项目Issue({0})的解决方案已完成处理。</entry>
+  <entry key="msg.mail.ProjectHelper.issue_has_been_specified_in_the_unfinished_task">Issue({0})에 미완료 업무 지정이 되었습니다.</entry>
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_specified_in_the_unfinished_task">프로젝트의 Issue({0})에 미완료 업무 지정이 되었습니다.</entry>
+  <entry key="msg.mail.ProjectHelper.issue_has_been_completed">Issue({0})已完成处理。</entry>
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_completed">项目Issue({0})已完成处理。</entry>
+  <entry key="msg.mail.ProjectHelper.issue_has_been_deleted">Issue({0})已被删除。</entry>
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_deleted">项目Issue({0})已被删除。</entry>
+
+</properties>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+<NmLoader>
+<csvSubFolder handler="wt.folder.LoadFolder.createSubFolder" >
+    <csvuser></csvuser>
+    <csvfolderPath>/Default/자동차사업부/프로젝트</csvfolderPath>
+    <csvadminDomain></csvadminDomain>
+</csvSubFolder>
+<csvSubFolder handler="wt.folder.LoadFolder.createSubFolder" >
+    <csvuser></csvuser>
+    <csvfolderPath>/Default/전자사업부/프로젝트</csvfolderPath>
+    <csvadminDomain></csvadminDomain>
+</csvSubFolder>
+<csvSubFolder handler="wt.folder.LoadFolder.createSubFolder" >
+    <csvuser></csvuser>
+    <csvfolderPath>/Default/자동차사업부/프로젝트/PROGRAM</csvfolderPath>
+    <csvadminDomain></csvadminDomain>
+</csvSubFolder>
+<csvSubFolder handler="wt.folder.LoadFolder.createSubFolder" >
+    <csvuser></csvuser>
+    <csvfolderPath>/Default/전자사업부/프로젝트/PROGRAM</csvfolderPath>
+    <csvadminDomain></csvadminDomain>
+</csvSubFolder>
+<csvSubFolder handler="wt.folder.LoadFolder.createSubFolder" >
+    <csvuser></csvuser>
+    <csvfolderPath>/Default/자동차사업부/프로젝트/GATE</csvfolderPath>
+    <csvadminDomain></csvadminDomain>
+</csvSubFolder>
+<csvSubFolder handler="wt.folder.LoadFolder.createSubFolder" >
+    <csvuser></csvuser>
+    <csvfolderPath>/Default/전자사업부/프로젝트/GATE</csvfolderPath>
+    <csvadminDomain></csvadminDomain>
+</csvSubFolder>
+</NmLoader>

@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+@font-face {
+	font-family: Nanumgo;
+	src: url(<@host>/extcore/font/NanumGothic.eot);
+	src: local(※), url(<@host>/extcore/font/NanumGothic.woff) format('woff')
+}
+
+@font-face {
+	font-family: NanumBold;
+	src: url(<@host>/extcore/font/NanumGothicBold.eot);
+	src: local(※), url(<@host>/extcore/font/NanumGothicBold.woff) format('woff')
+}
+
+img,span {
+	vertical-align: middle
+}
+
+.r-space5 {
+	margin-right: 5px !important
+}
+
+.r-space7 {
+	margin-right: 7px !important
+}
+
+.r-space9 {
+	margin-right: 9px !important
+}
+
+.r-space10 {
+	margin-right: 10px !important
+}
+
+.r-space15 {
+	margin-right: 15px !important
+}
+
+.r-space20 {
+	margin-right: 20px !important
+}
+
+.l-space10 {
+	margin-left: 10px !important
+}
+
+.l-space5 {
+	margin-left: 5px !important
+}
+
+.l-space7 {
+	margin-left: 7px !important
+}
+
+.l-space20 {
+	margin-left: 20px !important
+}
+
+.l-space30 {
+	margin-left: 30px !important
+}
+
+.l-space40 {
+	margin-left: 40px !important
+}
+
+.b-space5 {
+	margin-bottom: 5px !important
+}
+
+.b-space7 {
+	margin-bottom: 7px !important
+}
+
+.b-space20 {
+	margin-bottom: 20px !important
+}
+
+.b-space10 {
+	margin-bottom: 10px !important
+}
+
+.b-space15 {
+	margin-bottom: 15px !important
+}
+
+.b-space25 {
+	margin-bottom: 25px !important
+}
+
+.b-space30 {
+	margin-bottom: 30px !important
+}
+
+.b-space40 {
+	margin-bottom: 40px !important
+}
+
+.t-space5 {
+	margin-top: 5px !important
+}
+
+.t-space10 {
+	margin-top: 10px !important
+}
+
+.t-space15 {
+	margin-top: 15px !important
+}
+
+.t-space20 {
+	margin-top: 20px !important
+}
+
+.t-space30 {
+	margin-top: 30px !important
+}
+
+.t-space40 {
+	margin-top: 40px !important
+}
+
+.t-space50 {
+	margin-top: 50px !important
+}
+
+.box-size {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.mail-box {
+	margin: 30px auto;
+	width: 800px;
+	border-radius: 10px;
+	border: 3px solid #8dbbd8;
+	position: relative;
+	padding: 40px 0 50px
+}
+
+.mail-box .back-right {
+	position: absolute;
+	top: -2px;
+	right: 0
+}
+
+.mail-box .mail-title {
+	font-size: 14px;
+	font-family: NanumBold !important;
+	color: #6594b1;
+	letter-spacing: -0.25px;
+	border-bottom: 1px dashed #6aa4c8
+}
+
+.mail-contents {
+	margin: 25px 40px 0 95px;
+	font-size: 12px;
+	Font-family: NanumGothic, "나눔고딕", Nanumgo, NanumBold, Dotum;
+	color: #666
+}
+
+.mail-table-01 {
+	width: 100%;
+	border-collapse: collapse
+}
+
+.mail-table-01 td {
+	height: 30px;
+	border-top: 1px solid #b7d1e2;;
+	border-bottom: 1px solid #b7d1e2;
+	padding-left: 10px
+}
+
+.mail-table-01 td.subject {
+	padding-left: 27px;
+	background: url("<@host>/portal/images/mail_bul_table.gif") no-repeat 15px 50%;
+	color: #578aaa
+}
+
+.mail-table-02 {
+	width: 90%;
+	border-collapse: collapse;
+	margin-top: 12px;
+	margin-bottom: 12px
+}
+
+.mail-table-02 td {
+	height: 22px;
+	border: 1px solid #dfdfdf;
+	text-align: center
+}
+
+.mail-table-02 thead td {
+	background-color: #f6f6f6
+}
+
+.mail-point-color {
+	color: #529f00
+}
+
+.mail-point-color a:link {
+	color: #529f00
+}
+
+.mail-point-color a:visited {
+	color: #529f00
+}
+
+.mail-point-color a:hover {
+	color: #77cc1b
+}
+
+.mail-point-color a:active {
+	color: #529f00
+}
+</style>
+</head>
+<body>
+  <div class="mail-box box-size">
+    <div class="back-right">
+      <img src="<@host>/portal/images/mail_logo.png" />
+    </div>
+    <div class="mail-title">
+      <span class="r-space15 l-space40"><img style="display: inline-block; padding-bottom: 15px" src="<@host>/portal/images/mail_bul_title.png" /></span>
+      &#91;<@mailType>&#93; &lt;<@mailPboType>&gt; &lt;<@mailPboName>&gt; <@titleMsg><!-- &#91;검토요청&#93; <결재대상유형> <결재대상명> 검토 요청 알림 -->
+    </div>
+    <div class="mail-contents">
+      <div class="b-space20">&lt;<@mailPboType>&gt; &lt;<@mailPboName>&gt; <@descriptionMsg><!-- <결재대상유형> <결재대상명>의 검토가 요청되었습니다. --></div>
+      <div>
+        <table cellpadding="0" class="mail-table-01" summary="">
+          <colgroup>
+            <col width="15%" />
+            <col width="35%" />
+            <col width="15%" />
+            <col width="35%" />
+          </colgroup>
+          <tbody>
+            <@approvalLine>
+            <tr>
+              <td colspan="4" align="center" style="padding-left: 0; padding-top: 10px; padding-bottom: 10px; line-height: 24px"><@footerMsg><!-- PLM System의 결재대기함을 확인하시기 바랍니다. --><br />
+              <span class="mail-point-color">
+              <a href="<@goLinkURL>" onclick="window.open(this.href, '', 'width=50,height=50,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0'); return false;">
+              <@footerClickMsg><!-- 클릭하면 해당 화면이 열립니다. --></a></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+BODY
+A:link    { text-decoration:none; color:#8A8A8A}
+A:visited { text-decoration:underline; color:#5E5E5E}
+A:active  { text-decoration:none; color:#5E5E5E}
+A:hover   { text-decoration:underline; color:#8A8A8A}
+
+A.txt:link    { text-decoration:none; color:#3F6FA3}
+A.txt:visited { text-decoration:none; color:#3F6FA3}
+A.txt:active  { text-decoration:none; color:#3F6FA3}
+A.txt:hover   { text-decoration:none; color:#8A8A8A}
+
+body {
+	background-color: #FFFFFF;
+	background-image: url(/plm/jsp/cost/acc_img/sub_work_top_2.jpg);
+	background-repeat: no-repeat;
+	margin:0 0 0 0 ;
+
+}
+
+.style1 {font-size: 12px; text-align:center; background-color:#ffffff}
+.style2 {font-size: 12px; text-align:right; background-color:#ffffff}
+.style3 {font-size: 12px; font-weight:bold; color:#313536;}
+.style5 {font-size: 12px; background-color:#f2f2fa; text-align: center; font-weight: bold; color:#333333}
+.style8 {font-size: 11px; text-align:right; background-color:#FFFFFF;}
+.style14 {font-size: 12px; text-align:left;}
+.line_name {font-size: 4px; color:#EFEFEF; text-align:center}
+#box {border:1 solid #ffffff ;padding:3 1 0 2;}

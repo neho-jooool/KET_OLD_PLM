@@ -1,0 +1,37 @@
+confirm.approval = 바로 결재하시겠습니까?\\n('취소' 선택시 개인문서함에 저장됩니다)
+confirm.delete = 경고!!\\n삭제하시겠습니까?
+confirm.update = 수정하시겠습니까?
+confirm.revise = 개정하시겠습니까?
+confirm.create = 생성하시겠습니까?
+
+save.success = 성공적으로 생성되었습니다
+save.fail = 생성 실패하였습니다
+
+update.success = 성공적으로 수정되었습니다
+update.fail = 수정 실패하였습니다
+
+delete.success = 성공적으로 삭제되었습니다
+delete.fail = 삭제 실패하였습니다
+
+revise.success = 성공적으로 개정되었습니다
+revise.fail = 개정 실패하였습니다
+
+checkout.success = 성공적으로 체크아웃되었습니다
+checkout.fail = 체크아웃 실패하였습니다
+
+undocheckout.success = 성공적으로 체크아웃취소되었습니다
+undocheckout.fail = 체크아웃취소 실패하였습니다
+
+checkin.success = 성공적으로 체크인되었습니다
+checkin.fail = 체크인 실패하였습니다
+
+mailsend.success = 성공적으로 메일을 발송하였습니다
+mailsend.fail = 메일 발송이 실패하였습니다
+
+error.title = 에러처리 페이지
+error.desc = 다음 문제 때문에 에러가 발생했습니다.
+error.msg = 시스템 관리자에게 문의하십시오.
+
+drawing.title = 에러처리 페이지
+drawing.desc = 다음 문제 때문에 에러가 발생했습니다.
+drawing.msg = 시스템 관리자에게 문의하십시오.

@@ -1,0 +1,113 @@
+#결재 관련 메세지 출력
+wfm.msg.success=성공하였습니다
+wfm.msg.fail=결재에 실패하였습니다. \n 관리자에게 문의하세요.
+
+#라이프사이클템플릿
+wfm.template.common=KET_COMMON_LC
+
+#의뢰접수그룹
+wfm.drr.group=자동차사업부_기획
+
+#의뢰접수그룹
+#개발의뢰
+wfm.drr1.group=자동차사업부_기획1
+###
+
+#검토의뢰
+wfm.drr2.group=자동차사업부_기획2
+###
+
+##메일만받는사람들
+wfm.drr3.group=자동차사업부_기획3
+###
+
+#전장모듈
+wfm.drr4.group=자동차사업부_기획4
+####
+
+#전자사업부 의뢰접수 그룹
+wfm.drr5.group=전자사업부_의뢰접수
+####
+
+#해석의뢰접수그룹
+wfm.drr6.group=해석의뢰접수
+####
+
+#본부별 임원그룹
+wfm.car.group=자동차사업부_임원
+wfm.electronic.group=전자사업부_임원
+
+#결재대상자 유형 정의
+wfm.request=요청
+wfm.review=검토
+wfm.discuss=합의
+wfm.receiver=수신
+wfm.reference=참조
+wfm.reqrecipient=의뢰접수
+wfm.request.distribute=추가배포요청
+wfm.rework=재작업
+wfm.confirm.reject=반려확인
+
+#결재 라우팅 이벤트 유형 정의
+wfm.accept=승인
+wfm.conaccept=조건부승인
+wfm.reject=반려
+wfm.reqrecipient.reject=기각
+wfm.cancel=취소
+wfm.stop=중지
+wfm.confirm=확인
+wfm.delegate.receipt=수신자변경
+wfm.delegate.todo=작업위임
+
+#활동수행 작업명 정의
+wfm.task.ewplan=계획수립
+wfm.task.ewresult=실적보고
+wfm.task.ewendreq=해제신청
+wfm.task.ewend=해제판정
+wfm.task.moldca=금형설계변경
+wfm.task.prodca=제품설계변경
+wfm.task.moldco=금형설계변경완료
+wfm.task.prodco=제품설계변경완료
+
+#객체 대상 타입 정의
+wfm.type.bom=신규BOM
+wfm.type.docproj=프로젝트 산출문서
+wfm.type.techdoc=기술문서
+wfm.type.devreqdoc.R=개발검토의뢰문서
+wfm.type.devreqdoc.D=개발의뢰문서
+wfm.type.moldco=금형 설계변경 주문
+wfm.type.moldcr=금형 설계변경 요청
+wfm.type.moldca=금형 설계변경
+wfm.type.prodco=제품 설계변경 주문
+wfm.type.prodcr=제품 설계변경 요청
+wfm.type.prodca=제품 설계변경
+wfm.type.ecr.competent=변경요청-주관부서
+wfm.type.ecr.meeting=변경요청-회의록
+wfm.type.epmdoc=도면
+wfm.type.multiepm=도면 일괄결재 요청
+wfm.type.ew=초기유동관리지정
+wfm.type.ewplan=계획서
+wfm.type.ewresult=실적보고
+wfm.type.ewendreq=해제신청
+wfm.type.ewend=해제판정
+wfm.type.part=부품
+wfm.type.reviewproject=검토프로젝트
+wfm.type.productproject=제품프로젝트
+wfm.type.moldproject=금형프로젝트
+wfm.type.purchaseproject=구매품프로젝트
+wfm.type.workproject=업무프로젝트
+wfm.type.performance=성과관리
+wfm.type.wtdoc=문서
+wfm.type.etc=확인안됨
+wfm.type.dqm=ISSUE
+wfm.type.dqmraise=ISSUE제기
+wfm.type.dqmaction=ISSUE검토
+wfm.type.drawingdistrequset=배포요청서
+wfm.type.samplerequest=Sample 요청
+wfm.type.assessRequest=목표승인
+wfm.type.assRsltRequest=평가결과
+wfm.type.tryCondition=금형Try조건표
+wfm.type.devreqdoc=개발(검토)의뢰문서
+wfm.type.analysis=해석의뢰문서
+wfm.type.analysisInfo=해석의뢰접수문서
+wfm.type.salesproject=영업프로젝트

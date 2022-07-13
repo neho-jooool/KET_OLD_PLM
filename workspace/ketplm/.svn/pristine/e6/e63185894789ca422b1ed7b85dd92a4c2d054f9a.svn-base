@@ -1,0 +1,383 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "service"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4CCE8BE6005D"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "StandardKETCommonService"
+	    quid       	"4CCE8D060290"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CCE8D1A0196"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4CCE8D4D0251"
+		    supplier   	"Logical View::e3ps::common::service::KETCommonService"
+		    quidu      	"4CCE8D25003E"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4CCE8D8800CB"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "KETCommonService"
+	    quid       	"4CCE8D25003E"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "getVersionHistory"
+		    quid       	"4CCE91780280"
+		    parameters 	(list Parameters
+			(object Parameter "oidStr"
+			    quid       	"4CCE91A9035B"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"ArrayList<RevisionControlled>"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getPBO"
+		    quid       	"4CEDC711021F"
+		    parameters 	(list Parameters
+			(object Parameter "pbo"
+			    quid       	"4CEDC73A021F"
+			    type       	"WTObject"
+			    quidu      	"34240FF701C2"))
+		    result     	"WTObject "
+		    exceptions 	"WTException[343BC97C0223]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"34240FF701C2")))
+	(object Class "KETCommonHelper"
+	    quid       	"4CCE8D380222")
+	(object Association "$UNNAMED$0"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4CCE8D5B006D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4CCE8D5B02CE"
+		    supplier   	"Logical View::e3ps::common::service::KETCommonHelper"
+		    quidu      	"4CCE8D380222"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETCommonServiceFwd()")))
+		    quid       	"4CCE8D5B02D0"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::common::service::KETCommonService"
+		    quidu      	"4CCE8D25003E"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "CommonService"
+	    quid       	"4CCE8C050196"
+	    title      	"CommonService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(468, 303)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(287, 228)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::service::StandardKETCommonService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(475, 750)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(186, 669)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	578
+			justify    	0
+			label      	"StandardKETCommonService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CCE8D060290"
+		    compartment 	(object Compartment
+			Parent_View 	@2
+			location   	(186, 730)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	500
+			justify    	1)
+		    width      	596
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCE8D1A0196"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(473, 656)
+			(468, 390))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::common::service::KETCommonHelper" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2510, 749)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(2312, 698)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	396
+			justify    	0
+			label      	"KETCommonHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CCE8D380222"
+		    width      	414
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::service::KETCommonService" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1445, 750)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1239, 666)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	412
+			justify    	0
+			label      	"KETCommonService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@5
+			location   	(1239, 616)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	412
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CCE8D25003E"
+		    compartment 	(object Compartment
+			Parent_View 	@5
+			location   	(1239, 727)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	3
+			max_width  	397
+			justify    	1)
+		    width      	430
+		    height     	292
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCE8D4D0251"
+		    client     	@2
+		    supplier   	@5
+		    vertices   	(list Points
+			(773, 750)
+			(1229, 750))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(1981, 749)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCE8D5B006D"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @8
+			    Parent_View 	@7
+			    location   	(454, -4)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCE8D5B02CE"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(1981, 749)
+				(2302, 749))
+			    line_style 	0)
+			(object RoleView "service" @9
+			    Parent_View 	@7
+			    location   	(454, -4)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(1786, 699)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.607477
+				height     	51
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCE8D5B02D0"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(1981, 749)
+				(1660, 749))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(1692, 803)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+
+<NmLoader>
+
+<csvDomain handler="wt.load.LoadUser.createDomain" >
+    <csvuser></csvuser>
+    <csvname><?loc-begin key="KET_DOMAIN"?>자동차사업부<?loc-end?></csvname>
+    <csvdescription></csvdescription>
+    <csvparentDomainPath>/Default</csvparentDomainPath>
+</csvDomain>
+
+<csvDomain handler="wt.load.LoadUser.createDomain" >
+    <csvuser></csvuser>
+    <csvname><?loc-begin key="KET_DOMAIN"?>전자사업부<?loc-end?></csvname>
+    <csvdescription></csvdescription>
+    <csvparentDomainPath>/Default</csvparentDomainPath>
+</csvDomain>
+
+</NmLoader>

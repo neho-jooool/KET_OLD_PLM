@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cost">
+	 
+	<select id="findByProjectNo" resultType="ext.ket.project.cost.entity.KETCostDTO">
+	   <![CDATA[
+		SELECT A.REV_NO  as REVISION                                                                                                                      /*Rev*/
+		      ,TO_CHAR(C.F_DAY,'YYYY-MM-DD') as REVIEWCOMPLETEDATE                                                                                        /*검토완료일*/
+		      ,A.DR_STEP REVIEWSTEP                                                                                                                       /*검토단계*/
+		      ,PART_NAME PARTNAME                                                                                                                         /*PartName*/
+		      ,REPLACE(B.KET_COST,',','') as SALESTARGETCOST                                                                                              /*판매목표가(원)*/
+		      ,To_char ( NVL(B.SU_YEAR_1,0)+NVL(B.SU_YEAR_2,0)+NVL(B.SU_YEAR_3,0)+NVL(B.SU_YEAR_4,0)+NVL(B.SU_YEAR_5,0)+NVL(B.SU_YEAR_6,0)+NVL(B.SU_YEAR_7,0)+NVL(B.SU_YEAR_8,0) , 'Fm999,999,999,990' ) AS SUYEARSUM /*예상판매수량*/
+              ,To_char ( NVL(TOTAL_SALES_1,0)+NVL(TOTAL_SALES_2,0)+NVL(TOTAL_SALES_3,0)+NVL(TOTAL_SALES_4,0)+NVL(TOTAL_SALES_5,0)+NVL(TOTAL_SALES_6,0)+NVL(TOTAL_SALES_7,0)+NVL(TOTAL_SALES_8,0) , 'Fm999,999,999,990' ) AS TOTALSALESSUM /*예상매출액*/ 
+		      ,B.PRO_1 as PRODUCTION                                                                                                                      /*생산처*/
+		      ,DECODE(NVL(B.SELECT_COST,'1'),'1',B.CASE_1_NOTE,'2',CASE_2_NOTE,'3',CASE_3_NOTE)                                       AS CLASSIFICATION   /*구분*/                   
+		      ,NVL(REPLACE(DECODE(NVL(B.SELECT_COST,'1'),'1',B.ACTUAL_COST_SUM_1,'2',B.ACTUAL_COST_SUM_2,'3',B.ACTUAL_COST_SUM_3),',',''),0) AS TOTALCOST        /*총원가(원)*/
+		      ,NVL(REPLACE(DECODE(NVL(B.SELECT_COST,'1'),'1',B.EARN_RATE_SUM_1,'2',B.EARN_RATE_SUM_2,'3',B.EARN_RATE_SUM_3),',',''),0) AS PROFITRATE             /*수익률(%)*/
+		      ,NOTE_3 as MAINISSUE                                                                                                                        /*주요Issue사항*/
+		      ,W_NAME as CREATOR                                                                                                                          /*작성자*/
+		      ,DECODE(STEP_NO,'2','작성중','6','승인완료','결재중') AS STATE                                                                                 /*상태*/
+              ,CASE WHEN INPUT_GB = '1' AND NVL(DIVISION,'1') = '1' THEN '/plm/jsp/cost/costreport/cost_report_1.jsp?report_pk='||crp_group||'&'||'table_row='||TABLE_ROW              /*수기등록 자동차사업부링크url*/
+                    WHEN INPUT_GB = '1' AND NVL(DIVISION,'1') = '2' THEN ''                                                                               /*수기등록 전자사업부링크(화면없음)*/
+                    ELSE '/plm/jsp/cost/costreport/cost_report_1.jsp?report_pk='||crp_group||'&'||'table_row='||TABLE_ROW                                                               /*원가시스템 정상 진행 보고서링크 url*/
+               END AS URL                                                                                                                  /*원가 보고서 링크*/   
+		  FROM COST_PRODUCTINFO A, COST_REPORT B, WFINFO C, COST_REQUEST D                
+		 WHERE A.PK_PID = B.FK_PID                                                         
+		   AND B.FK_WID = C.PK_WID                                                         
+		   AND A.PK_PID = D.FK_PID(+)
+		   AND A.PJT_NO = '${projectNo}'                                                         
+		   AND A.REPORT_PK = CRP_GROUP(+)
+		   AND (B.GROUP_NO  = 'T001' OR A.GROUP_NO  = 'T001')	       
+		   AND STEP_NO = '6'
+		   AND NVL(DIVISION,'1') = ${division}  /*자동차사업부 DIVISION = 1, 전자사업부  DIVISION = 2*/
+		 ORDER BY REV_NO DESC
+		]]>
+    </select>
+</mapper>

@@ -1,0 +1,628 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "service"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C739F1700BB"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "StandardKETDmsService"
+	    quid       	"4C73A0DA034B"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C73A13901D4"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4C73A5750203"
+		    supplier   	"Logical View::e3ps::dms::service::KETDmsService"
+		    quidu      	"4C73A56003A9"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4C73A1130222"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "KETDmsService"
+	    quid       	"4C73A56003A9"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "selectDocCategoryForTree"
+		    attributes 	(list Attribute_Set)
+		    quid       	"4C7C808D00BB"
+		    result     	"ArrayList"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"378A63D00390")
+		(object Operation "makeTree"
+		    attributes 	(list Attribute_Set)
+		    quid       	"4C7C8134035B"
+		    parameters 	(list Parameters
+			(object Parameter "code"
+			    quid       	"4C7C815F0242"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "list"
+			    quid       	"4C7C81770213"
+			    type       	"ArrayList"
+			    quidu      	"378A63D00390"))
+		    result     	"ArrayList"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"378A63D00390")
+		(object Operation "makeRoot"
+		    attributes 	(list Attribute_Set)
+		    quid       	"4C7C832E038A"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "selectDocCategory"
+		    quid       	"4C8035EB035B"
+		    parameters 	(list Parameters
+			(object Parameter "OID"
+			    quid       	"4C8036A5009C"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"KETDocumentCategory"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B17C801CD")
+		(object Operation "insertDocCategory"
+		    attributes 	(list Attribute_Set)
+		    quid       	"4C7B5F5D0383"
+		    documentation 	"문서분류코드 등록"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C7B5FE30315"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETDocumentCategory"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B17C801CD")
+		(object Operation "updateDocCategory"
+		    quid       	"4C803612032C"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C8036F8005D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETDocumentCategory"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B17C801CD")
+		(object Operation "deleteDocCategory"
+		    quid       	"4C803621008C"
+		    parameters 	(list Parameters
+			(object Parameter "OID"
+			    quid       	"4C803734001F"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "selectCategoryPath"
+		    quid       	"4C80558A005D"
+		    parameters 	(list Parameters
+			(object Parameter "OID"
+			    quid       	"4C8055B5008C"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "selectChildDocCategory"
+		    quid       	"4C8894AD004E"
+		    parameters 	(list Parameters
+			(object Parameter "code"
+			    quid       	"4C8894F80271"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"ArrayList"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"378636410351")
+		(object Operation "insertProjectDoc"
+		    quid       	"4C8DC70A0148"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C8DC76E0213"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETProjectDocument"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B57AF0027")
+		(object Operation "updateProjectDoc"
+		    quid       	"4C8DC789008C"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C8DC7A3038A"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETProjectDocument"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B57AF0027")
+		(object Operation "deleteProjectDoc"
+		    quid       	"4C8DC7CD03D8"
+		    parameters 	(list Parameters
+			(object Parameter "OID"
+			    quid       	"4C8DC80A01F4"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "searchProjectDoc"
+		    quid       	"4C92B4BB00FA"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C92B4BB00FB"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "reviceProjectDoc"
+		    quid       	"4CAEAC8602BF"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CAEAC870251"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETProjectDocument"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B57AF0027")
+		(object Operation "insertDevRequest"
+		    quid       	"4CD0C6150242"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD0C6680157"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETDevelopmentRequest"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CC8B3CB02AF")
+		(object Operation "updateDevRequest"
+		    quid       	"4CD0C6230261"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD0C6C7001F"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETDevelopmentRequest"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CC8B3CB02AF")
+		(object Operation "deleteDevRequest"
+		    quid       	"4CD0C5EF007D"
+		    parameters 	(list Parameters
+			(object Parameter "OID"
+			    quid       	"4CD0C6FA0148"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "createStandardTemplate"
+		    quid       	"4D081C5001A5"
+		    documentation 	"표준양식 등록"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D081C8C029F"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4D081C8E01E4"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETStandardTemplate"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4D081983031C")
+		(object Operation "updateStandardTemplate"
+		    quid       	"4D081C520203"
+		    documentation 	"표준양식 수정"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D081CFB0148"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4D081CFD001F"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETStandardTemplate"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4D081983031C")
+		(object Operation "deleteStandardTemplate"
+		    quid       	"4D081C540251"
+		    documentation 	"표준양식 삭제"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D081D6402EE"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4D081D6600BB"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "insertTechDoc"
+		    quid       	"4D12D2BE037A"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D12D2BE037B"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETTechnicalDocument"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4D081446006D")
+		(object Operation "updateTechDoc"
+		    quid       	"4D12D3100000"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D12D3100001"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETTechnicalDocument"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4D081446006D")
+		(object Operation "deleteTechDoc"
+		    quid       	"4D12D33E029F"
+		    parameters 	(list Parameters
+			(object Parameter "OID"
+			    quid       	"4D12D33E02A0"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "reviceTechDoc"
+		    quid       	"4D23F8F2034B"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D23F8F2034C"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETTechnicalDocument"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4D081446006D")))
+	(object Class "KETDmsHelper"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"cg_style"
+		    value      	"Sequence"))
+	    quid       	"4C73A569036B")
+	(object Association "$UNNAMED$0"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4C73A5A702FD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C73A5A8029F"
+		    supplier   	"Logical View::e3ps::dms::service::KETDmsHelper"
+		    quidu      	"4C73A569036B"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETDmsServiceFwd()")))
+		    quid       	"4C73A5A8035B"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::dms::service::KETDmsService"
+		    quidu      	"4C73A56003A9"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "DMSService"
+	    quid       	"4C73A0230280"
+	    title      	"DMSService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	306
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(515, 256)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(334, 181)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::dms::service::StandardKETDmsService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(517, 644)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(270, 563)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	494
+			justify    	0
+			label      	"StandardKETDmsService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73A0DA034B"
+		    width      	512
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73A13901D4"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(516, 550)
+			(515, 343))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::dms::service::KETDmsHelper" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2582, 649)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(2428, 598)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	308
+			justify    	0
+			label      	"KETDmsHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73A569036B"
+		    width      	326
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::dms::service::KETDmsService" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1537, 696)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1258, 62)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	558
+			justify    	0
+			label      	"KETDmsService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@5
+			location   	(1258, 12)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	558
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73A56003A9"
+		    width      	576
+		    height     	1392
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73A5750203"
+		    client     	@2
+		    supplier   	@5
+		    vertices   	(list Points
+			(773, 657)
+			(1248, 680))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(2121, 668)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73A5A702FD"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @8
+			    Parent_View 	@7
+			    location   	(680, 119)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A5A8029F"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(2121, 668)
+				(2418, 654))
+			    line_style 	0)
+			(object RoleView "service" @9
+			    Parent_View 	@7
+			    location   	(680, 119)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(1938, 638)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.613836
+				height     	40
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A5A8035B"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(2121, 668)
+				(1825, 682))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(1859, 735)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))

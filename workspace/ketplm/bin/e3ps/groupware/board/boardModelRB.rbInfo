@@ -1,0 +1,89 @@
+ResourceInfo.class=wt.tools.resource.MetadataResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+
+# Entry Contents
+
+Board.value=Board
+
+Board.category.value=Category
+
+Board.categoryReference.value=Category Reference
+
+Board.comment.value=Comment
+
+Board.contents.value=Contents
+
+Board.depth.value=Depth
+
+Board.parentReference.value=Parent Reference
+
+Board.readCount.value=Read Count
+
+Board.state.value=State
+
+Board.title.value=Title
+
+BoardCategory.value=Board Category
+
+BoardCategory.board.value=Board
+
+BoardCategory.description.value=Description
+
+BoardCategory.name.value=Name
+
+BoardCategory.parentReference.value=Parent Reference
+
+BoardCategory.treeType.value=Tree Type
+
+BoardComment.value=Board Comment
+
+BoardComment.board.value=Board
+
+BoardComment.boardReference.value=Board Reference
+
+BoardComment.contents.value=Contents
+
+BoardComment.name.value=Name
+
+BoardCommentLink.value=Board Comment Link
+
+BoardCommentLink.board.value=Board
+
+BoardCommentLink.comment.value=Comment
+
+CategoryBoardLink.value=Category Board Link
+
+CategoryBoardLink.board.value=Board
+
+CategoryBoardLink.category.value=Category
+
+Notify.value=Notify
+
+Notify.contents.value=Contents
+
+Notify.deadline.value=Deadline
+
+Notify.title.value=Title
+
+Notify.user.value=User
+
+NotifyWTUserLink.value=Notify WTUser Link
+
+NotifyWTUserLink.notify.value=Notify
+
+NotifyWTUserLink.user.value=User

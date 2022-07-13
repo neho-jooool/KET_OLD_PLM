@@ -1,0 +1,37 @@
+
+rem <!-- load ACR -->
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\acl\KET_ACR.xml -u wcadmin -p wcadmin
+
+rem <!-- load Workflow -->
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_CAN_WF.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_COMMON_WF_NEW.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_COMMON_WF_PMS.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_DISTRIBUTE_WF.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_DRR_WF.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_DRR_WF_NEW.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_TODO_WF.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\workflow\KET_CAN_WF_NEW.xml -u wcadmin -p wcadmin
+
+rem <!-- load lifecycle -->
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_COMMON_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_COMMON_LC_PMS.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_DRR_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_DRR_LC_NEW.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_ECA_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_ECN_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_ECO_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_ECR_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_EPM_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_EWR_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_MOLD_PMS_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_PART_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_PRODUCT_PMS_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_PROGRAM_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_REVIEW_PMS_LC.xml -u wcadmin -p wcadmin
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\lifecycle\KET_PRODUCT_PMS_LC_NEW.xml -u wcadmin -p wcadmin
+
+rem <!-- load folder -->
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\folder\ket_folders_new.xml -u wcadmin -p wcadmin -CONT_PATH /wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET
+
+rem <!-- load Group -->
+windchill wt.load.LoadFromFile -d %WT_HOME%\loadFiles\ket\group\ket_groups_new.xml -u wcadmin -p wcadmin

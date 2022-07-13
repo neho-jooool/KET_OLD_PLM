@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>메일 발송</title>
+</head>
+<style>
+<!--
+BODY,TD,SELECT,input,DIV,form,TEXTAREA,center,option,pre,blockquote{font-family:돋움,verdana;color:333333;font-size:12px;}
+.redtxt {font-family:돋움,verdana;color:#FF0033;font-size:12px;}
+.title  {font-family:돋움,verdana;color:#0068A9;font-size:16px;line-height:20pt;font-weight:bold;}
+A:link  {Color:#333333;Font-size:12px;Font-family:돋움;text-decoration:none;}
+A:visited {Color:#333333;Font-size:12px;Font-family:돋움;	text-decoration:none;}
+-->
+</style>
+<body leftmargin=15>
+<br>
+
+<table cellspacing=0 cellpadding=0>
+<tr>
+<td><font color=0b3c69>▣<b> KET PLM 通知事项 </font></b></td>
+</tr>
+</table>
+  <br>
+<table width='800' border='1' cellpadding='3' cellspacing='1' bgcolor='#cccccc'>
+<col width= "15%"><col width= "35%"><col width= "15%"><col width= "35%">
+
+
+
+<tr>
+<td width='130' height='30' align='center' bgcolor='#f5f5f5'>题 目</td>
+<td width='670' height='30' align='left' bgcolor='#FFFFFF' colspan = 3><@subject></td>
+</tr>
+
+<tr>
+<td width='130' height='30' align='center' bgcolor='#f5f5f5'>Project No</td>
+<td width='270' height='30' align='center' bgcolor='#FFFFFF'><@projectNo></td>
+<td width='130' height='30' align='center' bgcolor='#f5f5f5'>区分</td>
+<td width='270' height='30' align='center' bgcolor='#FFFFFF'><@pjtTypeName></td>
+</tr>
+
+<tr>
+<td width='130' height='30' align='center' bgcolor='#f5f5f5'>Project Name</td>
+<td width='270' height='30' align='center' bgcolor='#FFFFFF'><@projectName></td>
+<td width='130' height='30' align='center' bgcolor='#f5f5f5'><@pmTitleName></td>
+<td width='270' height='30' align='center' bgcolor='#FFFFFF'><@pmName></td>
+</tr>
+
+<tr>
+<td width='130' height='30' align='center' bgcolor='#f5f5f5' >内容</td>
+<td width='670' height='30' align='center' bgcolor='#FFFFFF' colspan = 3><@text></td>
+</tr>
+</table>
+<table width=800 cellspacing=0 cellpadding=0>
+  <tr>
+    <td height=5></td>
+  </tr>
+  <tr>
+  <td align=right>
+    <table width=40 cellspacing=0 cellpadding=2>
+    <tr><!-- <a href=\""+host+"/plm/jsp/SSOLogin.jsp?mode=mail&pax_webid="+userId+"&returnUrl="+myPage+"\" target=\"_blank\"> -->
+    <td align=center bgcolor=d0d0a4><b><i><a href="<@host>/plm/jsp/SSOLogin.jsp?mode=mail&pax_webid=<@userId>&returnUrl=/plm/jsp/project/index2.jsp?oid=<@oid>" target='_blank'><span style='font-family:arial;'>go</span></a></b></td>
+    </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+    <td><br><@approvalHistory></td>
+  </tr>
+</table>
+</body>
+</html>

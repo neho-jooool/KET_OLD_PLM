@@ -1,0 +1,61 @@
+/* jquery autocomplete ui */
+.ui-autocomplete { max-height: 200px; overflow-y: auto; overflow-x: hidden; font-size: 11px;}
+.ui-autocomplete-loading { background:white url('/plm/extcore/image/loading.gif') no-repeat right center }
+
+
+/* jquery datepicker ui */
+.ui-datepicker{ font-size: 12px; width: 200px;  font-family: NanumGothic, "³ª´®°íµñ", Nanumgo, NanumBold, Malgun gothic, "¸¼Àº°íµñ", dotum, "µ¸À½", Arial, tahoma, verdana;}
+/* 
+.ui-datepicker select.ui-datepicker-month{ width:35%; font-size: 11px; }
+.ui-datepicker select.ui-datepicker-year{ width:40%; font-size: 11px; } 
+*/
+.ui-datepicker-trigger{
+    padding-left: 3px;
+}
+
+.iframetab {
+    width:100%;
+    height:100%;
+    border:0px;
+    margin:0px;
+}
+
+/* tab area border */
+#tabs { 
+    /* padding: 0px;  */
+    padding-right : 10px;
+    background: none; 
+    border-width: 0px; 
+} 
+
+/* tab title background color */
+#tabs .ui-tabs-nav { 
+    padding-left: 8px; 
+    background: transparent; 
+    border-width: 0px 0px 0px 0px; 
+    border-radius: 0px; 
+    /* border-radius: 5px; */ 
+} 
+
+/* tab content border */
+#tabs .ui-tabs-panel {
+	border-color : #82bad1;
+    border-width: 1px 1px 1px 1px; 
+    border-radius: 9px;
+    padding : 5px 5px 0px 5px;
+}
+
+/* active tab */
+#tabs .ui-tabs-active a {
+   background-color: #82bad1;        /*To make it looks like on example pic, it is possible do do with it whatever you want*/
+   /* border-color: #CCCCCC;
+   border-style: solid;
+   border-width: 1px 1px 0;
+   border-radius: 5px 5px 0 0;    To affect only top corners */
+   position: relative;
+   z-index: 5;
+   color : #fff !important;
+   text-decoration: none !important;     /*To overwrite jquery-ui.css*/
+   margin-bottom : -2px;
+   padding-bottom : -2px;
+}

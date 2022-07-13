@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="standardMng">
+
+
+
+	<insert id="StandardInsert" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        INSERT INTO KETSTANDARD 
+            (REV,YEAR,DAYHOUR,DAYMAXIMUM,WORKDAY,ECRHOUR,ECOHOUR,CREATEUSER,CREATEDATE,UPDATEUSER,UPDATEDATE,OID)
+        VALUES 
+            (
+            (SELECT DECODE(MAX(REV),'',0,MAX(REV)+1) FROM KETSTANDARD WHERE YEAR = #{year}),
+            #{year}, 
+            #{dayHour},
+            #{dayMaximum},
+            #{workday},
+            #{ecrhour},
+            #{ecohour},
+            #{createUser},
+            SYSDATE,
+            #{updateUser},
+            SYSDATE,
+            (SELECT 'KETSTANDARD:'||DECODE(MAX(REV),'',0,MAX(REV)+1)||#{year} 
+            FROM KETSTANDARD WHERE YEAR = #{year}))
+    ]]>
+	</insert>
+
+	<delete id="StandardDelete" parameterType="ext.ket.dashboard.entity.StandardDataDTO">
+		<if test="vdelOids != null and vdelOids !=''">
+			DELETE FROM KETSTANDARD WHERE OID IN 
+			<foreach item="delOid" index="index" collection="vdelOids"
+				open="(" separator="," close=")">
+				#{delOid}
+			</foreach>
+		</if>
+	</delete>
+
+	<select id="StandardList" parameterType="ext.ket.dashboard.entity.StandardDTO"
+		resultType="ext.ket.dashboard.entity.StandardDTO">
+		SELECT * FROM (
+		SELECT DATA.*, ROWNUM
+		FROM (SELECT REV,YEAR,DAYHOUR ,DAYMAXIMUM,WORKDAY,ECRHOUR,ECOHOUR,OID, '1' as selectTab FROM
+		KETSTANDARD) DATA)
+		ORDER BY YEAR DESC, REV DESC
+	</select>
+	
+	<update id="StandardUpdate" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        UPDATE KETSTANDARD
+           SET DAYHOUR    = #{dayHour}
+              ,DAYMAXIMUM = #{dayMaximum}
+              ,WORKDAY    = #{workday}
+              ,ECRHOUR    = #{ecrhour}
+              ,ECOHOUR    = #{ecohour}
+              ,UPDATEUSER = #{updateUser}
+         WHERE OID = #{oid}
+    ]]>
+    </update>
+    
+    
+    <select id="StandardList1" parameterType="ext.ket.dashboard.entity.StandardDTO"
+        resultType="ext.ket.dashboard.entity.StandardDTO">
+        SELECT * FROM (
+        SELECT DATA.*, ROWNUM
+        FROM (SELECT REV, YEAR, DEPARTMENT, NAME, MON_1, MON_2, MON_3, MON_4, MON_5, MON_6, MON_7, MON_8, MON_9, MON_10, MON_11, MON_12,OID
+                FROM KETTEAMWORK WHERE DEPARTMENT = #{departmentOid}) DATA)
+        ORDER BY YEAR DESC, REV DESC
+    </select>
+    
+    <insert id="StandardInsert1" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        INSERT INTO KETTEAMWORK 
+            (REV, YEAR, DEPARTMENT, NAME, MON_1, MON_2, MON_3, MON_4, MON_5, MON_6, MON_7, MON_8, 
+             MON_9, MON_10, MON_11, MON_12, CREATEUSER, CREATEDATE, UPDATEUSER, UPDATEDATE, OID)
+        VALUES 
+            (
+            (SELECT DECODE(MAX(REV),'',0,MAX(REV)+1) FROM KETTEAMWORK WHERE YEAR = #{year} AND DEPARTMENT = #{departmentOid}),
+            #{year}, 
+            #{departmentOid},
+            (select name from department where ida2a2 = #{departmentOid}),
+            #{mon_1},
+            #{mon_2},
+            #{mon_3},
+            #{mon_4},
+            #{mon_5},
+            #{mon_6},
+            #{mon_7},
+            #{mon_8},
+            #{mon_9},
+            #{mon_10},
+            #{mon_11},
+            #{mon_12},
+            #{createUser},
+            SYSDATE,
+            #{updateUser},
+            sysdate,
+            (SELECT 'KETTEAMWORK:'||DECODE(MAX(REV),'',0,MAX(REV)+1)||#{year}||#{departmentOid}
+               FROM KETTEAMWORK WHERE YEAR = #{year} AND DEPARTMENT = #{departmentOid}))
+    ]]>
+    </insert>
+    
+    <update id="StandardUpdate1" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        UPDATE KETTEAMWORK
+           SET year    = #{year}
+              ,department = #{departmentOid}
+              ,name = (select name from department where ida2a2 = #{departmentOid})
+              ,mon_1    = #{mon_1}
+              ,mon_2    = #{mon_2}
+              ,mon_3    = #{mon_3}
+              ,mon_4    = #{mon_4}
+              ,mon_5    = #{mon_5}
+              ,mon_6    = #{mon_6}
+              ,mon_7    = #{mon_7}
+              ,mon_8    = #{mon_8}
+              ,mon_9    = #{mon_9}
+              ,mon_10    = #{mon_10}
+              ,mon_11    = #{mon_11}
+              ,mon_12    = #{mon_12}
+              ,updateuser = #{updateUser}
+              ,updatedate = sysdate
+         WHERE OID = #{oid}
+    ]]>
+    </update>
+    
+    <delete id="StandardDelete1" parameterType="ext.ket.dashboard.entity.StandardDataDTO">
+        <if test="vdelOids != null and vdelOids !=''">
+            DELETE FROM KETTEAMWORK WHERE OID IN 
+            <foreach item="delOid" index="index" collection="vdelOids"
+                open="(" separator="," close=")">
+                #{delOid}
+            </foreach>
+        </if>
+    </delete>
+    
+    <select id="StandardList2" parameterType="ext.ket.dashboard.entity.StandardDTO"
+        resultType="ext.ket.dashboard.entity.StandardDTO">
+        SELECT * FROM (
+        SELECT DATA.*, ROWNUM
+        FROM (SELECT REV, PM_ROLE, PMCFT_ROLE, PARTICIPANT_ROLE, OID, '3' as selectTab 
+                FROM KETROLE) DATA)
+        ORDER BY REV DESC
+    </select>
+    
+    <insert id="StandardInsert2" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        INSERT INTO KETROLE 
+            (REV, PM_ROLE, PMCFT_ROLE, PARTICIPANT_ROLE, CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE, OID)
+        VALUES 
+            (
+            (SELECT DECODE(MAX(REV),'',0,MAX(REV)+1) FROM KETROLE),
+            #{pm_role}, 
+            #{pmcft_role},
+            #{participant_role},
+            #{createUser},
+            SYSDATE,
+            #{updateUser},
+            sysdate,
+            (SELECT 'KETROLE:'||DECODE(MAX(REV),'',0,MAX(REV)+1)
+               FROM KETROLE))
+    ]]>
+    </insert>
+    
+    <update id="StandardUpdate2" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        UPDATE KETROLE
+           SET pm_role = #{pm_role}
+              ,pmcft_role = #{pmcft_role}
+              ,participant_role    = #{participant_role}
+              ,update_user = #{updateUser}
+              ,update_date = sysdate
+         WHERE OID = #{oid}
+    ]]>
+    </update>
+    
+    <delete id="StandardDelete2" parameterType="ext.ket.dashboard.entity.StandardDataDTO">
+        <if test="vdelOids != null and vdelOids !=''">
+            DELETE FROM KETROLE WHERE OID IN 
+            <foreach item="delOid" index="index" collection="vdelOids"
+                open="(" separator="," close=")">
+                #{delOid}
+            </foreach>
+        </if>
+    </delete>
+        
+    
+    <select id="StandardList3" parameterType="ext.ket.dashboard.entity.StandardDTO"
+        resultType="ext.ket.dashboard.entity.StandardDTO">
+        SELECT * FROM (
+        SELECT DATA.*, ROWNUM
+        FROM (SELECT REV, S_RANK, A_RANK, B_RANK, C_RANK, R_RANK, OID, '4' as selectTab 
+                FROM KETRANK) DATA)
+        ORDER BY REV DESC
+    </select>
+    
+    <insert id="StandardInsert3" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        INSERT INTO KETRANK 
+            (REV, S_RANK, A_RANK, B_RANK, C_RANK, R_RANK, CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE, OID)
+        VALUES 
+            (
+            (SELECT DECODE(MAX(REV),'',0,MAX(REV)+1) FROM KETRANK),
+            #{s_rank}, 
+            #{a_rank},
+            #{b_rank},
+            #{c_rank},
+            #{r_rank},
+            #{createUser},
+            SYSDATE,
+            #{updateUser},
+            sysdate,
+            (SELECT 'KETRANK:'||DECODE(MAX(REV),'',0,MAX(REV)+1)
+               FROM KETRANK))
+    ]]>
+    </insert>
+    
+    <update id="StandardUpdate3" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        UPDATE KETRANK
+           SET s_rank = #{s_rank}
+              ,a_rank = #{a_rank}
+              ,b_rank = #{b_rank}
+              ,c_rank = #{c_rank}
+              ,r_rank = #{r_rank}
+              ,update_user = #{updateUser}
+              ,update_date = sysdate
+         WHERE OID = #{oid}
+    ]]>
+    </update>
+    
+    <delete id="StandardDelete3" parameterType="ext.ket.dashboard.entity.StandardDataDTO">
+        <if test="vdelOids != null and vdelOids !=''">
+            DELETE FROM KETRANK WHERE OID IN 
+            <foreach item="delOid" index="index" collection="vdelOids"
+                open="(" separator="," close=")">
+                #{delOid}
+            </foreach>
+        </if>
+    </delete>
+    
+    
+    <select id="StandardList4" parameterType="ext.ket.dashboard.entity.StandardDTO"
+        resultType="ext.ket.dashboard.entity.StandardDTO">
+        SELECT * FROM (
+        SELECT DATA.*, ROWNUM
+        FROM (SELECT REV, M_F1020, P_H1020, S_J1020, Y_L1020, E_P1020, K_R1020, OID, '5' as selectTab 
+                FROM KETDUTY) DATA)
+        ORDER BY REV DESC
+    </select>
+    
+    <insert id="StandardInsert4" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        INSERT INTO KETDUTY 
+            (REV, M_F1020, P_H1020, S_J1020, Y_L1020, E_P1020, K_R1020, CREATEUSER, CREATEDATE, UPDATEUSER, UPDATEDATE, OID)
+        VALUES 
+            (
+            (SELECT DECODE(MAX(REV),'',0,MAX(REV)+1) FROM KETDUTY),
+            #{m_f1020}, 
+            #{p_h1020},
+            #{s_j1020},
+            #{y_l1020},
+            #{e_p1020},
+            #{k_r1020},
+            #{createUser},
+            SYSDATE,
+            #{updateUser},
+            sysdate,
+            (SELECT 'KETDUTY:'||DECODE(MAX(REV),'',0,MAX(REV)+1)
+               FROM KETDUTY))
+    ]]>
+    </insert>
+    
+    <update id="StandardUpdate4" parameterType="ext.ket.dashboard.entity.StandardDTO">
+    <![CDATA[
+        UPDATE KETDUTY
+           SET m_f1020 = #{m_f1020}
+              ,p_h1020 = #{p_h1020}
+              ,s_j1020 = #{s_j1020}
+              ,y_l1020 = #{y_l1020}
+              ,e_p1020 = #{e_p1020}
+              ,k_r1020 = #{k_r1020}
+              ,updateuser = #{updateUser}
+              ,updatedate = sysdate
+         WHERE OID = #{oid}
+    ]]>
+    </update>
+    
+    <delete id="StandardDelete4" parameterType="ext.ket.dashboard.entity.StandardDataDTO">
+        <if test="vdelOids != null and vdelOids !=''">
+            DELETE FROM KETDUTY WHERE OID IN 
+            <foreach item="delOid" index="index" collection="vdelOids"
+                open="(" separator="," close=")">
+                #{delOid}
+            </foreach>
+        </if>
+    </delete>
+
+
+</mapper>

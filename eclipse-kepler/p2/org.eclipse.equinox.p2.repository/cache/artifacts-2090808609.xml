@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='AJDT Artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.compressed' value='false'/>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+    <property name='p2.timestamp' value='1308774809103'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='47'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.ui' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='1265041'/>
+        <property name='download.size' value='1265041'/>
+        <property name='download.md5' value='a1f8c79fd120df34f7b5b1c017c46620'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.weaving.jdt' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='105760'/>
+        <property name='download.size' value='105760'/>
+        <property name='download.md5' value='e85f14c46bb487a580de32c32f82c3cb'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.aspectj.ajde' version='1.6.12.20110613132200'>
+      <properties size='4'>
+        <property name='artifact.size' value='7000601'/>
+        <property name='download.size' value='7000601'/>
+        <property name='download.md5' value='61a095e0ebfc2d45ed0bb1e57ea0fe1e'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.visualiser.source' version='2.2.0.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='214332'/>
+        <property name='download.size' value='214332'/>
+        <property name='download.md5' value='bbf0704e6eeb88c7bcea92bc1f45b1dc'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.weaving.sdk' version='1.0.0.v20090817'>
+      <properties size='3'>
+        <property name='artifact.size' value='11555'/>
+        <property name='download.size' value='11555'/>
+        <property name='download.md5' value='b8a1011ba0c640837b92233feea84b68'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.caching.source' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='12567'/>
+        <property name='download.size' value='12567'/>
+        <property name='download.md5' value='9434527b1db4820cef95054beab5a7de'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.visualiser.tests' version='2.2.0.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='9134'/>
+        <property name='download.size' value='9134'/>
+        <property name='download.md5' value='50b42f35027243e7d865e240d41c9f1d'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.core.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='406946'/>
+        <property name='download.size' value='406946'/>
+        <property name='download.md5' value='58b45dd811d09b7945d3746ebde82509'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.aspectj.source' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='36425'/>
+        <property name='download.size' value='36425'/>
+        <property name='download.md5' value='a5ef749fb6edcaa80aef7fd40da1a5f2'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.xref.ui.tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='9029'/>
+        <property name='download.size' value='9029'/>
+        <property name='download.md5' value='d5ab503c9891021dd74795f68bcd750f'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.caching' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='12754'/>
+        <property name='download.size' value='12754'/>
+        <property name='download.md5' value='5191f39d7b8f37f4a5b7c9d5546a409c'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ajdt.pde.build' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='12375'/>
+        <property name='download.size' value='12375'/>
+        <property name='download.md5' value='b2dc08fe224c8f232a8f7e57acae3e0d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.core' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='676982'/>
+        <property name='download.size' value='676982'/>
+        <property name='download.md5' value='e0f1f9ffa656d040f4c8b25808c4d0c8'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.doc.user' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='316851'/>
+        <property name='download.size' value='316851'/>
+        <property name='download.md5' value='b5553393ae38e372ab68c99317d31847'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.examples' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='96742'/>
+        <property name='download.size' value='96742'/>
+        <property name='download.md5' value='60fa40f3654dc010478a12cea28f0e8c'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.caching.j9' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='5833'/>
+        <property name='download.size' value='5833'/>
+        <property name='download.md5' value='b470392a7bd757c129f2dac4e675c3c5'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.xref.core' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='43537'/>
+        <property name='download.size' value='43537'/>
+        <property name='download.md5' value='142abc7da90ad09e0d27adae0b9b7f64'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.pde.build' version='2.0.2.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='76527'/>
+        <property name='download.size' value='76527'/>
+        <property name='download.md5' value='e0cf2a059d1929e8f452459d97e3e917'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.xref.ui.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='49384'/>
+        <property name='download.size' value='49384'/>
+        <property name='download.md5' value='171103c9158bac34a3f7fdccc9f24702'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.aspectj.weaver' version='1.6.12.20110613132200'>
+      <properties size='4'>
+        <property name='artifact.size' value='1490246'/>
+        <property name='download.size' value='1490246'/>
+        <property name='download.md5' value='f13b04886dc7a23571619ba946cf39e1'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.weaving.jdt.tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='49554'/>
+        <property name='download.size' value='49554'/>
+        <property name='download.md5' value='976234de543f32b5db7a51ebd2d8a15f'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.examples.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='11622'/>
+        <property name='download.size' value='11622'/>
+        <property name='download.md5' value='6d1f09668c602fc8eb667fa610b676e9'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.contribution.weaving' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='7016'/>
+        <property name='download.size' value='7016'/>
+        <property name='download.md5' value='dcbfa5585ea501077bed46e7b8d1ec6c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.contribution.xref.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='11528'/>
+        <property name='download.size' value='11528'/>
+        <property name='download.md5' value='1393181af318da36b059c823c2aaf9db'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.xref.core.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='23427'/>
+        <property name='download.size' value='23427'/>
+        <property name='download.md5' value='608c4629e52324d8e35d77b92d8b537c'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.aspectj.feature_tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='12364'/>
+        <property name='download.size' value='12364'/>
+        <property name='download.md5' value='8d8c392d00367abeba41ea9785d66595'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ajdt.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='11580'/>
+        <property name='download.size' value='11580'/>
+        <property name='download.md5' value='61e89fa1db721c457e59cca99e6b6a6c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.mylyn.ui' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='24210'/>
+        <property name='download.size' value='24210'/>
+        <property name='download.md5' value='6137d2b798d8248a19ce3babf6fdaf95'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.mylyn.ui.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='7563'/>
+        <property name='download.size' value='7563'/>
+        <property name='download.md5' value='2d59e788ab80a655501316ce645737df'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.visualiser' version='2.2.0.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='1281682'/>
+        <property name='download.size' value='1281682'/>
+        <property name='download.md5' value='2993581eda17a9484372c191ad0af599'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.core.tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='588410'/>
+        <property name='download.size' value='588410'/>
+        <property name='download.md5' value='c16c99a2d7718f0cfc20487cf0a20410'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.contribution.xref' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='12513'/>
+        <property name='download.size' value='12513'/>
+        <property name='download.md5' value='16ac0870526cc0d804122800e3fea476'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.caching.j9.source' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='5724'/>
+        <property name='download.size' value='5724'/>
+        <property name='download.md5' value='2129c133992f69b3466b4ee77937e8ae'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.contribution.weaving.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='11541'/>
+        <property name='download.size' value='11541'/>
+        <property name='download.md5' value='d31b407133c39a4fdcc2858fa697ae01'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.ui.visual.tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='151682'/>
+        <property name='download.size' value='151682'/>
+        <property name='download.md5' value='e8df23dbc41e1e76400b15a49e51424f'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.hook.source' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='33570'/>
+        <property name='download.size' value='33570'/>
+        <property name='download.md5' value='e9c01faeb40d777caa4338dcd305aacd'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.xref.ui' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='102142'/>
+        <property name='download.size' value='102142'/>
+        <property name='download.md5' value='bad0249dd9b77a474fb68d8ed663a3ca'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.xref.core.tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='11735'/>
+        <property name='download.size' value='11735'/>
+        <property name='download.md5' value='5e954febe91ecea850ee4fbdb1c6780d'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.contribution.weaving.jdt.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='57108'/>
+        <property name='download.size' value='57108'/>
+        <property name='download.md5' value='6a27d48fec81351bbf96f47eb0cace0c'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.hook' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='33176'/>
+        <property name='download.size' value='33176'/>
+        <property name='download.md5' value='8bad17639cc6afea7f7e39118296d7f5'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.aspectj.runtime' version='1.6.12.20110613132200'>
+      <properties size='4'>
+        <property name='artifact.size' value='99004'/>
+        <property name='download.size' value='99004'/>
+        <property name='download.md5' value='8f79dc30980f357f1893bd026269a7bc'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.ui.tests' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='4003019'/>
+        <property name='download.size' value='4003019'/>
+        <property name='download.md5' value='41d5abe63448d8f804fda9fe2b1a36ea'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.weaving.aspectj' version='1.0.0.v20100108'>
+      <properties size='4'>
+        <property name='artifact.size' value='16188'/>
+        <property name='download.size' value='16188'/>
+        <property name='download.md5' value='7b4a7cf82d745a3c49af91077081fd03'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ajdt.ui.source' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='580383'/>
+        <property name='download.size' value='580383'/>
+        <property name='download.md5' value='229499236cc777bec073f8c3ad9257f7'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ajdt' version='2.1.3.e36x-20110622-1300'>
+      <properties size='3'>
+        <property name='artifact.size' value='13002'/>
+        <property name='download.size' value='13002'/>
+        <property name='download.md5' value='83defe6a4555e9feb94c651257896e5e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.aspectj' version='2.1.3.e36x-20110622-1300'>
+      <properties size='4'>
+        <property name='artifact.size' value='192183'/>
+        <property name='download.size' value='192183'/>
+        <property name='download.md5' value='6660c6a67b3a5bdb938218a701935347'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.aspectj.runtime.source' version='1.6.12.20110613132200'>
+      <properties size='4'>
+        <property name='artifact.size' value='91969'/>
+        <property name='download.size' value='91969'/>
+        <property name='download.md5' value='b736fb219fe17264f85c9c45140be483'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

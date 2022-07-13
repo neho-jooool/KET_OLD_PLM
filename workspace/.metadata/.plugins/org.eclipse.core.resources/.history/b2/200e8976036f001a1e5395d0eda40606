@@ -1,0 +1,64 @@
+package e3ps.test;
+
+public class Solution2 {
+
+    public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+	// 1번 수포자가 찍는 방식: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, ...
+	// 2번 수포자가 찍는 방식: 2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5, ...
+	// 3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ...
+
+	int[] answers = { 1, 2, 3, 4, 5 };
+	solution(answers);
+    }
+
+    public static int[] solution(int[] answers) {
+
+	int[] answer = new int[3];
+
+	int supoja1_start_point = 1; // 탐색 초기화 값 지정
+	int supoja1_end_point = 5; // 탐색 마지막 값 지정
+	int supoja1_search_style = 1; // 탐색 조건 = +1
+
+	int[] supoja1_answer_type_data = new int[answers.length];// 답안지의 길이만큼 수포자1의 배열 길이를 정해준다
+
+	getAnswerTypeData(supoja1_answer_type_data, supoja1_start_point, supoja1_end_point, supoja1_search_style);// 수포자1의 찍는 방식으로 배열 값을 채운다
+	getJumsuData(answers, supoja1_answer_type_data, 0, answer);
+
+	return answer;
+    }
+
+    public static int[] getAnswerTypeData(int[] answer_type, int start_point, int end_point, int search_style) {
+
+	int current_position = start_point; // 현재 탐색 노드 위치 설정
+	for (int index = 0; index < answer_type.length; index++) {
+	    answer_type[index] = current_position;
+
+	    if (current_position == end_point) {// current_position 초기화 규칙대로 다시 시작하기 위해
+		current_position = start_point;
+	    }
+
+	    if (search_style == 1) {
+		current_position++;
+	    }
+	}
+
+	return answer_type;
+
+    }
+
+    public static void getJumsuData(int[] answers, int[] supoja_data, int supoja, int[] answer) {// 답안지와 수포자의 답지를 비교해서 맞춘 갯수를 카운트 한다
+
+	int jumsu = 0;
+
+	for (int index = 0; index < answers.length; index++) {
+	    if (answers[index] == supoja_data[index]) {
+		jumsu++;
+	    }
+	}
+	answer[supoja] = jumsu;
+
+    }
+
+}

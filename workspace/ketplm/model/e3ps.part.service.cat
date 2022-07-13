@@ -1,0 +1,379 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "service"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4CA541580138"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "KETNewPartListHelper"
+	    quid       	"4C9077DC00BB")
+	(object Class "KETNewPartListService"
+	    quid       	"4C9077BE031C"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "createNewPartList"
+		    quid       	"4CA18E4A0157"
+		    parameters 	(list Parameters
+			(object Parameter "arg"
+			    quid       	"4CA1A0A801E4"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "updateNewPartList"
+		    quid       	"4CA2D73302EE"
+		    parameters 	(list Parameters
+			(object Parameter "arg"
+			    quid       	"4CA2D74E007D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "deleteNewPartList"
+		    quid       	"4CA2D759002E"
+		    parameters 	(list Parameters
+			(object Parameter "oId"
+			    quid       	"4CA2D7700261"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getNewPartList"
+		    quid       	"4CA2D77A032C"
+		    parameters 	(list Parameters
+			(object Parameter "arg"
+			    quid       	"4CBD098D00DA"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "deleteRealNewPartList"
+		    quid       	"51B96B1802C0"
+		    parameters 	(list Parameters
+			(object Parameter "oid"
+			    quid       	"51B96B35030E"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Class "StandardKETNewPartListService"
+	    quid       	"4C9077AB0290"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C9077BC00FA"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4C9077D90138"
+		    supplier   	"Logical View::e3ps::part::service::KETNewPartListService"
+		    quidu      	"4C9077BE031C"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4C9077F7037A"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Association "$UNNAMED$0"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4CAAD7C301C4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4CAAD7C40118"
+		    supplier   	"Logical View::e3ps::part::service::KETNewPartListHelper"
+		    quidu      	"4C9077DC00BB"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETNewPartListServiceFwd()")))
+		    quid       	"4CAAD7C40128"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::part::service::KETNewPartListService"
+		    quidu      	"4C9077BE031C"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "NewPartListService"
+	    quid       	"4C907776002E"
+	    title      	"NewPartListService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(591, 162)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(410, 87)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::part::service::StandardKETNewPartListService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(591, 670)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(275, 589)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	632
+			justify    	0
+			label      	"StandardKETNewPartListService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C9077AB0290"
+		    width      	650
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C9077BC00FA"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(591, 576)
+			(591, 249))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::part::service::KETNewPartListHelper" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2550, 665)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(2326, 614)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	448
+			justify    	0
+			label      	"KETNewPartListHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C9077DC00BB"
+		    width      	466
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::part::service::KETNewPartListService" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1594, 665)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1351, 506)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	486
+			justify    	0
+			label      	"KETNewPartListService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@5
+			location   	(1351, 456)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	486
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C9077BE031C"
+		    width      	504
+		    height     	442
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C9077D90138"
+		    client     	@2
+		    supplier   	@5
+		    vertices   	(list Points
+			(916, 667)
+			(1341, 666))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(2081, 665)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CAAD7C301C4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @8
+			    Parent_View 	@7
+			    location   	(487, 0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CAAD7C40118"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(2081, 665)
+				(2316, 665))
+			    line_style 	0)
+			(object RoleView "service" @9
+			    Parent_View 	@7
+			    location   	(487, 0)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(1956, 627)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.535270
+				height     	39
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CAAD7C40128"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(2081, 665)
+				(1846, 665))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(1871, 719)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))

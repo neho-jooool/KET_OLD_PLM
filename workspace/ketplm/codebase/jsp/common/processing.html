@@ -1,0 +1,32 @@
+<script type="text/javascript">
+<!--
+function showProcessing(){
+	
+	var height = document.body.scrollHeight + 40;
+	
+	if(height < window.innerHeight){
+		document.getElementById('loading-mask').style.height = "100%";
+	}else{
+		document.getElementById('loading-mask').style.height = height + "px";
+	}
+	
+    document.getElementById('loading-mask').style.display = '';
+    document.getElementById('loading').style.display = '';
+}
+
+function hideProcessing() { 
+    document.getElementById('loading-mask').style.display = 'none';
+    document.getElementById('loading').style.display = 'none';
+}
+//-->
+</script>
+<link rel="stylesheet" type="text/css" href="/plm/portal/css/multicombo/jquery.loadmask.css" />
+<link rel="stylesheet" type="text/css" href="/plm/extcore/css/loading.css" />
+<!-- loading start -->
+<div id="loading-mask" class="loadmask" style="display:none;"></div>
+<div id="loading" class="loadmask-msg" style="display:none;">
+    <div class="loading-indicator">
+        <span id="loading-msg">Loading...</span>
+    </div>
+</div>
+<!-- loading end -->

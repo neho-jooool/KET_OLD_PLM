@@ -1,0 +1,4 @@
+[TRACE] 2013-12-26 10:20:00 com.whales.lms.rms.scheduler.TaskTemplate 
+com.whales.lms.rms.scheduler.task.SystemOnOffTask result : OK
+[TRACE] 2013-12-26 10:20:34 com.whales.lms.rms.scheduler.TaskTemplate 
+com.whales.lms.rms.scheduler.task.SystemAliveCheckTask result : OK

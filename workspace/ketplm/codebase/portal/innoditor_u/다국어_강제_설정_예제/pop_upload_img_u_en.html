@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta http-equiv="Pragma" content="No-Cache" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>InnoDitor Image Upload</title>
+
+<script language="javascript" type="text/javascript" src="./js/browserlanguage.js"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+// language force setting - english
+g_browserCHK.language = "en";
+//]]>
+</script>
+<script language="javascript" type="text/javascript" src="./js/uploadimage_u.js"></script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+// customer setting variable
+// if this example apply...
+var g_strUploadPath_Image = "/z_experience/upload_tran_u.asp";
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+function fnImageSend()
+{
+	var strImageURL = "";
+
+	if(1 == g_nSelectedTabIndex)
+	{
+		if(null == g_objUploadObject)
+		{
+			alert(res_warning_msg[4]);
+			return;
+		}
+
+		strImageURL = g_objUploadObject.src;
+	}
+	else
+	{
+		if(null == g_objLoadURLObject)
+		{
+			alert(res_warning_msg[5]);
+			return;
+		}
+
+		strImageURL = g_objLoadURLObject.src;
+	}
+
+
+	if("" == document.getElementById("txtAlt").value)
+	{
+		alert(res_warning_msg[7]);
+		document.getElementById("txtAlt").focus();
+		return;
+	}
+
+
+	if("" != document.getElementById("txtWidth").value)
+	{
+		if(isNaN(document.getElementById("txtWidth").value))
+		{
+			alert(res_warning_msg[6]);
+			document.getElementById("txtWidth").focus();
+			return;
+		}
+	}
+
+	if("" != document.getElementById("txtHeight").value)
+	{
+		if(isNaN(document.getElementById("txtHeight").value))
+		{
+			alert(res_warning_msg[6]);
+			document.getElementById("txtHeight").focus();
+			return;
+		}
+	}
+
+	if("" != document.getElementById("txtBorder").value)
+	{
+		if(isNaN(document.getElementById("txtBorder").value))
+		{
+			alert(res_warning_msg[6]);
+			document.getElementById("txtBorder").focus();
+			return;
+		}
+	}
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// basic apply (image align -> left) - start
+/*
+	var arrReturnValue = new Array();
+	arrReturnValue[0] = strImageURL;
+	arrReturnValue[1] = document.getElementById("txtAlt").value;
+	arrReturnValue[2] = document.getElementById("txtWidth").value;
+	arrReturnValue[3] = document.getElementById("txtHeight").value;
+	arrReturnValue[4] = document.getElementById("txtBorder").value;
+*/
+	// basic apply (image align -> left) - end
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// extension apply - start
+	var strALT = document.getElementById("txtAlt").value;
+	var strWidth = document.getElementById("txtWidth").value;
+	var strHeight = document.getElementById("txtHeight").value;
+	var strBorder = document.getElementById("txtBorder").value;
+
+	var strImageHTML = "";
+	strImageHTML += "<img src='" + strImageURL + "' alt='" + strALT + "' width='" + strWidth + "' height='" + strHeight + "' border='" + strBorder + "'>";
+
+	var arrReturnValue = new Array();
+	arrReturnValue[0] = "";
+	arrReturnValue[1] = "";
+	arrReturnValue[2] = "";
+	arrReturnValue[3] = "";
+	arrReturnValue[4] = "";
+	arrReturnValue[5] = strImageHTML;// image tag direct setting -> [0] ~ [4] value set ""
+	// extension apply - end
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	if(g_browserCHK.wk || g_browserCHK.op)
+	{
+		// Chrome  / Safari / Opera
+		opener.fnSetImageReturnValue(arrReturnValue);
+	}
+	else if(g_browserCHK.ie || g_browserCHK.ff)
+	{
+		// IE  /  FireFox
+		window.returnValue = arrReturnValue;
+	}
+
+	window.close();
+}
+//]]>
+</script>
+</head>
+
+<body onload="javascript:fnAdjustPage();">
+
+<div style="width:598px;height:550px;border:1px solid #e2e2e2;">
+	<div style="margin-left:16px;margin-right:16px;">
+
+		<div style="margin-top:10px;"><img id="res_image_0" alt="" src="./image/blank.gif" /></div>
+
+		<!-- Tab Area -->
+		<div style="height:27px;margin-top:12px;border-bottom:1px solid #d2d2d2;">
+			<div style="display:inline;">
+				<a href="javascript:fnTabClick(1);"><img id="imgTab_1" alt="" src="./image/blank.gif" onmouseover="javascript:fnTabMouseOver(this,1);" onmouseout="javascript:fnTabMouseOut(this,1);" /></a>
+			</div>
+			<div style="display:inline;">
+				<a href="javascript:fnTabClick(2);"><img id="imgTab_2" alt="" src="./image/blank.gif" onmouseover="javascript:fnTabMouseOver(this,2);" onmouseout="javascript:fnTabMouseOut(this,2);" /></a>
+			</div>
+		</div>
+
+		<div style="margin-top:2px;">
+
+			<!-- Link UI Set Area -->
+			<div id="imgLoadArea" style="display:none;width:550px;">
+				<div style="display:inline;float:left;vertical-align:top;">
+					<input type="text" title="image url" id="txtLoadURL" name="txtLoadURL" class="form" style="width:398px" maxlength="512" />
+				</div>
+				<div style="display:inline;">
+					<div style="height:22px;margin-left:7px;display:inline;float:left;">
+						<a href="javascript:fnLoadURLImage();"><img id="res_image_1" alt="url" src="./image/blank.gif" /></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- image view Area(main) -->
+			<div style="display:inline;float:left;width:410px;">
+				<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td id="img_main" align="center" style="width:400px;height:410px;border:1px solid #c4cad1;background-color:#ffffff;background-image:url(./image/editwin/pop_upload_thumnail_bg.gif);">
+						<img id="res_image_2" alt="upload image" src="./image/blank.gif" />
+					</td>
+				</tr>
+				</table>
+			</div>
+			<div style="display:inline;float:left;width:2px;"></div>
+			<div style="display:inline;float:left;vertical-align:top;">
+
+				<!-- 이미지 업로드 UI Set 영역 -->
+				<div id="imgPreviewArea" style="height:230px;">
+
+					<!-- 이미지 보여주기 영역(preview) -->
+					<div id="img_preview" style="width:150px;height:150px;border:1px solid #c4cad1;background-color:#ffffff;background-image:url(./image/editwin/pop_upload_thumnail_bg.gif);text-align:center;">
+						<img id="res_image_3" alt="preview" src="./image/blank.gif" style="margin-top:60px;" />
+					</div>
+
+					<!-- 파일선택, 업로드 버튼 영역 -->
+					<form name="frmUpload" method="post" action="" enctype="multipart/form-data" onsubmit="return false">
+					<div style="margin-top:10px;">
+						<div style="width:70px;height:20px;margin-left:7px;display:inline;float:left;">
+							<div class="UploadFileContainer"><input type="file" title="file" id="fileUpload" name="fileUpload" class="UploadFile" onfocus="javascript:fnFired_Focus_File(this);" onblur="javascript:fnFired_Blur_File(this);" style="cursor:pointer;" /></div>
+							<input type="hidden" name="hdnUploadType" value="1" />
+						</div>
+						<div style="display:inline;">
+							<a href="javascript:fnUploadFile();"><img id="res_image_4" alt="upload" src="./image/blank.gif" /></a>
+						</div>
+					</div>
+					<div style="margin-top:4px;text-align:center;">
+						<span id="res_item_0"></span><br />
+						<span id="res_item_1"></span>
+					</div>
+					</form>
+
+				</div>
+
+				<div id="imgPreviewDummy" style="display:none;height:230px;"></div>
+
+				<div style="width:150px;height:1px;border-top:1px solid #dedede;"></div>
+
+				<!-- Tooltip Area -->
+				<div style="margin-top:10px;">
+					<div>
+						<b id="res_item_5"></b>
+					</div>
+					<div>
+						<input id="txtAlt" title="Tooltip" name="txtAlt" type="text" class="form" style="width:150px" maxlength="50" />
+					</div>
+				</div>
+
+				<!-- Width,Height Area -->
+				<div style="margin-top:10px;">
+					<div>
+						<b id="res_item_2"></b>
+					</div>
+					<div style="margin-top:4px;clear:both;">
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="chkSameRatio" title="Same Ratio" name="chkSameRatio" type="checkbox" class="form" value="1" style="background-color:transparent;border:0px solid #FFFFFF;" checked="checked" />
+						</div>
+						<div id="res_item_8" style="display:inline;"></div>
+					</div>
+					<div style="margin-top:4px;clear:both;">
+						<div id="res_item_3" style="display:inline;float:left;width:70px;"></div>
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="txtWidth" title="Width" name="txtWidth" type="text" class="form" style="width:40px;text-align:right" maxlength="5" value="0" onkeyup="javascript:fnKeyUpWidthHeight(1);" />
+						</div>
+						<div style="display:inline;">(px)</div>
+					</div>
+					<div style="margin-top:4px;clear:both;">
+						<div id="res_item_4" style="display:inline;float:left;width:70px;"></div>
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="txtHeight" title="Height" name="txtHeight" type="text" class="form" style="width:40px;text-align:right" maxlength="5" value="0" onkeyup="javascript:fnKeyUpWidthHeight(2);" />
+						</div>
+						<div style="display:inline;">(px)</div>
+					</div>
+				</div>
+
+				<!-- Border Area -->
+				<div style="margin-top:10px;">
+					<div>
+						<b id="res_item_6"></b>
+					</div>
+					<div style="margin-top:4px;">
+						<div id="res_item_7" style="display:inline;float:left;width:90px;"></div>
+						<div style="display:inline;float:left;vertical-align:top;margin-top:-4px;">
+							<input id="txtBorder" title="Border" name="txtBorder" type="text" class="form" style="width:20px;text-align:right" maxlength="2" value="0" />
+						</div>
+						<div style="display:inline;">(px)</div>
+					</div>
+				</div>
+
+				<!-- Apply,Cancel Area -->
+				<div style="margin-top:10px;text-align:center;">
+					<div style="display:inline;">
+						<a href="javascript:fnImageSend();"><img id="res_image_5" alt="apply" src="./image/blank.gif" /></a>
+					</div>
+					<div style="display:inline;">
+						<a href="javascript:window.close();"><img id="res_image_6" alt="cancel" src="./image/blank.gif" /></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Upload Form Action Area : Start -->
+<iframe name="ifrmUpload" src="" style="display:none" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<!-- Upload Form Action Area : End -->
+
+<div id="uploadStatus" style="display:none">
+	<div class="UploadStatus" style="top:0px;left:0px;width:600px;height:230px"></div>
+	<div class="UploadStatus" style="top:230px;left:0px;width:160px;height:80px"></div>
+	<div class="UploadStatusBar" style="top:230px;left:160px;width:280px;height:80px"><img id="res_image_7" alt="status" src="./image/blank.gif" /></div>
+	<div class="UploadStatus" style="top:230px;left:440px;width:160px;height:80px"></div>
+	<div class="UploadStatus" style="top:310px;left:0px;width:600px;height:220px"></div>
+</div>
+
+</body> 
+</html>

@@ -1,0 +1,27 @@
+BODY
+A:link    { text-decoration:none; color:#8A8A8A}
+A:visited { text-decoration:underline; color:#5E5E5E}
+A:active  { text-decoration:none; color:#5E5E5E}
+A:hover   { text-decoration:underline; color:#8A8A8A}
+
+A.txt:link    { text-decoration:none; color:#3F6FA3}
+A.txt:visited { text-decoration:none; color:#3F6FA3}
+A.txt:active  { text-decoration:none; color:#3F6FA3}
+A.txt:hover   { text-decoration:none; color:#8A8A8A}
+
+
+.style1 {font-size: 12px;text-align:center}		 		 
+.style2 {font-size: 12px; font-weight: bold;color:#FF9900; text-align:center}	
+.style3 {font-size: 12px; font-weight: bold;color:#4F4F4F;}
+.style4 {font-size: 12px; background-color:#D2D2D2; text-align: center; color:#FFFFFF}
+.style5 {font-size: 12px; background-color:#D2D2D2; text-align: center; font-weight: bold; color:#333333}
+.style6 {font-size: 11px; text-align:center;color:#3300FF}
+.style7 {font-size: 10px}
+.style8 {font-size: 12px;text-align:right}	
+.style9 {font-size: 12px;text-align:left}
+.style10 {font-size: 24px; font-weight: bold;color:#4F4F4F;text-align:center;}
+.style11 {font-size: 12px;text-align:center; font-weight: bold;color:#FF0033}
+
+.line_name {font-size: 4px; color:#EFEFEF; text-align:center}
+#bg_color {background:#E6E6E6}
+#not_Data {background:#FFDFDF}

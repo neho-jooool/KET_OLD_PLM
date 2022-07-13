@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE NmLoader SYSTEM "standardX05.dtd">
+
+<NmLoader>
+
+<csvTeamTemplateBegin handler="wt.team.LoadTeam.createTeamTemplateBegin" >
+    <csvname>Electron Project</csvname>
+    <csvdescription><?loc-begin key="KET_TEAM"?>전자사업부 프로젝트팀<?loc-end?></csvdescription>
+    <csvfolderLocation>/System</csvfolderLocation>
+    <csvenabled>true</csvenabled>
+</csvTeamTemplateBegin>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON01</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON02</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON03</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON04</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON05</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON06</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON07</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON08</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON09</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON10</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON11</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON12</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON13</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON14</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON15</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON16</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_ELECTRON17</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvTeamTemplateEnd handler="wt.team.LoadTeam.createTeamTemplateEnd" />
+
+<csvTeamTemplateBegin handler="wt.team.LoadTeam.createTeamTemplateBegin" >
+    <csvname>Mold Project</csvname>
+    <csvdescription><?loc-begin key="KET_TEAM"?>금형 프로젝트팀<?loc-end?></csvdescription>
+    <csvfolderLocation>/System</csvfolderLocation>
+    <csvenabled>true</csvenabled>
+</csvTeamTemplateBegin>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD01</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD02</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD03</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD04</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD05</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD06</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD07</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD08</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD09</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD10</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD11</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD12</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD13</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_MOLD14</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvTeamTemplateEnd handler="wt.team.LoadTeam.createTeamTemplateEnd" />
+
+<csvTeamTemplateBegin handler="wt.team.LoadTeam.createTeamTemplateBegin" >
+    <csvname>Review Project</csvname>
+    <csvdescription><?loc-begin key="KET_TEAM"?>검토 프로젝트팀<?loc-end?></csvdescription>
+    <csvfolderLocation>/System</csvfolderLocation>
+    <csvenabled>true</csvenabled>
+</csvTeamTemplateBegin>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW01</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW02</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW03</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW04</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW06</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW10</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW11</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW12</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW15</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW16</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW18</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_REVIEW23</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvTeamTemplateEnd handler="wt.team.LoadTeam.createTeamTemplateEnd" />
+
+<csvTeamTemplateBegin handler="wt.team.LoadTeam.createTeamTemplateBegin" >
+    <csvname>Product Project</csvname>
+    <csvdescription><?loc-begin key="KET_TEAM"?>제품 프로젝트팀<?loc-end?></csvdescription>
+    <csvfolderLocation>/System</csvfolderLocation>
+    <csvenabled>true</csvenabled>
+</csvTeamTemplateBegin>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT01</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT02</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT03</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT04</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT05</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT06</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT07</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT08</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT09</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT10</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT11</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT12</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT13</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT14</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT15</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT16</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT17</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT18</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT19</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT20</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT21</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT22</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT23</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT24</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+	
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT25</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT26</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvRoleHolder2 handler="wt.team.LoadTeam.createRoleHolder" >
+    <csvroleToAssign>Team_PRODUCT27</csvroleToAssign>
+    <csvassignedPrincipal></csvassignedPrincipal>
+</csvRoleHolder2>
+
+<csvTeamTemplateEnd handler="wt.team.LoadTeam.createTeamTemplateEnd" />
+
+</NmLoader>

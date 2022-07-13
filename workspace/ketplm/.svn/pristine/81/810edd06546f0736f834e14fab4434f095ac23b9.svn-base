@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+	<!-- Annotation Setup -->
+	<context:annotation-config />
+	
+	<!--  Custom for KET -->
+	<context:component-scan base-package="ext.ket" />
+	
+	<!-- task schedule Setting -->
+	<task:annotation-driven />
+	
+	<bean id="download" class="ext.ket.common.files.util.DownloadView"/>
+	<bean id="downloadViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+        <property name="order" value="0"/>
+    </bean>
+    <!--  Custom for KET -->
+    
+    
+	<!-- Set up basic handler adapters -->
+	<bean
+		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	    <!--  Custom for KET -->
+		<property name="messageConverters">
+			<list>
+				<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+			</list>
+		</property>
+		 <!--  Custom for KET -->
+	</bean>
+
+	<!-- Load in URLs that are not relative to /ptc1 -->
+	<bean id="defaultHandlerMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<!-- Property-based mappings should override the annotated mappings -->
+		<property name="order" value="100" />
+		<property name="alwaysUseFullPath" value="true" />
+		<property name="mappings">
+			<ref bean="defaultHandlerMappings" />
+		</property>
+	</bean>
+
+	<bean id="defaultHandlerMappings"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean" />
+
+	<!--
+		Enables annotation-based handler mappings. Don't use the full path
+		here, ensure paths are relative to /ptc1
+	-->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="order" value="1000" />
+	</bean>
+
+	<!-- View Resolution -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+	</bean>
+
+	<!-- Exception Handling -->
+	<bean id="exceptionController" class="com.ptc.mvc.controllers.ExceptionController" />
+	<bean id="exceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="/ptc1/error" />
+	</bean>
+
+	<!-- Manages mappings for typeBased lookup-->
+	<bean id="typeBasedBeanNameFactory" class="com.ptc.mvc.util.DefaultTypeBasedNameFactory" />
+
+	<!-- Default resolver -->
+	<bean id="defaultComponentBuilderResolver"
+		class="com.ptc.mvc.components.support.DefaultComponentBuilderResolver" />
+
+	<alias alias="configurableComponentBuilderResolver" name="defaultComponentBuilderResolver" />
+
+	<!-- HttpSession-scoped DataSourceSession -->
+	<bean id="dataSourceSession" factory-bean="dataSourceManager"
+		factory-method="newDataSourceSession" scope="session">
+		<aop:scoped-proxy />
+	</bean>
+
+	<!-- Assigns a DataSourceSession to DataSourceSessionAware beans -->
+	<bean id="dataSourceSessionAwareProcessor"
+		class="com.ptc.mvc.ds.server.support.DataSourceSessionAwareProcessor">
+		<property name="session" ref="dataSourceSession" />
+	</bean>
+
+	<!-- Service for DataSource polling -->
+	<bean id="dataSourceService" class="com.ptc.mvc.ds.server.rpc.DefaultDataSourceService" />
+
+	<!-- Base config, concrete ones need to specify a serializer -->
+	<bean id="abstractDataSourcePoller" class="com.ptc.mvc.components.ds.DataSourcePoller"
+		abstract="true">
+		<property name="service" ref="dataSourceService" />
+	</bean>
+
+</beans>

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+org.eclipse.team.ui.first_time=false
+org.eclipse.team.ui.show_author_in_compare_editor=true
+org.eclipse.team.ui.sychronizing_default_participant=org.eclipse.team.svn.ui.synchronize.update.SynchronizeModelParticipant
+org.eclipse.team.ui.sychronizing_default_participant_sec_id=1657672661828
+org.eclipse.team.ui.sychronizing_default_perspective_to_show=never
+org.eclipse.team.ui.view_syncinfo_in_label=true

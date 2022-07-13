@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="material">
+
+
+
+    <insert id="insertMaterial" parameterType="ext.ket.edm.entity.dto.KETMaterialDTO">
+        INSERT INTO KETMATERIAL 
+            (WTPARTNUMBER,MATERIAL,MATERIAL_PROPERTIES,CREATE_USER,CREATE_DATE)
+        VALUES 
+            (
+            #{partOid}, 
+            #{material},
+            #{materialProperties},
+            #{loginUserId},
+            SYSDATE)
+    </insert>
+
+    <delete id="deleteMaterial" parameterType="ext.ket.edm.entity.dto.KETMaterialDTO">
+        DELETE FROM KETMATERIAL 
+        WHERE WTPARTNUMBER = #{partOid}
+    </delete>
+    
+    <select id="searchMaterial" parameterType="ext.ket.edm.entity.dto.KETMaterialDTO" resultType="ext.ket.edm.entity.dto.KETMaterialDTO">
+        SELECT MATERIAL, MATERIAL_PROPERTIES MATERIALPROPERTIES FROM KETMATERIAL
+        WHERE WTPARTNUMBER = #{partOid}     
+    </select>
+    
+  
+  
+</mapper>

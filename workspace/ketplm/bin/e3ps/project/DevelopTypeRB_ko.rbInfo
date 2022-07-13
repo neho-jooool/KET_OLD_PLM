@@ -1,0 +1,36 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()	
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()	
+# <key>.order=					getOrder()	
+# <key>.selectable=				isSelectable()	
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.argComment<n>=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.constant=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.customizable=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.deprecated=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+
+# Entry Contents
+IMPROVE1.value=\ud615\uc0c1\ubcc0\uacbd/\uac15\uc131\ubcf4\uac15
+IMPROVE1.shortDescription=IMPROVE1
+IMPROVE1.order=1
+
+IMPROVE2.value=\uc0ac\uc591\ubcc0\uacbd
+IMPROVE2.shortDescription=IMPROVE2
+IMPROVE2.order=2
+
+IMPROVE3.value=\uc0ac\uc591\ucd94\uac00
+IMPROVE3.shortDescription=IMPROVE3
+IMPROVE3.order=3
+
+IMPROVE4.value=\uae30\ud0c0
+IMPROVE4.shortDescription=IMPROVE4
+IMPROVE4.order=4

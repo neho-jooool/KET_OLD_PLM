@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <fileSeperator><![CDATA[\]]></fileSeperator>
+    <foldDefaultPath><![CDATA[E:\Stamping]]></foldDefaultPath>
+    <foldYear>2014</foldYear>
+    <foldMonth>09</foldMonth>
+    <foldDay>30</foldDay>
+    <foldRequestNo>D1409002</foldRequestNo>
+    <executeNo>1</executeNo>
+    <transNxFileSuffix>_nx_t</transNxFileSuffix>
+    <transCreoFileSuffix>_creo_t</transCreoFileSuffix>
+    <transLogFileExt>log</transLogFileExt>
+    <transErrFileSuffix>_e</transErrFileSuffix>
+    <stampFileSuffix>_s</stampFileSuffix>
+    <stampLogFileExt>log</stampLogFileExt>
+    <stampErrFileSuffix>_e</stampErrFileSuffix>
+    <stampCompanyName><![CDATA[KOREA ELECTRIC TERMINAL CO.,LTD.]]></stampCompanyName>
+    <requestDrawingList>
+        <drawing>
+            <cadType>NX</cadType>
+            <transRequest>Y</transRequest>
+            <cadOid>wt.epm.EPMDocument:65225785</cadOid>
+            <drawingNumber>22402000-000A1_PRT</drawingNumber>
+            <drawingVersion>0.0</drawingVersion>
+            <drawingFileName><![CDATA[22402000-top.prt]]></drawingFileName>
+            <transNxSelectedSheet>Active</transNxSelectedSheet>
+            <transThreedCadNo>22402000-000A1_PRT</transThreedCadNo>
+            <transThreedCadVersion>0.0</transThreedCadVersion>
+            <transThreedCadOid>wt.epm.EPMDocument:65225785</transThreedCadOid>
+            <transThreedCadFileName><![CDATA[22402000-top.prt]]></transThreedCadFileName>
+            <stampType>APPROVED</stampType>
+            <stampAprovedDate>2014-09-29</stampAprovedDate>
+            <stampTeamName><![CDATA[Manufacturing Tec
+hnology Development Team 1]]></stampTeamName>
+            <stampRequest>Y</stampRequest>
+            <stepRequest>Y</stepRequest>
+        </drawing>
+        <drawing>
+            <cadType>NX</cadType>
+            <transRequest>Y</transRequest>
+            <cadOid>wt.epm.EPMDocument:84466556</cadOid>
+            <drawingNumber>22448000-L011_PRT</drawingNumber>
+            <drawingVersion>0.0</drawingVersion>
+            <drawingFileName><![CDATA[22448000-L011.prt]]></drawingFileName>
+            <transNxSelectedSheet>Active</transNxSelectedSheet>
+            <transThreedCadNo>22448000-L011_PRT</transThreedCadNo>
+            <transThreedCadVersion>0.0</transThreedCadVersion>
+            <transThreedCadOid>wt.epm.EPMDocument:84466556</transThreedCadOid>
+            <transThreedCadFileName><![CDATA[22448000-L011.prt]]></transThreedCadFileName>
+            <stampType>APPROVED</stampType>
+            <stampAprovedDate>2014-09-29</stampAprovedDate>
+            <stampTeamName><![CDATA[Manufacturing Tec
+hnology Development Team 1]]></stampTeamName>
+            <stampRequest>Y</stampRequest>
+            <stepRequest>Y</stepRequest>
+        </drawing>
+        <drawing>
+            <cadType>NX</cadType>
+            <transRequest>Y</transRequest>
+            <cadOid>wt.epm.EPMDocument:65593411</cadOid>
+            <drawingNumber>22511000-000A1_PRT</drawingNumber>
+            <drawingVersion>0.0</drawingVersion>
+            <drawingFileName><![CDATA[22511000-top.prt]]></drawingFileName>
+            <transNxSelectedSheet>Active</transNxSelectedSheet>
+            <transThreedCadNo>22511000-000A1_PRT</transThreedCadNo>
+            <transThreedCadVersion>0.0</transThreedCadVersion>
+            <transThreedCadOid>wt.epm.EPMDocument:65593411</transThreedCadOid>
+            <transThreedCadFileName><![CDATA[22511000-top.prt]]></transThreedCadFileName>
+            <stampType>APPROVED</stampType>
+            <stampAprovedDate>2014-09-29</stampAprovedDate>
+            <stampTeamName><![CDATA[Manufacturing Tec
+hnology Development Team 1]]></stampTeamName>
+            <stampRequest>Y</stampRequest>
+            <stepRequest>Y</stepRequest>
+        </drawing>
+    </requestDrawingList>
+</root>

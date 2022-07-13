@@ -1,0 +1,3 @@
+ant -f D:\ptc\Windchill_10.2\HTTPServer\webAppConfig.xml addAuthResource -DappName=plm
+ant -f D:\ptc\Windchill_10.2\HTTPServer\webAppConfig.xml addAuthResource -DappName=plm-WHC
+ant -f D:\ptc\Windchill_10.2\HTTPServer\webAppConfig.xml addAuthResource -DappName=plm-Solr

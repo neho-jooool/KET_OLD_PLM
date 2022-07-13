@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="drawingDistRequest">
+	<select id="totalPageCount" resultType="java.lang.String" >
+	   SELECT * 
+          FROM (
+                SELECT
+                ROWNUM rnum
+                FROM KETDrawingDistRequest A,
+                    WTDocumentMaster B,
+                    WTUser C,
+                    People D
+                WHERE A.IDA3MASTERREFERENCE = B.IDA2A2
+                AND A.IDA3D2ITERATIONINFO = C.IDA2A2
+                AND D.IDA3B4 = C.IDA2A2
+                AND SUBSTR(B.WTDOCUMENTNUMBER,1,1) = 'D'
+                AND A.BACKGROUNDYN IS NULL
+                <!-- 
+                <isNotEmpty property="distType" prepend="AND">
+                    A.DISTTYPE= #{distType}
+                </isNotEmpty>
+                <isNotEmpty property="distReqNumber" prepend="AND">
+                    B.WTDOCUMENTNUMBER= #{distReqNumber}
+                </isNotEmpty>
+                <isNotEmpty property="title" prepend="AND">
+                    A.TITLE= #{title}
+                </isNotEmpty>
+                 -->
+                <if test="creatorId != null and creatorId != ''">
+                ${creatorId}
+                </if> 
+                <if test="distSubcontractor != null and distSubcontractor != ''">
+                AND ${distSubcontractor}
+                </if> 
+                <if test="distType != null and distType != ''">
+                AND ${distType}
+                </if>
+                <if test="distReqNumber != null and distReqNumber != ''">
+                 AND ${distReqNumber}
+                </if>
+                <if test="title != null and title != ''">
+                AND ${title}
+                </if>
+                <if test="creator != null and creator != ''">
+                AND ${creator}
+                </if>
+                <if test="createStartDate != null and createStartDate != ''">
+                <![CDATA[
+                AND TO_CHAR(A.CREATESTAMPA2,'yyyy-mm-dd') >= #{createStartDate}
+                ]]>   
+                </if>
+                <if test="createEndDate != null and createEndDate != ''">
+                <![CDATA[
+                AND TO_CHAR(A.CREATESTAMPA2,'yyyy-mm-dd') <= #{createEndDate}
+                ]]>
+                </if>
+                <if test="drawingDistEoArray != null and drawingDistEoArray != ''">
+                AND (EXISTS (SELECT 1
+							FROM KETDRAWINGDISTPRODEOLINK DISTEOLINK , KETProdChangeOrder ECO
+							WHERE DISTEOLINK.IDA3A5 = ECO.IDA2A2
+							AND DISTEOLINK.IDA3B5 = A.IDA2A2
+							AND ${drawingDistEoArray} )
+                OR EXISTS (SELECT 1
+                            FROM KETDRAWINGDISTMOLDEOLINK DISTEOLINK , KETMOLDChangeOrder ECO
+                            WHERE DISTEOLINK.IDA3A5 = ECO.IDA2A2
+                            AND DISTEOLINK.IDA3B5 = A.IDA2A2
+                            AND ${drawingDistEoArray} ))
+                </if>
+                <if test="drawingName != null and drawingName != ''">
+                AND EXISTS (SELECT 1 
+                            FROM 
+                                EPMDOCUMENTMASTER EM
+                                ,EPMDOCUMENT EPM 
+                                ,KETDRAWINGDISTEPMLINK DL
+                            WHERE 1=1
+                            AND EM.IDA2A2 = EPM.IDA3MASTERREFERENCE
+                            AND DL.IDA3A5 = EPM.IDA2A2
+                            AND DL.IDA3B5 = A.IDA2A2
+                            AND ${drawingName} )
+                </if>
+                 <if test="drawingNo != null and drawingNo != ''">
+                AND EXISTS (SELECT 1 
+                            FROM 
+                                EPMDOCUMENTMASTER EM
+                                ,EPMDOCUMENT EPM 
+                                ,KETDRAWINGDISTEPMLINK DL
+                            WHERE 1=1
+                            AND EM.IDA2A2 = EPM.IDA3MASTERREFERENCE
+                            AND DL.IDA3A5 = EPM.IDA2A2
+                            AND DL.IDA3B5 = A.IDA2A2
+                            AND ${drawingNo} )
+                </if>
+                <if test="documentName != null and documentName != ''">
+                AND (EXISTS (SELECT 1                                 
+                          FROM                                                                                     
+                              KETPROJECTDOCUMENT      KPD,                                                           
+                              KETDocumentCategoryLink KDCL,                                                           
+                              KETDOCUMENTCATEGORY     KDC,                                                           
+                              PHASELINK               PL,                                                           
+                              PHASETEMPLATE           PT,                                                           
+                              PEOPLE                  P,                                                           
+                              WTDocumentMaster        WDM,                                                           
+                              NUMBERCODEVALUE         NCV                                                          
+                         WHERE KPD.LATESTITERATIONINFO = 1                                                           
+                           AND KPD.IDA2A2 IN (SELECT IDA3A5 FROM KETDRAWINGDISTDOCLINK                               
+                                            WHERE INSTR(CLASSNAMEKEYROLEAOBJECTREF, 'KETProjectDocument') != 0     
+                                            AND  IDA3B5 = A.IDA2A2)                           
+                           AND KPD.IDA2A2              = KDCL.IDA3B5                                                    
+                           AND KDCL.IDA3A5              = KDC.IDA2A2                                                    
+                           AND KPD.IDA3A2STATE         = PL.IDA3A5                                                    
+                           AND PL.IDA3B5              = PT.IDA2A2                                                    
+                           AND PT.PHASESTATE          = KPD.STATESTATE                                                
+                           AND KPD.IDA3B2ITERATIONINFO = P.IDA3B4                                                    
+                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2                                                    
+                           AND KDC.CATEGORYCODE        =  NCV.CODE                                                   
+                           AND NCV.LANG              =  'ko'                                                       
+                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )                                                  
+                           AND ( KPD.STATESTATE = 'APPROVED' ) 
+                           AND ${documentName})
+                OR EXISTS (SELECT 1
+                          FROM KETTechnicalDOCUMENT KPD     
+                              ,KETDRAWINGDISTDOCLINK  DDC 
+                              ,WTDocumentMaster WDM 
+                         WHERE LATESTITERATIONINFO = 1    
+                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )          
+                           AND KPD.IDA2A2 = DDC.IDA3A5    
+                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2  
+                           AND DDC.IDA3B5 = A.IDA2A2
+                           AND ${documentName}))
+                </if>
+                <if test="documentNo != null and documentNo != ''">
+                AND (EXISTS (SELECT 1                                 
+                          FROM                                                                                     
+                              KETPROJECTDOCUMENT      KPD,                                                           
+                              KETDocumentCategoryLink KDCL,                                                           
+                              KETDOCUMENTCATEGORY     KDC,                                                           
+                              PHASELINK               PL,                                                           
+                              PHASETEMPLATE           PT,                                                           
+                              PEOPLE                  P,                                                           
+                              WTDocumentMaster        WDM,                                                           
+                              NUMBERCODEVALUE         NCV                                                          
+                         WHERE KPD.LATESTITERATIONINFO = 1                                                           
+                           AND KPD.IDA2A2 IN (SELECT IDA3A5 FROM KETDRAWINGDISTDOCLINK                               
+                                            WHERE INSTR(CLASSNAMEKEYROLEAOBJECTREF, 'KETProjectDocument') != 0     
+                                            AND  IDA3B5 = A.IDA2A2)                           
+                           AND KPD.IDA2A2              = KDCL.IDA3B5                                                    
+                           AND KDCL.IDA3A5              = KDC.IDA2A2                                                    
+                           AND KPD.IDA3A2STATE         = PL.IDA3A5                                                    
+                           AND PL.IDA3B5              = PT.IDA2A2                                                    
+                           AND PT.PHASESTATE          = KPD.STATESTATE                                                
+                           AND KPD.IDA3B2ITERATIONINFO = P.IDA3B4                                                    
+                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2                                                    
+                           AND KDC.CATEGORYCODE        =  NCV.CODE                                                   
+                           AND NCV.LANG              =  'ko'                                                       
+                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )                                                  
+                           AND ( KPD.STATESTATE = 'APPROVED' ) 
+                           AND ${documentNo})
+                OR EXISTS (SELECT 1
+                          FROM KETTechnicalDOCUMENT KPD     
+                              ,KETDRAWINGDISTDOCLINK  DDC 
+                              ,WTDocumentMaster WDM 
+                         WHERE LATESTITERATIONINFO = 1    
+                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )          
+                           AND KPD.IDA2A2 = DDC.IDA3A5    
+                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2  
+                           AND DDC.IDA3B5 = A.IDA2A2
+                           AND ${documentNo}))
+                </if>
+                <if test="distDeptName != null and distDeptName != ''">
+                AND EXISTS (SELECT 1
+                           FROM KETDrawingDistDept KDDD
+                           WHERE KDDD.IDA3A3 = A.IDA2A2
+                           AND ${distDeptName})
+                </if>
+              )
+         WHERE 1=1
+	</select>
+	
+	<select id="pagingList" resultType="ext.ket.edm.entity.dto.KETDrawingDistReqDTO" parameterType="ext.ket.edm.entity.dto.KETDrawingDistReqDTO">
+	   <![CDATA[
+	    SELECT * 
+	      FROM (
+	           SELECT
+                  ROWNUM rnum
+                  ,TT.*
+                FROM
+                (
+		        SELECT
+		          T.*
+		        FROM
+		        (
+	                SELECT
+	                A.CLASSNAMEA2A2||':'||A.IDA2A2 AS oid
+	                ,B.WTDOCUMENTNUMBER AS distReqNumber
+	                ,A.TITLE AS title
+	                ,(SELECT NAME FROM NUMBERCODE
+					WHERE CODETYPE = 'DISTTYPE'
+					AND CODE = A.DISTTYPE) AS distType
+	                ,A.DISTDEPTNAME AS distDeptName
+	                ,A.DISTSUBCONTRACTOR AS distSubcontractor
+	                ,A.DISTREASON AS distReason
+	                ,TO_CHAR(A.CREATESTAMPA2,'yyyy-mm-dd') createStamp
+	                ,D.NAME creator
+	                ,(SELECT PH.NAME                                                                                                                
+	                    FROM PHASETEMPLATE PH,                                                                                                    
+	                        PHASELINK PL                                                                                                            
+	                    WHERE PL.IDA3A5 = A.IDA3A2STATE                                                                                        
+	                    AND PL.IDA3B5 = PH.IDA2A2                                                                                            
+	                    AND PH.PHASESTATE = A.STATESTATE) state
+	                FROM KETDrawingDistRequest A,
+	                    WTDocumentMaster B,
+	                    WTUser C,
+	                    People D
+	                WHERE A.IDA3MASTERREFERENCE = B.IDA2A2
+	                AND A.IDA3D2ITERATIONINFO = C.IDA2A2
+	                AND D.IDA3B4 = C.IDA2A2
+                    AND SUBSTR(B.WTDOCUMENTNUMBER,1,1) = 'D'
+                    AND A.BACKGROUNDYN IS NULL
+	                ]]>
+	                <!-- 
+	                <isNotEmpty property="distType" prepend="AND">
+	                    A.DISTTYPE= #{distType}
+	                </isNotEmpty>
+	                <isNotEmpty property="distReqNumber" prepend="AND">
+	                    B.WTDOCUMENTNUMBER= #{distReqNumber}
+	                </isNotEmpty>
+	                <isNotEmpty property="title" prepend="AND">
+	                    A.TITLE= #{title}
+	                </isNotEmpty>
+	                 -->
+	                <if test="creatorId != null and creatorId != ''">
+                    ${creatorId}
+                    </if> 
+	                <if test="distSubcontractor != null and distSubcontractor != ''">
+			        AND ${distSubcontractor}
+			        </if> 
+	                <if test="distType != null and distType != ''">
+	                AND ${distType}
+	                </if>
+	                <if test="distReqNumber != null and distReqNumber != ''">
+                     AND ${distReqNumber}
+                    </if>
+                    <if test="title != null and title != ''">
+                    AND ${title}
+                    </if>
+                    <if test="creator != null and creator != ''">
+                    AND ${creator}
+                    </if>
+                    <if test="createStartDate != null and createStartDate != ''">
+                    <![CDATA[
+                    AND TO_CHAR(A.CREATESTAMPA2,'yyyy-mm-dd') >= #{createStartDate}
+                    ]]>
+                    </if>
+                    <if test="createEndDate != null and createEndDate != ''">
+                    <![CDATA[
+                    AND TO_CHAR(A.CREATESTAMPA2,'yyyy-mm-dd') <= #{createEndDate}
+                    ]]>
+                    </if>
+	                <if test="drawingDistEoArray != null and drawingDistEoArray != ''">
+	                AND (EXISTS (SELECT 1
+	                            FROM KETDRAWINGDISTPRODEOLINK DISTEOLINK , KETProdChangeOrder ECO
+	                            WHERE DISTEOLINK.IDA3A5 = ECO.IDA2A2
+	                            AND DISTEOLINK.IDA3B5 = A.IDA2A2
+	                            AND ${drawingDistEoArray} )
+	                OR EXISTS (SELECT 1
+	                            FROM KETDRAWINGDISTMOLDEOLINK DISTEOLINK , KETMOLDChangeOrder ECO
+	                            WHERE DISTEOLINK.IDA3A5 = ECO.IDA2A2
+	                            AND DISTEOLINK.IDA3B5 = A.IDA2A2
+	                            AND ${drawingDistEoArray} ))
+	                </if>
+                    <if test="drawingName != null and drawingName != ''">
+                    AND EXISTS (SELECT 1 
+                                FROM 
+		                            EPMDOCUMENTMASTER EM
+		                            ,EPMDOCUMENT EPM 
+		                            ,KETDRAWINGDISTEPMLINK DL
+	                            WHERE 1=1
+	                            AND EM.IDA2A2 = EPM.IDA3MASTERREFERENCE
+	                            AND DL.IDA3A5 = EPM.IDA2A2
+	                            AND DL.IDA3B5 = A.IDA2A2
+	                            AND ${drawingName} )
+                    </if>
+                     <if test="drawingNo != null and drawingNo != ''">
+                    AND EXISTS (SELECT 1 
+                                FROM 
+                                    EPMDOCUMENTMASTER EM
+                                    ,EPMDOCUMENT EPM 
+                                    ,KETDRAWINGDISTEPMLINK DL
+                                WHERE 1=1
+                                AND EM.IDA2A2 = EPM.IDA3MASTERREFERENCE
+                                AND DL.IDA3A5 = EPM.IDA2A2
+                                AND DL.IDA3B5 = A.IDA2A2
+                                AND ${drawingNo} )
+                    </if>
+                    <if test="documentName != null and documentName != ''">
+	                AND (EXISTS (SELECT 1                                 
+	                          FROM                                                                                     
+	                              KETPROJECTDOCUMENT      KPD,                                                           
+	                              KETDocumentCategoryLink KDCL,                                                           
+	                              KETDOCUMENTCATEGORY     KDC,                                                           
+	                              PHASELINK               PL,                                                           
+	                              PHASETEMPLATE           PT,                                                           
+	                              PEOPLE                  P,                                                           
+	                              WTDocumentMaster        WDM,                                                           
+	                              NUMBERCODEVALUE         NCV                                                          
+	                         WHERE KPD.LATESTITERATIONINFO = 1                                                           
+	                           AND KPD.IDA2A2 IN (SELECT IDA3A5 FROM KETDRAWINGDISTDOCLINK                               
+	                                            WHERE INSTR(CLASSNAMEKEYROLEAOBJECTREF, 'KETProjectDocument') != 0     
+	                                            AND  IDA3B5 = A.IDA2A2)                           
+	                           AND KPD.IDA2A2              = KDCL.IDA3B5                                                    
+	                           AND KDCL.IDA3A5              = KDC.IDA2A2                                                    
+	                           AND KPD.IDA3A2STATE         = PL.IDA3A5                                                    
+	                           AND PL.IDA3B5              = PT.IDA2A2                                                    
+	                           AND PT.PHASESTATE          = KPD.STATESTATE                                                
+	                           AND KPD.IDA3B2ITERATIONINFO = P.IDA3B4                                                    
+	                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2                                                    
+	                           AND KDC.CATEGORYCODE        =  NCV.CODE                                                   
+	                           AND NCV.LANG              =  'ko'                                                       
+	                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )                                                  
+	                           AND ( KPD.STATESTATE = 'APPROVED' ) 
+	                           AND ${documentName})
+	                OR EXISTS (SELECT 1
+	                          FROM KETTechnicalDOCUMENT KPD     
+	                              ,KETDRAWINGDISTDOCLINK  DDC 
+	                              ,WTDocumentMaster WDM 
+	                         WHERE LATESTITERATIONINFO = 1    
+	                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )          
+	                           AND KPD.IDA2A2 = DDC.IDA3A5    
+	                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2  
+	                           AND DDC.IDA3B5 = A.IDA2A2
+	                           AND ${documentName}))
+	                </if>
+	                <if test="documentNo != null and documentNo != ''">
+	                AND (EXISTS (SELECT 1                                 
+	                          FROM                                                                                     
+	                              KETPROJECTDOCUMENT      KPD,                                                           
+	                              KETDocumentCategoryLink KDCL,                                                           
+	                              KETDOCUMENTCATEGORY     KDC,                                                           
+	                              PHASELINK               PL,                                                           
+	                              PHASETEMPLATE           PT,                                                           
+	                              PEOPLE                  P,                                                           
+	                              WTDocumentMaster        WDM,                                                           
+	                              NUMBERCODEVALUE         NCV                                                          
+	                         WHERE KPD.LATESTITERATIONINFO = 1                                                           
+	                           AND KPD.IDA2A2 IN (SELECT IDA3A5 FROM KETDRAWINGDISTDOCLINK                               
+	                                            WHERE INSTR(CLASSNAMEKEYROLEAOBJECTREF, 'KETProjectDocument') != 0     
+	                                            AND  IDA3B5 = A.IDA2A2)                           
+	                           AND KPD.IDA2A2              = KDCL.IDA3B5                                                    
+	                           AND KDCL.IDA3A5              = KDC.IDA2A2                                                    
+	                           AND KPD.IDA3A2STATE         = PL.IDA3A5                                                    
+	                           AND PL.IDA3B5              = PT.IDA2A2                                                    
+	                           AND PT.PHASESTATE          = KPD.STATESTATE                                                
+	                           AND KPD.IDA3B2ITERATIONINFO = P.IDA3B4                                                    
+	                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2                                                    
+	                           AND KDC.CATEGORYCODE        =  NCV.CODE                                                   
+	                           AND NCV.LANG              =  'ko'                                                       
+	                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )                                                  
+	                           AND ( KPD.STATESTATE = 'APPROVED' ) 
+	                           AND ${documentNo})
+	                OR EXISTS (SELECT 1
+	                          FROM KETTechnicalDOCUMENT KPD     
+	                              ,KETDRAWINGDISTDOCLINK  DDC 
+	                              ,WTDocumentMaster WDM 
+	                         WHERE LATESTITERATIONINFO = 1    
+	                           AND ( KPD.DIVISIONCODE in ('ER', 'CA') )          
+	                           AND KPD.IDA2A2 = DDC.IDA3A5    
+	                           AND KPD.IDA3MASTERREFERENCE = WDM.IDA2A2  
+	                           AND DDC.IDA3B5 = A.IDA2A2
+	                           AND ${documentNo}))
+	                </if>
+                    <if test="distDeptName != null and distDeptName != ''">
+                    AND EXISTS (SELECT 1
+                               FROM KETDrawingDistDept KDDD
+                               WHERE KDDD.IDA3A3 = A.IDA2A2
+                               AND ${distDeptName})
+                    </if>
+                  )T 
+	              <if test="sortName != null and sortName != ''">
+		              <if test="sortName == 'thePersistInfo.createStamp'">
+                        ORDER BY createStamp ${sortType}
+		              </if>
+		              <if test="sortName != 'thePersistInfo.createStamp'">
+                        ORDER BY ${sortName} ${sortType}
+	                  </if>
+                  </if>
+	              ) TT)
+	              <![CDATA[
+	     WHERE rnum >= #{offSet} AND rnum < #{limit} 
+       ]]>    
+    </select>
+  
+</mapper>

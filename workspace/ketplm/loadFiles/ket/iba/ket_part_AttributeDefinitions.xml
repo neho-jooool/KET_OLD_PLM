@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE NmLoader SYSTEM "standardX05.dtd">
+
+<NmLoader>
+
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>PartAttributes</csvname>
+		<csvhierarchyDisplayName/>
+		<csvorganizerPaths/>
+		<csvdefinitionPaths/>
+		<csvdisplay_name/>
+		<csvdescription/>
+		<csvdata_type>org</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier> </csvlogicalIdentifier>
+	</csvAttrDefinizer>
+
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>PartType</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>부품유형<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>부품유형<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>제품, 금형 부품유형 구분<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>PartType</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>BOMFlag</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>신규부품구분<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>신규부품구분<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>신규부품 여부를 구분<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>BOMFlag</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>IsDeleted</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>부품삭제구분<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>부품삭제구분<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>ERP에서 삭제표시된 부품을 관리하는 속성<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>IsDeleted</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>PartGroup</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>자재그룹내역<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>자재그룹내역<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>자재그룹내역<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>PartGroup</csvlogicalIdentifier>
+	</csvAttrDefinizer>	
+	
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>PartWeight</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>순중량<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>순중량<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>순중량<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>PartWeight</csvlogicalIdentifier>
+	</csvAttrDefinizer>		
+	
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>WeightUnit</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>중량단위<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>중량단위<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>중량단위<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>WeightUnit</csvlogicalIdentifier>
+	</csvAttrDefinizer>		
+	
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>IsYazaki</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>YAZAKI 여부<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>YAZAKI 여부<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>YAZAKI 여부<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>IsYazaki</csvlogicalIdentifier>
+	</csvAttrDefinizer>		
+	
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>YazakiNo</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>YAZAKI 제번<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>PartAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>YAZAKI 제번<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>YAZAKI 제번<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>YazakiNo</csvlogicalIdentifier>
+	</csvAttrDefinizer>		
+
+</NmLoader>

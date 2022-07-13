@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.eclipse.wst.jsdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.wst.jsdt.core.compiler.problem.finallyBlockNotCompletingNormally=ignore
+org.eclipse.wst.jsdt.core.compiler.problem.noEffectAssignment=ignore
+org.eclipse.wst.jsdt.core.compiler.problem.optionalSemicolon=ignore
+org.eclipse.wst.jsdt.core.compiler.problem.uninitializedLocalVariable=ignore
+org.eclipse.wst.jsdt.core.compiler.problem.unusedLocal=ignore
+semanticValidation=enabled

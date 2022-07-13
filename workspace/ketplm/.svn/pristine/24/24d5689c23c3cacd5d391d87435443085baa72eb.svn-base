@@ -1,0 +1,34 @@
+##########################
+# Develop DB Server      #
+##########################
+
+driver=net.sf.log4jdbc.DriverSpy
+url=jdbc:log4jdbc:oracle:thin:@192.168.1.113:1521:wind
+#url=jdbc:log4jdbc:oracle:thin:@localhost:1521:wind
+username=wcadmin
+password=wcadmin
+maxActive=10
+
+#rehearsal Server Only Test
+solr.server.url=http://plm.ket.com/plm-Solr/wblib
+
+
+################################
+# rehearsal DB Server Setting  #
+################################
+
+#driver=oracle.jdbc.OracleDriver
+#url=jdbc:oracle:thin:@192.168.1.111:1521:wind
+#username=wcadmin
+#password=wcadmin
+#solr.server.url=http://plm.ket.com/plm-Solr/wblib
+
+##########################
+# Real DB Server Setting #
+##########################
+
+#driver=oracle.jdbc.OracleDriver
+#url=jdbc:oracle:thin:@192.168.1.111:1521:wind
+#username=wcadmin
+#password=wcadmin
+#solr.server.url=http://plm.ket.com/plm-Solr/wblib

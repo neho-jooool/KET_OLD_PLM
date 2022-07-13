@@ -1,0 +1,33 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+DEV_REVIEW_STAGE.value=\u5f00\u53d1\u68c0\u8ba8\u9636\u6bb5
+DEV_REVIEW_STAGE.order=10
+DEV_REVIEW_STAGE.selectable=true
+
+DEVELOPMENT_STAGE.value=\u5f00\u53d1\u9636\u6bb5
+DEVELOPMENT_STAGE.order=20
+DEVELOPMENT_STAGE.selectable=true
+
+PRODUCTION_STAGE.value=\u91cf\u4ea7\u9636\u6bb5
+PRODUCTION_STAGE.order=30
+PRODUCTION_STAGE.selectable=true

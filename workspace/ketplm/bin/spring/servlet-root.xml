@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+		
+	<!-- annotation 설정 -->
+	<context:component-scan base-package="ext.ket" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/> 
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/> 		
+	</context:component-scan>
+
+	<!-- Tiles 설정 -->
+	<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="order" value="1"></property>
+    	<property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView" />
+	</bean>
+ 
+	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+    	<property name="definitions">
+        	<list>
+        		<value>classpath:/tiles/shared-tiles.xml</value>   		
+        	</list>
+    	</property>
+	</bean>
+	
+	<!--  Message 설정 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">	
+		<property name="defaultEncoding" value="UTF-8"/>
+		<property name="basenames">
+			<list>
+				<value>classpath:/message/shared-message</value>
+			</list>
+		</property>
+		<property name="cacheSeconds" value="0"/>
+	</bean>
+	
+	<!-- multipart resolver -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+       <!--  <property name="maxUploadSize">
+            <value>10000000</value>//100MB
+        </property> -->
+    </bean> 		
+</beans>

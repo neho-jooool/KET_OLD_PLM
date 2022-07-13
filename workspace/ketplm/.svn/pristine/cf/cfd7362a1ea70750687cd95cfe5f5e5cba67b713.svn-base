@@ -1,0 +1,36 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()
+# <key>.order=					getOrder()
+# <key>.selectable=				isSelectable()
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=                ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.argComment<n>=          ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.constant=               ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.customizable=           ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.deprecated=             ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+
+# Entry Contents
+IMPROVE1.value=\u5f62\u72b6\u53d8\u5316/\u94a2\u7b4b\u521a\u5ea6
+IMPROVE1.shortDescription=\u5f62\u72b6\u53d8\u5316/\u94a2\u7b4b\u521a\u5ea6
+IMPROVE1.order=1
+
+IMPROVE2.value=\u914d\u7f6e\u53d8\u66f4
+IMPROVE2.shortDescription=\u914d\u7f6e\u53d8\u66f4
+IMPROVE2.order=2
+
+IMPROVE3.value=\u5176\u4ed6\u89c4\u683c
+IMPROVE3.shortDescription=\u5176\u4ed6\u89c4\u683c
+IMPROVE3.order=3
+
+IMPROVE4.value=\u5176\u5b83
+IMPROVE4.shortDescription=\u5176\u5b83
+IMPROVE4.order=4

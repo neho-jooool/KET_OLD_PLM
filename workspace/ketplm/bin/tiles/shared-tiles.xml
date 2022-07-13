@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="main" template="/extcore/jsp/main/main.jsp"></definition>
+	<definition name="/ptc1/error" template="/extcore/jsp/shared/exception/error.jsp"></definition>
+
+	<definition name="base.excel"
+		template="/extcore/jsp/shared/layout/layoutExcel.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<definition name="excel:*/*" extends="base.excel">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}.jsp" />
+	</definition>
+
+	<definition name="base.layout" template="/extcore/jsp/shared/layout/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<definition name="popup.layout"
+		template="/extcore/jsp/shared/layout/layoutPopup.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+    <definition name="noExtends:*/*/*" template="/extcore/jsp/{1}/{2}/{3}.jsp" />
+    
+    <definition name="noExtends:*/*" template="/extcore/jsp/{1}/{2}.jsp" />
+
+    <definition name="noExtends:*" template="/extcore/jsp/{1}.jsp" />
+
+	<definition name="*/*/*Form" extends="popup.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}/{3}Form.jsp" />
+	</definition>
+
+	<definition name="*/*Form" extends="popup.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}Form.jsp" />
+	</definition>
+
+	<definition name="*Form" extends="popup.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}Form.jsp" />
+	</definition>
+
+	<definition name="*/*/*Popup" extends="popup.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}/{3}Popup.jsp" />
+	</definition>
+
+	<definition name="*/*Popup" extends="popup.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}Popup.jsp" />
+	</definition>
+
+	<definition name="*Popup" extends="popup.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}Popup.jsp" />
+	</definition>
+
+	<definition name="*/*/*" extends="base.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}/{3}.jsp" />
+	</definition>
+
+	<definition name="*/*" extends="base.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}/{2}.jsp" />
+	</definition>
+
+	<definition name="*" extends="base.layout">
+		<put-attribute name="body" value="/extcore/jsp/{1}.jsp" />
+	</definition>
+
+</tiles-definitions>

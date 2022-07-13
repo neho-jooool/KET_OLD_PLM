@@ -1,0 +1,1221 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+<NmLoader>
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Business Administrators</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Business Administrators</csvgroupName>
+    <csvuserName>wcadmin</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Business Administrators</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Business Administrators</csvgroupName>
+    <csvuserName>dhyoon</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>공통_임원</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>공통_임원</csvgroupName>
+    <csvuserName>wcadmin</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_임원</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_임원</csvgroupName>
+    <csvuserName>wcadmin</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_임원</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_임원</csvgroupName>
+    <csvuserName>wcadmin</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>go</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>thuban</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>pridesss</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>sung1052a</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>yosnri</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>goldenwings</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>haseung86</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>esshin</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>icarus</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>hsjung</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>hem</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>cyj5541</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>leepriest</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>ggaimi1016</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>ost</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>lyk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>dhyoon</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>jbhong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>leejh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>romess79</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>ankihwan</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>rd2elec</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>dracos7</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>rushall</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>hhcho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>khpark</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>leesw</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>narsys3</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>k0424</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>kjh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>kdkim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>kmk805</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>ysg</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>jhs</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>bong1116</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>pyh92</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>kms</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>bis</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>lcg</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부</csvgroupName>
+    <csvuserName>parkduyang</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvuserName>go</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvuserName>thuban</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvuserName>pridesss</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvuserName>sung1052a</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형설계</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>yosnri</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>goldenwings</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>haseung86</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>esshin</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>icarus</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>hsjung</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>hem</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>cyj5541</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>leepriest</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>ggaimi1016</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>ost</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>lyk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_제품설계</csvgroupName>
+    <csvuserName>dhyoon</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_영업</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_영업</csvgroupName>
+    <csvuserName>hhcho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_영업</csvgroupName>
+    <csvuserName>khpark</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_영업</csvgroupName>
+    <csvuserName>leesw</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvuserName>leejh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvuserName>romess79</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvuserName>lyk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_기획</csvgroupName>
+    <csvuserName>dhyoon</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_품질</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_품질</csvgroupName>
+    <csvuserName>pyh92</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_품질</csvgroupName>
+    <csvuserName>kms</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_품질</csvgroupName>
+    <csvuserName>bis</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_품질</csvgroupName>
+    <csvuserName>lcg</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_품질</csvgroupName>
+    <csvuserName>parkduyang</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_생산</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_생산</csvgroupName>
+    <csvuserName>ysg</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_생산</csvgroupName>
+    <csvuserName>jhs</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_생산</csvgroupName>
+    <csvuserName>bong1116</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_구매</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_구매</csvgroupName>
+    <csvuserName>sjs</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_구매</csvgroupName>
+    <csvuserName>kbd</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_구매</csvgroupName>
+    <csvuserName>ktm</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형부품</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형부품</csvgroupName>
+    <csvuserName>ankihwan</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형부품</csvgroupName>
+    <csvuserName>rd2elec</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형부품</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차사업부_금형부품</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>bizz</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>1004joc</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>csh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>jmpark</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>thebluest</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>pbs</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>shkim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>yjcho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>yhum</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>chul07</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>bccho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>yscho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>kcm0524</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>kcjeong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>yhkim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>ksk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>nslee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>chk0313</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>chaejh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>qakjc</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>mk2001</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>deshutz</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>mksong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부</csvgroupName>
+    <csvuserName>hskim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_금형설계</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_금형설계</csvgroupName>
+    <csvuserName>bizz</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_금형설계</csvgroupName>
+    <csvuserName>1004joc</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_금형설계</csvgroupName>
+    <csvuserName>csh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>jmpark</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>thebluest</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>pbs</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>shkim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>yjcho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>yhum</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>chul07</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>bccho</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_제품설계</csvgroupName>
+    <csvuserName>csh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_영업</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_영업</csvgroupName>
+    <csvuserName>kcjeong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_영업</csvgroupName>
+    <csvuserName>yhkim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_영업</csvgroupName>
+    <csvuserName>ksk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_영업</csvgroupName>
+    <csvuserName>nslee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_기획</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_기획</csvgroupName>
+    <csvuserName>mksong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_기획</csvgroupName>
+    <csvuserName>hskim</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_기획</csvgroupName>
+    <csvuserName>csh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>지원조직</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>지원조직</csvgroupName>
+    <csvuserName>sjs</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>지원조직</csvgroupName>
+    <csvuserName>kbd</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>지원조직</csvgroupName>
+    <csvuserName>ktm</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>지원조직</csvgroupName>
+    <csvuserName>chr</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try담당</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try담당</csvgroupName>
+    <csvuserName>dracos7</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try담당</csvgroupName>
+    <csvuserName>rushall</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try담당</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try담당</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try제작관리</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try제작관리</csvgroupName>
+    <csvuserName>dracos7</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try제작관리</csvgroupName>
+    <csvuserName>rushall</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try제작관리</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>Try제작관리</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvdescription>f</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvuserName>leejh</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvuserName>romess79</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvuserName>lyk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvuserName>junlee</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvuserName>lsy</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>자동차PMO</csvgroupName>
+    <csvuserName>dhyoon</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+</NmLoader>

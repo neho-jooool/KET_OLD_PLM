@@ -1,0 +1,618 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "content"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"41EB863302DD"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "E3PSContentService"
+	    quid       	"40B6C6DF0218"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "attach"
+		    quid       	"40B6CC4302BC"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6CFA5004B"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "files"
+			    quid       	"40B6CC440372"
+			    type       	"java.util.Vector"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"40F22A5601C4"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40F22A7402CB"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "files"
+			    quid       	"40F22A740343"
+			    type       	"java.util.Vector")
+			(object Parameter "descs"
+			    quid       	"41EE1E7D003E"
+			    type       	"java.util.Vector"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"40B6CC350276"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6CF9A008B"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "file"
+			    quid       	"40B6CC36032C"
+			    type       	"e3ps.common.content.uploader.WBFile")
+			(object Parameter "desc"
+			    quid       	"41EE1EC301E3"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"40B6D02002FA"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6D04600CE"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "file"
+			    quid       	"40B6D046011E"
+			    type       	"e3ps.common.content.uploader.WBFile")
+			(object Parameter "desc"
+			    quid       	"41EE1EC00148"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "isPrimary"
+			    quid       	"41EF2013023A"
+			    type       	"boolean"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"40B6CFFC017C"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6D0120097"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "data"
+			    quid       	"40B6D01200DE"
+			    type       	"ApplicationData"
+			    quidu      	"3486C8950290"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"40B6D04600B0"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6D063018E"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "data"
+			    quid       	"40B6D06301DE"
+			    type       	"ApplicationData"
+			    quidu      	"3486C8950290")
+			(object Parameter "isPrimary"
+			    quid       	"41EF20260238"
+			    type       	"boolean"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"435C4F9100DA"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"435C4FC701AA"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "file"
+			    quid       	"435C4FE601D7"
+			    type       	"File"
+			    quidu      	"3784E56B01D9")
+			(object Parameter "desc"
+			    quid       	"435C500201AF"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "contentRoleType"
+			    quid       	"435C500D0327"
+			    type       	"ContentRoleType"
+			    quidu      	"36474F370222"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attach"
+		    quid       	"435C503A0105"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"435C503A0106"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "file"
+			    quid       	"435C503A0107"
+			    type       	"e3ps.common.content.uploader.WBFile")
+			(object Parameter "desc"
+			    quid       	"435C503A0108"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "contentRoleType"
+			    quid       	"435C503A0109"
+			    type       	"ContentRoleType"
+			    quidu      	"36474F370222"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "attachURL"
+		    quid       	"435C50770081"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"435C50770082"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "url"
+			    quid       	"435C50770083"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "desc"
+			    quid       	"435C50770084"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "contentRoleType"
+			    quid       	"435C50770085"
+			    type       	"ContentRoleType"
+			    quidu      	"36474F370222"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "replace"
+		    quid       	"40B6D2120347"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6D235015C"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "file"
+			    quid       	"40B6D23501B6"
+			    type       	"e3ps.common.content.uploader.WBFile")
+			(object Parameter "desc"
+			    quid       	"41EE1F1E014D"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "replaceItem"
+			    quid       	"41EF22A602C4"
+			    type       	"ContentItem"
+			    quidu      	"35006B0F035B"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "replace"
+		    quid       	"435C50B7023B"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"435C50B7023C"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "file"
+			    quid       	"435C50B7023D"
+			    type       	"File"
+			    quidu      	"3784E56B01D9")
+			(object Parameter "desc"
+			    quid       	"435C50B7023E"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "replaceItem"
+			    quid       	"435C50B7023F"
+			    type       	"ContentItem"
+			    quidu      	"35006B0F035B"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "replace"
+		    quid       	"40B6D2F7015B"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6D30C03BE"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "data"
+			    quid       	"40B6D30D003A"
+			    type       	"ApplicationData"
+			    quidu      	"3486C8950290")
+			(object Parameter "replaceItem"
+			    quid       	"41EF22AE0027"
+			    type       	"ContentItem"
+			    quidu      	"35006B0F035B"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "replaceURL"
+		    quid       	"435C50F10325"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"435C50F10326"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "url"
+			    quid       	"435C50F10327"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "desc"
+			    quid       	"435C50F10328"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "contentItem"
+			    quid       	"435C50F10329"
+			    type       	"ContentItem"
+			    quidu      	"35006B0F035B"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "delete"
+		    quid       	"40B6D386019D"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"40B6D3AB002E"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399")
+			(object Parameter "deleteItem"
+			    quid       	"41EF22C9022E"
+			    type       	"ContentItem"
+			    quidu      	"35006B0F035B"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "delete"
+		    quid       	"4107177A0135"
+		    parameters 	(list Parameters
+			(object Parameter "holder"
+			    quid       	"4107178902DB"
+			    type       	"ContentHolder"
+			    quidu      	"348899BF0399"))
+		    result     	"ContentHolder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"348899BF0399")
+		(object Operation "getIconImgTag"
+		    quid       	"435C5129020D"
+		    parameters 	(list Parameters
+			(object Parameter "obj"
+			    quid       	"435C513A02DA"
+			    type       	"WTObject"
+			    quidu      	"34240FF701C2"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")))
+	(object Class "StandardE3PSContentService"
+	    quid       	"40B6C6F2030F"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"40B6C6FD035B"
+		    supplier   	"Logical View::e3ps::common::content::E3PSContentService"
+		    quidu      	"40B6C6DF0218")
+		(object Inheritance_Relationship
+		    quid       	"40B6C6FF02FA"
+		    supplier   	"Logical View::wt::services::StandardManager"
+		    quidu      	"342982E402DE"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"41EF61660363"
+		    result     	"void"
+		    exceptions 	"wt.services.ManagerException"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "E3PSContentHelper"
+	    quid       	"40B6C8880395")
+	(object Association "$UNNAMED$0"
+	    quid       	"40B6C8A10305"
+	    roles      	(list role_list
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new E3PSContentServiceFwd()"))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE))
+		    quid       	"40B6C8A200CC"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::common::content::E3PSContentService"
+		    quidu      	"40B6C6DF0218"
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE)
+		(object Role "$UNNAMED$1"
+		    quid       	"40B6C8A200CE"
+		    supplier   	"Logical View::e3ps::common::content::E3PSContentHelper"
+		    quidu      	"40B6C8880395"
+		    is_aggregate 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "00.서비스"
+	    quid       	"41EDB3920126"
+	    title      	"00.서비스"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    ShowOperationSignature 	TRUE
+		    location   	(2509, 130)
+		    font       	(object Font
+			size       	10
+			face       	"굴림"
+			bold       	TRUE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(2287, 92)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	444
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	12632256
+		    quidu      	"342982E402DE"
+		    width      	462
+		    height     	96
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::content::StandardE3PSContentService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1599, 130)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1308, 74)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	582
+			justify    	0
+			label      	"StandardE3PSContentService")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6C6F2030F"
+		    width      	600
+		    height     	136
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40B6C6FF02FA"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(1899, 130)
+			(2277, 130))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::common::content::E3PSContentService" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    ShowOperationSignature 	TRUE
+		    location   	(1595, 792)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(47, 383)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	3096
+			justify    	0
+			label      	"E3PSContentService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@4
+			location   	(47, 333)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	3096
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6C6DF0218"
+		    width      	3114
+		    height     	942
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @5
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40B6C6FD035B"
+		    client     	@2
+		    supplier   	@4
+		    vertices   	(list Points
+			(1598, 198)
+			(1597, 320))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::common::content::E3PSContentHelper" @6
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(546, 130)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(345, 89)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	402
+			justify    	0
+			label      	"E3PSContentHelper")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6C8880395"
+		    width      	420
+		    height     	107
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(740, 251)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40B6C8A10305"
+		    roleview_list 	(list RoleViews
+			(object RoleView "service" @8
+			    Parent_View 	@7
+			    location   	(-1769, -48)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @9
+				Parent_View 	@8
+				location   	(806, 315)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	204
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.698347
+				height     	19
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40B6C8A200CC"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(740, 251)
+				(849, 320))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$1" @10
+			    Parent_View 	@7
+			    location   	(-1769, -48)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40B6C8A200CE"
+			    client     	@7
+			    supplier   	@6
+			    vertices   	(list Points
+				(740, 251)
+				(631, 183))
+			    line_style 	0)))))))

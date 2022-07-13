@@ -1,0 +1,37 @@
+@@DO_NOT_EDIT_WARNING@@
+
+# Delegate specific web app requests to Tomcat by request URL
+
+<IfModule mod_jk.c>
+  JkMount /@@WEB_APP_NAME@@/*.jsp* @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/servlet/* @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/j_security_check @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/*/j_security_check @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/*.jar @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/gwt/servlet/* @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/gwt/*/servlet/* @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/ptc1/* @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/app @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/app/* @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/trustedAuth/* @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/protocolAuth/* @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/wt.properties @@AJP_WORKER_NAME@@
+
+  JkMount /@@WEB_APP_NAME@@/servicecenter/ @@AJP_WORKER_NAME@@
+  JkMount /@@WEB_APP_NAME@@/servicecenter/lib/isomorphic/login/loginSuccessMarker.html @@AJP_WORKER_NAME@@
+
+  # Custom for KET
+  JkMount /@@WEB_APP_NAME@@/ext/* @@AJP_WORKER_NAME@@
+</IfModule>
+
+<IfModule !mod_jk.c>
+<IfModule mod_proxy_ajp.c>
+  ProxyPassMatch ^(/@@WEB_APP_NAME@@/((?i).*\.jsp(.*)|servlet/.*|(.*/)?j_security_check|.*\.jar|gwt(/.*)?/servlet/.*|ptc1/.*|app|app/.*|trustedAuth/.*|protocolAuth/.*|wt\.properties)|servicecenter/|servicecenter/lib/isomorphic/login/loginSuccessMarker\.html)$ balancer://@@AJP_WORKER_NAME@@$1 @@nocanon@@
+</IfModule>
+</IfModule>

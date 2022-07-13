@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Web App Authenticated Resource List-->
+<resources>
+   <resource/>
+   <resource type="protocolAuth">protocolAuth</resource>
+   <resource type="protocolAuth">infoengine/verifyCredentials.html</resource>
+   <resource type="anonymous">servlet/WindchillGW</resource>
+   <resource type="anonymous">servlet/JNLPGeneratorServlet</resource>
+   <resource type="anonymous">servlet/ProwtGW</resource>
+   <resource type="anonymous">servlet/XML4Cognos</resource>
+   <resource type="anonymous">urlmap.properties</resource>
+   <resource type="anonymous">wt.properties</resource>
+   <resource type="anonymous">wtcore/getWtProperties.jsp</resource>
+   <resource type="anonymous">login</resource>
+   <resource type="anonymous">trustedAuth</resource>
+   <resource type="anonymous">wtcore/test.html</resource>
+   <resource type="anonymous">wtcore/test</resource>
+   <resource type="anonymous">wt/jmx/connection/getLocalJmxUrl.jsp</resource>
+   <resource type="anonymous">install/uwgm</resource>
+   <resource type="anonymous">wtcore/images</resource>
+   <resource type="anonymous">netmarkets/images</resource>
+   <resource type="anonymous">servlet/InterSiteJmxProxy</resource>
+   <resource type="anonymous">webserver/apache/error</resource>
+   <resource type="anonymous">netmarkets/customtemplates</resource>
+   <resource type="anonymous">extcore/logincheck.jsp</resource>
+   <resource type="anonymous">extcore/image</resource>
+   <resource type="anonymous">servlet/StampingWS</resource>
+   <resource type="anonymous">netmarkets/ketemplate</resource>
+   <resource type="anonymous">jsp/SSOLogin.jsp</resource>
+   <resource type="anonymous">extcore/font</resource>
+   <resource type="anonymous">portal/images</resource>
+   <resource>e3ps</resource>
+   <resource>jsp</resource>
+   <resource>portal</resource>
+   <resource>servlet/e3ps/</resource>
+   <resource>servlet/e3ps.common.content.servlet</resource>
+   <resource>servlet/e3ps.project.servlet</resource>
+   <resource>servlet/e3ps.project.moldPart.servlet</resource>
+   <resource>servlet/e3ps.project.material.servlet</resource>
+   <resource>servlet/e3ps.wfm.servlet</resource>
+   <resource>servlet/e3ps.groupware.board.servlet</resource>
+</resources>

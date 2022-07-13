@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample">
+	 
+	<select id="list" resultType="ext.ket.sample.entity.SampleDTO">
+        SELECT * FROM WTUSER
+    </select>
+    
+	<select id="pagingList" resultType="ext.ket.sample.entity.SampleDTO">
+	   <![CDATA[
+	    SELECT * 
+	      FROM (
+	        SELECT A.*, rownum rnum 
+	          FROM WTUSER A
+	          )
+	     WHERE rnum >= #{offSet} AND rnum < #{limit} 
+       ]]>    
+    </select>
+ 
+    <insert id="insert" parameterType="ext.ket.sample.entity.SampleDTO" >
+        INSERT INTO WTUSER values(#{name},#{email},#{phone})
+    </insert> 
+ 
+	<delete id="delete" parameterType="ext.ket.sample.entity.SampleDTO">
+        DELETE WTUSER WHERE(name=#{name})
+    </delete> 
+ 
+ 
+    <select id="sampleRequsetPagingList" resultType="ext.ket.sample.entity.SampleRequestDTO">
+        SELECT *
+        FROM
+        (    
+        SELECT
+            ROWNUM rnum 
+            ,T.* 
+        FROM (
+            SELECT
+            A.CLASSNAMEA2A2||':'||A.IDA2A2 AS oid
+            ,A.REQUESTNO requestNo
+            ,A.REQUESTTITLE requestTitle
+            ,A.PURPOSE purpose
+            ,A.CUSTOMERNAME customerName
+            ,A.CUSTOMERCODE customerCode
+            ,A.CARTYPECODE carTypeCode
+            ,A.CARTYPENAME carTypeName
+            ,A.CUSTOMERCONTRACTOR customerContractor
+            ,A.SAMPLEREQUESTSTATENAME sampleRequestStateName
+            ,A.SAMPLEREQUESTSTATECODE sampleRequestStateCode
+            ,TO_CHAR(A.REQUESTDATE, 'YYYY-MM-DD') requestDate
+            ,D.NAME createUserName
+            ,(SELECT TO_CHAR(DISPENSATIONDATE, 'YYYY-MM-DD')
+             FROM KETSamplePart KSP, KETSamplePartLink KSL
+             WHERE KSP.IDA2A2 = KSL.IDA3B5
+             AND KSL.IDA3A5 = A.IDA2A2
+             AND ROWNUM = 1) dispensationDate
+            ,(SELECT PE.NAME
+             FROM WTUser WTU, People PE
+             WHERE F.IDA3B8 = WTU.IDA2A2
+             AND PE.IDA3B4 = WTU.IDA2A2
+             AND ROWNUM = 1)  pmUserName
+            ,wtm.Name requestPartName
+            ,wt.PTC_STR_4TYPEINFOWTPART
+            ,CASE WHEN wt.PTC_STR_4TYPEINFOWTPART = 'PC004' THEN '양산'  
+             WHEN nm.name IS NOT NULL  THEN nm.name
+             WHEN wt.PTC_STR_4TYPEINFOWTPART = 'PC003' THEN '개발'
+             ELSE ''
+             END developeStageName
+            ,wtm.wtPartNumber partNumber
+            ,F.REQUESTCOUNT requestCount
+        FROM KETSampleRequest A,
+            WTUser C,
+            People D,
+            department E,
+            KETSamplePart F,
+            KETSAMPLEPARTLINK G,
+            WTPART wt, 
+            WTPARTMASTER wtm,
+            KETPARTPROJECTLINK partlink,
+            e3psprojectmaster pjtm,
+            (select * from productproject where LASTEST = 1 and CHECKOUTSTATE != 'c/o')  pjt,
+            numbercode nm
+        WHERE 1=1
+        AND A.idA3A7 = C.IDA2A2
+        AND D.IDA3B4 = C.IDA2A2
+        AND E.ida2a2 = D.IDA3C4
+        AND G.IDA3A5 = A.IDA2A2
+        AND G.IDA3B5 = F.IDA2A2
+        AND wtm.ida2a2 = wt.IDA3MASTERREFERENCE
+        AND wt.IDA2A2 = F.IDA3A8
+        and wt.BRANCHIDITERATIONINFO = partlink.branchida3b5(+)
+        and partlink.ida3a5 = pjtm.ida2a2(+)
+        and pjtm.ida2a2 = pjt.ida3b8(+)
+        and pjt.IDA3F9 = nm.ida2a2(+)
+		<if test="carTypeName != null and carTypeName != ''">
+          AND ${carTypeName}
+        </if>
+        <if test="customerName != null and customerName != ''">
+          AND ${customerName}
+        </if>
+        <if test="requestTitle != null and requestTitle != ''">
+          AND ${requestTitle}
+        </if>
+        <if test="requestNo != null and requestNo != ''">
+          AND ${requestNo}
+        </if>
+		<if test="sampleRequestStateName != null and sampleRequestStateName != ''">
+          AND ${sampleRequestStateName}
+        </if>
+		<if test="customerContractor != null and customerContractor != ''">
+          AND ${customerContractor}
+        </if>
+		<if test="createUserDeptName != null and createUserDeptName != ''">
+          AND ${createUserDeptName}
+        </if>
+        <if test="createUserName != null and createUserName != ''">
+          AND ${createUserName}
+        </if>
+		<if test="(requstPartName != null and requstPartName != '') or (pmUserName != null and pmUserName != '') or (checkDevelCode != 'null' and checkDevelCode != '[]') or (pmUserDeptName != null and pmUserDeptName != '')">
+        AND F.IDA2A2 in 
+        (SELECT KSP.IDA2A2
+		FROM KETSamplePart KSP, KETSamplePartLink KSL, WTPART WTP, WTPARTMASTER WTPM
+		WHERE KSP.IDA2A2 = KSL.IDA3B5
+		AND WTP.IDA3MASTERREFERENCE = WTPM.IDA2A2
+		AND KSP.IDA3A8 = WTP.IDA2A2
+        <if test="requstPartName != null and requstPartName != ''">
+        AND ${requstPartName}
+        </if>
+        <if test="pmUserName != null and pmUserName != ''">
+        AND EXISTS
+            (SELECT 1
+            FROM People peo, department dpart
+            WHERE peo.IDA3B4 = KSP.IDA3B8
+            AND dpart.ida2a2 = peo.IDA3C4
+            AND ${pmUserName}) 
+        </if>
+        <!-- <if test="checkDevelCode != 'null' and checkDevelCode != '[]'">
+        AND EXISTS
+            (SELECT 1
+            FROM WTPART
+            WHERE IDA2A2 = KSP.IDA3A8
+            AND PTC_STR_4TYPEINFOWTPART IN 
+                <foreach item="developeStageCode" index="index" collection="developeStageCodeArr" open="(" separator="," close=")">
+                    #{developeStageCode}
+                </foreach>
+            )
+        </if> -->
+        <if test="pmUserDeptName != null and pmUserDeptName != ''">
+        AND EXISTS
+            (SELECT 1
+            FROM People peo, department dpart
+            WHERE peo.IDA3B4 = KSP.IDA3B8
+            AND dpart.ida2a2 = peo.IDA3C4
+            AND ${pmUserDeptName}) 
+        </if>
+        )
+        </if>
+        <if test="sortName != null and sortName != ''">
+        ORDER BY ${sortName} ${sortType}
+        </if>
+       )T)
+       <![CDATA[
+       WHERE rnum >= #{offSet} AND rnum < #{limit} 
+       ]]>
+       <if test="checkDevelCode != 'null' and checkDevelCode != '[]'">
+        AND developeStageName in 
+                <foreach item="developeStageCode" index="index" collection="developeStageCodeArr" open="(" separator="," close=")">
+                    #{developeStageCode}
+                </foreach>
+        </if>
+    </select>
+    
+    <select id="sampleRequsetTotalPageCount" resultType="java.lang.String">
+        SELECT 
+		      A.IDA2A2
+		     ,CASE WHEN wt.PTC_STR_4TYPEINFOWTPART = 'PC004' THEN '양산'  
+              WHEN nm.name IS NOT NULL  THEN nm.name
+              WHEN wt.PTC_STR_4TYPEINFOWTPART = 'PC003' THEN '개발'
+              ELSE ''
+              END developeStageName
+         FROM KETSampleRequest A,
+              WTUser C,
+              People D,
+              department E,
+              KETSamplePart F,
+              KETSAMPLEPARTLINK G,
+              WTPART wt, 
+              WTPARTMASTER wtm,
+              KETPARTPROJECTLINK partlink,
+              e3psprojectmaster pjtm,
+              (select * from productproject where LASTEST = 1 and CHECKOUTSTATE != 'c/o')  pjt,
+              numbercode nm
+        WHERE 1=1
+        AND A.idA3A7 = C.IDA2A2
+        AND D.IDA3B4 = C.IDA2A2
+        AND E.ida2a2 = D.IDA3C4
+        AND G.IDA3A5 = A.IDA2A2
+        AND G.IDA3B5 = F.IDA2A2
+        AND wtm.ida2a2 = wt.IDA3MASTERREFERENCE
+        AND wt.IDA2A2 = F.IDA3A8
+        and wt.BRANCHIDITERATIONINFO = partlink.branchida3b5(+)
+        and partlink.ida3a5 = pjtm.ida2a2(+)
+        and pjtm.ida2a2 = pjt.ida3b8(+)
+        and pjt.IDA3F9 = nm.ida2a2(+)
+		<if test="carTypeName != null and carTypeName != ''">
+          AND ${carTypeName}
+        </if>
+        <if test="customerName != null and customerName != ''">
+          AND ${customerName}
+        </if>
+        <if test="requestTitle != null and requestTitle != ''">
+          AND ${requestTitle}
+        </if>
+		<if test="requestNo != null and requestNo != ''">
+          AND ${requestNo}
+        </if>
+		<if test="sampleRequestStateName != null and sampleRequestStateName != ''">
+          AND ${sampleRequestStateName}
+        </if>
+        <if test="customerContractor != null and customerContractor != ''">
+          AND ${customerContractor}
+        </if>
+		<if test="createUserDeptName != null and createUserDeptName != ''">
+		  AND ${createUserDeptName}
+		</if>
+		<if test="createUserName != null and createUserName != ''">
+		  AND ${createUserName}
+        </if>
+		<if test="(requstPartName != null and requstPartName != '') or (pmUserName != null and pmUserName != '') or (checkDevelCode != 'null' and checkDevelCode != '[]') or (pmUserDeptName != null and pmUserDeptName != '')">
+        AND F.IDA2A2 in 
+        (SELECT KSP.IDA2A2
+        FROM KETSamplePart KSP, KETSamplePartLink KSL, WTPART WTP, WTPARTMASTER WTPM
+        WHERE KSP.IDA2A2 = KSL.IDA3B5
+        AND WTP.IDA3MASTERREFERENCE = WTPM.IDA2A2
+        AND KSP.IDA3A8 = WTP.IDA2A2
+        <if test="requstPartName != null and requstPartName != ''">
+        AND ${requstPartName}
+        </if>
+        <if test="pmUserName != null and pmUserName != ''">
+        AND EXISTS
+            (SELECT 1
+            FROM People peo, department dpart
+            WHERE peo.IDA3B4 = KSP.IDA3B8
+            AND dpart.ida2a2 = peo.IDA3C4
+            AND ${pmUserName}) 
+        </if>
+        <if test="checkDevelCode != 'null' and checkDevelCode != '[]'">
+        AND developeStageName in 
+                <foreach item="developeStageCode" index="index" collection="developeStageCodeArr" open="(" separator="," close=")">
+                    #{developeStageCode}
+                </foreach>
+<!--         AND EXISTS
+            (SELECT 1
+            FROM WTPART
+            WHERE IDA2A2 = KSP.IDA3A8
+            AND PTC_STR_4TYPEINFOWTPART IN 
+                <foreach item="developeStageCode" index="index" collection="developeStageCodeArr" open="(" separator="," close=")">
+                    #{developeStageCode}
+                </foreach>
+            ) -->
+        </if>
+        <if test="pmUserDeptName != null and pmUserDeptName != ''">
+        AND EXISTS
+            (SELECT 1
+            FROM People peo, department dpart
+            WHERE peo.IDA3B4 = KSP.IDA3B8
+            AND dpart.ida2a2 = peo.IDA3C4
+            AND ${pmUserDeptName}) 
+        </if>
+        )
+        </if>
+    </select>
+</mapper>

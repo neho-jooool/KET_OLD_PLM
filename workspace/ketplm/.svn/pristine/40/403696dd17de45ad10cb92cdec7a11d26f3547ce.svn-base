@@ -1,0 +1,684 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "service"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C739F46033C"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "StandardKETEwsService"
+	    quid       	"4C73B3380167"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C73B38B004E"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4C73B39D02FD"
+		    supplier   	"Logical View::e3ps::ews::service::KETEwsService"
+		    quidu      	"4C73B38F03A9"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4C73B3E2036B"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "KETEwsService"
+	    quid       	"4C73B38F03A9"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "createEarlyWarning"
+		    quid       	"4C7C5A9E0280"
+		    documentation 	"초기유동관리 지정 등록"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C7C5B6402FD"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4C7E144A0177"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarning"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B7694016F")
+		(object Operation "createEarlyWarningTarget"
+		    quid       	"4C8035610109"
+		    documentation 	"초기유동관리 지정 목표 등록"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C8035C0033C"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "ketEarlyWarning"
+			    quid       	"4C8428DF03D8"
+			    type       	"KETEarlyWarning"
+			    quidu      	"4C7B7694016F"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "updateEarlyWarning"
+		    quid       	"4C90951F0280"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C90957800EA"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4C909585000F"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarning"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B7694016F")
+		(object Operation "deleteEarlyWarningTarget"
+		    quid       	"4C909AAC01F4"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C909ADC01F4"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "ketEarlyWarning"
+			    quid       	"4C909AFB036B"
+			    type       	"KETEarlyWarning"
+			    quidu      	"4C7B7694016F"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "reviseEarlyWarning"
+		    quid       	"4CA01D4F0368"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CA01DEA01F1"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CA01E5D023F"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarning"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7B7694016F")
+		(object Operation "deleteEarlyWarning"
+		    quid       	"4CA177A80251"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CA177C600DA"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CA177D7009C"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "createEarlyWarningPlan"
+		    quid       	"4CA42C3A038A"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CA42C750290"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CA42C8C035B"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningPlan"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CA2E9BD006D")
+		(object Operation "updateEarlyWarningPlan"
+		    quid       	"4CA4371D0271"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CA4373C0203"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CA437490222"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningPlan"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CA2E9BD006D")
+		(object Operation "reviseEarlyWarningPlan"
+		    quid       	"4CA4376301B5"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CA437DB00CB"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CA43820032C"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningPlan"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CA2E9BD006D")
+		(object Operation "deleteEarlyWarningPlan"
+		    quid       	"4CA438360271"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CA4384A0128"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CA438600000"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "createEarlyWarningResult"
+		    quid       	"4CB3A48C0399"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CB3A4DA00BB"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CB3A4E8033C"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningResult"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CB2DEAB0369")
+		(object Operation "updateEarlyWarningResult"
+		    quid       	"4CB3A50300EA"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CB3A52502BF"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CB3A5320222"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningResult"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CB2DEAB0369")
+		(object Operation "deleteEarlyWarningResult"
+		    quid       	"4CB3A57B01D4"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CB3A629009C"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CB3A64300AB"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "createEarlyWarningProblem"
+		    quid       	"4CB3C8BF000F"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CB3C8D401D4"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "ketEarlyWarningResult"
+			    quid       	"4CB3C8E2036B"
+			    type       	"KETEarlyWarningResult"
+			    quidu      	"4CB2DEAB0369"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "deleteEarlyWarningProblem"
+		    quid       	"4CB3C913034B"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CB3C9350186"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "ketEarlyWarningResult"
+			    quid       	"4CB3C940001F"
+			    type       	"KETEarlyWarningResult"
+			    quidu      	"4CB2DEAB0369"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "createEarlyWarningEndReq"
+		    quid       	"4CD396C303A9"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD3974600EA"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CD397470213"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningEndReq"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CD38DE300FA")
+		(object Operation "updateEarlyWarningEndReq"
+		    quid       	"4CD396D6009C"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD397F803D8"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CD397F903D8"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningEndReq"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CD38DE300FA")
+		(object Operation "deleteEarlyWarningEndReq"
+		    quid       	"4CD396EA01F4"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD398370167"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CD3983B002E"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "createEarlyWarningEnd"
+		    quid       	"4CD396F603B9"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD39863029F"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CD3986402BF"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningEnd"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CD3905202DE")
+		(object Operation "updateEarlyWarningEnd"
+		    quid       	"4CD39701033C"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD39A170148"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CD39A19009C"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"KETEarlyWarningEnd"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CD3905202DE")
+		(object Operation "deleteEarlyWarningEnd"
+		    quid       	"4CD3970D002E"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4CD39A40005D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "files"
+			    quid       	"4CD39A410177"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "stopEarlyWarning"
+		    quid       	"4D17D92B012C"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D17D95802F1"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETEarlyWarningStep"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CF72F150242")
+		(object Operation "reopenEarlyWarning"
+		    quid       	"4D17D92C0310"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D17D9C3034F"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"KETEarlyWarningStep"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CF72F150242")
+		(object Operation "updatePartner"
+		    quid       	"4D510FD303C8"
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")))
+	(object Class "KETEwsHelper"
+	    quid       	"4C73B3A1006D")
+	(object Association "$UNNAMED$0"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4C73B3BB0213"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C73B3BC0177"
+		    supplier   	"Logical View::e3ps::ews::service::KETEwsHelper"
+		    quidu      	"4C73B3A1006D"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETEwsServiceFwd()")))
+		    quid       	"4C73B3BC0179"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::ews::service::KETEwsService"
+		    quidu      	"4C73B38F03A9"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "EWSService"
+	    quid       	"4C73A05403D8"
+	    title      	"EWSService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(437, 171)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(256, 96)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::service::StandardKETEwsService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(436, 1048)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(189, 967)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	494
+			justify    	0
+			label      	"StandardKETEwsService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B3380167"
+		    width      	512
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73B38B004E"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(436, 954)
+			(436, 258))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::ews::service::KETEwsHelper" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1981, 1045)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1830, 994)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	302
+			justify    	0
+			label      	"KETEwsHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B3A1006D"
+		    width      	320
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::service::KETEwsService" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1241, 1045)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(947, 411)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	588
+			justify    	0
+			label      	"KETEwsService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@5
+			location   	(947, 361)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	588
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B38F03A9"
+		    width      	606
+		    height     	1392
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73B39D02FD"
+		    client     	@2
+		    supplier   	@5
+		    vertices   	(list Points
+			(692, 1046)
+			(937, 1045))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(1682, 1045)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73B3BB0213"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @8
+			    Parent_View 	@7
+			    location   	(446, 527)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73B3BC0177"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(1682, 1045)
+				(1820, 1045))
+			    line_style 	0)
+			(object RoleView "service" @9
+			    Parent_View 	@7
+			    location   	(446, 527)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(1623, 1002)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.435484
+				height     	44
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73B3BC0179"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(1682, 1045)
+				(1544, 1045))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(1558, 1099)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))

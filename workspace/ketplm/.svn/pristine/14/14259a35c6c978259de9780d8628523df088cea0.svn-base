@@ -1,0 +1,85 @@
+ResourceInfo.class=wt.tools.resource.MetadataResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+
+# Entry Contents
+
+Department.value=Department
+
+Department.code.value=Code
+
+Department.name.value=Name
+
+Department.parentReference.value=Parent Reference
+
+Department.people.value=People
+
+Department.sort.value=Sort
+
+DepartmentPeopleLink.value=Department People Link
+
+DepartmentPeopleLink.department.value=Department
+
+DepartmentPeopleLink.people.value=People
+
+People.value=People
+
+People.address.value=Address
+
+People.cellTel.value=Cell Tel
+
+People.department.value=Department
+
+People.departmentReference.value=Department Reference
+
+People.duty.value=Duty
+
+People.dutyCode.value=Duty Code
+
+People.email.value=Email
+
+People.homeTel.value=Home Tel
+
+People.id.value=Id
+
+People.isDisable.value=Is Disable
+
+People.name.value=Name
+
+People.officeTel.value=Office Tel
+
+People.password.value=Password
+
+People.priority.value=Priority
+
+People.proxy.value=Proxy
+
+People.pwChangeDate.value=Pw Change Date
+
+People.sortNum.value=Sort Num
+
+People.user.value=User
+
+People.userReference.value=User Reference
+
+People.warningCount.value=Warning Count
+
+WTUserPeopleLink.value=WTUser People Link
+
+WTUserPeopleLink.people.value=People
+
+WTUserPeopleLink.user.value=User

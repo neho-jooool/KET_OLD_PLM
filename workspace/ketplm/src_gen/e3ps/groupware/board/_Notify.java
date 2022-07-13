@@ -1,0 +1,433 @@
+package e3ps.groupware.board;
+
+@SuppressWarnings({"cast", "deprecation", "unchecked"})
+public abstract class _Notify implements wt.content.ContentHolder, e3ps.common.impl.OwnPersistable, java.io.Externalizable {
+   static final long serialVersionUID = 1;
+
+   static final java.lang.String RESOURCE = "e3ps.groupware.board.boardResource";
+   static final java.lang.String CLASSNAME = Notify.class.getName();
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String TITLE = "title";
+   static int TITLE_UPPER_LIMIT = -1;
+   java.lang.String title;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public java.lang.String getTitle() {
+      return title;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setTitle(java.lang.String title) throws wt.util.WTPropertyVetoException {
+      titleValidate(title);
+      this.title = title;
+   }
+   void titleValidate(java.lang.String title) throws wt.util.WTPropertyVetoException {
+      if (TITLE_UPPER_LIMIT < 1) {
+         try { TITLE_UPPER_LIMIT = (java.lang.Integer) wt.introspection.WTIntrospector.getClassInfo(CLASSNAME).getPropertyDescriptor("title").getValue(wt.introspection.WTIntrospector.UPPER_LIMIT); }
+         catch (wt.introspection.WTIntrospectionException e) { TITLE_UPPER_LIMIT = 2000; }
+      }
+      if (title != null && !wt.fc.PersistenceHelper.checkStoredLength(title.toString(), TITLE_UPPER_LIMIT, true))
+         throw new wt.util.WTPropertyVetoException("wt.introspection.introspectionResource", wt.introspection.introspectionResource.UPPER_LIMIT,
+               new java.lang.Object[] { new wt.introspection.PropertyDisplayName(CLASSNAME, "title"), java.lang.String.valueOf(java.lang.Math.min(TITLE_UPPER_LIMIT, wt.fc.PersistenceHelper.DB_MAX_SQL_STRING_SIZE/wt.fc.PersistenceHelper.DB_MAX_BYTES_PER_CHAR)) },
+               new java.beans.PropertyChangeEvent(this, "title", this.title, title));
+   }
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String CONTENTS = "contents";
+   java.lang.Object contents;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public java.lang.Object getContents() {
+      return contents;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setContents(java.lang.Object contents) throws wt.util.WTPropertyVetoException {
+      contentsValidate(contents);
+      this.contents = contents;
+   }
+   void contentsValidate(java.lang.Object contents) throws wt.util.WTPropertyVetoException {
+   }
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String DEADLINE = "deadline";
+   java.sql.Timestamp deadline;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public java.sql.Timestamp getDeadline() {
+      return deadline;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setDeadline(java.sql.Timestamp deadline) throws wt.util.WTPropertyVetoException {
+      deadlineValidate(deadline);
+      this.deadline = deadline;
+   }
+   void deadlineValidate(java.sql.Timestamp deadline) throws wt.util.WTPropertyVetoException {
+   }
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String READ_COUNT = "readCount";
+   int readCount = 0;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public int getReadCount() {
+      return readCount;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setReadCount(int readCount) throws wt.util.WTPropertyVetoException {
+      readCountValidate(readCount);
+      this.readCount = readCount;
+   }
+   void readCountValidate(int readCount) throws wt.util.WTPropertyVetoException {
+   }
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String DOC_NUMBER = "docNumber";
+   int docNumber;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public int getDocNumber() {
+      return docNumber;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setDocNumber(int docNumber) throws wt.util.WTPropertyVetoException {
+      docNumberValidate(docNumber);
+      this.docNumber = docNumber;
+   }
+   void docNumberValidate(int docNumber) throws wt.util.WTPropertyVetoException {
+   }
+
+   /**
+    * 0=false, 1=true
+    *
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String PREFERRED = "preferred";
+   int preferred = 0;
+   /**
+    * 0=false, 1=true
+    *
+    * @see e3ps.groupware.board.Notify
+    */
+   public int getPreferred() {
+      return preferred;
+   }
+   /**
+    * 0=false, 1=true
+    *
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setPreferred(int preferred) throws wt.util.WTPropertyVetoException {
+      preferredValidate(preferred);
+      this.preferred = preferred;
+   }
+   void preferredValidate(int preferred) throws wt.util.WTPropertyVetoException {
+   }
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String WEB_EDITOR = "webEditor";
+   java.lang.Object webEditor;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public java.lang.Object getWebEditor() {
+      return webEditor;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setWebEditor(java.lang.Object webEditor) throws wt.util.WTPropertyVetoException {
+      webEditorValidate(webEditor);
+      this.webEditor = webEditor;
+   }
+   void webEditorValidate(java.lang.Object webEditor) throws wt.util.WTPropertyVetoException {
+   }
+
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public static final java.lang.String WEB_EDITOR_TEXT = "webEditorText";
+   java.lang.Object webEditorText;
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public java.lang.Object getWebEditorText() {
+      return webEditorText;
+   }
+   /**
+    * @see e3ps.groupware.board.Notify
+    */
+   public void setWebEditorText(java.lang.Object webEditorText) throws wt.util.WTPropertyVetoException {
+      webEditorTextValidate(webEditorText);
+      this.webEditorText = webEditorText;
+   }
+   void webEditorTextValidate(java.lang.Object webEditorText) throws wt.util.WTPropertyVetoException {
+   }
+
+   java.util.Vector contentVector;
+   /**
+    * This is a non-persistent vector that is used to pass content from server to client.  Should not be directly accessed by the client.
+    *
+    * @see wt.content.ContentHolder
+    */
+   public java.util.Vector getContentVector() {
+      return contentVector;
+   }
+   /**
+    * This is a non-persistent vector that is used to pass content from server to client.  Should not be directly accessed by the client.
+    *
+    * @see wt.content.ContentHolder
+    */
+   public void setContentVector(java.util.Vector contentVector) throws wt.util.WTPropertyVetoException {
+      contentVectorValidate(contentVector);
+      this.contentVector = contentVector;
+   }
+   void contentVectorValidate(java.util.Vector contentVector) throws wt.util.WTPropertyVetoException {
+   }
+
+   boolean hasContents;
+   /**
+    * This is a non-persistent variable that is used to pass information from server to client.  Should not be directly accessed by the client
+    *
+    * @see wt.content.ContentHolder
+    */
+   public boolean isHasContents() {
+      return hasContents;
+   }
+   /**
+    * This is a non-persistent variable that is used to pass information from server to client.  Should not be directly accessed by the client
+    *
+    * @see wt.content.ContentHolder
+    */
+   public void setHasContents(boolean hasContents) throws wt.util.WTPropertyVetoException {
+      hasContentsValidate(hasContents);
+      this.hasContents = hasContents;
+   }
+   void hasContentsValidate(boolean hasContents) throws wt.util.WTPropertyVetoException {
+   }
+
+   wt.content.HttpContentOperation operation;
+   /**
+    * @see wt.content.ContentHolder
+    */
+   public wt.content.HttpContentOperation getOperation() {
+      return operation;
+   }
+   /**
+    * @see wt.content.ContentHolder
+    */
+   public void setOperation(wt.content.HttpContentOperation operation) throws wt.util.WTPropertyVetoException {
+      operationValidate(operation);
+      this.operation = operation;
+   }
+   void operationValidate(wt.content.HttpContentOperation operation) throws wt.util.WTPropertyVetoException {
+   }
+
+   java.util.Vector httpVector;
+   /**
+    * This is a non-persistent vector that is used to pass content from server to client.  Should not be directly accessed by the client.
+    *
+    * @see wt.content.ContentHolder
+    */
+   public java.util.Vector getHttpVector() {
+      return httpVector;
+   }
+   /**
+    * This is a non-persistent vector that is used to pass content from server to client.  Should not be directly accessed by the client.
+    *
+    * @see wt.content.ContentHolder
+    */
+   public void setHttpVector(java.util.Vector httpVector) throws wt.util.WTPropertyVetoException {
+      httpVectorValidate(httpVector);
+      this.httpVector = httpVector;
+   }
+   void httpVectorValidate(java.util.Vector httpVector) throws wt.util.WTPropertyVetoException {
+   }
+
+   wt.fc.PersistInfo thePersistInfo = new wt.fc.PersistInfo();
+   /**
+    * @see wt.fc.Persistable
+    */
+   public wt.fc.PersistInfo getPersistInfo() {
+      return thePersistInfo;
+   }
+   /**
+    * @see wt.fc.Persistable
+    */
+   public void setPersistInfo(wt.fc.PersistInfo thePersistInfo) {
+      this.thePersistInfo = thePersistInfo;
+   }
+
+   wt.org.WTPrincipalReference owner;
+   /**
+    * @see e3ps.common.impl.OwnPersistable
+    */
+   public wt.org.WTPrincipalReference getOwner() {
+      return owner;
+   }
+   /**
+    * @see e3ps.common.impl.OwnPersistable
+    */
+   public void setOwner(wt.org.WTPrincipalReference owner) throws wt.util.WTPropertyVetoException {
+      ownerValidate(owner);
+      this.owner = owner;
+   }
+   void ownerValidate(wt.org.WTPrincipalReference owner) throws wt.util.WTPropertyVetoException {
+      if (owner == null)
+         throw new wt.util.WTPropertyVetoException("wt.fc.fcResource", wt.fc.fcResource.REQUIRED_ATTRIBUTE,
+               new java.lang.Object[] { new wt.introspection.PropertyDisplayName(CLASSNAME, "owner") },
+               new java.beans.PropertyChangeEvent(this, "owner", this.owner, owner));
+   }
+
+   public java.lang.String toString() {
+      return getConceptualClassname();
+   }
+
+   public java.lang.String getConceptualClassname() {
+      return CLASSNAME;
+   }
+
+   public wt.introspection.ClassInfo getClassInfo() throws wt.introspection.WTIntrospectionException {
+      return wt.introspection.WTIntrospector.getClassInfo(getConceptualClassname());
+   }
+
+   public java.lang.String getType() {
+      try { return getClassInfo().getDisplayName(); }
+      catch (wt.introspection.WTIntrospectionException wte) { return wt.util.WTStringUtilities.tail(getConceptualClassname(), '.'); }
+   }
+
+   public boolean equals(java.lang.Object obj) {
+      return wt.fc.PersistenceHelper.equals(this, obj);
+   }
+
+   public int hashCode() {
+      return wt.fc.PersistenceHelper.hashCode(this);
+   }
+
+   public static final long EXTERNALIZATION_VERSION_UID = -5040382800887107242L;
+
+   public void writeExternal(java.io.ObjectOutput output) throws java.io.IOException {
+      output.writeLong( EXTERNALIZATION_VERSION_UID );
+
+      output.writeObject( contents );
+      output.writeObject( deadline );
+      output.writeInt( docNumber );
+      output.writeObject( owner );
+      output.writeInt( preferred );
+      output.writeInt( readCount );
+      output.writeObject( thePersistInfo );
+      output.writeObject( title );
+      output.writeObject( webEditor );
+      output.writeObject( webEditorText );
+
+      if (!(output instanceof wt.pds.PDSObjectOutput)) {
+         output.writeObject( contentVector );
+         output.writeBoolean( hasContents );
+         output.writeObject( httpVector );
+         output.writeObject( operation );
+      }
+
+   }
+
+
+   public void readExternal(java.io.ObjectInput input) throws java.io.IOException, java.lang.ClassNotFoundException {
+      long readSerialVersionUID = input.readLong();
+      readVersion( (e3ps.groupware.board.Notify) this, input, readSerialVersionUID, false, false );
+   }
+
+   public void writeExternal(wt.pds.PersistentStoreIfc output) throws java.sql.SQLException, wt.pom.DatastoreException {
+      output.setObject( "contents", contents );
+      output.setTimestamp( "deadline", deadline );
+      output.setInt( "docNumber", docNumber );
+      output.writeObject( "owner", owner, wt.org.WTPrincipalReference.class, true );
+      output.setInt( "preferred", preferred );
+      output.setInt( "readCount", readCount );
+      output.writeObject( "thePersistInfo", thePersistInfo, wt.fc.PersistInfo.class, true );
+      output.setString( "title", title );
+      output.setObject( "webEditor", webEditor );
+      output.setObject( "webEditorText", webEditorText );
+   }
+
+   public void readExternal(wt.pds.PersistentRetrieveIfc input) throws java.sql.SQLException, wt.pom.DatastoreException {
+      contents = (java.lang.Object) input.getObject( "contents" );
+      deadline = input.getTimestamp( "deadline" );
+      docNumber = input.getInt( "docNumber" );
+      owner = (wt.org.WTPrincipalReference) input.readObject( "owner", owner, wt.org.WTPrincipalReference.class, true );
+      preferred = input.getInt( "preferred" );
+      readCount = input.getInt( "readCount" );
+      thePersistInfo = (wt.fc.PersistInfo) input.readObject( "thePersistInfo", thePersistInfo, wt.fc.PersistInfo.class, true );
+      title = input.getString( "title" );
+      webEditor = (java.lang.Object) input.getObject( "webEditor" );
+      webEditorText = (java.lang.Object) input.getObject( "webEditorText" );
+   }
+
+   boolean readVersion_5040382800887107242L( java.io.ObjectInput input, long readSerialVersionUID, boolean superDone ) throws java.io.IOException, java.lang.ClassNotFoundException {
+      contents = (java.lang.Object) input.readObject();
+      deadline = (java.sql.Timestamp) input.readObject();
+      docNumber = input.readInt();
+      owner = (wt.org.WTPrincipalReference) input.readObject();
+      preferred = input.readInt();
+      readCount = input.readInt();
+      thePersistInfo = (wt.fc.PersistInfo) input.readObject();
+      title = (java.lang.String) input.readObject();
+      webEditor = (java.lang.Object) input.readObject();
+      webEditorText = (java.lang.Object) input.readObject();
+
+      if (!(input instanceof wt.pds.PDSObjectInput)) {
+            contentVector = (java.util.Vector) input.readObject();
+            hasContents = input.readBoolean();
+            httpVector = (java.util.Vector) input.readObject();
+            operation = (wt.content.HttpContentOperation) input.readObject();
+      }
+
+      return true;
+   }
+
+   protected boolean readVersion( Notify thisObject, java.io.ObjectInput input, long readSerialVersionUID, boolean passThrough, boolean superDone ) throws java.io.IOException, java.lang.ClassNotFoundException {
+      boolean success = true;
+
+      if ( readSerialVersionUID == EXTERNALIZATION_VERSION_UID )
+         return readVersion_5040382800887107242L( input, readSerialVersionUID, superDone );
+      else if ( readSerialVersionUID == -5040382800887107242L )
+         return ((Notify) this).readVersion_5040382800887107242L( input, readSerialVersionUID, superDone );
+      else if ( readSerialVersionUID == -6380360563663008594L )
+         return ((Notify) this).readVersion_6380360563663008594L( input, readSerialVersionUID, superDone );
+      else
+         success = readOldVersion( input, readSerialVersionUID, passThrough, superDone );
+
+      if (input instanceof wt.pds.PDSObjectInput)
+         wt.fc.EvolvableHelper.requestRewriteOfEvolvedBlobbedObject();
+
+      return success;
+   }
+
+   boolean readOldVersion( java.io.ObjectInput input, long readSerialVersionUID, boolean passThrough, boolean superDone ) throws java.io.IOException, java.lang.ClassNotFoundException {
+      throw new java.io.InvalidClassException(CLASSNAME, "Local class not compatible: stream classdesc externalizationVersionUID="+readSerialVersionUID+" local class externalizationVersionUID="+EXTERNALIZATION_VERSION_UID);
+   }
+}

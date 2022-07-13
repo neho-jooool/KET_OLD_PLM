@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta http-equiv="Pragma" content="No-Cache" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>InnoDitor Product Help</title>
+<link rel="stylesheet" type="text/css" href="./help/css/help_u.css" />
+
+<script language="javascript" type="text/javascript" src="./js/browserlanguage.js"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+// language force setting - english
+g_browserCHK.language = "en";
+//]]>
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+var nSelectedTabIndex = 0;
+
+function fnHelpTabOver(objTab, nTabIndex)
+{
+	if(nSelectedTabIndex != nTabIndex)
+	{
+		if(2 == objTab.childNodes.length)
+		{
+			objTab.childNodes[0].style.display = "none";
+			objTab.childNodes[1].style.display = "";
+		}
+	}
+}
+
+function fnHelpTabOut(objTab, nTabIndex)
+{
+	if(nSelectedTabIndex != nTabIndex)
+	{
+		if(2 == objTab.childNodes.length)
+		{
+			objTab.childNodes[0].style.display = "";
+			objTab.childNodes[1].style.display = "none";
+		}
+	}
+}
+
+function fnHelpTabClick(nTabIndex)
+{
+	nSelectedTabIndex = nTabIndex;
+
+	for(var i=0; i<5; i++)
+	{
+		var objTab = document.getElementById("helpTab_" + i);
+		if(i != nTabIndex)
+		{
+			if(2 == objTab.childNodes.length)
+			{
+				objTab.childNodes[0].style.display = "";
+				objTab.childNodes[1].style.display = "none";
+			}
+		}
+		else
+		{
+			if(2 == objTab.childNodes.length)
+			{
+				objTab.childNodes[0].style.display = "none";
+				objTab.childNodes[1].style.display = "";
+			}
+		}
+	}
+
+	// language force setting - english
+	var strHelpURL = "./help/ifrm_help_u_en_" + nTabIndex + ".html";
+
+	var objFrame = document.getElementById("ifrmHelp");
+	objFrame.src = strHelpURL;
+}
+
+function fnSetHelpResource()
+{
+	var strLangPath = g_browserCHK.language;
+	for(var i=0; i<5; i++)
+	{
+		var objTab = document.getElementById("helpTab_" + i);
+		if(2 == objTab.childNodes.length)
+		{
+			objTab.childNodes[0].src = "./help/image/" + strLangPath + "/help_tab_" + i + ".gif";
+			objTab.childNodes[1].src = "./help/image/" + strLangPath + "/help_tab_" + i + "_r.gif";
+		}
+	}
+}
+//]]>
+</script>
+</head>
+
+<body onload="javascript:fnSetHelpResource();fnHelpTabClick(0);">
+
+<div style="width:670px;margin:auto;">
+	<div style="height:10px;"></div>
+	<div>
+		<div style="background-image:url(./help/image/help_tab_bg.gif);">
+			<div style="display:inline-block;width:77px;">
+				<a id="helpTab_0" href="javascript:fnHelpTabClick(0);" onmouseover="javascript:fnHelpTabOver(this,0);" onmouseout="javascript:fnHelpTabOut(this,0);"><img alt="tab" src="./help/image/blank.gif" style="display:none" /><img alt="tab" src="./help/image/blank.gif" /></a>
+			</div>
+			<div style="display:inline-block;width:77px;">
+				<a id="helpTab_1" href="javascript:fnHelpTabClick(1);" onmouseover="javascript:fnHelpTabOver(this,1);" onmouseout="javascript:fnHelpTabOut(this,1);"><img alt="tab" src="./help/image/blank.gif" /><img alt="tab" src="./help/image/blank.gif" style="display:none" /></a>
+			</div>
+			<div style="display:inline-block;width:77px;">
+				<a id="helpTab_2" href="javascript:fnHelpTabClick(2);" onmouseover="javascript:fnHelpTabOver(this,2);" onmouseout="javascript:fnHelpTabOut(this,2);"><img alt="tab" src="./help/image/blank.gif" /><img alt="tab" src="./help/image/blank.gif" style="display:none" /></a>
+			</div>
+			<div style="display:inline-block;width:77px;">
+				<a id="helpTab_3" href="javascript:fnHelpTabClick(3);" onmouseover="javascript:fnHelpTabOver(this,3);" onmouseout="javascript:fnHelpTabOut(this,3);"><img alt="tab" src="./help/image/blank.gif" /><img alt="tab" src="./help/image/blank.gif" style="display:none" /></a>
+			</div>
+			<div style="display:inline-block;width:77px;">
+				<a id="helpTab_4" href="javascript:fnHelpTabClick(4);" onmouseover="javascript:fnHelpTabOver(this,4);" onmouseout="javascript:fnHelpTabOut(this,4);"><img alt="tab" src="./help/image/blank.gif" /><img alt="tab" src="./help/image/blank.gif" style="display:none" /></a>
+			</div>
+		</div>
+	</div>
+	<div style="height:10px;"></div>
+	<iframe id="ifrmHelp" name="ifrmHelp" width="670" height="610" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="about:blank"></iframe>
+</div>
+
+</body>
+</html>

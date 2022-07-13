@@ -1,0 +1,37 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>한국단자 개발원가 시스템</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    function movePage(goUrl){
+        var contentFrame = document.getElementById("contentFrame");
+        if(goUrl == "mainList"){
+            contentFrame.src = "/plm/jsp/cost/list/mainList.jsp";
+        }else if (goUrl == "auth"){
+            contentFrame.src = "/plm/jsp/cost/auth/authList.jsp";
+        }else if (goUrl == "standard"){
+            contentFrame.src = "/plm/jsp/cost/standard/standardTab.jsp";
+        }else if (goUrl == "newRequest"){
+            location.href = '/plm/jsp/cost/costdb/cost_re_add.jsp';
+        }
+    }
+
+    function mainListMovePage(select_name,select_team,pjt_name,pjt_no,f_name,a_name,customer_F,car_type,search_state){
+        var contentFrame = document.getElementById("contentFrame");
+        contentFrame.src = "/plm/jsp/cost/list/mainList.jsp?select_name="+select_name+"&select_team="+select_team+"&pjt_name="+pjt_name+"&pjt_no="+pjt_no+"&f_name="+f_name+"&a_name="+a_name+"&customer_F="+customer_F+"&car_type="+car_type+"&search_state="+search_state;
+    }
+</script>
+</head>
+<form method=post target=cen >
+<input type=hidden name="menuPage">
+<input type=hidden name="centerPage">
+</form>
+<!-- NEW Start -->
+<frameset rows="173,*" framespacing=0 frameborder=no border=2 id=topFrame>
+  <frame name=topMenuFrame noresize frameborder=no scrolling=no id=topMenuFrame src="/plm/jsp/cost/common/top1.jsp">
+  <frame name=contentFrame noresize frameborder=no scrolling=yes id=contentFrame src="/plm/jsp/cost/list/mainList.jsp">
+</frameset>
+<!-- NEW End -->
+<noframes><body>
+</body>
+</noframes></html>

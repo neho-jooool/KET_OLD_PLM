@@ -1,0 +1,72 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+PRODUCT_DRAWING.value=\u4ea7\u54c1\u56fe\u7eb8
+PRODUCT_DRAWING.order=10
+PRODUCT_DRAWING.defaultValue=true
+PRODUCT_DRAWING.selectable=true
+PRODUCT_DRAWING.shortDescription=\u4ea7\u54c1\u56fe\u7eb8
+
+APPROVAL_DRAWING.value=\u627f\u8ba4\u56fe\u7eb8
+APPROVAL_DRAWING.order=20
+APPROVAL_DRAWING.selectable=true
+APPROVAL_DRAWING.shortDescription=\u627f\u8ba4\u56fe\u7eb8
+
+CUSTOMER_DRAWING.value=\u987e\u5ba2\u63d0\u4ea4\u56fe\u7eb8
+CUSTOMER_DRAWING.order=30
+CUSTOMER_DRAWING.selectable=true
+CUSTOMER_DRAWING.shortDescription=\u987e\u5ba2\u63d0\u4ea4\u56fe\u7eb8
+
+ECAD_DRAWING.value=ECAD\u56fe\u7eb8
+ECAD_DRAWING.order=40
+ECAD_DRAWING.selectable=true
+ECAD_DRAWING.shortDescription=ECAD\u56fe\u7eb8
+
+DEV_REVIEW_DRAWING.value=\u5f00\u53d1\u68c0\u8ba8\u9636\u6bb5
+DEV_REVIEW_DRAWING.order=50
+DEV_REVIEW_DRAWING.selectable=true
+DEV_REVIEW_DRAWING.shortDescription=\u5f00\u53d1\u68c0\u8ba8\u9636\u6bb5
+
+PRODUCT_REFERENCE_DRAWING.value=\u4ea7\u54c1\u53c2\u8003\u56fe\u7eb8
+PRODUCT_REFERENCE_DRAWING.order=60
+PRODUCT_REFERENCE_DRAWING.selectable=true
+PRODUCT_REFERENCE_DRAWING.shortDescription=\u4ea7\u54c1\u53c2\u8003\u56fe\u7eb8
+
+INJECTION_MOLD_DRAWING.value=\u6ce8\u5851\u6a21\u5177\u56fe\u7eb8
+INJECTION_MOLD_DRAWING.order=70
+INJECTION_MOLD_DRAWING.selectable=true
+INJECTION_MOLD_DRAWING.shortDescription=\u6ce8\u5851\u6a21\u5177\u56fe\u7eb8
+
+PRESS_MOLD_DRAWING.value=Press\u6a21\u5177\u56fe\u7eb8
+PRESS_MOLD_DRAWING.order=80
+PRESS_MOLD_DRAWING.selectable=true
+PRESS_MOLD_DRAWING.shortDescription=Press\u6a21\u5177\u56fe\u7eb8
+
+INJECTION_MOLD_SET_DRAWING.value=\u6ce8\u5851\u6a21\u5177SET\u56fe\u7eb8
+INJECTION_MOLD_SET_DRAWING.order=90
+INJECTION_MOLD_SET_DRAWING.selectable=true
+INJECTION_MOLD_SET_DRAWING.shortDescription=\u6ce8\u5851\u6a21\u5177SET\u56fe\u7eb8
+
+PRESS_MOLD_SET_DRAWING.value=Press\u6a21\u5177SET\u56fe\u7eb8
+PRESS_MOLD_SET_DRAWING.order=100
+PRESS_MOLD_SET_DRAWING.selectable=true
+PRESS_MOLD_SET_DRAWING.shortDescription=Press\u6a21\u5177SET\u56fe\u7eb8

@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PROJECT TASK 알림메일</title>
+<style type="text/css">
+<!--
+body {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom:10px;
+}
+.tdblueM {
+        border-bottom-style: solid;
+        border-bottom-color: #e5e4e4;
+        border-bottom-width: 1px;
+        border-right-style: solid;
+        border-right-color: #e5e4e4;
+        border-right-width: 1px;
+        background-color: #f4f4f4;
+        height: 25px;
+        padding-top: 2px;
+        padding-left: 5px;
+        color:#000000;
+        text-align: center;
+        font-family:Dotum;
+        font-size: 12px;
+        padding-right: 5px;
+        }
+
+        .tdwhiteL {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #e5e4e4;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #e5e4e4;
+        background-color:#ffffff;
+        height: 22px;
+        color:#575757;
+        padding-top: 2px;
+        padding-left: 5px;
+        text-align: left;
+        font-family:Dotum;
+        font-size: 12px;
+        }
+
+        .tdwhiteL0 {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #e5e4e4;
+        background-color:#ffffff;
+        height: 22px;
+        color:#575757;
+        padding-top: 2px;
+        padding-left: 5px;
+        text-align: left;
+        font-family:Dotum;
+        font-size: 12px;
+        }
+
+        .tab_btm2 {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #bbbbbb;
+        height: 2px;
+    }
+-->
+</style>
+</head>
+<body>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table height="28" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="5"></td>
+        <td width="20"><img src="<@host>/plm/portal/images/m_icon_3.gif"></td>
+        <td><font color="#4D4D4D" size="3"><b>PLM Notice Mail</font></b></td>
+      </tr>
+    </table></td>
+    <td width="219" align="right"><img src="<@host>/plm/portal/images/m_logo_plm.gif"></td>
+  </tr>
+</table>
+<table width="800" height="500" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_9.gif"></td>
+    <td height="10" background="<@host>/plm/portal/images/box_14.gif"></td>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_10.gif"></td>
+  </tr>
+  <tr>
+    <td width="10" background="<@host>/plm/portal/images/box_13.gif">&nbsp;</td>
+    <td valign="top"><table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="20">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="20">&nbsp;</td>
+      </tr>
+      <tr><td width="20">&nbsp;&nbsp;</td>
+            <td colspan="2" height="40" align="left">
+                <font face="Dotum" color="#575757">Projects <@pjtNo> the (pending) Previous Task has been completed.</font>
+                <br><font color=red>Please proceed with subsequent operations.</font>
+            </td>
+            <td width="10"></td>
+      </tr>
+      <tr>
+        <td width="20">&nbsp;</td>
+            <td><table border="0" cellspacing="0" cellpadding="0" width="780">
+            <tr><td width="10"></td>
+            <td class="tab_btm2" colspan="6"></td></tr>
+            <tr><td width="10"></td>
+            <td width="50" height="40" class="tdblueM">Project No.</td><td class="tdwhiteL0"><@pjtNo></td>
+            <td width="50" height="40" class="tdblueM">Project Name.</td><td class="tdwhiteL0"><@pjtName></td>
+            <td width="50" height="40" class="tdblueM">PM</td><td class="tdwhiteL0"><@PM></td>
+            <td width="10"></td></tr>
+            <tr><td width="10"></td>
+            <td width="50" height="40" class="tdblueM">Previous Task</td><td class="tdwhiteL0"><@targetTitle></td>
+            <td width="50" height="40" class="tdblueM">Responsibility</td><td class="tdwhiteL0"><@targetUser></td>
+            <td width="50" height="40" class="tdblueM">Actual Date</td><td class="tdwhiteL0"><@targetEndDate></td>
+            <td width="10"></td></tr>
+            <tr><td width="10"></td>
+            <td width="50" height="40" class="tdblueM">Post Task</td><td class="tdwhiteL0"><@sourceTitle></td>
+            <td width="50" height="40" class="tdblueM">Responsibility</td><td class="tdwhiteL0"><@sourceUser></td>
+            <td width="50" height="40" class="tdblueM">Target Date</td><td class="tdwhiteL0"><@sourceStartDate></td>
+            <td width="10"></td></tr>
+            <tr><td width="10"></td>
+            <td class="tab_btm2" colspan="6"></td></tr>
+            <tr align="right"><td align="right" colspan="7">
+                    <@goLinkPage>GO</a>
+            </td></tr>
+            </table><br></td>
+      </tr>
+
+    </table>
+      <!--내용--></td>
+    <td width="10" background="<@host>/plm/portal/images/box_15.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_11.gif"></td>
+    <td height="10" background="<@host>/plm/portal/images/box_16.gif"></td>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_12.gif"></td>
+  </tr>
+</table>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="35" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"><img src="<@host>/plm/portal/images/copyr_1.gif"></td>
+        <td align="center" valign="middle"><img src="<@host>/plm/portal/images/copyright.gif"></td>
+        <td width="10"><img src="<@host>/plm/portal/images/copyr_2.gif"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

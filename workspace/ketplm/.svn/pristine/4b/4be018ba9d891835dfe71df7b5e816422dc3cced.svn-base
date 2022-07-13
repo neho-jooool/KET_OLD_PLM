@@ -1,0 +1,20 @@
+import java.sql.Timestamp;
+
+import org.apache.commons.lang.StringUtils;
+
+import wt.util.WTException;
+import e3ps.common.util.DateUtil;
+import ext.ket.shared.log.Kogger;
+
+public class Test {
+
+    public static void main(String[] args) {
+//	String str = "wt.org.WTUser:28484";
+//	int idx = str.indexOf(":")+1;
+//	str.substring(idx);
+//	System.out.println(str.substring(idx));
+	String date = "2015-01-09";
+	Timestamp time = DateUtil.convertDate2(date);
+	System.out.println(time);
+    }
+}

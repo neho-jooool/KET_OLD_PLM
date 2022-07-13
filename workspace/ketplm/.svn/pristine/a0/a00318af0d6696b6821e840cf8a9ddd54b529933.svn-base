@@ -1,0 +1,148 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.replacement=false
+ResourceInfo.UUID=48de8535-78c4-4872-bb60-fa3b4042c6ec
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+
+##############################################
+# ECR에서 추가
+APPROVEDFILING.value=\u6279\u51c6\u5f52\u6863
+APPROVEDFILING.shortDescription=Approved Filing State
+
+CONSIDER.value=\u8003\u8651
+CONSIDER.shortDescription=Consider State
+
+# UNDERCONSIDER.value=검토중
+# UNDERCONSIDER.shortDescription=검토중 상태
+
+CONSIDERED.value=\u8003\u8651\u5b8c\u6210
+CONSIDERED.shortDescription=Consider Completed State
+##############################################
+
+
+ACTIVITYCOMPLETED.value=\u6d3b\u52a8\u5b8c\u6210
+ACTIVITYCOMPLETED.shortDescription=Activity Completed state
+
+APPROVED.value.translationSource.now=Approved
+APPROVED.shortDescription.translationSource.now=Approved state
+APPROVED.value=\u627f\u8ba4\u5b8c\u4e86
+APPROVED.shortDescription=Approved state
+
+CANCELLED.value.translationSource.now=Canceled
+CANCELLED.shortDescription.translationSource.now=Canceled state
+CANCELLED.value=\u53d6\u6d88\u4e86
+CANCELLED.shortDescription=Canceled state
+
+EWRCANCELED.value=\u5df2\u4e2d\u65ad
+EWRCANCELED.shortDescription=EWR Canceled State
+
+EWRCOMPLETED.value=\u89e3\u9664\u5b8c\u6210
+EWRCOMPLETED.shortDescription=EWR Completed State
+
+EWRDECISION.value=\u89e3\u9664\u5224\u5b9a
+EWRDECISION.shortDescription=EWR Decision State
+
+EWRDESIGNATE.value=\u7ba1\u7406\u6307\u5b9a
+EWRDESIGNATE.shortDescription=EWR Designate State
+
+EWRREPORT.value=\u5b9e\u9645\u62a5\u544a
+EWRREPORT.shortDescription=EWR Report State
+
+EWRREQUEST.value=\u89e3\u9664\u7533\u8bf7
+EWRREQUEST.shortDescription=EWR Request State
+
+EXCUTEACTIVITY.value=\u6d3b\u52a8\u6267\u884c
+EXCUTEACTIVITY.shortDescription=Excute Activity state
+
+INWORK.value.translationSource.now=In Work
+INWORK.shortDescription.translationSource.now=In Work state
+INWORK.value=\u4f5c\u4e1a\u4e2d
+INWORK.shortDescription=In Work state
+
+PLANNING.value.translationSource.now=Planning
+PLANNING.shortDescription.translationSource.now=Planning state
+PLANNING.value=\u8ba1\u5212\u6811\u7acb
+PLANNING.shortDescription=Planning state
+
+RECEIVING.value.translationSource.now=Receiving
+RECEIVING.shortDescription.translationSource.now=Receiving state
+RECEIVING.value=\u59d4\u6258\u63a5\u6536\u4e2d
+RECEIVING.shortDescription=Receiving state
+
+REJECTED.value.translationSource.now=Rejected
+REJECTED.shortDescription.translationSource.now=Rejected state
+REJECTED.value=\u9000\u56de
+REJECTED.shortDescription=Rejected state
+
+REWORK.value.translationSource.now=Rework
+REWORK.shortDescription.translationSource.now=Rework state
+REWORK.value=\u518d\u4f5c\u4e1a
+REWORK.shortDescription=Rework state
+
+UNDERREVIEW.value.translationSource.now=Under Review
+UNDERREVIEW.shortDescription.translationSource.now=Under review state
+UNDERREVIEW.value=\u68c0\u8ba8\u4e2d
+UNDERREVIEW.shortDescription=Under review state
+
+WORKCOMPLETED.value=\u4f5c\u4e1a\u5b8c\u4e86
+WORKCOMPLETED.shortDescription=Work Completed state
+
+PMOINWORK.value=\u767b\u5f55\u4e2d
+PMOINWORK.shortDescription=PMOINWORK
+PMOINWORK.order=1001
+
+DEVASSIGN.value=\u62c5\u5f53\u6307\u5b9a\u4e2d
+DEVASSIGN.shortDescription=DEVASSIGN
+DEVASSIGN.order=1002
+
+PROGRESS.value=\u8fdb\u884c
+PROGRESS.shortDescription=PROGRESS
+PROGRESS.order=1003
+
+STOPED.value=\u4e2d\u6b62
+STOPED.shortDescription=STOPED
+STOPED.order=1004
+
+WITHDRAWN.value.translationSource.now=Withdrawn
+WITHDRAWN.shortDescription.translationSource.now=Withdrawn
+WITHDRAWN.value=\u53d6\u6d88
+WITHDRAWN.shortDescription=WITHDRAWN
+WITHDRAWN.order=1005
+
+COMPLETED.value.translationSource.now=Completed
+COMPLETED.shortDescription.translationSource.now=Completed state
+COMPLETED.value=\u6d3b\u52a8\u5b8c\u6210
+COMPLETED.shortDescription=COMPLETED
+COMPLETED.order=1006
+
+PLANCHANGE.value=\u65e5\u7a0b\u53d8\u66f4
+PLANCHANGE.shortDescription=PLANCHANGE
+PLANCHANGE.order=1007
+
+CANCELING.value=\u53d6\u6d88\u4e2d
+CANCELING.shortDescription=CANCELING
+CANCELING.order=1071
+
+STOPINWORK.value=\u4e2d\u6b62\u4e2d
+STOPINWORK.shortDescription=STOPINWORK
+STOPINWORK.order=1072

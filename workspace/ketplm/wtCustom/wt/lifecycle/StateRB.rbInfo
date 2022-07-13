@@ -1,0 +1,128 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.replacement=false
+ResourceInfo.UUID=48de8535-78c4-4872-bb60-fa3b4042c6ec
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+
+##############################################
+# ECR에서 추가
+APPROVEDFILING.value=Approved Filing
+APPROVEDFILING.shortDescription=Approved Filing State
+
+CONSIDER.value=Consider
+CONSIDER.shortDescription=Consider State
+
+# UNDERCONSIDER.value=검토중
+# UNDERCONSIDER.shortDescription=검토중 상태
+
+CONSIDERED.value=Consider Completed
+CONSIDERED.shortDescription=Consider Completed State
+##############################################
+
+
+ACTIVITYCOMPLETED.value=Activity Completed
+ACTIVITYCOMPLETED.shortDescription=Activity Completed state
+
+APPROVED.value=Approved
+APPROVED.shortDescription=Approved state
+
+CANCELLED.value=Canceled
+CANCELLED.shortDescription=Canceled state
+
+EWRCANCELED.value=EWR Canceled
+EWRCANCELED.shortDescription=EWR Canceled State
+
+EWRCOMPLETED.value=EWR Completed
+EWRCOMPLETED.shortDescription=EWR Completed State
+
+EWRDECISION.value=EWR Decision
+EWRDECISION.shortDescription=EWR Decision State
+
+EWRDESIGNATE.value=EWR Designate
+EWRDESIGNATE.shortDescription=EWR Designate State
+
+EWRREPORT.value=EWR Report
+EWRREPORT.shortDescription=EWR Report State
+
+EWRREQUEST.value=EWR Request
+EWRREQUEST.shortDescription=EWR Request State
+
+EXCUTEACTIVITY.value=Excute Activity
+EXCUTEACTIVITY.shortDescription=Excute Activity state
+
+INWORK.value=In Work
+INWORK.shortDescription=In Work state
+
+PLANNING.value=Planning
+PLANNING.shortDescription=Planning state
+
+RECEIVING.value=Receiving
+RECEIVING.shortDescription=Receiving state
+
+REJECTED.value=Rejected
+REJECTED.shortDescription=Rejected state
+
+REWORK.value=Rework
+REWORK.shortDescription=Rework state
+
+UNDERREVIEW.value=Under Review
+UNDERREVIEW.shortDescription=Under review state
+
+WORKCOMPLETED.value=Work Completed
+WORKCOMPLETED.shortDescription=Work Completed state
+
+PMOINWORK.value=PMOINWORK
+PMOINWORK.shortDescription=PMOINWORK
+PMOINWORK.order=1001
+
+DEVASSIGN.value=DEVASSIGN
+DEVASSIGN.shortDescription=DEVASSIGN
+DEVASSIGN.order=1002
+
+PROGRESS.value=PROGRESS
+PROGRESS.shortDescription=PROGRESS
+PROGRESS.order=1003
+
+STOPED.value=STOPED
+STOPED.shortDescription=STOPED
+STOPED.order=1004
+
+WITHDRAWN.value=WITHDRAWN
+WITHDRAWN.shortDescription=WITHDRAWN
+WITHDRAWN.order=1005
+
+COMPLETED.value=COMPLETED
+COMPLETED.shortDescription=COMPLETED
+COMPLETED.order=1006
+
+PLANCHANGE.value=PLANCHANGE
+PLANCHANGE.shortDescription=PLANCHANGE
+PLANCHANGE.order=1007
+
+CANCELING.value=CANCELING
+CANCELING.shortDescription=CANCELING
+CANCELING.order=1071
+
+STOPINWORK.value=STOPINWORK
+STOPINWORK.shortDescription=STOPINWORK
+STOPINWORK.order=1072

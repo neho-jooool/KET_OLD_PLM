@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>슬라이드버튼 Frame</title>
+<script>
+function toggleFrame(open) {
+  if ( open == null ) {
+    var cols = window.parent.bottomFrame.cols;
+    window.parent.bottomFrame.cols = cols.charAt(0) == "0" ? "191,9,*" : "0,9,*";
+  } else {
+    window.parent.bottomFrame.cols = open ? "0,9,*" : "191,9,*";
+  }
+}
+</script>
+</head>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+</style>
+<body>
+<td width="9" valign="top">	
+<a href="javascript:toggleFrame();"><img src="/plm/portal/images/img_common/arrow.gif" alt="슬라이드버튼" width="9" height="30" border="0"></a>
+</td>
+</body>
+</html>

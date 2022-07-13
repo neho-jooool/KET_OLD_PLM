@@ -1,0 +1,1169 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+# 최종사용처
+CUSTOMEREVENT.value=CUSTOMEREVENT
+CUSTOMEREVENT.order=150
+
+# 형태
+FORMTYPE.value=FORMTYPE
+FORMTYPE.order=160
+
+#협력업체
+SUBCONTRACTOR.value=SUBCONTRACTOR
+SUBCONTRACTOR.order=170
+
+# 제품구분
+PRODUCTTYPE.value=PRODUCTTYPE
+PRODUCTTYPE.order=180
+
+# Rank
+RANK.value=RANK
+RANK.order=190
+
+# 조립구분
+ASSEMBLEDTYPE.value=ASSEMBLEDTYPE
+ASSEMBLEDTYPE.order=210
+
+# Process
+PROCESS.value=PROCESS
+PROCESS.order=220
+
+# 개발구분
+DEVELOPENTTYPE.value=DEVELOPENTTYPE
+DEVELOPENTTYPE.order=230
+
+# 조립처
+ASSEMBLYPLACE.value=ASSEMBLYPLACE
+ASSEMBLYPLACE.order=230
+
+# 설계구분
+DESIGNTYPE.value=DESIGNTYPE
+DESIGNTYPE.order=240
+
+# 금형제품구분
+MOLDPRODUCTSTYPE.value=MOLDPRODUCTSTYPE
+MOLDPRODUCTSTYPE.order=250
+
+# 금형구분
+MOLDTYPE.value=MOLDTYPE
+MOLDTYPE.order=260
+
+# 개발/양산구분
+DEVYN.value=DEVYN
+DEVYN.order=280
+
+# 사업부구분
+DIVISIONFLAG.value=DIVISIONFLAG
+DIVISIONFLAG.order=290
+
+# 금형 ECO 설계변경사유
+CHANGEREASON.value=CHANGEREASON
+CHANGEREASON.order=300
+
+# 생산성 향상 유형
+INCREASEPRODTYPE.value=INCREASEPRODTYPE
+INCREASEPRODTYPE.order=310
+
+# 의뢰구분
+REQUESTTYPE.value=REQUESTTYPE
+REQUESTTYPE.order=320
+
+# 설계변경유형
+CHANGETYPE.value=CHANGETYPE
+CHANGETYPE.order=330
+
+# 처리구분
+PROCESSTYPE.value=PROCESSTYPE
+PROCESSTYPE.order=340
+
+# 제품 설계변경 유형
+PRODCHANGETYPE.value=PRODCHANGETYPE
+PRODCHANGETYPE.order=350
+
+# 제품 설계변경 사유
+PRODCHAGEREASON.value=PRODCHAGEREASON
+PRODCHAGEREASON.order=360
+
+# 제품ECO 고객확인 구분
+CUSTOMCHECK.value=CUSTOMCHECK
+CUSTOMCHECK.order=370
+
+# 제품ECO 조정변경 사항
+CHANGEFACT.value=CHANGEFACT
+CHANGEFACT.order=380
+
+# 제품ECO 적용시기
+EFFECTIVEDATE.value=EFFECTIVEDAT
+EFFECTIVEDATE.order=390
+
+# 제품ECO 재고처리
+INVPROCESS.value=INVPROCESS
+INVPROCESS.order=400
+
+# 제품ECO 설계변경 사유
+PRODECOREASON.value=\uc81c\ud488ECO \uc124\uacc4\ubcc0\uacbd \uc0ac\uc720
+PRODECOREASON.order=410
+
+# 제품ECO 설계변경 상세사유
+CHANGEDETAILREASON.value=\uc81c\ud488ECO \uc124\uacc4\ubcc0\uacbd \uc0c1\uc138\uc0ac\uc720
+CHANGEDETAILREASON.order=411
+
+# 신규부품유형
+NEWPARTTYPE.value=NEWPARTTYPE
+NEWPARTTYPE.order=420
+
+# 제품부품채번구분
+NEWPRODUCTTYPE.value=NEWPRODUCTTYPE
+NEWPRODUCTTYPE.order=430
+
+# 금형부품채번구분
+NEWDIETYPE.value=NEWDIETYPE
+NEWDIETYPE.order=440
+
+# Try 단계
+TRYTYPE.value=TRYTYPE
+TRYTYPE.order=450
+
+# 원재료 Maker
+MATERIALMAKER.value=MATERIALMAKER
+MATERIALMAKER.order=460
+
+# 원재료 Type
+MATERIALTYPE.value=MATERIALTYPE
+MATERIALTYPE.order=470
+
+# 원재료 특성
+MATERIALPROPERTIES.value=MATERIALPROPERTIES
+MATERIALPROPERTIES.order=480
+
+#접점고객
+SAPSUBCONTRACTOR.value=Customer
+SAPSUBCONTRACTOR.order=490
+
+# Machine Maker
+MACHINEMAKER.value=MACHINEMAKER
+MACHINEMAKER.order=500
+
+# Machine Type
+MACHINETYPE.value=MACHINETYPE
+MACHINETYPE.order=510
+
+# Machine 특성
+MACHINETON.value=MACHINETON
+MACHINETON.order=520
+
+# 사내생산처
+PRODUCTIONDEPT.value=PRODUCTIONDEPT
+PRODUCTIONDEPT.order=530
+
+#제품ECO변경문서구분
+PRODECODOCTYPE.value=PRODECODOCTYPE
+PRODECODOCTYPE.order=540
+
+# 불량유형
+PROBLEMTYPE.value=PROBLEMTYPE
+PROBLEMTYPE.order=550
+
+# 작업장코드(금형비용)
+WORKSHOPCODE.value=WORKSHOPCODE
+WORKSHOPCODE.order=560
+
+# 제품군
+PRODCATEGORYCODE.value=PRODCATEGORYCODE
+PRODCATEGORYCODE.order=185
+
+# 초기유동관리 단계
+EWSSTEP.value=EWSSTEP
+EWSSTEP.order=570
+
+# 자료보안등급
+SECURITYLEVEL.value=SECURITYLEVEL
+SECURITYLEVEL.order=580
+
+# 개발유형
+DEVREVIEWTYPE.value=DEVREVIEWTYPE
+DEVREVIEWTYPE.order=590
+
+# 표면처리
+SURFACETREAT.value=SURFACETREAT
+SURFACETREAT.order=600
+
+# 포장타입
+PACKTYPE.value=PACKTYPE
+PACKTYPE.order=610
+
+#제품ECO기타후속활동
+PRODECOETCACT.value=PRODECOETCACT
+PRODECOETCACT.order=620
+
+#자동차개발팀
+CARDEVDEPT.value=CARDEVDEPT
+CARDEVDEPT.order=630
+
+#전자개발팀
+ELECDEVDEPT.value=ELECDEVDEPT
+ELECDEVDEPT.order=640
+
+#고객제출
+BUYERSUMMIT.value=BUYERSUMMIT
+BUYERSUMMIT.order=650
+
+#QnA 상태
+QNASTATUS.value=QNASTATUS
+QNASTATUS.order=660
+
+#QnA 분류
+QNATYPE.value=QNATYPE
+QNATYPE.order=670
+
+#시스템개선요청 상태
+IMPROVESTATUS.value=IMPROVESTATUS
+IMPROVESTATUS.order=680
+
+#시스템개선요청 분류
+IMPROVETYPE.value=IMPROVETYPE
+IMPROVETYPE.order=690
+
+#PLM 메뉴얼 구분
+MANUALTYPE.value=MANUALTYPE
+MANUALTYPE.order=700
+
+#사용 언어
+LANGUAGE.value=LANGUAGE
+LANGUAGE.order=710
+
+#자동차일정 View Type
+CUSTOMERVIEWTYPE.value=CUSTOMERVIEWTYPE
+CUSTOMERVIEWTYPE.order=720
+
+#품질확보절차
+DOCUMENTQUALITY.value=DOCUMENTQUALITY
+DOCUMENTQUALITY.order=730
+
+#버전
+VERSION.value=VERSION
+VERSION.order=740
+
+#일정변경 사유
+HISTORYCHANGETYPE.value=HISTORYCHANGETYPE
+HISTORYCHANGETYPE.order=750
+
+#MyTask Project Status
+MYTASKPJTSTATE.value=MYTASKPJTSTATE
+MYTASKPJTSTATE.order=760
+
+#MyTask 완료여부
+MYTASKCOMPLETE.value=MYTASKCOMPLETE
+MYTASKCOMPLETE.order=770
+
+#금형부품관리 단계구분
+MOLDPARTLEVELTYPE.value=MOLDPARTLEVELTYPE
+MOLDPARTLEVELTYPE.order=780
+
+#금형부품관리 상태
+MOLDPARTSTATE.value=MOLDPARTSTATE
+MOLDPARTSTATE.order=790
+
+#방수여부
+SEALED.value=SEALED
+SEALED.order=800
+
+#시리즈
+SERIES.value=SERIES
+SERIES.order=810
+
+#시스템 개선 요청 항목
+IMPROVEITEM.value=IMPROVEITEM
+IMPROVEITEM.order=820
+
+#ECO 조회결과보기
+ECOREASONTYPECLS.value=ECOREASONTYPECLS
+ECOREASONTYPECLS.order=830
+
+#금형 Type
+DIETYPE.value=DIETYPE
+DIETYPE.order=840
+
+#Task Type
+TASKTYPE.value=TASKTYPE
+TASKTYPE.order=850
+
+#금형 Task Type
+MOLDTASKTYPE.value=MOLDTASKTYPE
+MOLDTASKTYPE.order=860
+
+#프로젝트 중지 구분
+PROJECTSTOPTYPE.value=PROJECTSTOPTYPE
+PROJECTSTOPTYPE.order=870
+
+#프로젝트 취소 구분
+PROJECTCANCELTYPE.value=PROJECTCANCELTYPE
+PROJECTCANCELTYPE.order=880
+
+#제작구분
+MAKINGTYPE.value=MAKINGTYPE
+MAKINGTYPE.order=890
+
+#사업부구분 - 숫자
+DIVISIONNUMBER.value=DIVISIONNUMBER
+DIVISIONNUMBER.order=900
+
+#사업부구분 - 영문2자리
+DIVISIONTYPE.value=DIVISIONTYPE
+DIVISIONTYPE.order=910
+
+#Project Type
+PROJECTTYPE.value=PROJECTTYPE
+PROJECTTYPE.order=920
+
+#개발 날짜 구분
+DEVELOPDATETYPE.value=DEVELOPDATETYPE
+DEVELOPDATETYPE.order=930
+
+#Issue 긴급여부
+ISSUEURGENCY.value=ISSUEURGENCY
+ISSUEURGENCY.order=940
+
+#Issue 중요도
+ISSUEIMPORTANCE.value=ISSUEIMPORTANCE
+ISSUEIMPORTANCE.order=950
+
+#Issue 완료여부
+ISSUECOMPLETE.value=ISSUECOMPLETE
+ISSUECOMPLETE.order=960
+
+#성과관리 구분
+PERFORMANCEPJTTYPE.value=PERFORMANCEPJTTYPE
+PERFORMANCEPJTTYPE.order=970
+
+#ECO현황 상태
+ECOREPORTSTATE.value=ECOREPORTSTATE
+ECOREPORTSTATE.order=980
+
+#양산금형 구분
+MOLDPLANTYPE.value=MOLDPLANTYPE
+MOLDPLANTYPE.order=990
+
+#양산금형 측정구분
+MOLDPLANCHECKTYPE.value=MOLDPLANCHECKTYPE
+MOLDPLANCHECKTYPE.order=1000
+
+#양산금형 단계
+MOLDPLANSTAGE.value=MOLDPLANSTAGE
+MOLDPLANSTAGE.order=1010
+
+#양산금형 상태
+MOLDPLANSTATUS.value=MOLDPLANSTATUS
+MOLDPLANSTATUS.order=1020
+
+#생산처 구분
+VENDORFLAG.value=VENDORFLAG
+VENDORFLAG.order=1030
+
+#My Issue Type
+MYISSUETYPE.value=MYISSUETYPE
+MYISSUETYPE.order=1040
+
+# 제품구분_방수_시리즈
+PRODUCTTYPELEVEL2.value=PRODUCTTYPELEVEL2
+PRODUCTTYPELEVEL2.order=1050
+
+# 습득교훈 구분
+LESSONDIVISION.value=LESSONDIVISION
+LESSONDIVISION.order=1060
+
+# 습득교훈 구분 (원인/개선대책)
+LESSONCOMMON.value=LESSONCOMMON
+LESSONCOMMON.order=1070
+
+# 평가목표 구분 (목표Gate)
+ASSESSTARGETTYPE.value=ASSESSTARGETTYPE
+ASSESSTARGETTYPE.order=1080
+
+# Gate 대상 선택
+GATELEVELNAME.value=GATELEVELNAME
+GATELEVELNAME.order=1090
+
+# ECM - 금형변경
+MOLDCHANGE.value=\uae08\ud615\ubcc0\uacbd(ECM)
+MOLDCHANGE.order=1100
+ 
+# ECM - 원가변동
+COSTCHANGE.value=\uc6d0\uac00\ubcc0\ub3d9(ECM)
+COSTCHANGE.order=1110
+
+# ECM - 긴급도
+EMERGENCYPOSITION.value=\uae34\uae09\ub3c4(ECM)
+EMERGENCYPOSITION.order=1120
+
+# ECM - 검토결과
+REVIEWRESULT.value=\uac80\ud1a0\uacb0\uacfc(ECM)
+REVIEWRESULT.order=1130
+
+# 배포유형(배포요청서)
+DISTTYPE.value=DISTTYPE
+DISTTYPE.order=1140
+
+# 배포포멧 (배포요청서)
+DRAWINGDISTFILETYPE.value=DRAWINGDISTFILETYPE
+DRAWINGDISTFILETYPE.order=1150
+
+# 부품분류체계 사용여부
+PARTCLAZUSEYN.value=\ubd80\ud488\ubd84\ub958 \uc0ac\uc6a9\uc5ec\ubd80
+PARTCLAZUSEYN.order=1160
+
+# 부품분류체계 부품구분
+PARTCLAZPARTGUBUN.value=\ubd80\ud488\ubd84\ub958 \ubd80\ud488\uad6c\ubd84
+PARTCLAZPARTGUBUN.order=1170
+
+# 부품 속성 - MSL
+SPECMSL.value=MSL
+SPECMSL.order=1180
+
+# 부품 속성 - PCB 재질
+SPECPCBMATERIAL.value=PCB \uc7ac\uc9c8
+SPECPCBMATERIAL.order=1190
+
+# 부품 속성 - 표면처리
+SPECSURFACETREATMENT.value=\ud45c\uba74\ucc98\ub9ac
+SPECSURFACETREATMENT.order=1200
+
+# 부품 속성 - Package Type
+SPECPACKAGETYPE.value=Package Type
+SPECPACKAGETYPE.order=1210
+
+# 부품 속성 - 금형구분
+SPECMMOLDFLAG.value=\uae08\ud615\uad6c\ubd84
+SPECMMOLDFLAG.order=1220
+
+# 부품 속성 - 재질마킹
+SPECMATERIALMARKING.value=\uc7ac\uc9c8\ub9c8\ud0b9
+SPECMATERIALMARKING.order=1230
+
+# 부품 속성 - 생산구분
+SPECMPRODFLAG.value=\uc0dd\uc0b0\uad6c\ubd84
+SPECMPRODFLAG.order=1240
+
+# 부품 속성 - 장착위치
+SPECINSTALLPOSITION.value=\uc7a5\ucc29\uc704\uce58
+SPECINSTALLPOSITION.order=1250
+
+# 부품 속성 - Layer
+SPECLAYER.value=Layer
+SPECLAYER.order=1260
+
+# 부품 속성 - IND 단위
+SPECINDUNIT.value=IND \ub2e8\uc704
+SPECINDUNIT.order=1270
+
+# 부품 속성 - RLC Package Type
+SPECRLCPACKAGETYPE.value=RLC Package Type
+SPECRLCPACKAGETYPE.order=1280
+
+# 부품 속성 - YAZAKI여부
+SPECISYAZAKI.value=YAZAKI\uc5ec\ubd80
+SPECISYAZAKI.order=1290
+
+# 부품 속성 - 특징
+SPECCHARACTERISTICS.value=\ud2b9\uc9d5
+SPECCHARACTERISTICS.order=1300
+
+# 부품 속성 - 저항값
+SPECELECTRICRESISTANCEVALUE.value=\uc800\ud56d\uac12
+SPECELECTRICRESISTANCEVALUE.order=1310
+
+# 부품 속성 - 전류센서용량
+SPECVOLTAGESENSECAPACITY.value=\uc804\ub958\uc13c\uc11c\uc6a9\ub7c9
+SPECVOLTAGESENSECAPACITY.order=1320
+
+# 부품 속성 - ESD(HBM)
+SPECESD.value=ESD(HBM)
+SPECESD.order=1330
+
+# 부품 속성 - Tolerance
+SPECTOLERANCE.value=Tolerance
+SPECTOLERANCE.order=1340
+
+# 부품 속성 - 제작구분
+SPECMMAKINGFLAG.value=\uc81c\uc791\uad6c\ubd84
+SPECMMAKINGFLAG.order=1350
+
+# 부품 속성 - 사급구분
+SPECMSELFCONTRACTFLAG.value=\uc0ac\uae09\uad6c\ubd84
+SPECMSELFCONTRACTFLAG.order=1360
+
+# 부품 속성 - 색상(color)
+SPECCOLOR.value=\uc0c9\uc0c1(color)
+SPECCOLOR.order=1370
+
+# 부품 속성 - 도금
+SPECPLATING.value=\ub3c4\uae08
+SPECPLATING.order=1380
+
+# 부품 속성 - 외형가공
+SPECAPPEARANCEPROCESS.value=\uc678\ud615\uac00\uacf5
+SPECAPPEARANCEPROCESS.order=1390
+
+# 부품 속성 - RELAY 용량
+SPECRELAYCAPACITY.value=RELAY \uc6a9\ub7c9
+SPECRELAYCAPACITY.order=1400
+
+# 부품 속성 - CAP 단위
+SPECCAPUNIT.value=CAP \ub2e8\uc704
+SPECCAPUNIT.order=1410
+
+# 부품 속성 - RES 단위
+SPECRESUNIT.value=RES \ub2e8\uc704
+SPECRESUNIT.order=1420
+
+# 부품 속성 - Tg
+SPECTG.value=Tg
+SPECTG.order=1430
+
+# 부품 속성 - Type (충전기)
+SPECTYPECHARGER.value=Type(\ucda9\uc804\uae30)
+SPECTYPECHARGER.order=1440
+
+# 부품 속성 - 플랜트
+SPECPLANT.value=\ud50c\ub79c\ud2b8
+SPECPLANT.order=1450
+
+# 부품 속성 - Thickness
+SPECTHICKNESS.value=Thickness
+SPECTHICKNESS.order=1460
+
+# 부품 속성 - RLC Tolerance
+SPECRLCTOLERANCE.value=RLC Tolerance
+SPECRLCTOLERANCE.order=1470
+
+# 부품 속성 - 단위
+SPECUNITUNIT.value=\ub2e8\uc704
+SPECUNITUNIT.order=1480
+
+# 부품 속성 - Type2(충전기)
+SPT2CHARGER.value=Type2(\ucda9\uc804\uae30)
+SPT2CHARGER.order=1490
+
+# 부품 속성 - Solder Resistor Corlor
+SPECSOLDERRESISTORCOLOR.value=Solder Resistor Corlor
+SPECSOLDERRESISTORCOLOR.order=1500
+
+# 부품 속성 - 자재유형
+SPECPARTTYPE.value=\uc790\uc7ac\uc720\ud615
+SPECPARTTYPE.order=1510
+
+# 부품 속성 - Type(Bulb)
+SPTBULBCONN.value=Type(Bulb)
+SPTBULBCONN.order=1520
+
+# 부품 속성 - Type2 (고전압퓨즈)
+SPECTYPEHIGHVOLTAGEFUSE.value=Type2(\uace0\uc804\uc555\ud4e8\uc988)
+SPECTYPEHIGHVOLTAGEFUSE.order=1530
+
+# 부품 속성 - 재질(금형부품)
+SPECMATERIALMOLD.value=\uc7ac\uc9c8(\uae08\ud615\ubd80\ud488)
+SPECMATERIALMOLD.order=1540
+
+# 부품 속성 - T재질(비철)
+SPECMATERIALNONFERROUS.value=\uc7ac\uc9c8(\ube44\ucca0)
+SPECMATERIALNONFERROUS.order=1550
+
+# 부품 속성 - 구매그룹
+SPECPURCHASEGROUP.value=\uad6c\ub9e4\uadf8\ub8f9
+SPECPURCHASEGROUP.order=1560
+
+# TASK 지연사유 유형
+TASKDELAYTYPE.value=TASKDELAYTYPE
+TASKDELAYTYPE.order=1570
+
+# 부품 속성 - 시리즈
+SPECSERIES.value=\uc2dc\ub9ac\uc988
+SPECSERIES.order=1580
+
+# 부품 속성 - Locking Type
+SPECLOCKINGTYPE.value=Locking Type
+SPECLOCKINGTYPE.order=1590
+
+# 부품 속성 - Certified
+SPECCERTIFIED.value=Certified
+SPECCERTIFIED.order=1600
+
+# 부품 속성 - Wire Range(SQ)
+SPECWIRERANGE.value=Wire Range(SQ)
+SPECWIRERANGE.order=1610
+
+# 부품 속성 - WATT(W)
+SPECWATTW.value=WATT(W)
+SPECWATTW.order=1620
+
+# 부품 속성 - 레진 여부
+SPECRESIN.value=\ub808\uc9c4 \uc5ec\ubd80
+SPECRESIN.order=1630
+
+# 부품 속성 - Hole 형상
+SPECHOLESHAPE.value=Hole \ud615\uc0c1
+SPECHOLESHAPE.order=1640
+
+# 부품 속성 - 피복재질
+SPECCLOTHESMATERIAL.value=\ud53c\ubcf5\uc7ac\uc9c8
+SPECCLOTHESMATERIAL.order=1650
+
+# 부품 속성 - 쉴드여부
+SPECISSHIELD.value=\uc274\ub4dc\uc5ec\ubd80
+SPECISSHIELD.order=1660
+
+# 부품 속성 - ESIR 승인
+SPECESIRAPPROVAL.value=ESIR \uc2b9\uc778
+SPECESIRAPPROVAL.order=1670
+
+# 부품 속성 - ISIR 승인
+SPECISIRAPPROVAL.value=ISIR \uc2b9\uc778
+SPECISIRAPPROVAL.order=1680
+
+# 부품 속성 - 포장사양
+SPPACKAGESPEC.value=\ud3ec\uc7a5\uc0ac\uc591
+SPPACKAGESPEC.order=1690
+
+# 부품 속성 - Seal Type
+SPECSEALTYPE.value=Seal Type
+SPECSEALTYPE.order=1700
+
+# 부품 속성 - 실장방식&적용전선
+SPMOUNTWAYAPE.value=\uc2e4\uc7a5\ubc29\uc2dd&\uc801\uc6a9\uc804\uc120
+SPMOUNTWAYAPE.order=1710
+
+# 부품 속성 - 납땜 방식
+SPECSOLDERING.value=\ub0a9\ub55c \ubc29\uc2dd
+SPECSOLDERING.order=1720
+
+# 부품 속성 - 조립 공법
+SPECCONSTRUCMETH.value=\uc870\ub9bd \uacf5\ubc95
+SPECCONSTRUCMETH.order=1730
+
+# 부품 속성 - Cable 연결 방식
+SPECCABLECONMETH.value=Cable \uc5f0\uacb0 \ubc29\uc2dd
+SPECCABLECONMETH.order=1740
+
+# 부품 속성 - 커넥터 결합 방향
+SPCONNCOMBDIR.value=\ucee4\ub125\ud130 \uacb0\ud569 \ubc29\ud5a5
+SPCONNCOMBDIR.order=1750
+
+# 부품 속성 - TPA 적용
+SPECLOCKTTML.value=TPA \uc801\uc6a9
+SPECLOCKTTML.order=1760
+
+# 부품 속성 - 터미널 TYPE
+SPECTERMINALTYPE.value=\ud130\ubbf8\ub110 TYPE
+SPECTERMINALTYPE.order=1770
+
+# 부품 속성 - 터미널 BARREL-SIZE
+SPECTERMBARRELSZ.value=\ud130\ubbf8\ub110 BARREL-SIZE
+SPECTERMBARRELSZ.order=1780
+
+# 부품 속성 - 터미널 압착 방식
+SPECTERMPREZTYPE.value=\ud130\ubbf8\ub110 \uc555\ucc29 \ubc29\uc2dd
+SPECTERMPREZTYPE.order=1790
+
+# 부품 속성 - GWIT 재질여부
+SPECGWITMATERAT.value=GWIT \uc7ac\uc9c8\uc5ec\ubd80
+SPECGWITMATERAT.order=1800
+
+# 부품 속성 - 인터페이스
+SPECINTERFACE.value=\uc778\ud130\ud398\uc774\uc2a4
+SPECINTERFACE.order=1810
+
+# 부품 속성 - 핀수&형상
+SPECPINNSHAPE.value=\ud540\uc218&\ud615\uc0c1
+SPECPINNSHAPE.order=1820
+
+# 부품 속성 - SUB 공급형태
+SPECSUBSUPPLIY.value=SUB \uacf5\uae09\ud615\ud0dc
+SPECSUBSUPPLIY.order=1830
+
+# 부품 속성 - 코딩&색상
+SPECCODINGNCOLOR.value=\ucf54\ub529&\uc0c9\uc0c1
+SPECCODINGNCOLOR.order=1840
+
+# 검토결과(품질문제)
+DQMREVIEWRESULT.value=DQMREVIEWRESULT
+DQMREVIEWRESULT.order=1850
+
+# 부품 속성 - 색상(구매품)
+SPCOLORPURCH.value=\uc0c9\uc0c1(\uad6c\ub9e4\ud488)
+SPCOLORPURCH.order=1860
+
+# 부품 속성 - 색상(전자사업부)
+SPCOLORELEC.value=\uc0c9\uc0c1(\uc804\uc790\uc0ac\uc5c5\ubd80)
+SPCOLORELEC.order=1870
+
+# 부품 속성 - 시리즈(LAMP)
+SPSERIESLAMP.value=\uc2dc\ub9ac\uc988(LAMP)
+SPSERIESLAMP.order=1880
+
+# 부품 속성 - 친환경
+SPENVFRIEND.value=\uce5c\ud658\uacbd
+SPENVFRIEND.order=1890
+
+# 부품 속성 - Type1(고전압퓨즈)
+SPT1HIVOLTFUZ.value=Type1(\uace0\uc804\uc555\ud4e8\uc988)
+SPT1HIVOLTFUZ.order=1900
+
+# 부품 속성 - Type(일반커넥터)
+SPTGENCONN.value=Type(\uc77c\ubc18\ucee4\ub125\ud130)
+SPTGENCONN.order=1910
+
+# 부품 속성 - Type(PCB 커넥터)
+SPTPCBCONN.value=Type(PCB \ucee4\ub125\ud130)
+SPTPCBCONN.order=1920
+
+# 부품 속성 - Type(LAMP)
+SPTLAMPCONN.value=Type(LAMP)
+SPTLAMPCONN.order=1930
+
+# 부품 속성 - Type(고전압)
+SPTHIVOLT.value=Type(\uace0\uc804\uc555)
+SPTHIVOLT.order=1940
+
+# 부품 속성 - Type(J/B)
+SPTJNB.value=Type(J/B)
+SPTJNB.order=1950
+
+# 부품 속성 - Type(PRA)
+SPTPRA.value=Type(PRA)
+SPTPRA.order=1960
+
+# 부품 속성 - Type(GNSS 모듈)
+SPTGNSS.value=Type(GNSS \ubaa8\ub4c8)
+SPTGNSS.order=1970
+
+# 부품 속성 - Type(통신모듈)
+SPTCOMMODULE.value=Type(\ud1b5\uc2e0\ubaa8\ub4c8)
+SPTCOMMODULE.order=1980
+
+# 부품 속성 - Type(멀티미디어 유닛)
+SPTMULTIMEDUNIT.value=Type(\uba40\ud2f0\ubbf8\ub514\uc5b4 \uc720\ub2db)
+SPTMULTIMEDUNIT.order=1990
+
+# 부품 속성 - Lance Type
+SPLANCETYPE.value=Lance Type
+SPLANCETYPE.order=2000
+
+# 부품 속성 - CPA 적용
+SPECLOCKTCONN.value=CPA \uc801\uc6a9
+SPECLOCKTCONN.order=2010
+
+# 부품 속성 - 도금(구매품)
+SPPLATINGPURCH.value=\ub3c4\uae08(\uad6c\ub9e4\ud488)
+SPPLATINGPURCH.order=2020
+
+# 부품 속성 - WireRange_AWG(전자)
+SPWIRERAWGELEC.value=WireRange_AWG(\uc804\uc790)
+SPWIRERAWGELEC.order=2030
+
+# 부품 속성 - AEC-Q
+SPAECQ.value=AEC-Q
+SPAECQ.order=2040
+
+# 부품 속성 - 제전방지
+SPFESTPREVENT.value=\uc81c\uc804\ubc29\uc9c0
+SPFESTPREVENT.order=2050
+
+#배포SheetType
+SHEETTYPE.value=\ubc30\ud3ecSheetType
+SHEETTYPE.order=2060
+
+#발생구분
+OCCURTYPE.value=\ubc1c\uc0dd\uad6c\ubd84
+OCCURTYPE.order=2070
+
+#발생처
+OCCURPLACE.value=\ubc1c\uc0dd\ucc98
+OCCURPLACE.order=2080
+
+#발생원인처
+PROBLEMTEAM.value=\ubc1c\uc0dd\uc6d0\uc778\ucc98
+PROBLEMTEAM.order=2090
+
+#품질문제검토결과
+HAVETERMINATED.value=\ud488\uc9c8\ubb38\uc81c\uac80\ud1a0\uacb0\uacfc
+HAVETERMINATED.order=2100
+
+#금형Try조건표Press금형구조
+PRESSTYPESTRUCTURE.value=Press\uae08\ud615\uad6c\uc870
+PRESSTYPESTRUCTURE.order=2110
+
+#금형Try조건표Press제품방식
+PRESSPRODUCTMETHOD.value=Press\uc81c\ud488\ubc29\uc2dd
+PRESSPRODUCTMETHOD.order=2120
+
+#금형Try조건표Press스크랩처리 
+PRESSSCRAPTYPE.value=Press\uc2a4\ud06c\ub7a9\ucc98\ub9ac
+PRESSSCRAPTYPE.order=2130
+
+#금형Try조건표Press안전센서  
+PRESSSAFETYSENSOR.value=Press\uc548\uc804\uc13c\uc11c
+PRESSSAFETYSENSOR.order=2140
+
+#금형Try조건표Press타발유   
+PRESSBLANKINGOIL.value=Press\ud0c0\ubc1c\uc720
+PRESSBLANKINGOIL.order=2150
+
+#금형Try조건표Press피더기   
+PRESSFIDER.value=Press\ud53c\ub354\uae30
+PRESSFIDER.order=2160
+
+#금형Try조건표Mold금형구조   
+MOLDTYPESTRUCTURE.value=Mold\uae08\ud615\uad6c\uc870
+MOLDTYPESTRUCTURE.order=2170
+
+#금형Try조건표Mold게이트방식  
+MOLDGATETYPE.value=Mold\uac8c\uc774\ud2b8\ubc29\uc2dd
+MOLDGATETYPE.order=2180
+
+#금형Try조건표Mold취판부두께  
+MOLDTHICKNESS.value=Mold\ucde8\ud310\ubd80\ub450\uaed8
+MOLDTHICKNESS.order=2190
+
+#금형Try조건표Mold온도센서홀  
+MOLDTEMPERATURESENSOR.value=Mold\uc628\ub3c4\uc13c\uc11c\ud640
+MOLDTEMPERATURESENSOR.order=2200
+
+#금형Try조건표Mold단위(사출압력)   
+MOLDUNITINJECTIONPRESSURE.value=Mold\ub2e8\uc704(\uc0ac\ucd9c\uc555\ub825)
+MOLDUNITINJECTIONPRESSURE.order=2210
+
+#금형Try조건표Mold단위(보압)
+MOLDUNITPACKINGPRESSURE.value=Mold\ub2e8\uc704(\ubcf4\uc555)
+MOLDUNITPACKINGPRESSURE.order=2220
+
+#금형Try조건표Mold단위(배압) 
+MOLDUNITBACKPRESSURE.value=Mold\ub2e8\uc704(\ubc30\uc555)
+MOLDUNITBACKPRESSURE.order=2230
+
+#금형Try조건표Mold단위(저압형체)   
+MOLDUNITLOWPRESSURE.value=Mold\ub2e8\uc704(\uc800\uc555\ud615\uccb4)
+MOLDUNITLOWPRESSURE.order=2240
+
+#불량구분유형
+PROBLEMDIVTYPE.value=\ubd88\ub7c9\uad6c\ubd84\uc720\ud615
+PROBLEMDIVTYPE.order=2250
+
+#해석용도   
+ANALYSISUSE.value=\ud574\uc11d\uc6a9\ub3c4
+ANALYSISUSE.order=2260
+
+#해석구분
+ANALYSISDIVISION.value=\ud574\uc11d\uad6c\ubd84
+ANALYSISDIVISION.order=2270
+
+#설계단계명
+DESIGNREFLECT.value=\uc124\uacc4\ub2e8\uacc4\uba85
+DESIGNREFLECT.order=2280
+
+#부품분류 채번특성
+NUMBERINGCHARICS.value=\ubd80\ud488\ubd84\ub958 \ucc44\ubc88\ud2b9\uc131
+NUMBERINGCHARICS.order=2290
+
+# 부품 속성 - 시리즈(Bulb)
+SPSERIESBULB.value=\uc2dc\ub9ac\uc988(Bulb)
+SPSERIESBULB.order=2300
+
+# 부품 속성 - Type(Bulb)
+SPTBULBCONN.value=Type(Bulb)
+SPTBULBCONN.order=2310
+
+# 부품 속성 - Type2(충전기)
+SPT2CHARGER.value=Type2(\ucda9\uc804\uae30)
+SPT2CHARGER.order=2320
+
+# 부품 속성 - Type1(고전압퓨즈)
+SPT1HIVOLTFUZ.value=Type1(\uace0\uc804\uc555\ud4e8\uc988)
+SPT1HIVOLTFUZ.order=2330
+
+#ECM - 전장모듈L1
+EMODULEL1.value=\uc804\uc7a5\ubaa8\ub4c8L1
+EMODULEL1.order=2310
+
+#ECM - 전장모듈L2
+EMODULEL2.value=\uc804\uc7a5\ubaa8\ub4c8L2
+EMODULEL2.order=2320
+
+#ECM - 전장모듈L3
+EMODULEL3.value=\uc804\uc7a5\ubaa8\ub4c8L3
+EMODULEL3.order=2330
+
+#ECM - 전장모듈L4
+EMODULEL4.value=\uc804\uc7a5\ubaa8\ub4c8L4
+EMODULEL4.order=2340
+
+#ECM - 전장모듈L5
+EMODULEL5.value=\uc804\uc7a5\ubaa8\ub4c8L5
+EMODULEL5.order=2350
+
+# 개발유형
+DEVELOPPATTERN.value=DEVELOPPATTERN
+DEVELOPPATTERN.order=2360
+
+# 부품 속성 - 난연등급
+SPECMFLAMELEVEL.value=\ub09c\uc5f0\ub4f1\uae09
+SPECMFLAMELEVEL.order=2370
+
+# 부품 속성 - Actuator 위치구분
+SPECMACLCTNFLAG.value=Actuator \uc704\uce58\uad6c\ubd84
+SPECMACLCTNFLAG.order=2380
+
+# 부품 속성 - 표준커넥터
+SPSTANDARDCONNECT.value=\ud45c\uc900\ucee4\ub125\ud130
+SPSTANDARDCONNECT.order=2390
+
+# 부품 속성 - 커넥터스타일
+SPCONNECTORSTYLE.value=\ucee4\ub125\ud130\uc2a4\ud0c0\uc77c
+SPCONNECTORSTYLE.order=2400
+
+# 영업프로젝트 - 프로젝트 상태
+SALESPJTSTATE.value=\uc601\uc5c5 \ud504\ub85c\uc81d\ud2b8 \uc0c1\ud0dc
+SALESPJTSTATE.order=2410
+
+# 영업프로젝트 - 영업프로젝트 실패 유형
+SALESFAILTYPE.value=\uc2e4\ud328\uc720\ud615
+SALESFAILTYPE.order=2420
+
+# 영업프로젝트 - 국가
+SALESNATION.value=\uad6d\uac00
+SALESNATION.order=2430
+
+# 영업프로젝트 - 수주사/경쟁사
+SALESCOMPETITOR.value=\uc218\uc8fc\uc0ac
+SALESCOMPETITOR.order=2440
+
+# 영업프로젝트 - 중요도
+SALESRANK.value=\uc911\uc694\ub3c4
+SALESRANK.order=2450
+
+# 영업프로젝트 - 제품군 대분류
+SALESMAINCATEGORY.value=\uc81c\ud488\uad70\ub300\ubd84\ub958
+SALESMAINCATEGORY.order=2460
+
+# All-Toll, Full-Toll
+ATFTCATEGORY.value=ATFTCategory
+ATFTCATEGORY.order=2470
+
+# 부품분류체계 친환경여부
+PARTCLAZISECOCAR.value=\ubd84\ub958\uccb4\uacc4 \uce5c\ud658\uacbd\uc5ec\ubd80
+PARTCLAZISECOCAR.order=2480
+
+# 원가구분
+OUPPUTCOSTDIVISION.value=\uc6d0\uac00\uad6c\ubd84
+OUPPUTCOSTDIVISION.order=2490
+
+# 개발/검토 목적
+DEVELOPANDREVIEWGOAL.value=\uac1c\ubc1c/\uac80\ud1a0 \ubaa9\uc801
+DEVELOPANDREVIEWGOAL.order=2500
+
+# 제품측정현황구분
+PRODUCTCHECKDIVISION.value=\uc81c\ud488\uce21\uc815\ud604\ud669 \uad6c\ubd84
+PRODUCTCHECKDIVISION.order=2510
+
+# 프로젝트 기본정보(관리 제품군)
+MANAGEPRODUCTTYPE.value=\uad00\ub9ac \uc81c\ud488\uad70
+MANAGEPRODUCTTYPE.order=2520
+
+# 프로젝트 상태(상황실 interface용)
+PROJECTSTATE.value=\ud504\ub85c\uc81d\ud2b8 \uc0c1\ud0dc
+PROJECTSTATE.order=2530
+
+# 프로젝트 사업부구분(상황실 interface용)
+PJTTYPE.value=\ud504\ub85c\uc81d\ud2b8 \uc0ac\uc5c5\ubd80\uad6c\ubd84
+PJTTYPE.order=2540
+
+# 금형ECO 개발단계구분(상황실 interface용)
+MOLDDEVYN.value=\uae08\ud615ECO \uac1c\ubc1c\ub2e8\uacc4\uad6c\ubd84
+MOLDDEVYN.order=2550
+
+# ALL-TOOL, FULL-TOOL 구분(상황실 interface용)
+ATFTDIVISION.value=ATFT\uad6c\ubd84
+ATFTDIVISION.order=2560
+
+# 합불여부(상황실 interface용)
+PASSANDFAIL.value=\ud569\ubd88\uad6c\ubd84
+PASSANDFAIL.order=2570
+
+# 프로젝트 P1/P2/SOP 구분(상황실 interface용)
+MASSPHASE.value=\uc591\uc0b0\uc9c4\ud589\uc0c1\ud0dc\uad6c\ubd84
+MASSPHASE.order=2580
+
+# Gate 평가결과 대상(상황실 interface용)
+GATETARGETTYPE.value=Gate \ud3c9\uac00\uacb0\uacfc \ub300\uc0c1
+GATETARGETTYPE.order=2590
+
+# 초품일정준수 구분(상황실 interface 용)
+FIRSTSCHEDULEOBEYTYPE.value=\ucd08\ud488\uc77c\uc815\uc900\uc218 \uad6c\ubd84
+FIRSTSCHEDULEOBEYTYPE.order=2600
+
+# 프로젝트 속성
+OBTAINORDERTYPE.value=\uc218\uc8fc\uc5ec\ubd80
+OBTAINORDERTYPE.order=2610
+
+# 영업Subject
+SUBJECTTYPE.value=\uc601\uc5c5Subject
+SUBJECTTYPE.order=2620
+
+# 생산처 구분 - 원가
+MFTFACTORY.value=\uc0dd\uc0b0\ucc98
+MFTFACTORY.order=2630
+
+#금형제작 구분 - 원가
+MOLDDIVISION.value=\uae08\ud615\uc81c\uc791
+MOLDDIVISION.order=2640
+
+#설비제작 구분 - 원가
+FACDIVISION.value=\uc124\ube44\uc81c\uc791
+FACDIVISION.order=2650
+
+#구매품 구분 - 원가
+PURCHASES.value=\uad6c\ub9e4\ud488 \uad6c\ubd84
+PURCHASES.order=2660
+
+#원재료 - 원가
+RAWMATERIAL.value=\uc6d0\uc7ac\ub8cc
+RAWMATERIAL.order=2670
+
+#도금 - 원가
+PLATING.value=\ub3c4\uae08
+PLATING.order=2680
+
+#시나리오 - 원가
+SCENARIO.value=\uc2dc\ub098\ub9ac\uc624
+SCENARIO.order=2690
+
+#원재료 두께 - 원가
+RAWMATTHICKNESS.value=\uc6d0\uc7ac\ub8cc \ub450\uaed8
+RAWMATTHICKNESS.order=2700
+
+#원재료 폭 - 원가
+RAWMATWIDTH.value=\uc6d0\uc7ac\ub8cc \ud3ed
+RAWMATWIDTH.order=2710
+
+#화폐단위 - 원가
+MONETARYUNIT.value=\ud654\ud3d0\ub2e8\uc704
+MONETARYUNIT.order=2720
+
+#산출기준 - 원가
+CALCULATIONSTD.value=\uc0b0\ucd9c\uae30\uc900
+CALCULATIONSTD.order=2730
+
+#수지기준단가 구분 - 원가
+RESINSDIVISION.value=\uc218\uc9c0\uae30\uc900\ub2e8\uac00 \uad6c\ubd84
+RESINSDIVISION.order=2740
+
+#제작처 구분 - 원가
+COSTMAKING.value=\uc81c\uc791\ucc98 \uad6c\ubd84
+COSTMAKING.order=2750
+
+#입고처 구분 - 원가 (사용안함) / MFTFACTORY 와 같음
+COSTWAREHOUSING.value=\uc785\uace0\ucc98 \uad6c\ubd84
+COSTWAREHOUSING.order=2750
+
+#납입처 구분 - 원가 (사용안함) / MFTFACTORY 와 같음
+COSTDELIVER.value=\ub0a9\uc785\ucc98 \uad6c\ubd84
+COSTDELIVER.order=2760
+
+#감가비 옵션 - 원가
+COSTREDUCEOPTION.value=\uac10\uac00\ube44 \uc635\uc158
+COSTREDUCEOPTION.order=2770
+
+#포장재사양 - 원가
+COSTPACKING.value=\ud3ec\uc7a5\uc7ac\uc0ac\uc591
+COSTPACKING.order=2780
+
+#고객요구사항 관리
+ISSUEREQ.value=\uc694\uccad\uad6c\ubd84
+ISSUEREQ.order=2790
+
+#고객요구사항 관리
+ISSUERANK.value=\ub4f1\uae09
+ISSUERANK.order=2800
+
+#고객요구사항 관리
+ISSUESTATE.value=\uc0c1\ud0dc
+ISSUESTATE.order=2810
+
+#고객요구사항 관리
+ISSUEDETAIL.value=\uc694\uccad\uad6c\ubd84 \uc0c1\uc138
+ISSUEDETAIL.order=2820
+
+#공통 태그 코드
+KETTAG.value=\ud0dc\uadf8
+KETTAG.order=2830
+
+#타스크 일정연계 코드
+TASKSCHEDULETYPE.value=\ud0c0\uc2a4\ud06c \uc77c\uc815\uc5f0\uacc4 \ucf54\ub4dc
+TASKSCHEDULETYPE.order=2840
+
+# ECM - 회의 필요 여부
+MEETINGREQ.value=\ud68c\uc758\ud544\uc694\uc5ec\ubd80
+MEETINGREQ.order=2850
+
+#주요일정식별코드
+MAINSCHEDULECODE.value=\ud0c0\uc2a4\ud06c\uc8fc\uc694\uc77c\uc815\ucf54\ub4dc
+MAINSCHEDULECODE.order=2860
+
+#업무프로젝트 구분
+WORKPROJECTTYPE.value=\uc5c5\ubb34\ud504\ub85c\uc81d\ud2b8 \uad6c\ubd84
+WORKPROJECTTYPE.order=2870
+
+#고객투자비 회수관리
+INVESTSTATE.value=\uc0c1\ud0dc
+INVESTSTATE.order=2890
+
+#고객투자비 회수관리
+INVESTCOLLECT.value=\ud68c\uc218\ube44\uad6c\ubd84
+INVESTCOLLECT.order=2891
+
+#고객투자비 구분자
+INVESTTYPE.value=\uace0\uac1d\ud22c\uc790\ube44 \uad6c\ubd84
+INVESTTYPE.order=2892
+
+# 부품 속성 - Rated Voltage
+RATEDVOLTAGE.value=Rated Voltage
+RATEDVOLTAGE.order=2893
+
+# 부품 속성 - Rated Current
+RATEDCURRENT.value=Rated Current
+RATEDCURRENT.order=2894
+
+# 부품 속성 - Mounting Type
+MOUNTINGTYPE.value=Mounting Type
+MOUNTINGTYPE.order=2895
+
+# 문제점구분(ISSUE - 구품질문제)
+DQMISSUETYPE.value=\ubb38\uc81c\uc810\uad6c\ubd84
+DQMISSUETYPE.order=2896
+
+# 발생시점(ISSUE - 구품질문제)
+DQMOCCURPOINT.value=\ubc1c\uc0dd\uc2dc\uc810
+DQMOCCURPOINT.order=2897
+
+# 발생단계(ISSUE - 구품질문제)
+DQMDEVSTEP.value=\ubc1c\uc0dd\ub2e8\uacc4
+DQMDEVSTEP.order=2898

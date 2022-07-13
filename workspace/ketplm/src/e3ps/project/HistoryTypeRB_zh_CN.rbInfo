@@ -1,0 +1,54 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()
+# <key>.order=					getOrder()
+# <key>.selectable=				isSelectable()
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=                ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.argComment<n>=          ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.constant=               ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.customizable=           ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+# <key>.deprecated=             ¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ
+
+# Entry Contents
+
+PROJECTCREATE.value=Project\u751f\u6210
+PROJECTCREATE.shortDescription=Project\u751f\u6210
+PROJECTCREATE.selectable=false
+
+PROJECTCOMPLETE.value=Project\u5b8c\u6210
+PROJECTCOMPLETE.shortDescription=Project\u5b8c\u6210
+PROJECTCOMPLETE.selectable=false
+
+PROJECTSTOP.value=Project\u4e2d\u6b62
+PROJECTSTOP.shortDescription=Project\u4e2d\u6b62
+PROJECTSTOP.selectable=false
+
+PROJECTING.value=Project\u8fdb\u884c
+PROJECTING.shortDescription=Project\u8fdb\u884c
+PROJECTING.selectable=false
+
+ERPUPDATE.value=ERP \u5c5e\u6027 Update
+ERPUPDATE.shortDescription=ERP \u5c5e\u6027 Update
+ERPUPDATE.selectable=false
+
+PLMUPDATE.value=PLM \u5c5e\u6027 Update
+PLMUPDATE.shortDescription=PLM \u5c5e\u6027 Update
+PLMUPDATE.selectable=false
+
+
+CHANGEPLAN.value=\u8ba1\u5212\u53d8\u66f4
+CHANGEPLAN.shortDescription=\u8ba1\u5212\u53d8\u66f4
+CHANGEPLAN.order=10
+
+ETC.value=\u5176\u5b83
+ETC.shortDescription=\u5176\u5b83
+ETC.order=20

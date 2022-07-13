@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $('.collapseIcon').click(function(){
+        if($('#collapseDiv').next().next().is(':hidden')){
+        	$(this).attr('src','/plm/extcore/extjs50/build/packages/ext-theme-classic/build/resources/images/layout/mini-top.gif');
+        	$(this).removeClass('expendIcon');
+        	$(this).addClass('collapseIcon');
+        	$('#collapseDiv').next().next().show();
+        }else{
+        	$(this).attr('src','/plm/extcore/extjs50/build/packages/ext-theme-classic/build/resources/images/layout/mini-bottom.gif');          
+        	$(this).removeClass('collapseIcon');
+        	$(this).addClass('expendIcon');
+        	$('#collapseDiv').next().next().hide();
+        }
+    });
+});

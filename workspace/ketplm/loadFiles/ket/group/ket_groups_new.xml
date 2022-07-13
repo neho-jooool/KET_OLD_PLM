@@ -1,0 +1,97 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+<NmLoader>
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>사양관리</csvgroupName>
+    <csvdescription>사양관리그룹입니다</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>사양관리</csvgroupName>
+    <csvuserName>jmpark</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_의뢰접수</csvgroupName>
+    <csvdescription>전자사업부_의뢰접수입니다</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_의뢰접수</csvgroupName>
+    <csvuserName>mksong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>전자사업부_의뢰접수</csvgroupName>
+    <csvuserName>chul07</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+
+<csvGroup handler="wt.load.LoadUser.createGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvdescription>원가정보를 조회하는 그룹</csvdescription>
+    <csvDirectoryService></csvDirectoryService>
+</csvGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>lcw</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>ketcolwj</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>jaeilp</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>kimseok</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>briandsk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>dschoi</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>lcgman</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>mksong</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+<csvUserGroup handler="wt.load.LoadUser.createUserGroup" >
+    <csvuser></csvuser>
+    <csvgroupName>원가_임원</csvgroupName>
+    <csvuserName>lyk</csvuserName>
+    <csvDirectoryService></csvDirectoryService>
+</csvUserGroup>
+</NmLoader>

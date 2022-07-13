@@ -1,0 +1,54 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()	
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()	
+# <key>.order=					getOrder()	
+# <key>.selectable=				isSelectable()	
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.argComment<n>=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.constant=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.customizable=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.deprecated=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+
+# Entry Contents
+
+PROJECTCREATE.value=\ud504\ub85c\uc81d\ud2b8\uc0dd\uc131
+PROJECTCREATE.shortDescription=\ud504\ub85c\uc81d\ud2b8\uc0dd\uc131
+PROJECTCREATE.selectable=false
+
+PROJECTCOMPLETE.value=\ud504\ub85c\uc81d\ud2b8\uc644\ub8cc
+PROJECTCOMPLETE.shortDescription=\ud504\ub85c\uc81d\ud2b8\uc644\ub8cc
+PROJECTCOMPLETE.selectable=false
+
+PROJECTSTOP.value=\ud504\ub85c\uc81d\ud2b8\uc911\uc9c0
+PROJECTSTOP.shortDescription=\ud504\ub85c\uc81d\ud2b8\uc911\uc9c0
+PROJECTSTOP.selectable=false
+
+PROJECTING.value=\ud504\ub85c\uc81d\ud2b8\uc9c4\ud589
+PROJECTING.shortDescription=\ud504\ub85c\uc81d\ud2b8\uc9c4\ud589
+PROJECTING.selectable=false
+
+ERPUPDATE.value=ERP \uc18d\uc131 \uc5c5\ub370\uc774\ud2b8
+ERPUPDATE.shortDescription=ERP \uc18d\uc131 \uc5c5\ub370\uc774\ud2b8
+ERPUPDATE.selectable=false
+
+PLMUPDATE.value=PLM \uc18d\uc131 \uc5c5\ub370\uc774\ud2b8
+PLMUPDATE.shortDescription=PLM \uc18d\uc131 \uc5c5\ub370\uc774\ud2b8
+PLMUPDATE.selectable=false
+
+
+CHANGEPLAN.value=\uacc4\ud68d\ubcc0\uacbd
+CHANGEPLAN.shortDescription=\uacc4\ud68d\ubcc0\uacbd
+CHANGEPLAN.order=10
+
+ETC.value=\uae30\ud0c0
+ETC.shortDescription=\uae30\ud0c0
+ETC.order=20

@@ -1,0 +1,9 @@
+INDEX VERSION 1.122+D:\ket\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3114179065.index
+3704677155.index
+337966545.index
+1731418464.index
+2047436.index
+1237288793.index
+843651203.index
+2633437333.index

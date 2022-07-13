@@ -1,0 +1,73 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.UUID=79e02281-cf1f-456a-8e15-a927f9f67da7
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+PRODUCT_DRAWING.value=PRODUCT_DRAWING
+PRODUCT_DRAWING.order=10
+PRODUCT_DRAWING.defaultValue=true
+PRODUCT_DRAWING.selectable=true
+PRODUCT_DRAWING.shortDescription=PRODUCT_DRAWING
+
+APPROVAL_DRAWING.value=APPROVAL_DRAWING
+APPROVAL_DRAWING.order=20
+APPROVAL_DRAWING.selectable=true
+APPROVAL_DRAWING.shortDescription=APPROVAL_DRAWING
+
+CUSTOMER_DRAWING.value=CUSTOMER_DRAWING
+CUSTOMER_DRAWING.order=30
+CUSTOMER_DRAWING.selectable=true
+CUSTOMER_DRAWING.shortDescription=CUSTOMER_DRAWING
+
+ECAD_DRAWING.value=ECAD_DRAWING
+ECAD_DRAWING.order=40
+ECAD_DRAWING.selectable=true
+ECAD_DRAWING.shortDescription=ECAD_DRAWING
+
+DEV_REVIEW_DRAWING.value=DEV_REVIEW_DRAWING
+DEV_REVIEW_DRAWING.order=50
+DEV_REVIEW_DRAWING.selectable=true
+DEV_REVIEW_DRAWING.shortDescription=DEV_REVIEW_DRAWING
+
+PRODUCT_REFERENCE_DRAWING.value=PRODUCT_REFERENCE_DRAWING
+PRODUCT_REFERENCE_DRAWING.order=60
+PRODUCT_REFERENCE_DRAWING.selectable=true
+PRODUCT_REFERENCE_DRAWING.shortDescription=PRODUCT_REFERENCE_DRAWING
+
+INJECTION_MOLD_DRAWING.value=INJECTION_MOLD_DRAWING
+INJECTION_MOLD_DRAWING.order=70
+INJECTION_MOLD_DRAWING.selectable=true
+INJECTION_MOLD_DRAWING.shortDescription=INJECTION_MOLD_DRAWING
+ 
+PRESS_MOLD_DRAWING.value=PRESS_MOLD_DRAWING
+PRESS_MOLD_DRAWING.order=80
+PRESS_MOLD_DRAWING.selectable=true
+PRESS_MOLD_DRAWING.shortDescription=PRESS_MOLD_DRAWING
+
+INJECTION_MOLD_SET_DRAWING.value=INJECTION_MOLD_SET_DRAWING
+INJECTION_MOLD_SET_DRAWING.order=90
+INJECTION_MOLD_SET_DRAWING.selectable=true
+INJECTION_MOLD_SET_DRAWING.shortDescription=INJECTION_MOLD_SET_DRAWING
+
+PRESS_MOLD_SET_DRAWING.value=PRESS_MOLD_SET_DRAWING
+PRESS_MOLD_SET_DRAWING.order=100
+PRESS_MOLD_SET_DRAWING.selectable=true
+PRESS_MOLD_SET_DRAWING.shortDescription=PRESS_MOLD_SET_DRAWING

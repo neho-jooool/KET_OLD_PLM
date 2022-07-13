@@ -1,0 +1,3098 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "entity"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C739F3E03C8"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "KETEarlyWarning"
+	    quid       	"4C7B7694016F"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C7B76B200C3"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+		    quidu      	"353FA84903E3"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "pjtNo"
+		    quid       	"4C7B776F0066"
+		    documentation 	"프로젝트 번호"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "inOut"
+		    quid       	"4C7B77A1025A"
+		    documentation 	"사내품 또는 외주품 구분정보"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "proteamNo"
+		    quid       	"4C7B77C401CD"
+		    documentation 	"대상 제품을 생산하는 팀의 코드값"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "partnerNo"
+		    quid       	"4C7B782D0085"
+		    documentation 	"대상 제품을 생산하는 협력사의 코드값"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "fstCharge"
+		    quid       	"4C7B78B202C7"
+		    documentation 	"수행담당자(정) 아이디 값"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "sndCharge"
+		    quid       	"4C7B78CB02C7"
+		    documentation 	"수행담당자(부) 아이디 값"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "workingMM"
+		    quid       	"4C7B78E701CD"
+		    documentation 	"초기유동관리 활동개월수"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "startDate"
+		    quid       	"4C7B795F00D3"
+		    documentation 	"초기유동관리 시작일"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "endDate"
+		    quid       	"4C7B7BA20102"
+		    documentation 	"초기유동관리 종료일"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "planDate"
+		    quid       	"4C7B7BCD00F2"
+		    documentation 	"초기유동관리 계획서 제출날짜"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7BE60121"
+		    documentation 	"추가 속성 항목1"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute2"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C050056"
+		    documentation 	"추가 속성 항목2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C190315"
+		    documentation 	"추가 속성 항목3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute4"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C3902A8"
+		    documentation 	"추가 속성 항목4"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute5"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C4C022B"
+		    documentation 	"추가 속성 항목5"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute6"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C6B0066"
+		    documentation 	"추가 속성 항목6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute7"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C810363"
+		    documentation 	"추가 속성 항목7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute8"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7C99016F"
+		    documentation 	"추가 속성 항목8"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute9"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7CE50269"
+		    documentation 	"추가 속성 항목9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute10"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B7D0400F2"
+		    documentation 	"추가 속성 항목10"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningTarget"
+	    quid       	"4C7B80EB02E6"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C7CA8FE0157"
+		    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+		    quidu      	"3432A8740232"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "productNo"
+		    quid       	"4C7B81850102"
+		    documentation 	"제품 번호"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "targetCusError"
+		    quid       	"4C7B81B901BD"
+		    documentation 	"고객불량 PPM의 목표값"
+		    type       	"Double"
+		    exportControl 	"Public")
+		(object ClassAttribute "targetWorkError"
+		    quid       	"4C7B81DF00E3"
+		    documentation 	"공정불량 PPM의 목표값"
+		    type       	"Double"
+		    exportControl 	"Public")
+		(object ClassAttribute "targetFacility"
+		    quid       	"4C7B82410269"
+		    documentation 	"설비가동율의 목표값"
+		    type       	"Double"
+		    exportControl 	"Public")
+		(object ClassAttribute "targetPerform"
+		    quid       	"4C7B82860056"
+		    documentation 	"성능가동율의 목표값"
+		    type       	"Double"
+		    exportControl 	"Public")
+		(object ClassAttribute "targetGood"
+		    quid       	"4C7B82A301EC"
+		    documentation 	"양품율의 목표값"
+		    type       	"Double"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B82C600D3"
+		    documentation 	"추가 속성 항목1"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute2"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B82E1023A"
+		    documentation 	"추가 속성 항목2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B82FD0095"
+		    documentation 	"추가 속성 항목3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute4"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B83170095"
+		    documentation 	"추가 속성 항목4"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute5"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B83400334"
+		    documentation 	"추가 속성 항목5"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute6"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B835B01BD"
+		    documentation 	"추가 속성 항목6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute7"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B837403A2"
+		    documentation 	"추가 속성 항목7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute8"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B838C0392"
+		    documentation 	"추가 속성 항목8"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute9"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B83A60344"
+		    documentation 	"추가 속성 항목9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute10"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4C7B83C201EC"
+		    documentation 	"추가 속성 항목10"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningPlan"
+	    quid       	"4CA2E9BD006D"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CA2FDAD031C"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+		    quidu      	"353FA84903E3"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "cftMember"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F065009C"
+		    documentation 	"조직도"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "manageDesc"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F0F9033C"
+		    documentation 	"중점관리 사항"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F12E0186"
+		    documentation 	"기타1"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute2"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F155002E"
+		    documentation 	"기타2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F167007D"
+		    documentation 	"기타3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute4"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F1BA01F4"
+		    documentation 	"기타4"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute5"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F2850109"
+		    documentation 	"기타5"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute6"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F2AF0196"
+		    documentation 	"기타6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute7"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F2CF01A5"
+		    documentation 	"기타7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute8"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F2F70119"
+		    documentation 	"기타8"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute9"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2F313036B"
+		    documentation 	"기타9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute10"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CA2FCFE009C"
+		    documentation 	"기타10"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningResult"
+	    quid       	"4CB2DEAB0369"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CB2E0C2008B"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+		    quidu      	"353FA84903E3"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "attribute1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2DFBA034A"
+		    documentation 	"기타1"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute2"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2DFF500AA"
+		    documentation 	"기타2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E00C034A"
+		    documentation 	"기타3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute4"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E02003C7"
+		    documentation 	"기타4"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute5"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E0330260"
+		    documentation 	"기타5"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute6"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E0490156"
+		    documentation 	"기타6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute7"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E05D02AE"
+		    documentation 	"기타7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute8"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E07C032B"
+		    documentation 	"기타8"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute9"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E0920241"
+		    documentation 	"기타9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute10"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB2E0A5030C"
+		    documentation 	"기타10"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningProblem"
+	    quid       	"4CB3C63B0232"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CB3CB3000EA"
+		    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+		    quidu      	"3432A8740232"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "problemkind"
+		    quid       	"4CB3C66A038A"
+		    documentation 	"문제점 종류"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "problemstep"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "1000")))
+		    quid       	"4CB3C6980196"
+		    documentation 	"공정"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "problemtype"
+		    quid       	"4CB3C6B4030D"
+		    documentation 	"유형"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "problemdesc"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB3C6DD03A9"
+		    documentation 	"문제점 "
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "measure"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CB3C712000F"
+		    documentation 	"대책"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "enddate"
+		    quid       	"4CB3C729031C"
+		    documentation 	"완료일"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "charge"
+		    quid       	"4CB3C75402BF"
+		    documentation 	"담당"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "isend"
+		    quid       	"4CB3C778008C"
+		    documentation 	"조치여부"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningEndReq"
+	    quid       	"4CD38DE300FA"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CD38FC8005D"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+		    quidu      	"353FA84903E3"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "requestdesc"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E0503D8"
+		    documentation 	"요청사항"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E07007D"
+		    documentation 	"기타1"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute2"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E080148"
+		    documentation 	"기타2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E09030D"
+		    documentation 	"기타3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute4"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E0B000F"
+		    documentation 	"기타4"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute5"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E0C001F"
+		    documentation 	"기타5"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute6"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E0D001F"
+		    documentation 	"기타6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute7"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E0E0138"
+		    documentation 	"기타7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute8"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E140271"
+		    documentation 	"기타8"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute9"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E160138"
+		    documentation 	"기타9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute10"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD38E1701F4"
+		    documentation 	"기타10"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningEnd"
+	    quid       	"4CD3905202DE"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CD391D80232"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+		    quidu      	"353FA84903E3"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "endresult"
+		    quid       	"4CD3906A03D8"
+		    documentation 	"판정결과"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "reason"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3906C0138"
+		    documentation 	"연장사유"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "extensiondate"
+		    quid       	"4CD39078008C"
+		    documentation 	"연장일"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD390790177"
+		    documentation 	"기타1"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute2"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3907A0203"
+		    documentation 	"기타2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3907B035B"
+		    documentation 	"기타3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute4"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3907C03C8"
+		    documentation 	"기타4"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute5"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3907E006D"
+		    documentation 	"기타5"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute6"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3907F0271"
+		    documentation 	"기타6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute7"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD3908003B9"
+		    documentation 	"기타7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute8"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD390820119"
+		    documentation 	"기타8"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute9"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD390830157"
+		    documentation 	"기타9"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attribute10"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4CD390840186"
+		    documentation 	"기타10"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "KETEarlyWarningStep"
+	    quid       	"4CF72F150242"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CF72F23035B"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+		    quidu      	"353FA84903E3"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "status"
+		    quid       	"4CF72F4B0167"
+		    documentation 	"초기유동관리 진행단계"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "fstCharge"
+		    quid       	"4CF72F4C0280"
+		    documentation 	"수행담당자"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "endDate"
+		    quid       	"4CF72F4D03B9"
+		    documentation 	"활동완료일"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "stopdate"
+		    quid       	"4D1400FD02CE"
+		    documentation 	"중단일자"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "reason"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"4D1400FF0000"
+		    documentation 	"중단이유"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Association "EarlyWarningTargetLink"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"Storage"
+		    value      	("Storage_Set" 1701)))
+	    quid       	"4C7C4F2903C8"
+	    roles      	(list role_list
+		(object Role "earlyWarning"
+		    quid       	"4C7C4F2A02BF"
+		    label      	"earlyWarning"
+		    supplier   	"Logical View::e3ps::ews::entity::KETEarlyWarning"
+		    quidu      	"4C7B7694016F"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "earlyWarningTarget"
+		    quid       	"4C7C4F2A02C1"
+		    label      	"earlyWarningTarget"
+		    supplier   	"Logical View::e3ps::ews::entity::KETEarlyWarningTarget"
+		    quidu      	"4C7B80EB02E6"
+		    client_cardinality 	(value cardinality "1..n")
+		    is_navigable 	TRUE)))
+	(object Association "KETResultProblemLink"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"Storage"
+		    value      	("Storage_Set" 1701)))
+	    quid       	"4CB3C7DF005D"
+	    roles      	(list role_list
+		(object Role "result"
+		    quid       	"4CB3C7DF0203"
+		    label      	"result"
+		    supplier   	"Logical View::e3ps::ews::entity::KETEarlyWarningResult"
+		    quidu      	"4CB2DEAB0369"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "problem"
+		    quid       	"4CB3C7DF0213"
+		    label      	"problem"
+		    supplier   	"Logical View::e3ps::ews::entity::KETEarlyWarningProblem"
+		    quidu      	"4CB3C63B0232"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)))
+	(object Association "KETEarlyWarningPlanLink"
+	    quid       	"4CBB9D700078"
+	    roles      	(list role_list
+		(object Role "earlyWarning"
+		    quid       	"4CBB9D700079"
+		    label      	"earlyWarning"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "plan"
+		    quid       	"4CBB9D70007A"
+		    label      	"plan"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)))
+	(object Association "KETEarlyWarningResultLink"
+	    quid       	"4CBB9DC402DA"
+	    roles      	(list role_list
+		(object Role "earlyWarning"
+		    quid       	"4CBB9DC402DB"
+		    label      	"earlyWarning"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "result"
+		    quid       	"4CBB9DC402DC"
+		    label      	"result"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)))
+	(object Association "KETEarlyWarningEndReqLink"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"Storage"
+		    value      	("Storage_Set" 1701)))
+	    quid       	"4CD3927E005D"
+	    roles      	(list role_list
+		(object Role "earlyWarning"
+		    quid       	"4CD3927E02AF"
+		    label      	"earlyWarning"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "endReq"
+		    quid       	"4CD3927E02BF"
+		    label      	"endReq"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)))
+	(object Association "KETEndReqLink"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"Storage"
+		    value      	("Storage_Set" 1701)))
+	    quid       	"4CD393C500FA"
+	    roles      	(list role_list
+		(object Role "endReq"
+		    quid       	"4CD393C502CE"
+		    label      	"endReq"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "end"
+		    quid       	"4CD393C502DE"
+		    label      	"end"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)))
+	(object Association "KETEarlyWarningStepLink"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"Storage"
+		    value      	("Storage_Set" 1701)))
+	    quid       	"4CF730A8002E"
+	    roles      	(list role_list
+		(object Role "earlyWarningstep"
+		    quid       	"4CF730A801E4"
+		    label      	"earlyWarningstep"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)
+		(object Role "earlyWarning"
+		    quid       	"4CF730A801F4"
+		    label      	"earlyWarning"
+		    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+		    quidu      	"353FA84603CB"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "EWSEntity"
+	    quid       	"4C73A04B00CB"
+	    title      	"EWSEntity"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list))
+	(object ClassDiagram "초기유동관리지정"
+	    quid       	"4C7B62B10325"
+	    title      	"초기유동관리지정"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(523, 300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(327, 46)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	392
+			justify    	0
+			label      	"WTDocument")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84903E3"
+		    width      	410
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2061, 259)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1880, 127)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"Persistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@2
+			location   	(1880, 77)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3432A8740232"
+		    width      	380
+		    height     	388
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarning" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(530, 1300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(302, 744)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	456
+			justify    	0
+			label      	"KETEarlyWarning")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C7B7694016F"
+		    width      	474
+		    height     	1136
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @4
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C7B76B200C3"
+		    client     	@3
+		    supplier   	@1
+		    vertices   	(list Points
+			(525, 731)
+			(524, 566))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningTarget" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2060, 1301)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1809, 845)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	502
+			justify    	0
+			label      	"KETEarlyWarningTarget")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C7B80EB02E6"
+		    width      	520
+		    height     	936
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C7CA8FE0157"
+		    client     	@5
+		    supplier   	@2
+		    vertices   	(list Points
+			(2060, 832)
+			(2060, 453))
+		    line_style 	0)
+		(object AssociationViewNew "EarlyWarningTargetLink" @7
+		    location   	(1283, 1300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @8
+			Parent_View 	@7
+			location   	(1290, 1155)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"EarlyWarningTargetLink"
+			pctDist    	0.633333
+			height     	146
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C7C4F2903C8"
+		    roleview_list 	(list RoleViews
+			(object RoleView "earlyWarning" @9
+			    Parent_View 	@7
+			    location   	(-942, -46)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(971, 1251)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	278
+				justify    	0
+				label      	"+earlyWarning"
+				pctDist    	0.604651
+				height     	49
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C7C4F2A02BF"
+			    client     	@7
+			    supplier   	@3
+			    vertices   	(list Points
+				(1283, 1300)
+				(767, 1300))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(816, 1252)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.904762
+				height     	49
+				orientation 	1))
+			(object RoleView "earlyWarningTarget" @12
+			    Parent_View 	@7
+			    location   	(-942, -46)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @13
+				Parent_View 	@12
+				location   	(1500, 1353)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	380
+				justify    	0
+				label      	"+earlyWarningTarget"
+				pctDist    	0.420543
+				height     	53
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C7C4F2A02C1"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(1283, 1300)
+				(1799, 1300))
+			    line_style 	0
+			    label      	(object SegLabel @14
+				Parent_View 	@12
+				location   	(1736, 1354)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..n"
+				pctDist    	0.877976
+				height     	54
+				orientation 	1))))))
+	(object ClassDiagram "초기유동관리계획서"
+	    quid       	"4CA2E94D0000"
+	    title      	"초기유동관리계획서"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @15
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1297, 340)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@15
+			location   	(1101, 86)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	392
+			justify    	0
+			label      	"WTDocument")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84903E3"
+		    width      	410
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningPlan" @16
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1297, 1297)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@16
+			location   	(1079, 941)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	436
+			justify    	0
+			label      	"KETEarlyWarningPlan")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CA2E9BD006D"
+		    width      	454
+		    height     	736
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @17
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CA2FDAD031C"
+		    client     	@16
+		    supplier   	@15
+		    vertices   	(list Points
+			(1297, 928)
+			(1297, 606))
+		    line_style 	0)))
+	(object ClassDiagram "실적보고서"
+	    quid       	"4CB2DE1802FC"
+	    title      	"실적보고서"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @18
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(761, 375)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@18
+			location   	(565, 121)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	392
+			justify    	0
+			label      	"WTDocument")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84903E3"
+		    width      	410
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningResult" @19
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(762, 1300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@19
+			location   	(523, 994)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"KETEarlyWarningResult")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CB2DEAB0369"
+		    width      	496
+		    height     	636
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @20
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CB2E0C2008B"
+		    client     	@19
+		    supplier   	@18
+		    vertices   	(list Points
+			(761, 981)
+			(761, 641))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningProblem" @21
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2181, 1300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@21
+			location   	(1920, 1044)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	522
+			justify    	0
+			label      	"KETEarlyWarningProblem")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CB3C63B0232"
+		    width      	540
+		    height     	536
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "KETResultProblemLink" @22
+		    location   	(1460, 1300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @23
+			Parent_View 	@22
+			location   	(1460, 1241)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"KETResultProblemLink"
+			pctDist    	0.500000
+			height     	60
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CB3C7DF005D"
+		    roleview_list 	(list RoleViews
+			(object RoleView "result" @24
+			    Parent_View 	@22
+			    location   	(-693, -15)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @25
+				Parent_View 	@24
+				location   	(1100, 1259)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	136
+				justify    	0
+				label      	"+result"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CB3C7DF0203"
+			    client     	@22
+			    supplier   	@19
+			    vertices   	(list Points
+				(1460, 1300)
+				(1010, 1300))
+			    line_style 	0
+			    label      	(object SegLabel @26
+				Parent_View 	@24
+				location   	(1056, 1354)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "problem" @27
+			    Parent_View 	@22
+			    location   	(-693, -15)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @28
+				Parent_View 	@27
+				location   	(1820, 1259)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	184
+				justify    	0
+				label      	"+problem"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CB3C7DF0213"
+			    client     	@22
+			    supplier   	@21
+			    vertices   	(list Points
+				(1460, 1300)
+				(1910, 1300))
+			    line_style 	0
+			    label      	(object SegLabel @29
+				Parent_View 	@27
+				location   	(1864, 1354)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @30
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2176, 388)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@30
+			location   	(1995, 256)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"Persistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@30
+			location   	(1995, 206)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3432A8740232"
+		    width      	380
+		    height     	388
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @31
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CB3CB3000EA"
+		    client     	@21
+		    supplier   	@30
+		    vertices   	(list Points
+			(2178, 1031)
+			(2176, 582))
+		    line_style 	0)))
+	(object ClassDiagram "초기유동관리Link"
+	    quid       	"4CBB9D360182"
+	    title      	"초기유동관리Link"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	228
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @32
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2100, 2639)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@32
+			location   	(1861, 2435)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"WTDocumentMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84603CB"
+		    width      	496
+		    height     	432
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @33
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(678, 1923)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@33
+			location   	(439, 1719)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"WTDocumentMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84603CB"
+		    width      	496
+		    height     	432
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @34
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1394, 1923)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@34
+			location   	(1155, 1719)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"WTDocumentMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84603CB"
+		    width      	496
+		    height     	432
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @35
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2100, 1908)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@35
+			location   	(1861, 1704)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"WTDocumentMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84603CB"
+		    width      	496
+		    height     	432
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "KETEndReqLink" @36
+		    location   	(2100, 2273)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @37
+			Parent_View 	@36
+			location   	(2281, 2275)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"KETEndReqLink"
+			pctDist    	3.516667
+			height     	2
+			orientation 	1)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CD393C500FA"
+		    roleview_list 	(list RoleViews
+			(object RoleView "endReq" @38
+			    Parent_View 	@36
+			    location   	(-29, 230)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @39
+				Parent_View 	@38
+				location   	(1982, 2148)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	174
+				justify    	0
+				label      	"+endReq"
+				pctDist    	0.840909
+				height     	119
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CD393C502CE"
+			    client     	@36
+			    supplier   	@35
+			    vertices   	(list Points
+				(2100, 2273)
+				(2100, 2124))
+			    line_style 	0
+			    label      	(object SegLabel @40
+				Parent_View 	@38
+				location   	(2166, 2151)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.827273
+				height     	66
+				orientation 	1))
+			(object RoleView "end" @41
+			    Parent_View 	@36
+			    location   	(-29, 230)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @42
+				Parent_View 	@41
+				location   	(2029, 2398)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	91
+				justify    	0
+				label      	"+end"
+				pctDist    	0.835633
+				height     	72
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CD393C502DE"
+			    client     	@36
+			    supplier   	@32
+			    vertices   	(list Points
+				(2100, 2273)
+				(2100, 2422))
+			    line_style 	0
+			    label      	(object SegLabel @43
+				Parent_View 	@41
+				location   	(2162, 2398)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.838377
+				height     	62
+				orientation 	0))))
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @44
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1401, 216)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@44
+			location   	(1162, 12)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"WTDocumentMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84603CB"
+		    width      	496
+		    height     	432
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @45
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1395, 1053)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@45
+			location   	(1156, 849)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	478
+			justify    	0
+			label      	"WTDocumentMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84603CB"
+		    width      	496
+		    height     	432
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "KETEarlyWarningPlanLink" @46
+		    location   	(1035, 1487)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @47
+			Parent_View 	@46
+			location   	(770, 1473)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	496
+			justify    	0
+			label      	"KETEarlyWarningPlanLink"
+			pctDist    	-3.933333
+			height     	15
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CBB9D700078"
+		    roleview_list 	(list RoleViews
+			(object RoleView "plan" @48
+			    Parent_View 	@46
+			    location   	(765, 894)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @49
+				Parent_View 	@48
+				location   	(947, 1674)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	108
+				justify    	0
+				label      	"+plan"
+				pctDist    	0.705097
+				height     	51
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CBB9D70007A"
+			    client     	@46
+			    supplier   	@33
+			    vertices   	(list Points
+				(1035, 1487)
+				(854, 1706))
+			    line_style 	0
+			    label      	(object SegLabel @50
+				Parent_View 	@48
+				location   	(833, 1650)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "earlyWarning" @51
+			    Parent_View 	@46
+			    location   	(765, 894)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @52
+				Parent_View 	@51
+				location   	(1033, 1292)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	278
+				justify    	0
+				label      	"+earlyWarning"
+				pctDist    	0.529729
+				height     	127
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CBB9D700079"
+			    client     	@46
+			    supplier   	@45
+			    vertices   	(list Points
+				(1035, 1487)
+				(1215, 1269))
+			    line_style 	0
+			    label      	(object SegLabel @53
+				Parent_View 	@51
+				location   	(1244, 1299)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.987067
+				height     	41
+				orientation 	1))))
+		(object AssociationViewNew "KETEarlyWarningResultLink" @54
+		    location   	(1394, 1487)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @55
+			Parent_View 	@54
+			location   	(1383, 1466)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	527
+			justify    	0
+			label      	"KETEarlyWarningResultLink"
+			pctDist    	0.333333
+			height     	22
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CBB9DC402DA"
+		    roleview_list 	(list RoleViews
+			(object RoleView "result" @56
+			    Parent_View 	@54
+			    location   	(1124, 894)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @57
+				Parent_View 	@56
+				location   	(1310, 1668)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	136
+				justify    	0
+				label      	"+result"
+				pctDist    	0.828794
+				height     	85
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CBB9DC402DC"
+			    client     	@54
+			    supplier   	@34
+			    vertices   	(list Points
+				(1394, 1487)
+				(1394, 1706))
+			    line_style 	0
+			    label      	(object SegLabel @58
+				Parent_View 	@56
+				location   	(1448, 1684)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "earlyWarning" @59
+			    Parent_View 	@54
+			    location   	(1124, 894)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @60
+				Parent_View 	@59
+				location   	(1414, 1335)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	278
+				justify    	0
+				label      	"+earlyWarning"
+				pctDist    	0.701613
+				height     	20
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CBB9DC402DB"
+			    client     	@54
+			    supplier   	@45
+			    vertices   	(list Points
+				(1394, 1487)
+				(1394, 1269))
+			    line_style 	0
+			    label      	(object SegLabel @61
+				Parent_View 	@59
+				location   	(1427, 1295)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.879377
+				height     	33
+				orientation 	1))))
+		(object AssociationViewNew "KETEarlyWarningEndReqLink" @62
+		    location   	(1746, 1480)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @63
+			Parent_View 	@62
+			location   	(2053, 1466)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	543
+			justify    	0
+			label      	"KETEarlyWarningEndReqLink"
+			pctDist    	5.633333
+			height     	15
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CD3927E005D"
+		    roleview_list 	(list RoleViews
+			(object RoleView "earlyWarning" @64
+			    Parent_View 	@62
+			    location   	(-130, -7)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @65
+				Parent_View 	@64
+				location   	(1759, 1292)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	278
+				justify    	0
+				label      	"+earlyWarning"
+				pctDist    	0.503806
+				height     	129
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CD3927E02AF"
+			    client     	@62
+			    supplier   	@45
+			    vertices   	(list Points
+				(1746, 1480)
+				(1572, 1269))
+			    line_style 	0
+			    label      	(object SegLabel @66
+				Parent_View 	@64
+				location   	(1555, 1295)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.970188
+				height     	31
+				orientation 	0))
+			(object RoleView "endReq" @67
+			    Parent_View 	@62
+			    location   	(-130, -7)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @68
+				Parent_View 	@67
+				location   	(1795, 1677)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	174
+				justify    	0
+				label      	"+endReq"
+				pctDist    	0.669643
+				height     	88
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CD3927E02BF"
+			    client     	@62
+			    supplier   	@35
+			    vertices   	(list Points
+				(1746, 1480)
+				(1920, 1691))
+			    line_style 	0
+			    label      	(object SegLabel @69
+				Parent_View 	@67
+				location   	(1970, 1649)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.995804
+				height     	66
+				orientation 	0))))
+		(object AssociationViewNew "KETEarlyWarningStepLink" @70
+		    location   	(1397, 634)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @71
+			Parent_View 	@70
+			location   	(1662, 647)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	496
+			justify    	0
+			label      	"KETEarlyWarningStepLink"
+			pctDist    	4.933333
+			height     	13
+			orientation 	1)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CF730A8002E"
+		    roleview_list 	(list RoleViews
+			(object RoleView "earlyWarningstep" @72
+			    Parent_View 	@70
+			    location   	(2, -419)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @73
+				Parent_View 	@72
+				location   	(1203, 474)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	354
+				justify    	0
+				label      	"+earlyWarningstep"
+				pctDist    	0.792231
+				height     	196
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CF730A801E4"
+			    client     	@70
+			    supplier   	@44
+			    vertices   	(list Points
+				(1397, 634)
+				(1398, 432))
+			    line_style 	0
+			    label      	(object SegLabel @74
+				Parent_View 	@72
+				location   	(1452, 452)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "earlyWarning" @75
+			    Parent_View 	@70
+			    location   	(2, -419)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @76
+				Parent_View 	@75
+				location   	(1246, 789)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	278
+				justify    	0
+				label      	"+earlyWarning"
+				pctDist    	0.771008
+				height     	150
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CF730A801F4"
+			    client     	@70
+			    supplier   	@45
+			    vertices   	(list Points
+				(1397, 634)
+				(1396, 836))
+			    line_style 	0
+			    label      	(object SegLabel @77
+				Parent_View 	@75
+				location   	(1450, 816)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))
+	(object ClassDiagram "해제신청서"
+	    quid       	"4CD38DC6033C"
+	    title      	"해제신청서"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @78
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1314, 434)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@78
+			location   	(1118, 180)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	392
+			justify    	0
+			label      	"WTDocument")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84903E3"
+		    width      	410
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningEndReq" @79
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1319, 1378)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@79
+			location   	(1071, 1047)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	496
+			justify    	0
+			label      	"KETEarlyWarningEndReq")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CD38DE300FA"
+		    width      	514
+		    height     	686
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @80
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CD38FC8005D"
+		    client     	@79
+		    supplier   	@78
+		    vertices   	(list Points
+			(1316, 1034)
+			(1315, 700))
+		    line_style 	0)))
+	(object ClassDiagram "해제판정서"
+	    quid       	"4CD3903E02DE"
+	    title      	"해제판정서"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @81
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1356, 406)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@81
+			location   	(1160, 152)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	392
+			justify    	0
+			label      	"WTDocument")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84903E3"
+		    width      	410
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningEnd" @82
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1365, 1334)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@82
+			location   	(1093, 953)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	544
+			justify    	0
+			label      	"KETEarlyWarningEnd")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CD3905202DE"
+		    width      	562
+		    height     	786
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @83
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CD391D80232"
+		    client     	@82
+		    supplier   	@81
+		    vertices   	(list Points
+			(1360, 940)
+			(1358, 672))
+		    line_style 	0)))
+	(object ClassDiagram "초기유동관리단계"
+	    quid       	"4CF72EFA02EE"
+	    title      	"초기유동관리단계"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @84
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1322, 413)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@84
+			location   	(1126, 159)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	392
+			justify    	0
+			label      	"WTDocument")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"353FA84903E3"
+		    width      	410
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ews::entity::KETEarlyWarningStep" @85
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1322, 998)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@85
+			location   	(1099, 817)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	446
+			justify    	0
+			label      	"KETEarlyWarningStep")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CF72F150242"
+		    width      	464
+		    height     	386
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @86
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CF72F23035B"
+		    client     	@85
+		    supplier   	@84
+		    vertices   	(list Points
+			(1322, 804)
+			(1322, 679))
+		    line_style 	0)))))

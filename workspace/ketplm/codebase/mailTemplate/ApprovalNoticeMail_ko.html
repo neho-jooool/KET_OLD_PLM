@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PLM 알림메일</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom:10px;
+}
+.tdblueM {
+		border-bottom-style: solid;
+		border-bottom-color: #e5e4e4;
+		border-bottom-width: 1px;
+		border-right-style: solid;
+		border-right-color: #e5e4e4;
+		border-right-width: 1px;
+		background-color: #f4f4f4;
+		height: 25px;
+		padding-top: 2px;
+		padding-left: 5px;
+		color:#000000;
+		text-align: center;
+		font-family:Dotum;
+		font-size: 12px;
+		padding-right: 5px;
+		}
+
+		.tdwhiteL {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #e5e4e4;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: #e5e4e4;
+		background-color:#ffffff;
+		height: 22px;
+		color:#575757;
+		padding-top: 2px;
+		padding-left: 5px;
+		text-align: left;
+		font-family:Dotum;
+		font-size: 12px;
+		}
+
+		.tdwhiteL0 {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #e5e4e4;
+		background-color:#ffffff;
+		height: 22px;
+		color:#575757;
+		padding-top: 2px;
+		padding-left: 5px;
+		text-align: left;
+		font-family:Dotum;
+		font-size: 12px;
+		}
+
+		.tab_btm2 {
+    	font-family: Arial, Helvetica, sans-serif;
+    	background-color: #bbbbbb;
+    	height: 2px;
+    }
+-->
+</style>
+</head>
+<body>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table height="28" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="5"></td>
+        <td width="20"><img src="<@host>/plm/portal/images/m_icon_3.gif"></td>
+        <td><font color="#4D4D4D" size="3"><b>[PLM]<@mailTitle></font></b></td>
+      </tr>
+    </table></td>
+    <td width="219" align="right"><img src="<@host>/plm/portal/images/m_logo_plm.gif"></td>
+  </tr>
+</table>
+<table width="800" height="500" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_9.gif"></td>
+    <td height="10" background="<@host>/plm/portal/images/box_14.gif"></td>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_10.gif"></td>
+  </tr>
+  <tr>
+    <td width="10" background="<@host>/plm/portal/images/box_13.gif">&nbsp;</td>
+    <td valign="top"><table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="20">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="20">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="20">&nbsp;</td>
+    		<td><table border="0" cellspacing="0" cellpadding="0" width="780">
+    		<tr><td width="10"></td>
+    		<td class="tab_btm2" colspan="2"></td></tr>
+    		<tr><td width="10"></td>
+    		<td width="150" height="40" class="tdblueM">분  류</td><td class="tdwhiteL0"><@objTitle></td>
+    		<td width="10"></td></tr>
+    		<tr><td width="10"></td>
+    		<td width="150" height="40" class="tdblueM"><@reqUser></td><td class="tdwhiteL0"><@creator></td>
+    		<td width="10"></td></tr>
+    		<tr><td width="10"></td>
+    		<td width="150" height="40" class="tdblueM">요청일</td><td class="tdwhiteL0"><@reqDate></td>
+    		<td width="10"></td></tr>
+    		<tr><td width="10"></td>
+    		<td class="tab_btm2" colspan="2"></td></tr>
+    		<tr><td width="10"></td>
+    		<td colspan="2" height="40" align="left">
+    			<font face="Dotum" color="#575757">확인 하시려면 <@goLinkPage>여기</a>를 눌러주세요</font>
+    			<br><font color=red>해당메일을 타인에게 전송하면 권한이 없어도 문서를 열어 볼 수 있습니다.<br>보안이 필요하면 타인에게 전송하지 마세요.</font>
+    			<br><br><@approvalHistory>
+    		</td>
+    		<td width="10"></td></tr>
+    		</table><br></td>
+      </tr>
+    </table>
+      <!--내용--></td>
+    <td width="10" background="<@host>/plm/portal/images/box_15.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_11.gif"></td>
+    <td height="10" background="<@host>/plm/portal/images/box_16.gif"></td>
+    <td width="10" height="10"><img src="<@host>/plm/portal/images/box_12.gif"></td>
+  </tr>
+</table>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="35" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"><img src="<@host>/plm/portal/images/copyr_1.gif"></td>
+        <td align="center" valign="middle"><img src="<@host>/plm/portal/images/copyright.gif"></td>
+        <td width="10"><img src="<@host>/plm/portal/images/copyr_2.gif"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,2063 @@
+<?xml version="1.0" ?><!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+<NmLoader>
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.folder.Cabinet</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.folder.SubFolder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/1/2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.pdmlink.PDMLinkProduct</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.inf.library.WTLibrary</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.team.Team</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.workflow.engine.WfExecutionObject</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>wt.calendar.WTCalendar</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>e3ps.project.Performance</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/</csvdomain>
+    <csvtypeId>e3ps.project.TemplateProject</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.fc.WTObject</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>공통_임원</csvprincipal>
+    <csvpermissionList>0/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.fc.WTObject</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_임원</csvprincipal>
+    <csvpermissionList>0/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.fc.WTObject</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_임원</csvprincipal>
+    <csvpermissionList>0/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>INWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.bom.entity.KETBomEcoHeader</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>REWORK</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.part.WTPart</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/]/Default</csvdomain>
+    <csvtypeId>e3ps.part.entity.KETNewPartList</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.wfm.entity.KETWfmMultiApprovalRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETMoldChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>PLANNING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>EXCUTEACTIVITY</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeOrder</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1</csvpermissionList>
+    <csvstate>ACTIVITYCOMPLETED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ecm.entity.KETProdChangeActivity</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/2/5</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_금형설계</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_금형설계</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>wt.epm.EPMDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETProjectDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부</csvprincipal>
+    <csvpermissionList>2</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETTechnicalDocument</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETStandardTemplate</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>ALL</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETStandardTemplate</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETStandardTemplate</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_기획</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_영업</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_기획</csvprincipal>
+    <csvpermissionList>1/11</csvpermissionList>
+    <csvstate>RECEIVING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_영업</csvprincipal>
+    <csvpermissionList>1/11</csvpermissionList>
+    <csvstate>RECEIVING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/11</csvpermissionList>
+    <csvstate>RECEIVING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_기획</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_영업</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_기획</csvprincipal>
+    <csvpermissionList>1/11</csvpermissionList>
+    <csvstate>RECEIVING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_영업</csvprincipal>
+    <csvpermissionList>1/11</csvpermissionList>
+    <csvstate>RECEIVING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/전자사업부</csvdomain>
+    <csvtypeId>e3ps.dms.entity.KETDevelopmentRequest</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>전자사업부_제품설계</csvprincipal>
+    <csvpermissionList>1/11</csvpermissionList>
+    <csvstate>RECEIVING</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningStep</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningStep</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningStep</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningStep</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>0/1/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningStep</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>0/1/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningStep</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>0/1/2/5/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarning</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningPlan</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>7</csvpermissionList>
+    <csvstate>APPROVED</csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningResult</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningResult</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningResult</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningResult</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningResult</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningResult</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEndReq</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEndReq</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEndReq</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEndReq</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEndReq</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEndReq</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEnd</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEnd</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>Business Administrators</csvprincipal>
+    <csvpermissionList>-1</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEnd</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEnd</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_구매</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEnd</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_생산</csvprincipal>
+    <csvpermissionList>0/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+<csvAccessRule handler="wt.load.LoadUser.createAccessRule" >
+    <csvuser></csvuser>
+    <csvdomain>[/wt.inf.container.OrgContainer=ket/wt.pdmlink.PDMLinkProduct=KET]/Default/자동차사업부</csvdomain>
+    <csvtypeId>e3ps.ews.entity.KETEarlyWarningEnd</csvtypeId>
+    <csvpermission>+</csvpermission>
+    <csvprincipal>자동차사업부_품질</csvprincipal>
+    <csvpermissionList>0/2/6/10</csvpermissionList>
+    <csvstate></csvstate>
+</csvAccessRule>
+
+</NmLoader>

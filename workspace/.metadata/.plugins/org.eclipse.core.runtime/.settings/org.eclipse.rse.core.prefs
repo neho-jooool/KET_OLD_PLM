@@ -1,0 +1,10 @@
+activeuserprofiles=Team;psb386;sw775park-PC
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.ftp.systemType.defaultUserId=
+org.eclipse.rse.systemtype.linux.systemType.defaultUserId=
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=
+org.eclipse.rse.systemtype.ssh.systemType.defaultUserId=
+org.eclipse.rse.systemtype.telnet.systemType.defaultUserId=
+org.eclipse.rse.systemtype.unix.systemType.defaultUserId=
+org.eclipse.rse.systemtype.windows.systemType.defaultUserId=
+useridperkey=sw775park-PC.Local\=sw775.park;

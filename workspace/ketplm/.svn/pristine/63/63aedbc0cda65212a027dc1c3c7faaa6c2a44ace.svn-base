@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+  <entry key="msg.mail.ProjectModuleEventListener.Please_register_Performance_management_objectives_of_the_project">Please register Performance management objectives of the project.</entry><!-- 프로젝트의 성과관리 목표를 등록하시길 바랍니다. -->
+  <entry key="msg.mail.ProjectModuleEventListener.Task_has_been_delayed">Task has been delayed.</entry><!-- Task가 지연되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.PLM.notice.mail">PLM Notice Mail</entry><!-- PLM 알림 메일 -->
+  <entry key="msg.mail.ProjectHelper.Development_person">Development person</entry><!-- 개발담당자 -->
+  <entry key="msg.mail.ProjectHelper.Mold development_person">Mold development person</entry><!-- 금형담당자 -->
+  <entry key="msg.mail.ProjectHelper.project_status_is_please_refer_to_your_work">Project status is {0}. Please refer to your work</entry><!-- 프로젝트가 {0} 되었습니다. 업무에 참조하시길 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.project_person_in_charge_is_assighed_please_refer_to_the_business">Project({0}) Person in charge is assighed. Please refer to the business.</entry><!-- 프로젝트({0})담당자가 되었습니다. 업무에 참조하시길 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.the_project_is_approved._please_refer_to_the_your_work">The project is approved. Please refer to the your work.</entry><!-- 프로젝트가 승인되어 진행 상태로 변경되었습니다. 업무에 참조하시길 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.the_project_schedule_is_changed._please_refer_to_the_your_work">The project schedule is changed. Please refer to the your work.</entry><!-- 프로젝트 일정이 변경되어 진행 상태로 변경되었습니다. 업무에 참조하시길 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.project.mold_try_complete">Mold Try Complete</entry><!-- 금형 Try 완료 -->
+  <entry key="msg.mail.ProjectHelper.mold_try_of_the_item_is_completed_please_refer_to_your_work">Mold try of the Item is completed. Please refer to your work</entry><!-- 상기 Item의 금형Try가 완료되었으니 업무에 참조 하시기 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.mold_development_person">Mold development person</entry><!-- 금형개발담당자 -->
+  <entry key="msg.mail.ProjectHelper.development_task_is_assigned_to_your_approval_list_of_workspace">Development task is assigned to your approval list of workspace</entry><!-- 개발 담당자 지정 업무가 작업공간의 결재대기함에 할당 되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_in_charge_of_development">You are assigned to in charge of development </entry><!-- 프로젝트의 개발담당자로 지정되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.the_project_has_been_created._please_refer_to_your_work">The project has been created. Please refer to your work.</entry><!-- 프로젝트가 생성 되었습니다. 업무에 참조 하십시오. -->
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_in_charge_of_mold_development">You are assigned to in charge of mold development </entry><!-- 프로젝트의 금형개발담당으로 지정되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_project_pm">You are assigned to project PM.</entry><!-- 프로젝트의 PM으로 지정되었습니다. -->
+
+  <entry key="msg.mail.ProjectHelper.issue_has_been_registered">Issue has been registered.</entry><!-- Issue가 등록되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_registered._please_refer_to_the_business">Project Issue ({0}) has been registered. Please refer to the business.</entry><!-- 프로젝트의  Issue({0})가 등록되었습니다. 업무에 참조하시기 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_registered_in_issue">The solution has been registered in Issue({0}).</entry><!-- Issue({0})에 해결방안이 등록되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_registered_in_project_issue_please_refer_to_the_business">The solution has been registered in Project Issue({0}). Please refer to the business.</entry><!-- 프로젝트의  Issue({0})에 해결방안이 등록되었습니다. 업무에 참조하시기 바랍니다. -->
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_issue">You are assigned to  {0} Issue</entry><!-- Issue({0})에  담당자로  위임되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.you_are_assigned_to_project_issue">{0} You are assigned to project {1} Issue</entry><!-- {0} 프로젝트의  Issue({1})에  담당자로  위임되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_completed_in_issue">The solution has been completed in Issue({0}).</entry><!-- Issue({0})에  해결 방안이 완료 되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.the_solution_has_been_completed_in_project_issue_please_refer_to_the_business">The solution has been completed in Project Issue({0}). Please refer to the business.</entry><!-- 프로젝트의  Issue({0})에  해결 방안이 완료 되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.issue_has_been_specified_in_the_unfinished_task">Issue ({0}) has been specified in the unfinished task</entry><!-- Issue({0})에  미완료 업무 지정이 되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_specified_in_the_unfinished_task">Project Issue ({0}) has been specified in the unfinished task</entry><!-- 프로젝트의  Issue({0})에  미완료 업무 지정이 되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.issue_has_been_completed">Issue({0}) has been completed.</entry><!-- Issue({0})가  완료되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_completed">Project Issue({0}) has been completed.</entry><!-- 프로젝트의  Issue({0})가  완료되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.issue_has_been_deleted">Issue({0}) has been deleted.</entry><!-- Issue({0})가  삭제 되었습니다. -->
+  <entry key="msg.mail.ProjectHelper.project_issue_has_been_deleted">Project Issue({0}) has been deleted.</entry><!-- 프로젝트의  Issue({0})가  삭제 되었습니다. -->
+
+</properties>

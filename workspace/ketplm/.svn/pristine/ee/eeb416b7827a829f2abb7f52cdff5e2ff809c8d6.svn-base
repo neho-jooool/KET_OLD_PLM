@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <script>
+        function onLoad() {
+			//document.location.replace('/plm/portal/index2.jsp');
+            setTimeout(function() { document.location.replace('servlet/WindchillGW'); }, 100);
+        }
+    </script>
+    <title>Windchill</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            margin: 0;
+            padding: 150px 0 0 0;
+        }
+    </style>
+</head>
+
+<body onload="onLoad();">
+    <a href="servlet/WindchillGW"><img src="wtcore/images/bblks/l_ptc_splash.png" border="0" /></a>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+WARNING=DO NOT MODIFY THIS FILE IF YOU DON'T UNDERSTAND
+defaultDestination=D\:/ptc/Windchill_10.2/Windchill/codebase
+defaultVariables=
+eclipse.preferences.version=1
+includeTeamPrivateFiles=false
+map|0=bin|D\:/ptc/Windchill_10.2/Windchill/codebase|,|**/*Test.class|,
+map|1=codebase|D\:/ptc/Windchill_10.2/Windchill/codebase|,|WEB-INF/lib/wt10.2M010.jar;WEB-INF/lib/com10.2M010.jar|,
+map|2=src|D\:/ptc/Windchill_10.2/Windchill/src|,|,|,
+map|3=src_gen|D\:/ptc/Windchill_10.2/Windchill/src_gen|,|,|,
+map|4=src_resources|D\:/ptc/Windchill_10.2/Windchill/src_resource|,|,|,
+map|5=wtCustom|D\:/ptc/Windchill_10.2/Windchill/wtCustom|,|,|,
+useCurrentDateForDestinationFiles=false

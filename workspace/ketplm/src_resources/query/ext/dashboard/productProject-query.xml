@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="product">
+
+    <select id="productPjtOverallStatus" resultType="ext.ket.dashboard.entity.ProductProjectDTO">
+        <![CDATA[
+                 SELECT     CUSTOMER
+					       ,CARTYPE
+					       ,DATA.MODELNAME AS DETAILCAR
+					       ,PJTNO
+					       ,PJTNAME
+					       ,STATE
+					       ,FN_GET_OEMPLAN_OEMENDDATE(MP.IDA2A2, '2') PROTO            
+					       ,FN_GET_OEMPLAN_OEMENDDATE(MP.IDA2A2, '3') P1            
+					       ,FN_GET_OEMPLAN_OEMENDDATE(MP.IDA2A2, '4') P2                        
+					       ,FN_GET_OEMPLAN_OEMENDDATE_SOP(MP.IDA2A2)  SOP
+					       ,ITEMTYPE
+					       ,ITEMCOUNT
+					       ,ISSUECOUNT
+				 FROM (
+				        SELECT CUSTOMER,CARTYPE,MODELNAME,PJTNAME,STATE,ITEMTYPE, MAX(ITEMCOUNT) ITEMCOUNT, ID,PJTNO, ISSUECOUNT
+				         FROM (
+						         SELECT NC_OEM.NAME  AS   CUSTOMER         
+						               ,OEM.NAME      AS  CARTYPE                 
+						               ,MP.MODELNAME  AS  MODELNAME 
+						               ,COUNT(E3PSPJTMST.PJTNO) OVER(PARTITION BY E3PSPJTMST.PJTNO ORDER BY PJT.STATESTATE) AS PJTTOTALCOUNT                               
+						               ,E3PSPJTMST.PJTNO AS PJTNO
+						               ,MP.IDA2A2 AS ID
+						               ,PJT.IDA2A2 AS PJTID
+						               ,E3PSPJTMST.PJTNAME AS PJTNAME
+						               ,PJT.STATESTATE AS STATE
+						               ,COUNT(PJT.STATESTATE) OVER(PARTITION BY PJT.IDA2A2, PJT.STATESTATE ORDER BY PJT.STATESTATE) AS PJTTYPECOUNT
+						               ,ITEM.ITEMTYPE AS ITEMTYPE
+						               ,COUNT(ITEM.ITEMTYPE) OVER(PARTITION BY PJT.IDA2A2, ITEM.ITEMTYPE ORDER BY PJT.STATESTATE)  AS ITEMCOUNT
+						              ,(SELECT COUNT(SUBJECT) FROM PROJECTISSUE ISSUE WHERE ISSUE.IDA3A4 = PJT.IDA2A2)  AS ISSUECOUNT
+						           FROM MODELPLAN      MP             
+						               ,OEMPROJECTTYPE OEM            
+						               ,NUMBERCODE     NC_OEM         
+						               ,NUMBERCODE     NC_MP    
+						               ,PRODUCTPROJECT PJT
+						               ,E3PSPROJECTMASTER E3PSPJTMST 
+						               ,MOLDITEMINFO ITEM
+						          WHERE MP.IDA3B3  = OEM.IDA2A2(+)    
+						            AND OEM.IDA3A4 = NC_OEM.IDA2A2(+) 
+						            AND MP.IDA3A3  = NC_MP.IDA2A2(+)
+						            AND PJT.IDA3D8(+) = OEM.IDA2A2
+						            AND PJT.IDA3B8 = E3PSPJTMST.IDA2A2
+						            AND PJT.IDA2A2 = ITEM.IDA3A3
+						            AND PJT.LASTEST       = 1                                                           
+						            AND PJT.CHECKOUTSTATE <> 'c/o'                                                         
+						            AND PJT.PJTTYPE = '2' 
+						          ORDER BY  MP.MODELNAME
+				                 )
+				          GROUP BY CUSTOMER, CARTYPE,MODELNAME,STATE,ITEMTYPE,PJTNAME,ID,PJTNO, ISSUECOUNT
+				          ORDER BY CUSTOMER, PJTNAME
+				        ) DATA, MODELPLAN MP
+				     WHERE 1=1
+				     AND DATA.ID = MP.IDA2A2 
+				     AND STATE IN ('COMPLETED','PROGRESS','WITHDRAWN')   
+        ]]>
+    </select>
+     
+   
+ 
+ 
+</mapper>

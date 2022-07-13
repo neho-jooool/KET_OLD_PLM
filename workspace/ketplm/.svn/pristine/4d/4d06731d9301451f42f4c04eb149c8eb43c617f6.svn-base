@@ -1,0 +1,18 @@
+ant -f %WT_HOME%/bin/tools.xml bundle_custom -Dbundle.forceCompile=true -Dbundle.input=registry
+resourcebuild wt.epm.EPMApplicationTypeRB
+resourcebuild wt.epm.EPMAuthoringAppTypeRB
+resourcebuild wt.lifecycle.StateRB
+resourcebuild wt.part.QuantityUnitRB
+resourcebuild wt.project.RoleRB
+resourcebuild e3ps.common.code.*
+resourcebuild e3ps.common.impl.*
+resourcebuild e3ps.edm.*
+resourcebuild e3ps.groupware.board.*
+resourcebuild e3ps.groupware.company.*
+resourcebuild e3ps.project.*
+resourcebuild e3ps.project.outputtype.*
+resourcebuild ext.ket.project.*
+
+Windchill stop
+ant -f %WT_HOME%/codebase/MakeJar.xml custUpdate
+Windchill start

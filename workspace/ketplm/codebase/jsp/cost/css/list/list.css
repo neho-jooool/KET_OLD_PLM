@@ -1,0 +1,37 @@
+BODY
+A:link    { text-decoration:none; color:#8A8A8A}
+A:visited { text-decoration:underline; color:#5E5E5E}
+A:active  { text-decoration:none; color:#5E5E5E}
+A:hover   { text-decoration:underline; color:#8A8A8A}
+
+A.txt:link    { text-decoration:none; color:#124454}
+A.txt:visited { text-decoration:none; color:#124454}
+A.txt:active  { text-decoration:none; color:#124454}
+A.txt:hover   { text-decoration:none; color:#00bdbd}
+
+A.txt_2:link    { text-decoration:none; color:#fea914}
+A.txt_2:visited { text-decoration:none; color:#fea914}
+A.txt_2:active  { text-decoration:none; color:#fea914}
+A.txt_2:hover   { text-decoration:none; color:#ff3a3a}
+
+.style1    {font-size: 12px;text-align:center}
+.style1_1  {font-size: 12px;text-align:center ; color:#333333;}
+.style2    {font-size: 12px; font-weight: bold;color:#124454; text-align:left}
+.style3    {font-size: 12px; font-weight: bold;color:#4F4F4F;}
+.style4    {font-size: 12px; background-color:#becfd5; text-align: center; color:#ffffff; font-weight: bold;}
+.style5    {font-size: 12px; background-color:#becfd5; text-align: center; font-weight: bold; color:#333333}
+.style55   {font-size: 12px; background-color:#ffffff; text-align: left; font-weight: bold; color:#333333}
+.style6    {font-size: 12px;font-weight: bold; text-align:right;color:#3F6FA3}
+.style10   {font-size: 24px; font-weight: bold;color:#4F4F4F;text-align:center}
+.line_name {font-size: 4px; color:#EFEFEF; text-align:center}
+.style7    {font-size: 12px;text-align:left}
+.style8    {font-size: 12px;text-align:right; color:#124454;}
+.style9    {font-size: 12px; text-align:center; font-weight: bold;color:#FF3300}
+.style9_1  {font-size: 12px; text-align:center; font-weight: bold;color:#cc3333}
+.style11   {font-size: 12px; text-align:center; color:#e75151}
+
+
+
+#menu1 {display:block;}
+#menu2 {display:block;}
+#menu3 {display:block;}

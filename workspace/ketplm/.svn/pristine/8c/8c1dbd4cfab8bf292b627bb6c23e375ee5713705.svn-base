@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE NmLoader SYSTEM "standardX05.dtd">
+
+<NmLoader>
+
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>EPMAttributes</csvname>
+		<csvhierarchyDisplayName/>
+		<csvorganizerPaths/>
+		<csvdefinitionPaths/>
+		<csvdisplay_name/>
+		<csvdescription/>
+		<csvdata_type>org</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier> </csvlogicalIdentifier>
+	</csvAttrDefinizer>
+
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>CADAppType</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>CAD종류<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>CAD종류<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>CAD종류<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>CADAppType</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>DevStage</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>개발구분<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>개발구분<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>개발단계, 양산단계, 개발검토단계 여부<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>DevStage</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>CADCategory</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>도면유형<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>도면유형<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>도면유형<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>CADCategory</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>CADManageType</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>도면종류<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>도면종류<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>제품도면, 금형도면 여부<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>CADManageType</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>ManufacturingVersion</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>양산버전<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>양산버전<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>양산버전<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>ManufacturingVersion</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>IsDummyFile</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>Dummy파일여부<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>Dummy파일여부<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>Dummy파일여부<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>IsDummyFile</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>PART_NO</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>PART_NO<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>PART_NO<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>PART_NO<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>PART_NO</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+	<csvAttrDefinizer handler="wt.iba.definition.DefinitionLoaderWithCache.createAttrDefinizer">
+		<csvname>PART_NAME</csvname>
+		<csvhierarchyDisplayName><?loc-begin key="KET_ATTRIBUTES"?>PART_NAME<?loc-end?></csvhierarchyDisplayName>
+		<csvorganizerPaths>EPMAttributes</csvorganizerPaths>
+		<csvdefinitionPaths/>
+		<csvdisplay_name><?loc-begin key="KET_ATTRIBUTES"?>PART_NAME<?loc-end?></csvdisplay_name>
+		<csvdescription><?loc-begin key="KET_ATTRIBUTES"?>PART_NAME<?loc-end?></csvdescription>
+		<csvdata_type>string</csvdata_type>
+		<csvQoMName/>
+		<csvnameValuePairs/>
+		<csvlogicalIdentifier>PART_NAME</csvlogicalIdentifier>
+	</csvAttrDefinizer>
+
+</NmLoader>

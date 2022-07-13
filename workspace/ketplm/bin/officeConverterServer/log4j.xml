@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+    debug="false">
+
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="encoding" value="UTF-8" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p [%c] %m%n" />
+        </layout>
+    </appender>
+
+    <!-- File -->
+    <appender name="dailyLog" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="F:\\ConvertFileDownload\\msConvertServer.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+        <param name="encoding" value="UTF-8" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="DateFormat" value="ISO8601" />
+            <param name="TimeZoneID" value="GMT-8:00" />
+            <param name="ConversionPattern" value="[%d] %-5p - %m%n" />
+        </layout>
+    </appender>
+
+    <logger name="officeConverterServer" additivity="false">
+        <level value="DEBUG" />
+        <appender-ref ref="console" />
+        <appender-ref ref="dailyLog" />
+    </logger>
+
+    <root>
+        <level value="DEBUG" />
+        <appender-ref ref="console" />
+    </root>
+
+
+</log4j:configuration>
+ 

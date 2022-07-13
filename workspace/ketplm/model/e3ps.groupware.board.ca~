@@ -1,0 +1,1685 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "board"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4CEC6B3300C1"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "Board"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"CompositeIndex1"
+		    value      	(value Text "parentReference.key.id")))
+	    quid       	"3D86C7D60099"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"3D86C7D6009B"
+		    supplier   	"Logical View::wnc::Foundation::wt::content::ContentHolder"
+		    quidu      	"348899BF0399")
+		(object Inheritance_Relationship
+		    quid       	"41406EA9004E"
+		    supplier   	"Logical View::e3ps::common::impl::Tree"
+		    quidu      	"4124498D01E9")
+		(object Inheritance_Relationship
+		    quid       	"41EDDC9200E3"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "title"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "2000")))
+		    quid       	"3D86C7D6009D"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "contents"
+		    attributes 	(list Attribute_Set)
+		    quid       	"3D86C7D6009E"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")
+		(object ClassAttribute "readCount"
+		    quid       	"3DCB91FF0055"
+		    type       	"int"
+		    initv      	"0"
+		    exportControl 	"Public")
+		(object ClassAttribute "depth"
+		    quid       	"3D86D81901B1"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "state"
+		    quid       	"41070C7D0361"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "docNumber"
+		    quid       	"51A565C7020B"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "preferred"
+		    quid       	"51A566590371"
+		    documentation 	"0=false, 1=true"
+		    type       	"int"
+		    initv      	"0"
+		    exportControl 	"Public")
+		(object ClassAttribute "webEditor"
+		    quid       	"51ADC63E01C8"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")
+		(object ClassAttribute "webEditorText"
+		    quid       	"51ADC6800388"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")))
+	(object Class "BoardComment"
+	    quid       	"3D86C7D600A3"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"41EDDC9501A5"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "contents"
+		    attributes 	(list Attribute_Set)
+		    quid       	"3D86C7D600A6"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")))
+	(object Class "Notify"
+	    quid       	"3D8FBDEB0151"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"3DE42E3900D3"
+		    supplier   	"Logical View::wnc::Foundation::wt::content::ContentHolder"
+		    quidu      	"348899BF0399")
+		(object Inheritance_Relationship
+		    quid       	"41EDDC9701EE"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "title"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "2000")))
+		    quid       	"3D8FD44700CB"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "contents"
+		    attributes 	(list Attribute_Set)
+		    quid       	"3D8FBE37002E"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")
+		(object ClassAttribute "deadline"
+		    quid       	"4428C6B4035D"
+		    type       	"java.sql.Timestamp"
+		    exportControl 	"Public")
+		(object ClassAttribute "readCount"
+		    quid       	"51A563EA02FE"
+		    type       	"int"
+		    initv      	"0"
+		    exportControl 	"Public")
+		(object ClassAttribute "docNumber"
+		    quid       	"51A565B4009B"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "preferred"
+		    quid       	"51A566A50239"
+		    documentation 	"0=false, 1=true"
+		    type       	"int"
+		    initv      	"0"
+		    exportControl 	"Public")
+		(object ClassAttribute "webEditor"
+		    quid       	"51ADC6B002E0"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")
+		(object ClassAttribute "webEditorText"
+		    quid       	"51ADC6BE0277"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")))
+	(object Class "BoardCategory"
+	    quid       	"40B6A61101CC"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"41406EA601D4"
+		    supplier   	"Logical View::e3ps::common::impl::Tree"
+		    quidu      	"4124498D01E9"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "name"
+		    quid       	"4105EEBB0378"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "description"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "2000")))
+		    quid       	"4105EECA03A2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "treeType"
+		    quid       	"4105EED50307"
+		    type       	"int"
+		    exportControl 	"Public")))
+	(object Class "HelpBoard"
+	    quid       	"51A5B4D60159"
+	    documentation 	"HelpDesk common board"
+	    stereotype 	"Abstract"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"51A5BD45039B"
+		    supplier   	"Logical View::e3ps::common::impl::Tree"
+		    quidu      	"4124498D01E9")
+		(object Inheritance_Relationship
+		    quid       	"51A5BD4C0312"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362")
+		(object Inheritance_Relationship
+		    quid       	"51A5BD4F01F2"
+		    supplier   	"Logical View::wnc::Foundation::wt::content::ContentHolder"
+		    quidu      	"348899BF0399"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "docNumber"
+		    quid       	"51A5B50301BB"
+		    documentation 	"document number"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "title"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "1000")))
+		    quid       	"51A5B51D00C3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "readCount"
+		    quid       	"51A5BD24037D"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "deleted"
+		    quid       	"51A5BEB2023A"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "preferred"
+		    quid       	"51A5BEC30002"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "depth"
+		    quid       	"51A5BED70301"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "webEditor"
+		    quid       	"51ADC6E60220"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public")
+		(object ClassAttribute "webEditorText"
+		    quid       	"51ADC6F80177"
+		    type       	"Object"
+		    quidu      	"3784E518034B"
+		    exportControl 	"Public"))
+	    abstract   	TRUE)
+	(object Class "ImproveBoard"
+	    quid       	"51A5BF29020E"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"51A5BF3C01FE"
+		    supplier   	"Logical View::e3ps::common::impl::Tree"
+		    quidu      	"4124498D01E9")
+		(object Inheritance_Relationship
+		    quid       	"51A5BF400367"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362")
+		(object Inheritance_Relationship
+		    quid       	"51A5BF440156"
+		    supplier   	"Logical View::wnc::Foundation::wt::content::ContentHolder"
+		    quidu      	"348899BF0399")
+		(object Inheritance_Relationship
+		    quid       	"51A5C1950013"
+		    supplier   	"Logical View::e3ps::groupware::board::HelpBoard"
+		    quidu      	"51A5B4D60159"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "classification"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "10")))
+		    quid       	"51A5C211035C"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "state"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "10")))
+		    quid       	"51A5C2BD024B"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "division"
+		    quid       	"51D630950258"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "handleResult"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"52FDA608009C"
+		    documentation 	"처리결과"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "cause"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "4000")))
+		    quid       	"52FDA8D5008C"
+		    documentation 	"원인"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "QnaBoard"
+	    quid       	"51A5C16403A3"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"51A5C173033B"
+		    supplier   	"Logical View::e3ps::groupware::board::HelpBoard"
+		    quidu      	"51A5B4D60159"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "classification"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "10")))
+		    quid       	"51A5C1BB018D"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "state"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "10")))
+		    quid       	"51A5C1DE0354"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Class "ManualBoard"
+	    quid       	"51A5C197039A"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"51A5C1AE01F2"
+		    supplier   	"Logical View::e3ps::groupware::board::HelpBoard"
+		    quidu      	"51A5B4D60159"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "classification"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "10")))
+		    quid       	"51A5C2740013"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "url"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "1000")))
+		    quid       	"51A5C29202D3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Association "BoardCommentLink"
+	    quid       	"3D86C7D600A8"
+	    roles      	(list role_list
+		(object Role "comment"
+		    quid       	"3D86C7D600A9"
+		    label      	"comment"
+		    supplier   	"Logical View::e3ps::groupware::board::BoardComment"
+		    quidu      	"3D86C7D600A3"
+		    client_cardinality 	(value cardinality "0..n")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "board"
+		    quid       	"3D86C7D600AA"
+		    label      	"board"
+		    supplier   	"Logical View::e3ps::groupware::board::Board"
+		    quidu      	"3D86C7D60099"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "CategoryBoardLink"
+	    quid       	"40B6A6D403D5"
+	    roles      	(list role_list
+		(object Role "board"
+		    quid       	"40B6A6D5030E"
+		    label      	"board"
+		    supplier   	"Logical View::e3ps::groupware::board::Board"
+		    quidu      	"3D86C7D60099"
+		    client_cardinality 	(value cardinality "0..n")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "category"
+		    quid       	"40B6A6D50310"
+		    label      	"category"
+		    supplier   	"Logical View::e3ps::groupware::board::BoardCategory"
+		    quidu      	"40B6A61101CC"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "NotifyWTUserLink"
+	    quid       	"40B6DF740068"
+	    roles      	(list role_list
+		(object Role "user"
+		    quid       	"40B6DF740271"
+		    label      	"user"
+		    supplier   	"Logical View::wnc::Foundation::wt::org::WTUser"
+		    quidu      	"33F8A95400CA"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "notify"
+		    quid       	"40B6DF740285"
+		    label      	"notify"
+		    supplier   	"Logical View::e3ps::groupware::board::Notify"
+		    quidu      	"3D8FBDEB0151"
+		    client_cardinality 	(value cardinality "1")
+		    is_navigable 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"3D86C7D600AB"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::content::ContentHolder" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2192, 868)
+		    font       	(object Font
+			size       	10
+			face       	"굴림"
+			bold       	TRUE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(2017, 846)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	350
+			justify    	0
+			label      	"ContentHolder")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(2017, 805)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	350
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	12632256
+		    quidu      	"348899BF0399"
+		    width      	368
+		    height     	146
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @2
+		    location   	(2521, 643)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(2258, 584)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	490
+			justify    	1
+			label      	"Notify를 읽어본 WTUser를 체크하기위한 Link")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	550
+		    height     	131)
+		(object ClassView "Class" "Logical View::e3ps::common::impl::Tree" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(814, 1518)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	TRUE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(650, 1461)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	328
+			justify    	0
+			label      	"Tree")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@3
+			location   	(650, 1411)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	328
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	16777088
+		    quidu      	"4124498D01E9"
+		    width      	346
+		    height     	238
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::BoardComment" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(814, 219)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(630, 163)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	368
+			justify    	0
+			label      	"BoardComment")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3D86C7D600A3"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(630, 224)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	1
+			max_width  	371
+			justify    	1)
+		    width      	386
+		    height     	136
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::Board" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(813, 868)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(584, 612)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	458
+			justify    	0
+			label      	"Board")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3D86C7D60099"
+		    compartment 	(object Compartment
+			Parent_View 	@5
+			location   	(584, 673)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	9
+			max_width  	471
+			justify    	1)
+		    width      	476
+		    height     	536
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "BoardCommentLink" @6
+		    location   	(813, 443)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @7
+			Parent_View 	@6
+			location   	(811, 425)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"BoardCommentLink"
+			pctDist    	0.466667
+			height     	19
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"3D86C7D600A8"
+		    roleview_list 	(list RoleViews
+			(object RoleView "comment" @8
+			    Parent_View 	@6
+			    location   	(293, -402)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @9
+				Parent_View 	@8
+				location   	(697, 300)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	248
+				justify    	0
+				label      	"+comment"
+				pctDist    	0.919016
+				height     	117
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"3D86C7D600A9"
+			    client     	@6
+			    supplier   	@4
+			    vertices   	(list Points
+				(813, 443)
+				(813, 287))
+			    line_style 	0
+			    label      	(object SegLabel @10
+				Parent_View 	@8
+				location   	(899, 303)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	80
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.896641
+				height     	86
+				orientation 	1))
+			(object RoleView "board" @11
+			    Parent_View 	@6
+			    location   	(293, -402)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @12
+				Parent_View 	@11
+				location   	(723, 582)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	192
+				justify    	0
+				label      	"+board"
+				pctDist    	0.888283
+				height     	91
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"3D86C7D600AA"
+			    client     	@6
+			    supplier   	@5
+			    vertices   	(list Points
+				(813, 443)
+				(813, 599))
+			    line_style 	0
+			    label      	(object SegLabel @13
+				Parent_View 	@11
+				location   	(867, 583)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object InheritView "" @14
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"3D86C7D6009B"
+		    client     	@5
+		    supplier   	@1
+		    vertices   	(list Points
+			(1051, 868)
+			(2007, 868))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::BoardCategory" @15
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(212, 1515)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@15
+			location   	(14, 1409)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	396
+			justify    	0
+			label      	"BoardCategory")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6A61101CC"
+		    compartment 	(object Compartment
+			Parent_View 	@15
+			location   	(14, 1470)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	3
+			max_width  	400
+			justify    	1)
+		    width      	414
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @16
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"41406EA601D4"
+		    client     	@15
+		    supplier   	@3
+		    vertices   	(list Points
+			(419, 1515)
+			(640, 1516))
+		    line_style 	0)
+		(object AssociationViewNew "CategoryBoardLink" @17
+		    location   	(447, 1259)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @18
+			Parent_View 	@17
+			location   	(416, 1260)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"CategoryBoardLink"
+			pctDist    	-0.033333
+			height     	1
+			orientation 	1)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40B6A6D403D5"
+		    roleview_list 	(list RoleViews
+			(object RoleView "board" @19
+			    Parent_View 	@17
+			    location   	(-918, -301)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @20
+				Parent_View 	@19
+				location   	(608, 1181)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	178
+				justify    	0
+				label      	"+board"
+				pctDist    	0.891847
+				height     	65
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40B6A6D5030E"
+			    client     	@17
+			    supplier   	@5
+			    vertices   	(list Points
+				(447, 1259)
+				(574, 1121))
+			    line_style 	0
+			    label      	(object SegLabel @21
+				Parent_View 	@19
+				location   	(510, 1131)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	80
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.738364
+				height     	42
+				orientation 	0))
+			(object RoleView "category" @22
+			    Parent_View 	@17
+			    location   	(-918, -301)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @23
+				Parent_View 	@22
+				location   	(476, 1373)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	253
+				justify    	0
+				label      	"+category"
+				pctDist    	0.347139
+				height     	99
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40B6A6D50310"
+			    client     	@17
+			    supplier   	@15
+			    vertices   	(list Points
+				(447, 1259)
+				(320, 1396))
+			    line_style 	0
+			    label      	(object SegLabel @24
+				Parent_View 	@22
+				location   	(321, 1333)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.752837
+				height     	44
+				orientation 	1))))
+		(object InheritView "" @25
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"41406EA9004E"
+		    client     	@5
+		    supplier   	@3
+		    vertices   	(list Points
+			(813, 1136)
+			(813, 1398))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::org::WTUser" @26
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3050, 179)
+		    font       	(object Font
+			size       	10
+			face       	"굴림"
+			bold       	TRUE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@26
+			location   	(2947, 140)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	206
+			justify    	0
+			label      	"WTUser")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	12632256
+		    quidu      	"33F8A95400CA"
+		    width      	224
+		    height     	98
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::impl::OwnPersistable" @27
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1503, 219)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	TRUE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@27
+			location   	(1300, 187)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	406
+			justify    	0
+			label      	"OwnPersistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@27
+			location   	(1300, 137)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	406
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	16777088
+		    quidu      	"41EDD9550362"
+		    width      	424
+		    height     	188
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @28
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"41EDDC9200E3"
+		    client     	@5
+		    supplier   	@27
+		    vertices   	(list Points
+			(1051, 641)
+			(1400, 313))
+		    line_style 	0)
+		(object InheritView "" @29
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"41EDDC9501A5"
+		    client     	@4
+		    supplier   	@27
+		    vertices   	(list Points
+			(1007, 219)
+			(1290, 219))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::org::WTUser" @30
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3494, 781)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@30
+			location   	(3402, 732)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	184
+			justify    	0
+			label      	"WTUser")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"33F8A95400CA"
+		    width      	202
+		    height     	122
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::Notify" @31
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2192, 268)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@31
+			location   	(1900, 37)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	584
+			justify    	0
+			label      	"Notify")
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3D8FBDEB0151"
+		    compartment 	(object Compartment
+			Parent_View 	@31
+			location   	(1900, 98)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	593
+			justify    	1)
+		    width      	602
+		    height     	486
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @32
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"3DE42E3900D3"
+		    client     	@31
+		    supplier   	@1
+		    vertices   	(list Points
+			(2192, 511)
+			(2192, 794))
+		    line_style 	0)
+		(object InheritView "" @33
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"41EDDC9701EE"
+		    client     	@31
+		    supplier   	@27
+		    vertices   	(list Points
+			(1890, 246)
+			(1715, 233))
+		    line_style 	0)
+		(object AssociationViewNew "NotifyWTUserLink" @34
+		    location   	(2942, 563)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @35
+			Parent_View 	@34
+			location   	(2952, 520)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"NotifyWTUserLink"
+			pctDist    	0.666667
+			height     	44
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40B6DF740068"
+		    roleview_list 	(list RoleViews
+			(object RoleView "user" @36
+			    Parent_View 	@34
+			    location   	(1083, -867)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @37
+				Parent_View 	@36
+				location   	(3288, 739)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	129
+				justify    	0
+				label      	"+user"
+				pctDist    	0.800570
+				height     	38
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40B6DF740271"
+			    client     	@34
+			    supplier   	@30
+			    vertices   	(list Points
+				(2942, 563)
+				(3392, 740))
+			    line_style 	0
+			    label      	(object SegLabel @38
+				Parent_View 	@36
+				location   	(3295, 809)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	80
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.866397
+				height     	100
+				orientation 	1))
+			(object RoleView "notify" @39
+			    Parent_View 	@34
+			    location   	(1083, -867)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @40
+				Parent_View 	@39
+				location   	(2617, 469)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	132
+				justify    	0
+				label      	"+notify"
+				pctDist    	0.700405
+				height     	31
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40B6DF740285"
+			    client     	@34
+			    supplier   	@31
+			    vertices   	(list Points
+				(2942, 563)
+				(2493, 387))
+			    line_style 	0
+			    label      	(object SegLabel @41
+				Parent_View 	@39
+				location   	(2560, 529)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.769231
+				height     	108
+				orientation 	0))))
+		(object AttachView "" @42
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@2
+		    supplier   	@34
+		    vertices   	(list Points
+			(2796, 590)
+			(2942, 563))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::HelpBoard" @43
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1505, 1520)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	TRUE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@43
+			location   	(1276, 1286)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	458
+			justify    	0
+			label      	"HelpBoard")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@43
+			location   	(1276, 1236)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	458
+			justify    	0
+			label      	"<<Abstract>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"51A5B4D60159"
+		    compartment 	(object Compartment
+			Parent_View 	@43
+			location   	(1276, 1347)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	9
+			max_width  	475
+			justify    	1)
+		    width      	476
+		    height     	592
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @44
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51A5BD45039B"
+		    client     	@43
+		    supplier   	@3
+		    vertices   	(list Points
+			(1266, 1519)
+			(987, 1518))
+		    line_style 	0)
+		(object InheritView "" @45
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51A5BD4C0312"
+		    client     	@43
+		    supplier   	@27
+		    vertices   	(list Points
+			(1504, 1223)
+			(1503, 313))
+		    line_style 	0)
+		(object InheritView "" @46
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51A5BD4F01F2"
+		    client     	@43
+		    supplier   	@1
+		    vertices   	(list Points
+			(1743, 1291)
+			(2112, 941))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::QnaBoard" @47
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2110, 1281)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@47
+			location   	(1896, 1200)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	428
+			justify    	0
+			label      	"QnaBoard")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"51A5C16403A3"
+		    compartment 	(object Compartment
+			Parent_View 	@47
+			location   	(1896, 1261)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	2
+			max_width  	437
+			justify    	1)
+		    width      	446
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @48
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51A5C173033B"
+		    client     	@47
+		    supplier   	@43
+		    vertices   	(list Points
+			(1886, 1368)
+			(1743, 1424))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::ImproveBoard" @49
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2114, 1525)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@49
+			location   	(1899, 1369)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	430
+			justify    	0
+			label      	"ImproveBoard")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"51A5BF29020E"
+		    compartment 	(object Compartment
+			Parent_View 	@49
+			location   	(1899, 1430)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	5
+			max_width  	428
+			justify    	1)
+		    width      	448
+		    height     	336
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @50
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51A5C1950013"
+		    client     	@49
+		    supplier   	@43
+		    vertices   	(list Points
+			(1889, 1522)
+			(1743, 1521))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::groupware::board::ManualBoard" @51
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2117, 1777)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@51
+			location   	(1903, 1696)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	428
+			justify    	0
+			label      	"ManualBoard")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"51A5C197039A"
+		    compartment 	(object Compartment
+			Parent_View 	@51
+			location   	(1903, 1757)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	2
+			max_width  	437
+			justify    	1)
+		    width      	446
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @52
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51A5C1AE01F2"
+		    client     	@51
+		    supplier   	@43
+		    vertices   	(list Points
+			(1895, 1683)
+			(1743, 1620))
+		    line_style 	0)))))

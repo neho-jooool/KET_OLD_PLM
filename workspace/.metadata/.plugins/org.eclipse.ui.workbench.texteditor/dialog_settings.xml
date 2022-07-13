@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="346" key="DIALOG_WIDTH"/>
+		<item value="370" key="DIALOG_Y_ORIGIN"/>
+		<item value="1047" key="DIALOG_X_ORIGIN"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="changeEpmDoc" key="selection"/>
+		<list key="findhistory">
+			<item value="changeEpmDoc"/>
+			<item value="validateBeforeCompleteReg"/>
+			<item value="ProdEcoServlet"/>
+			<item value="toMailAddress"/>
+			<item value="salesStateName"/>
+			<item value="updateSalesProjectForm"/>
+			<item value="예상 매출"/>
+			<item value="teamWorkTimeTaskList_new"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="analysisDTO"/>
+			<item value="("/>
+			<item value="Arm"/>
+			<item value="arm"/>
+			<item value="&quot;"/>
+			<item value="."/>
+			<item value="&apos;"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="319" key="DIALOG_Y_ORIGIN"/>
+		<item value="569" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

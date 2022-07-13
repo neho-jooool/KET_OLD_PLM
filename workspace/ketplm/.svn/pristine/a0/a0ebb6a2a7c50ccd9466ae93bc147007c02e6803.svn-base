@@ -1,0 +1,112 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+KET_EA.value=EA
+KET_EA.shortDescription=\uac1c\ubcc4
+KET_EA.longDescription=NA
+KET_EA.order=110
+
+KET_MG.value=mg
+KET_MG.shortDescription=\ubc00\ub9ac\uadf8\ub7a8
+KET_MG.longDescription=MASS
+KET_MG.order=120
+
+KET_G.value=g
+KET_G.shortDescription=\uadf8\ub7a8
+KET_G.longDescription=MASS
+KET_G.order=130
+
+KET_KG.value=kg
+KET_KG.shortDescription=\ud0ac\ub85c\uadf8\ub7a8
+KET_KG.longDescription=MASS
+KET_KG.order=140
+
+KET_M.value=m
+KET_M.shortDescription=\ubbf8\ud130
+KET_M.longDescription=LENGTH
+KET_M.order=150
+
+KET_MM.value=mm
+KET_MM.shortDescription=\ubc00\ub9ac\ubbf8\ud130
+KET_MM.longDescription=LENGTH
+KET_MM.order=160
+
+KET_PERCENT.value=%
+KET_PERCENT.shortDescription=\ubc31\ubd84\uc728
+KET_PERCENT.longDescription=NA
+KET_PERCENT.order=170
+
+KET_AM.value=AM
+KET_AM.shortDescription=Amount
+KET_AM.longDescription=NA
+KET_AM.order=180
+
+KET_CV.value=CV
+KET_CV.shortDescription=\ucf00\uc774\uc2a4
+KET_CV.longDescription=NA
+KET_CV.order=190
+
+KET_CA'.value=CA'
+KET_CA'.shortDescription=\ud310\uc9c0\uc0c1\uc790
+KET_CA'.longDescription=NA
+KET_CA'.order=200
+
+KET_P.value=P
+KET_P.shortDescription=\ud3ec\uc778\ud2b8
+KET_P.longDescription=NA
+KET_P.order=210
+
+KET_PAC.value=PAC
+KET_PAC.shortDescription=\ud3ec\uc7a5
+KET_PAC.longDescription=NA
+KET_PAC.order=220
+
+KET_REL.value=REL
+KET_REL.shortDescription=REEL
+KET_REL.longDescription=NA
+KET_REL.order=230
+
+KET_ROL.value=ROL
+KET_ROL.shortDescription=\uc5ed\ud560
+KET_ROL.longDescription=NA
+KET_ROL.order=240
+
+KET_ST.value=ST
+KET_ST.shortDescription=\ud488\ubaa9
+KET_ST.longDescription=NA
+KET_ST.order=250
+
+KET_L.value=L
+KET_L.shortDescription=Liter
+KET_L.longDescription=NA
+KET_L.order=260
+
+KET_ML.value=ml
+KET_ML.shortDescription=\ubc00\ub9ac\ub9ac\ud130
+KET_ML.longDescription=NA
+KET_ML.order=270
+
+KET_BOX.value=BOX
+KET_BOX.shortDescription=BOX
+KET_BOX.longDescription=NA
+KET_BOX.order=280

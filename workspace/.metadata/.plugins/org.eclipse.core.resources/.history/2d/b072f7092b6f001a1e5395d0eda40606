@@ -1,0 +1,50 @@
+package e3ps.test;
+
+public class Solution3 {
+
+    static int total_Len;
+    static int targetNum;
+    static int count;
+
+    public static void main(String[] args) {
+
+	int[] numbers = { 1, 1, 1, 1, 1 };
+	int target = 3;
+
+	Solution3 aa = new Solution3();
+
+	int b = aa.solution(numbers, target);
+	System.out.println("result = " + b);
+
+    }
+
+    public int solution(int[] numbers, int target) {
+	total_Len = numbers.length;
+
+	targetNum = target;
+	count = 0;
+
+	DFS(0, 0, numbers);
+	int answer = count;
+	System.out.println(answer);
+	return answer;
+    }
+
+    public static void DFS(int flag, int sum, int[] compNum) {
+	
+	if(total_Len == flag){//모든 원소를 탐색했다면 그 합계가 3일 때 count를 올려준다
+	    if(sum == targetNum){
+		count++;
+		return;
+	    }else{
+		return;
+	    }
+	}
+	
+	int tmpNum = compNum[flag];//현재 index의 원소를 꺼낸다
+	
+	DFS(flag+1, sum + tmpNum, compNum);
+	DFS(flag+1, sum - tmpNum, compNum);
+    }
+
+}

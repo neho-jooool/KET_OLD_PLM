@@ -1,0 +1,52 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()	
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()	
+# <key>.order=					getOrder()	
+# <key>.selectable=				isSelectable()	
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.argComment<n>=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.constant=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.customizable=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.deprecated=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+
+# Entry Contents
+PAST1.value=\ud30c\uc190
+PAST1.shortDescription=\ud30c\uc190
+PAST1.order=1
+
+PAST2.value=\ubcc0\uc0c9/\ubd80\uc2dd
+PAST2.shortDescription=\ubcc0\uc0c9/\ubd80\uc2dd
+PAST2.order=2
+
+PAST3.value=\ubcc0\uacbd/\ud728\ubc1c\uc0ddY
+PAST3.shortDescription=\ubcc0\uacbd/\ud728\ubc1c\uc0dd
+PAST3.order=3
+
+PAST4.value=\uc2e0\ub8b0\uc131\ud3c9\uac00NG
+PAST4.shortDescription=\uc2e0\ub8b0\uc131\ud3c9\uac00NG
+PAST4.order=4
+
+PAST5.value=\uc791\uc5c5\uc131\ubd88\ub7c9/\ud574\uc81c\uc5b4\ub824\uc6c0
+PAST5.shortDescription=\uc791\uc5c5\uc131\ubd88\ub7c9/\ud574\uc81c\uc5b4\ub824\uc6c0
+PAST5.order=5
+
+PAST6.value=\uc870\ub9bd\ubd88\ub7c9/\uc624\uc0bd\uc785
+PAST6.shortDescription=\uc870\ub9bd\ubd88\ub7c9/\uc624\uc0bd\uc785
+PAST6.order=6
+
+PAST7.value=\ub0a9\ub55c\ubd88\ub7c9
+PAST7.shortDescription=\ub0a9\ub55c\ubd88\ub7c9
+PAST7.order=7
+
+PAST8.value=\uae30\ud0c0
+PAST8.shortDescription=\uae30\ud0c0
+PAST8.order=8

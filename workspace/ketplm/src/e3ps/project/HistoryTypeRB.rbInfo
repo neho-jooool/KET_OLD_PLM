@@ -1,0 +1,54 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=					getLocalizedMessage(),getDisplay()
+# <key>.abbreviatedDisplay=		getAbbreviatedDisplay()
+# <key>.fullDisplay=			getFullDisplay()	
+# <key>.shortDescription=		getShortDescription(),	getComment()
+# <key>.longDescription=		getLongDescription()	
+# <key>.order=					getOrder()	
+# <key>.selectable=				isSelectable()	
+# <key>.defaultValue=			isDefaultValue(),get<ClassName>Default()
+
+# <key>.comment=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.argComment<n>=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.constant=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.customizable=			¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+# <key>.deprecated=				¿µÇâ ¾ÈÁÜ/ÆÄ¾Ç¾ÈµÊ 
+
+# Entry Contents
+
+PROJECTCREATE.value=PROJECTCREATE
+PROJECTCREATE.shortDescription=PROJECTCREATE
+PROJECTCREATE.selectable=false
+
+PROJECTCOMPLETE.value=PROJECTCOMPLETE
+PROJECTCOMPLETE.shortDescription=PROJECTCOMPLETE
+PROJECTCOMPLETE.selectable=false
+
+PROJECTSTOP.value=PROJECTSTOP
+PROJECTSTOP.shortDescription=PROJECTSTOP
+PROJECTSTOP.selectable=false
+
+PROJECTING.valuePROJECTING
+PROJECTING.shortDescription=PROJECTING
+PROJECTING.selectable=false
+
+ERPUPDATE.value=ERPUPDATE
+ERPUPDATE.shortDescription=ERPUPDATE
+ERPUPDATE.selectable=false
+
+PLMUPDATE.value=PLMUPDATE
+PLMUPDATE.shortDescription=PLMUPDATE
+PLMUPDATE.selectable=false
+
+
+CHANGEPLAN.value=CHANGEPLAN
+CHANGEPLAN.shortDescription=CHANGEPLAN
+CHANGEPLAN.order=10
+
+ETC.value=ETC
+ETC.shortDescription=ETC
+ETC.order=20

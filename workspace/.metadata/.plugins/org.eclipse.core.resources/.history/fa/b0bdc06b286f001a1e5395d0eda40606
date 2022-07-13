@@ -1,0 +1,57 @@
+package e3ps.test;
+
+public class Solution3 {
+
+    static int total_Len;
+    static int targetNum;
+    static int count;
+
+    public static void main(String[] args) {
+
+	int[] numbers = { 1, 1, 1, 1, 1 };
+	int target = 3;
+
+	Solution3 aa = new Solution3();
+
+	int b = aa.solution(numbers, target);
+	System.out.println("result = " + b);
+
+    }
+
+    public int solution(int[] numbers, int target) {
+	total_Len = numbers.length;
+
+	targetNum = target;
+	count = 0;
+
+	DFS(0, 0, numbers);
+	int answer = count;
+	System.out.println(answer);
+	return answer;
+    }
+
+    public static void DFS(int flag, int sum, int[] compNum) {
+	System.out.println(" 시작합니다.. " + sum + " flag : " + flag);
+	if (flag == total_Len) {
+	    if (targetNum == sum) {// 합계가 3이 되면 카운트를 증가한다
+		System.out.println(" 카운트 증가.. " + sum + " flag : " + flag);
+		count++;
+		return;
+	    } else {
+		System.out.println(" return 됨 falg = " + flag + " sum " + sum);
+		return;
+	    }
+	}
+	int tmpNum = compNum[flag];
+	System.out.println(" tmpNum === " + tmpNum + " 지금 sum = " + sum + " 던져줄 sum " + (sum + tmpNum));
+
+	DFS(flag + 1, sum + tmpNum, compNum); // 재귀
+
+	System.out.println(" 이제 빼기 start");
+
+	DFS(flag + 1, sum - tmpNum, compNum); // 재귀
+
+	System.out.println(" 이제 빼기 end");
+    }
+
+}

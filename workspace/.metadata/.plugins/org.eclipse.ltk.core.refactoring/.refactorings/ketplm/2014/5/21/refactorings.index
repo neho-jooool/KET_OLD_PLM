@@ -1,0 +1,19 @@
+1400458030271	Delete elements
+1400472116124	Delete element
+1400547406397	Delete element
+1400562213843	Rename local variable 'searchText'
+1400562563626	Rename field 'SOLR_SERVER'
+1400566996468	Rename type 'CommonService'
+1400583032588	Rename field 'sampleService'
+1400641144248	Delete element
+1400641320283	Delete elements
+1400641325584	Delete element
+1400644751830	Delete elements
+1400645504734	Delete elements
+1400727378631	Delete element
+1400734246938	Copy file
+1400735300178	Rename resource 'ProjectSearch.jsp'
+1400749599940	Rename resource 'list.js'
+1400752180440	Rename resource 'Layout.jsp'
+1400826000368	Encapsulate field 'title'
+1400828184559	Encapsulate field 'num'

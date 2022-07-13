@@ -1,0 +1,46 @@
+<!-- 
+*author : Seung-hwan Choi, skyprda@e3ps.com 
+*desc : 생성, 수정등 처리시 로딩 이미지를 처리한다.
+*usage : submit시 showProcessing() 를 호출한다.
+-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function startUserLoading()
+{
+	var div1 = document.getElementById('div1');
+	var div2 = document.getElementById('div2');
+
+	div1.style.left = (document.body.offsetWidth / 2 - 370)+"px";
+	div1.style.top = (document.body.offsetHeight / 2 - 250)+"px";
+	div1.style.display = "block";
+
+	div2.style.width = div1.offsetWidth;
+	div2.style.height = div1.offsetHeight;
+	div2.style.top = div1.style.top;
+	div2.style.left = div1.style.left;
+	div2.style.zIndex = div1.style.zIndex - 1;
+	div2.style.display = "block";
+}
+
+function endUserLoading(){
+	var div1 = document.getElementById('div1');
+	var div2 = document.getElementById('div2');
+	
+	div1.style.display = "none";
+	div2.style.display = "none";
+}
+//-->
+</SCRIPT>
+<DIV ID="div1" style='POSITION:absolute;Z-INDEX:10;display:none;width:740;height:500;'>
+<table width="730" height="490" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center"><img src="/plm/portal/icon/loading.gif" border="0"></td>
+</tr>
+</table>
+</DIV>
+<iframe
+  id="div2"
+  scrolling="no"
+  frameborder="0"
+  style="position:absolute; top:0px; left:0px; display:none;">
+</iframe>

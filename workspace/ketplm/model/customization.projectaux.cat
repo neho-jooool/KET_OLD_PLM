@@ -1,0 +1,132 @@
+
+(object Petal
+    version    	45
+    _written   	"Rose 4.5.8163.3"
+    charSet    	0)
+
+(object Class_Category "projectaux"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"37F382A5029F"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "ProjectAuxService"
+	    quid       	"37F382BE005D"
+	    stereotype 	"RemoteInterface")
+	(object Class "StandardProjectAuxService"
+	    quid       	"37F382C802CE"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"37F382F801B5"
+		    supplier   	"Logical View::customization::projectaux::ProjectAuxService"
+		    quidu      	"37F382BE005D")
+		(object Inheritance_Relationship
+		    quid       	"37F382FB005D"
+		    supplier   	"Logical View::wt::services::StandardManager"
+		    quidu      	"342982E402DE"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"37F382AC0232"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::customization::projectaux::ProjectAuxService" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(464, 253)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(253, 224)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"ProjectAuxService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(253, 174)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"37F382BE005D"
+		    width      	440
+		    height     	182
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::customization::projectaux::StandardProjectAuxService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(475, 981)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(213, 930)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	524
+			justify    	0
+			label      	"StandardProjectAuxService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"37F382C802CE"
+		    width      	542
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wt::services::StandardManager" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1334, 637)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(945, 58)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	778
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    compartment 	(object Compartment
+			Parent_View 	@3
+			location   	(945, 166)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	21
+			max_width  	784)
+		    width      	796
+		    height     	1182
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @4
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"37F382F801B5"
+		    client     	@2
+		    supplier   	@1
+		    line_style 	3
+		    origin_attachment 	(462, 918)
+		    terminal_attachment 	(462, 344))
+		(object InheritView "" @5
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"37F382FB005D"
+		    client     	@2
+		    supplier   	@3
+		    line_style 	0)))))

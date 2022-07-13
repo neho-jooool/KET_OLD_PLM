@@ -1,0 +1,52 @@
+#########################################################################
+# Windchill 제품 정의
+#########################################################################
+ecm.container=KET
+
+#########################################################################
+# 설계변경 LifeCycle 정의.
+#########################################################################
+
+# ECR Life cycle 수정 - 20140717
+#ecm.lifecycle.ecr=KET_ECR_LC
+ecm.lifecycle.ecr=KET_COMMON_LC
+
+ecm.lifecycle.competent=KET_COMMON_LC
+ecm.lifecycle.meeting=KET_COMMON_LC
+
+ecm.lifecycle.eco=KET_ECO_LC
+ecm.lifecycle.eca=KET_ECA_LC
+ecm.lifecycle.ecn=KET_ECN_LC
+ecm.lifecycle.bom=KET_EPM_LC
+ecm.lifecyle.part=KET_PART_LC
+
+
+#########################################################################
+# 설계변경 LifeCycle 한글명.
+#########################################################################
+INWORK=작업중
+WORKCOMPLETED=작업완료
+UNDERREVIEW=검토중
+APPROVED=승인완료
+REJECTED=반려됨
+PLANNING=계획수립
+EXCUTEACTIVITY=활동수행
+ACTIVITYCOMPLETED=활동완료
+REWORK=재작업
+
+APPROVEDFILING=제기승인
+CONSIDER=검토
+#STOPED=중지
+
+#########################################################################
+# 설계변경 활동계획 폴더명. 
+#########################################################################
+ecm.folder.car=/Default/자동차사업부/설계변경/
+ecm.folder.electronic=/Default/전자사업부/설계변경/
+ecm.folder.kets=/Default/KETS/설계변경/
+
+#########################################################################
+# 설계변경 활동계획 폴더명.
+#########################################################################
+bom.folder=/Default
+part.folder=/Default/부품

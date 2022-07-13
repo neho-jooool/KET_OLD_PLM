@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main">
+
+    <select id="mainContentsMyTask" resultType="hashmap">
+        <![CDATA[
+                SELECT NVL (SUM (PLAN), 0) AS PLAN, NVL (SUM (PROGRESS), 0) AS PROGRESS, NVL (SUM (DELAY), 0) AS DELAY
+                  FROM (SELECT CASE
+                  WHEN     A4.EXECSTARTDATE IS NULL
+                       AND A4.EXECENDDATE IS NULL
+                       AND TO_CHAR (SYSDATE, 'yyyy-mm-dd') < TO_CHAR (A4.PLANENDDATE, 'yyyy-mm-dd')
+                       AND TO_CHAR (A4.PLANENDDATE, 'yyyy-mm-dd') <= TO_CHAR (ADD_MONTHS (SYSDATE, 1), 'yyyy-mm-dd') THEN
+                     1
+                  ELSE
+                     0
+               END
+                  AS PLAN,
+               CASE
+                  WHEN     A4.EXECSTARTDATE IS NOT NULL
+                       AND A4.EXECENDDATE IS NULL
+                       AND TO_CHAR (A4.PLANENDDATE, 'yyyy-mm-dd') < TO_CHAR (SYSDATE, 'yyyy-mm-dd') THEN
+                     1
+                  ELSE
+                     0
+               END
+                  AS PROGRESS,
+               CASE
+                  WHEN     A4.EXECENDDATE IS NULL
+                       AND ROUND (A4.PLANENDDATE, 'DAY') < SYSDATE THEN
+                     1
+                  ELSE
+                     0
+               END
+                  AS DELAY
+          FROM E3PSTASK A0,
+               (SELECT DISTINCT A3.IDA2A2 TASKOID
+                  FROM TASKMEMBERLINK A0,
+                       PROJECTMEMBERLINK A1,
+                       MOLDPROJECT A2,
+                       E3PSTASK A3,
+                       EXTENDSCHEDULEDATA A4
+                 WHERE (    (A3.IDA3A4 = A4.IDA2A2)
+                        AND (A3.IDA3B4 = A2.IDA2A2)
+                        AND (A3.IDA2A2 = A0.IDA3A5)
+                        AND (A0.IDA3B5 = A1.IDA2A2)
+                        AND (A1.IDA3B5 = #{userOid})
+                        AND (A2.STATESTATE <> 'WITHDRAWN')
+                        AND (A2.LASTEST = 1)
+                        AND (A2.CHECKOUTSTATE <> 'c/o'))
+                UNION
+                SELECT DISTINCT A3.IDA2A2 TASKOID
+                  FROM TASKMEMBERLINK A0,
+                       PROJECTMEMBERLINK A1,
+                       PRODUCTPROJECT A2,
+                       E3PSTASK A3,
+                       EXTENDSCHEDULEDATA A4
+                 WHERE (    (A3.IDA3A4 = A4.IDA2A2)
+                        AND (A3.IDA3B4 = A2.IDA2A2)
+                        AND (A3.IDA2A2 = A0.IDA3A5)
+                        AND (A0.IDA3B5 = A1.IDA2A2)
+                        AND (A1.IDA3B5 = #{userOid})
+                        AND (A2.STATESTATE <> 'WITHDRAWN')
+                        AND (A2.LASTEST = 1)
+                        AND (A2.CHECKOUTSTATE <> 'c/o'))
+                UNION
+                SELECT DISTINCT A3.IDA2A2 TASKOID
+                  FROM TASKMEMBERLINK A0,
+                       PROJECTMEMBERLINK A1,
+                       REVIEWPROJECT A2,
+                       E3PSTASK A3,
+                       EXTENDSCHEDULEDATA A4
+                 WHERE (    (A3.IDA3A4 = A4.IDA2A2)
+                        AND (A3.IDA3B4 = A2.IDA2A2)
+                        AND (A3.IDA2A2 = A0.IDA3A5)
+                        AND (A0.IDA3B5 = A1.IDA2A2)
+                        AND (A1.IDA3B5 = #{userOid})
+                        AND (A2.STATESTATE <> 'WITHDRAWN')
+                        AND (A2.LASTEST = 1)
+                        AND (A2.CHECKOUTSTATE <> 'c/o'))) A1,
+               EXTENDSCHEDULEDATA A4
+         WHERE     (A0.IDA2A2 = A1.TASKOID)
+               AND (A0.IDA3A4 = A4.IDA2A2))
+        ]]>
+    </select>
+    <select id="mainContentsMyProject" resultType="hashmap">
+        <![CDATA[
+        SELECT MAX (DECODE (GUBUN, 'ReviewProject', CNT)) AS REVIEWPROJECT, MAX (DECODE (GUBUN, 'ProductProject', CNT)) AS PRODUCTPROJECT, MAX (DECODE (GUBUN, 'MoldProject', CNT)) AS MOLDPROJECT
+		  FROM (SELECT COUNT (A0.IDA2A2) CNT, 'ReviewProject' GUBUN
+		          FROM REVIEWPROJECT A0,
+		               (SELECT DISTINCT A0.IDA2A2 PROJECTID
+		                  FROM REVIEWPROJECT A0, PROJECTMEMBERLINK A1
+		                 WHERE (    (A1.IDA3A5 = A0.IDA2A2)
+		                        AND (A1.IDA3B5 = #{userOid})
+		                        AND ((A0.statestate = 'PMOINWORK') OR (A0.statestate = 'PROGRESS') OR (A0.statestate = 'PLANCHANGE')) 
+		                        AND (A0.LASTEST = 1)
+		                        AND (A0.CHECKOUTSTATE <> 'c/o'))) A2
+		         WHERE (A0.IDA2A2 = A2.PROJECTID)
+		        UNION
+		        SELECT COUNT (A0.IDA2A2) CNT, 'ProductProject' GUBUN
+		          FROM PRODUCTPROJECT A0,
+		               (SELECT DISTINCT A0.IDA2A2 PROJECTID
+		                  FROM PRODUCTPROJECT A0, PROJECTMEMBERLINK A1
+		                 WHERE (    (A1.IDA3A5 = A0.IDA2A2)
+		                        AND (A1.IDA3B5 = #{userOid})
+                                AND ((A0.statestate = 'PMOINWORK') OR (A0.statestate = 'PROGRESS') OR (A0.statestate = 'PLANCHANGE')) 
+		                        AND (A0.LASTEST = 1)
+		                        AND (A0.CHECKOUTSTATE <> 'c/o'))) A2
+		         WHERE (A0.IDA2A2 = A2.PROJECTID)
+		        UNION
+		        SELECT COUNT (A0.IDA2A2) CNT, 'MoldProject' GUBUN
+		          FROM MOLDPROJECT A0,
+		               (SELECT DISTINCT A0.IDA2A2 PROJECTID
+		                  FROM MOLDPROJECT A0, PROJECTMEMBERLINK A1
+		                 WHERE (    (A1.IDA3A5 = A0.IDA2A2)
+		                        AND (A1.IDA3B5 = #{userOid})
+                                AND ((A0.statestate = 'PMOINWORK') OR (A0.statestate = 'PROGRESS') OR (A0.statestate = 'PLANCHANGE')) 
+		                        AND (A0.LASTEST = 1)
+		                        AND (A0.CHECKOUTSTATE <> 'c/o'))) A2
+		         WHERE (A0.IDA2A2 = A2.PROJECTID))
+        ]]>
+    </select>
+    <select id="mainContentsMyTodo" resultType="hashmap">
+        <![CDATA[
+        SELECT NVL (SUM (PROJECT), 0) AS PROJECT, NVL (SUM (ECM), 0) AS ECM, NVL (SUM (DQM), 0) AS DQM
+		  FROM (SELECT CASE WHEN A0.CLASSNAMEKEYB4 LIKE '%e3ps.project%' THEN 1 ELSE 0 END AS PROJECT,
+		               CASE WHEN A0.CLASSNAMEKEYB4 LIKE '%e3ps.ecm.entity%' THEN 1 ELSE 0 END AS ECM,
+		               CASE
+		                  WHEN    A0.CLASSNAMEKEYB4 LIKE '%ext.ket.dqm.entity%'
+		                       OR A0.CLASSNAMEKEYB4 LIKE '%e3ps.ews.entity%' THEN
+		                     1
+		                  ELSE
+		                     0
+		               END
+		                  AS DQM
+		          FROM WORKITEM A0, WFASSIGNEDACTIVITY A1
+		         WHERE     (A0.IDA3A2OWNERSHIP = #{userOid})
+		               AND (A0.COMPLETEDBY IS NULL)
+		               AND (A0.IDA3A4 = A1.IDA2A2)
+		               AND (   (A1.NAME = '수행담당자')
+		                    OR (A1.NAME = '담당자지정'))
+		               AND A0.STATUS = 'POTENTIAL')
+        ]]>
+    </select>
+ 
+</mapper>

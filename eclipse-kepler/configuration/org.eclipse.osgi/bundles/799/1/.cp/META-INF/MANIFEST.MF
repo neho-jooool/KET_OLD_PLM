@@ -1,0 +1,649 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.wst.xsl.ui;singleton:=true
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/source
+ editing/webtools.sourceediting.xsl.git;path="bundles/org.eclipse.wst.
+ xsl.ui";tag=v20130423-0632
+Bundle-Activator: org.eclipse.wst.xsl.ui.internal.XSLUIPlugin
+Require-Bundle: org.eclipse.ui;bundle-version="[3.4.0,4.0.0)",org.ecli
+ pse.core.runtime;bundle-version="[3.4.0,4.0.0)",org.eclipse.wst.xml.c
+ ore;bundle-version="[1.1.300,2.0.0)",org.eclipse.ui.console;bundle-ve
+ rsion="[3.2.0,4.0.0)",org.eclipse.debug.ui;bundle-version="[3.3.100,4
+ .0.0)",org.eclipse.ui.navigator.resources;bundle-version="[3.3.0,4.0.
+ 0)",org.eclipse.wst.sse.core;bundle-version="1.1.600",org.eclipse.wst
+ .sse.ui;bundle-version="[1.3.0,2.0.0)",org.apache.xalan;bundle-versio
+ n="[2.7.1,2.8.0)",org.eclipse.jface.text;bundle-version="[3.4.0,4.0.0
+ )",org.eclipse.wst.xml.ui;bundle-version="[1.0.400,2.0.0)",org.eclips
+ e.wst.xsl.core;bundle-version="1.1.0",org.eclipse.ui.workbench.texted
+ itor;bundle-version="[3.4.0,4.0.0)",org.eclipse.wst.validation;bundle
+ -version="[1.1.103,2.0.0)",org.eclipse.ui.ide;bundle-version="[3.4.0,
+ 4.0.0)",org.eclipse.ui.forms;bundle-version="[3.3.100,4.0.0)",org.ecl
+ ipse.wst.xml.xpath.ui;bundle-version="[1.0.0,2.0.0)",org.eclipse.wst.
+ xml.xpath.core;bundle-version="[1.0.0,2.0.0)",com.ibm.icu;bundle-vers
+ ion="3.8.1"
+Bundle-Version: 1.1.301.v20130423-0632
+Export-Package: org.eclipse.wst.xsl.ui.internal;x-internal:=true,org.e
+ clipse.wst.xsl.ui.internal.actions;x-internal:=true,org.eclipse.wst.x
+ sl.ui.internal.contentassist;x-internal:=true,org.eclipse.wst.xsl.ui.
+ internal.contentassist.contentmodel;x-internal:=true,org.eclipse.wst.
+ xsl.ui.internal.contentassist.href;x-internal:=true,org.eclipse.wst.x
+ sl.ui.internal.contentoutline;x-internal:=true,org.eclipse.wst.xsl.ui
+ .internal.doubleclick;x-internal:=true,org.eclipse.wst.xsl.ui.interna
+ l.editor;x-internal:=true,org.eclipse.wst.xsl.ui.internal.handlers;x-
+ internal:=true,org.eclipse.wst.xsl.ui.internal.preferences;x-internal
+ :=true,org.eclipse.wst.xsl.ui.internal.quickassist;x-internal:=true,o
+ rg.eclipse.wst.xsl.ui.internal.registry;x-internal:=true,org.eclipse.
+ wst.xsl.ui.internal.style;x-internal:=true,org.eclipse.wst.xsl.ui.int
+ ernal.templates;x-internal:=true,org.eclipse.wst.xsl.ui.internal.util
+ ;x-internal:=true,org.eclipse.wst.xsl.ui.internal.validation;x-intern
+ al:=true,org.eclipse.wst.xsl.ui.internal.wizards;x-internal:=true,org
+ .eclipse.wst.xsl.ui.provisional.contentassist
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/ExcludeResultPrefi
+ xesContentAssist.class
+SHA1-Digest: SvY628+L69T62n2hQgJGDfsM8gU=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XSLContentAssistRe
+ questFactory.class
+SHA1-Digest: V93sTynjMezeyKfViyeEDvSesqA=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/ValidationPreference
+ Page.class
+SHA1-Digest: PzduvXzjcWcgEzOFZzBQnkAaxFk=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$2.class
+SHA1-Digest: oRnb/k3c2k27/l4f6HZ3OsF0Dy0=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$6.class
+SHA1-Digest: jwR80akYb3gpgBVQrO4U3QvTmWo=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/RefreshStructureJ
+ ob.class
+SHA1-Digest: RV72Wn817yozX9kfqhy7COrzvgs=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLTemplatePreferenc
+ ePage.class
+SHA1-Digest: ka3VbtbwNYgP38cxq5ZEB89Tppc=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/AbstractXMLElem
+ entContentAssistRequest.class
+SHA1-Digest: N/7obazKh5O06bOnMx7O+Og5EP8=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/XMLNodeActionMana
+ ger.class
+SHA1-Digest: +WJW5pg7ezmA1vrETrz4fcm9I60=
+
+Name: org/eclipse/wst/xsl/ui/internal/actions/NewXSDFileWizardDelegate
+ .class
+SHA1-Digest: 6BrRfz3Kw17TDDWqTqDgu7+2LKo=
+
+Name: org/eclipse/wst/xsl/ui/internal/registry/AdapterFactoryProviderF
+ orXSL.class
+SHA1-Digest: pRj2g8L6gQduumQBZRE1uNRdS8o=
+
+Name: org/eclipse/wst/xsl/ui/internal/StructuredTextViewerConfiguratio
+ nXSL.class
+SHA1-Digest: lNH2y/hPTj/K7lgLds09eM0wDDU=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLValidationPrefere
+ ncePage$1.class
+SHA1-Digest: 7qALTar/6ONAppQI3QjWLvfw6uI=
+
+Name: icons/full/directional.gif
+SHA1-Digest: NeQidKylrvapg5CJIug3sNDm29Y=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/CustomCompletio
+ nProposal.class
+SHA1-Digest: oXYZQDQ0hCsW3ATfB856uTLXp44=
+
+Name: org/eclipse/wst/xsl/ui/internal/actions/NewXSLFileWizardDelegate
+ .class
+SHA1-Digest: miPU5VFXIFLxE8vUKExjK85T6gg=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/ListWorkbenchAd
+ apter.class
+SHA1-Digest: Swd4lv9xD7uNQqMoUrAlIMTS1u8=
+
+Name: icons/full/imports.gif
+SHA1-Digest: fzP1836Z0sa/slwGPCRZtfLCIy4=
+
+Name: org/eclipse/wst/xsl/ui/internal/actions/NewDTDFileWizardDelegate
+ .class
+SHA1-Digest: UGIYTvamzQWo99uRyFjj99H1L6E=
+
+Name: icons/full/template.gif
+SHA1-Digest: LE9OW8o2KtnB6bnT/6rGzOjIsiA=
+
+Name: icons/full/variable.gif
+SHA1-Digest: di7a11fCOgVIcVP2WtaTl9KqpVo=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeAdapterF
+ actory$CMDocumentManagerListenerImpl.class
+SHA1-Digest: xivlfz3KIgV8XG5LrUQ3fcFjNRI=
+
+Name: icons/full/hierarchy.gif
+SHA1-Digest: bxdYWff3Y+o0pesdQD6Ya8jO9I0=
+
+Name: org/eclipse/wst/xsl/ui/internal/templates/TemplateContextTypeXSL
+ .class
+SHA1-Digest: 4/A5kMU2yCFoaHNjEYBAzV9tgk8=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XPathElementConten
+ tAssist.class
+SHA1-Digest: NFvfLVRreRabJYiLsbUDYJLMWeA=
+
+Name: icons/full/xslattribute-set.gif
+SHA1-Digest: s4fFBwmN5m3pnkzIQdrbAuD7hUE=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$12.class
+SHA1-Digest: P6/qaH2m6fLKBG4auleUi3Y5KOo=
+
+Name: org/eclipse/wst/xsl/ui/internal/editor/XSLEditor.class
+SHA1-Digest: 24xlixb3uJ6uczhWdlnZkWFYmts=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$16.class
+SHA1-Digest: SXNk9dskOx1Wwe6GyXjSG6r8Aog=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeAdapterF
+ actory.class
+SHA1-Digest: ONf9RaST4qe0+rwo/vwgACg7JC4=
+
+Name: org/eclipse/wst/xsl/ui/internal/editor/XSLHyperlinkDetector.clas
+ s
+SHA1-Digest: Fcw7iLWspeTkH2MBLY21TYjGyuo=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage.class
+SHA1-Digest: ZSUslxMM28AG5SGs35Dav3VkOqI=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/NullContentAssi
+ stRequest.class
+SHA1-Digest: a01IDTV7gTe6TbABraser1V5zo4=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XSLAttrNameSemanticHighlig
+ hting.class
+SHA1-Digest: RAP8UiyIR5aWznfHEXsVeL5FoL4=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/PropertyPreferencePa
+ ge$4.class
+SHA1-Digest: Y5CfhKGeYXx0Pp81l6xdXFbuXmQ=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/href/HrefContentAs
+ sistRequest$XSLFileResourceVisitor.class
+SHA1-Digest: RCnDWkntVXM0CPVdkbJvw8+n7uk=
+
+Name: org/eclipse/wst/xsl/ui/internal/Messages.class
+SHA1-Digest: dSsGZ0LJUQNIRDETumCPWw21erw=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage$2.class
+SHA1-Digest: 5lLaoITpqyputjLTGL6eWkWf2EM=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/AbstractXSLCont
+ entAssistProcessor.class
+SHA1-Digest: DLVQRW0Uu/LMsvt4j58Eak+av8w=
+
+Name: org/eclipse/wst/xsl/ui/internal/actions/NewWizardAction.class
+SHA1-Digest: LRnHAgU3q0jURJ64xgtg9hcWW6M=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage$6.class
+SHA1-Digest: DzGvUhwNN9cdlTLhbX8lLg86jQ8=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XSLContentAssistPr
+ ocessor.class
+SHA1-Digest: 1T/k2c9A73S1fGsEMjhLsGMWwOw=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLUIPreferenceIniti
+ alizer.class
+SHA1-Digest: tLSsJF0eei/ck8FpsUXQhJRapaM=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/LineStyleProviderForXSL.cl
+ ass
+SHA1-Digest: 1jIWYNWlKRdkPWPhCFEKIvF4lrs=
+
+Name: icons/full/mode.gif
+SHA1-Digest: UZZSIKJ/W7kz6y7A1H46eyfEO+A=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$3.class
+SHA1-Digest: lTcXPaUKaT4UFJZdGdgj+G+RxOw=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$7.class
+SHA1-Digest: LdUC7ZJGGGU2CGNXnFp+eeFU9RE=
+
+Name: org/eclipse/wst/xsl/ui/internal/handlers/OpenDeclarationHandler.
+ class
+SHA1-Digest: mVTPlaF+0YoDfqL4UdXI7y4NBW4=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XMLTextAttributeMap.class
+SHA1-Digest: poiV+8TpJy8GvxgKkzqNlBq/l/w=
+
+Name: org/eclipse/wst/xsl/ui/internal/PreferenceInitializer.class
+SHA1-Digest: cmi+0u74G1u54VxA3ERUddX+MQI=
+
+Name: icons/full/operation.gif
+SHA1-Digest: us8TVe7wc7pxrnsgt5vKjDoD5Gw=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/RefreshStructureJ
+ ob$1.class
+SHA1-Digest: nufLYrsdUWqLqp46b3dqrA3B4GI=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLValidationPrefere
+ ncePage$2.class
+SHA1-Digest: VHTdMb43R2GYU9xQmIy6msGIn7Q=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/ContentAssistProce
+ ssorFactory.class
+SHA1-Digest: bGCtP4AMeMKd0IsngFfUWSINuQA=
+
+Name: icons/full/xslt_launch.gif
+SHA1-Digest: AcXH5ug+KQCKPTRtUk0Md/sDUjc=
+
+Name: org/eclipse/wst/xsl/ui/internal/doubleclick/XSLDoubleClickStrate
+ gy.class
+SHA1-Digest: yC/0nGMMcxjkV/gTASaSJJlxksY=
+
+Name: org/eclipse/wst/xsl/ui/internal/actions/NewXMLFileWizardDelegate
+ .class
+SHA1-Digest: u6edK1T6zDu5V5ZyYPpW9gaccJk=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$13.class
+SHA1-Digest: 8csCRsLwF7X83Nw6so+AyhSzRFo=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileWizard.class
+SHA1-Digest: JRmskcPf8OCFADA/VJSiUm4kpSg=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/StylesheetModel
+ View.class
+SHA1-Digest: KL3hiDkYHJnJm9h8FmDcSLlBocg=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/XSLWorkbenchAda
+ pter.class
+SHA1-Digest: MspCSuIo4FfR/s94dTYkGOK0Vk4=
+
+Name: org/eclipse/wst/xsl/ui/internal/editor/OverrideIndicator.class
+SHA1-Digest: bAZwToTN3MIQ0OEut/UVsW1y3fo=
+
+Name: about.html
+SHA1-Digest: mUOvxSYxCUot6WW9T8TxmOQUrws=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/PropertyPreferencePa
+ ge$1.class
+SHA1-Digest: vDENIPXiNQcOJMF8AM22zDXWfac=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeLabelPro
+ vider.class
+SHA1-Digest: CrO+XOHwWSwSx4VnJeNvy9OHhnA=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/TestAttributeConte
+ ntAssist.class
+SHA1-Digest: ZxjM13OLrcBp2jaKMS+mCKY0K9c=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/StylesheetModel
+ View$1.class
+SHA1-Digest: Xj4KMckFsQQuV3vdhF96df9BsQI=
+
+Name: org/eclipse/wst/xsl/ui/internal/editor/SourceFileHyperlink.class
+SHA1-Digest: Dnj4qzJc8ryzwmI/1tgpAoaVD+A=
+
+Name: org/eclipse/wst/xsl/ui/internal/editor/OverrideIndicatorManager.
+ class
+SHA1-Digest: hwK178kPSitDkrEVNpLUPzue4kY=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage$3.class
+SHA1-Digest: TgGAuNYvRVoCKa2KWB1qEfOFZvs=
+
+Name: icons/full/function.gif
+SHA1-Digest: wyGrRDJGniyoCBdxxHkrmvFMmLY=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/CallTemplateConten
+ tAssistRequest.class
+SHA1-Digest: TQJTwXsqGCsQCOZ4u3sfWtYy7a4=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/XSLModelAdapter
+ Factory.class
+SHA1-Digest: opJY0bFhNArWW7krtbEz70WtCLA=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/TemplateNameAttrib
+ uteContentAssist.class
+SHA1-Digest: 8WNmHpLihsrXnp1bK2aoo43YBXg=
+
+Name: org/eclipse/wst/xsl/ui/internal/XSLUIPlugin.class
+SHA1-Digest: 1R86Y/Hsbr3TGy9nrSRdOR04uvA=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$4.class
+SHA1-Digest: zAxjjlikuFWbaJIJ5FHOWDEZUX0=
+
+Name: icons/full/import.gif
+SHA1-Digest: fWg+qIPsoZxj94oZYXy4c5k1nTo=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XSLTagDelimsSemanticHighli
+ ghting.class
+SHA1-Digest: /dGSA0Fkd0xSkh6MAmdOnLHo0pI=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$8.class
+SHA1-Digest: BzYifv3KolGqkAadiuxSXTB5YBk=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XSLTextAttributeMap.class
+SHA1-Digest: AONXH86FRlfAX8OZSg4lq5bkmOc=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/IXSLContentAssi
+ stProcessor.class
+SHA1-Digest: uVylAkOL57EkP0WjFWUn53zHgTE=
+
+Name: icons/full/alphab_sort_co.gif
+SHA1-Digest: JjLUPavD/jFA7MwWtXEyWh+PFu8=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/TemplateContentProvider.
+ class
+SHA1-Digest: uAKyfRiQ69fRm5iRbkGS/U8Cals=
+
+Name: schema/contentAssistProcessor.exsd
+SHA1-Digest: bIouZ35uPiF4nwlQ8wlUFvYyDzY=
+
+Name: org/eclipse/wst/xsl/ui/internal/templates/XSLTemplatesPage.class
+SHA1-Digest: EnujKEfR7adp2/wQZBiEkS67vOo=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/RefreshStructureJ
+ ob$2.class
+SHA1-Digest: nf95UIsZ8Dl4nhRVPxUj/ZZi1Ek=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/TemplateModeAttrib
+ uteContentAssist.class
+SHA1-Digest: AvhqcZFoONqpbIV2GIa+mf3Ww6o=
+
+Name: org/eclipse/wst/xsl/ui/internal/util/XSLPluginImageHelper.class
+SHA1-Digest: JfmfLJ6dLiV1g+T4mc45SR0UJtQ=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/href/PathComparato
+ r.class
+SHA1-Digest: hrec2Qeb7+ayAetITLFFAqB5eOU=
+
+Name: icons/full/field_default_obj.gif
+SHA1-Digest: WgT229fwjgJsY8rN4xBTcoP7gHM=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XSLTemplateComplet
+ ionProcessor.class
+SHA1-Digest: iCRxNl/5FxgUTg/PCJipjJTnsc8=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$10.class
+SHA1-Digest: 0v8QJ00SfZ6tXv5r0YxDOgeA+SI=
+
+Name: icons/full/templatenamed_obj.gif
+SHA1-Digest: /7Dfxu3TApYuV0jK7Fszug5lQ0I=
+
+Name: icons/full/new_xml.gif
+SHA1-Digest: SHmgBjsDKApIJ6FaLGJNe7HnU8Q=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$14.class
+SHA1-Digest: Cyx2oLQDocnhtHeT0CkVcJ4yJbw=
+
+Name: icons/full/package_obj.gif
+SHA1-Digest: TAzEv4kYyock9dC9OENnoK2FF1Y=
+
+Name: org/eclipse/wst/xsl/ui/internal/validation/XSLErrorListener.clas
+ s
+SHA1-Digest: mOBnq8Tr9FDLJY4L8XhK2a/33wY=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeAdapterF
+ actory$CMDocumentManagerListenerImpl$1.class
+SHA1-Digest: VUHwXbp+mmwIBYQoWFfvC3VSj+o=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/PropertyPreferencePa
+ ge$2.class
+SHA1-Digest: kSQMXEXJ8VkWYZgI3Kdb8CfcOdU=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XSLElementContentA
+ ssistRequest.class
+SHA1-Digest: /W+kE2YDzUFzCDy6Qqr1MzZx1FE=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeContentP
+ rovider.class
+SHA1-Digest: Ij/GNB8bf7lLi5S8J+fNdI+/e1U=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileWizard$1.class
+SHA1-Digest: IgK+mAKMjY/xK1Qn3WeIjVuCkSE=
+
+Name: org/eclipse/wst/xsl/ui/internal/messages.properties
+SHA1-Digest: IaOB5YtSq79GTDW3/8PbM9MBkpw=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/StylesheetModel
+ View$2.class
+SHA1-Digest: uJV47Z1eQtJ5SjBk3UNOdwSIvOY=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeAdapter.
+ class
+SHA1-Digest: FaCo3GW7F3oPX0PILM26LJCXbW8=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage$4.class
+SHA1-Digest: 662zGL8grxR6Y/1Xu19VqF9rpWE=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/href/HrefContentAs
+ sistRequest.class
+SHA1-Digest: Nt629dmmTTbkUJ+L/MbmaOgF88c=
+
+Name: org/eclipse/wst/xsl/ui/internal/templates/VersionTemplateVariabl
+ eResolverXSL.class
+SHA1-Digest: ANvkZ+D4BLJ/410DrNCl0ZXzUm0=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/AttributeContentAs
+ sist.class
+SHA1-Digest: teWUcJNeX1+FIOT6Zr3R8LmKcKc=
+
+Name: icons/full/newdtd_wiz.gif
+SHA1-Digest: AUsRZRBskJpdAXH1xjfRcfhqEB8=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XSLTemplateComplet
+ ionProcessor$ProposalComparator.class
+SHA1-Digest: orpf918MdDaNovKSWjcMeTMVHOg=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/AttributeShowingL
+ abelProvider.class
+SHA1-Digest: J8Ta2eEUuZ8x5HyosMoO6OmnxAM=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/MainPreferencePage.c
+ lass
+SHA1-Digest: 4YLU+LiRrGoXXckOBbBnibrzic8=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$1.class
+SHA1-Digest: NKZx2TM9YYXA1sTgN2/Y6geCuFE=
+
+Name: icons/full/family.gif
+SHA1-Digest: Z8cqDLp9iVlBLIxuDxbJ0K1NVCE=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$5.class
+SHA1-Digest: 7UyBSkflT+tMkuCLOxo3audH1uI=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLValidationPrefere
+ ncePage.class
+SHA1-Digest: 0illG2gSIqK1/qGjT57Jc2C2Bfg=
+
+Name: org/eclipse/wst/xsl/ui/internal/actions/NewWSDLFileWizardDelegat
+ e.class
+SHA1-Digest: aQkyh4KBIV6QA1zm4Axztyy9bUs=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/XSLContentOutline
+ Configuration$ToggleShowAttributeAction.class
+SHA1-Digest: uYYbGEDx/BmDpqhPFWYRwP6Rf2U=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$9.class
+SHA1-Digest: NdSNgqFDy0NyUEAMgbNB3N0FX6s=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/ComboData.class
+SHA1-Digest: +W7ZVLuIUGGpOA/soZAycIdjpvA=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/XSLContentOutline
+ Configuration.class
+SHA1-Digest: 5m5lxG0RyFBswpP0zArF1aq1HRU=
+
+Name: xslfiles/syntaxcoloring.xsl
+SHA1-Digest: MYY8Zz6QKt2P5tCZzl81GTL2h9U=
+
+Name: plugin.properties
+SHA1-Digest: hF/gBN6QOKW21gJMGrhm3zL3pBA=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/TemplateLabelProvider.cl
+ ass
+SHA1-Digest: Zk3rgz4h4KLp8UCtQTkkIJEMIBY=
+
+Name: org/eclipse/wst/xsl/ui/internal/quickassist/ValidationQuickAssis
+ t.class
+SHA1-Digest: ztIJR1MFCdsaVyB45+ixbhh6Hb4=
+
+Name: org/eclipse/wst/xsl/ui/internal/validation/DelegatingSourceValid
+ atorForXSL.class
+SHA1-Digest: CXeEOVpO23YHGMW7Q3bbyUqipmg=
+
+Name: org/eclipse/wst/xsl/ui/internal/XSLUIConstants.class
+SHA1-Digest: ocFCbZbtyd52vQbmmQk9n3+yCYY=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileWizardPage.cla
+ ss
+SHA1-Digest: KEqvsBjjEMvGGZ5VqhDe0GaJxD4=
+
+Name: org/eclipse/wst/xsl/ui/internal/util/XSLPluginImages.class
+SHA1-Digest: moVnO8WiHada7746A3/cd8SpQEc=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/SelectAttributeCon
+ tentAssist.class
+SHA1-Digest: oZrZgVVhY3psXwyAa1XOo/RB0t0=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/XSLTemplateContent
+ AssistProcessor.class
+SHA1-Digest: YFKzIeb3vI7QLQJ8aC6f3LJhSN0=
+
+Name: org/eclipse/wst/xsl/ui/internal/validation/XSLMarkupValidator.cl
+ ass
+SHA1-Digest: 1WRoWdnpjIm+FsCgN84UE3+nYfM=
+
+Name: org/eclipse/wst/xsl/ui/internal/quickassist/OverrideQuickAssist.
+ class
+SHA1-Digest: 03024ZjWnm5rx7neEofc0a3CfVo=
+
+Name: plugin.xml
+SHA1-Digest: Bmv8Zp+cAGS4zhxzi1ud+uwX8+o=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/PropertyPreferencePa
+ ge.class
+SHA1-Digest: hqwJy97QJGS84Z/GV0AH35xXudU=
+
+Name: icons/full/over_co.gif
+SHA1-Digest: KDXEkxrj3cdRhNP0UO9f3ztxPQc=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$11.class
+SHA1-Digest: zfsOeMhWRRJskcEZZqlrih4o6sM=
+
+Name: icons/full/xslt_file.gif
+SHA1-Digest: tLpdnMTBOJJKd1qCFWWB08W0n9U=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e$15.class
+SHA1-Digest: k2VBHdqpXyZe0HztsfO4YfHQ3PM=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XSLAttrValueSemanticHighli
+ ghting.class
+SHA1-Digest: PvTUApuq0WcTvqPbRtaAAZBOYDI=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentoutline/JFaceNodeAdapterF
+ actory$CMDocumentManagerListenerImpl$2.class
+SHA1-Digest: WNfpcVHqU8NpgZN8izxgxaRr5Ow=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/AbstractXSLPreferenc
+ ePage.class
+SHA1-Digest: hlXS1iLLqn5546PepqeS8swRyqU=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/LineStyleProviderForXSL$Pr
+ opertyChangeListener.class
+SHA1-Digest: utxXbkBAf4O0ShffEF6yK8T6w3U=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/PropertyPreferencePa
+ ge$3.class
+SHA1-Digest: 3o/zuwZJUcOIhvEuDeyrSs88BFY=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XSLTagNameSemanticHighligh
+ ting.class
+SHA1-Digest: fxNFRvuHUojdcNb3PtyQGKGLvGc=
+
+Name: org/eclipse/wst/xsl/ui/internal/contentassist/contentmodel/XSLCo
+ ntentModelGenerator.class
+SHA1-Digest: bYQFRYi3OYNnxvGBM/6+w45rTts=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/AbstractXSLSemanticHighlig
+ hting.class
+SHA1-Digest: iCEcnlWUebRs8IxR7UyiZrnpvo4=
+
+Name: icons/full/XSDFile.gif
+SHA1-Digest: ugi350r1G+dQ6m1zcao6y/jJelI=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/IStyleConstantsXSL.class
+SHA1-Digest: pmJRk3gj5RFwCJOIEBGPFiqDtdE=
+
+Name: icons/full/ancestor.gif
+SHA1-Digest: cj4/fmKLYsat2j37OFksJklBnYA=
+
+Name: templates/file_templates.xml
+SHA1-Digest: iVa1XBt/aLGcyEOv1w9SLpv0u3g=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/XSLSyntaxColoringPag
+ e.class
+SHA1-Digest: LMdwaSIWYRjLE7zknJg51kz6rwg=
+
+Name: org/eclipse/wst/xsl/ui/internal/editor/OverrideIndicatorImagePro
+ vider.class
+SHA1-Digest: yZ/tdFCQiRB7pk6BiSsiS2H4/pY=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/AbstractXSLCont
+ entAssistRequest.class
+SHA1-Digest: h9OHzfvu3DVRtzpLzRyq3z8BMbw=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage$1.class
+SHA1-Digest: tz7QpHMApZx0BTE0375SDEMfagU=
+
+Name: org/eclipse/wst/xsl/ui/internal/views/stylesheet/StylesheetModel
+ View$3.class
+SHA1-Digest: NDPcsL1n2EU2vQDWi/l+3BtRLRo=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XMLRegionMap.class
+SHA1-Digest: 3g4JsBJ7FMLXUq4j3lRpFTYHxwk=
+
+Name: org/eclipse/wst/xsl/ui/internal/preferences/AbstractXSLPreferenc
+ ePage$1.class
+SHA1-Digest: Rfgfzzl8e2yrkqI7rYSO+WH58Tw=
+
+Name: org/eclipse/wst/xsl/ui/internal/wizards/NewXSLFileTemplatesWizar
+ dPage$5.class
+SHA1-Digest: MVxFJRFpXZpuXB8o3JZvEfksRVE=
+
+Name: org/eclipse/wst/xsl/ui/internal/style/XSLRegionMap.class
+SHA1-Digest: /IxQs5iJozHJ9IrV2QWi8aC7Cc8=
+
+Name: org/eclipse/wst/xsl/ui/provisional/contentassist/IContentAssistP
+ roposalRequest.class
+SHA1-Digest: MH7qbVeL9i2adbjPd9sn3As2+HA=
+

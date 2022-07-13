@@ -1,0 +1,284 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "entity"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"571595ED00C6"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "KETDashBoardMailLink"
+	    quid       	"571596E80037"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"571597190150"
+		    supplier   	"Logical View::wnc::Foundation::wt::fc::ObjectToObjectLink"
+		    quidu      	"36095EC90148")))
+	(object Association "$UNNAMED$0"
+	    quid       	"57159780022C"
+	    roles      	(list role_list
+		(object Role "man"
+		    quid       	"571597810000"
+		    label      	"man"
+		    supplier   	"Logical View::e3ps::groupware::company::People"
+		    quidu      	"40B6AB400089"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "dept"
+		    quid       	"571597810008"
+		    label      	"dept"
+		    supplier   	"Logical View::e3ps::groupware::company::Department"
+		    quidu      	"40B6AB370285"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE))
+	    AssociationClass 	"Logical View::ext::ket::common::dashboard::entity::KETDashBoardMailLink"))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "1.메일수신설정"
+	    quid       	"5715973B02DC"
+	    title      	"1.메일수신설정"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::ext::ket::common::dashboard::entity::KETDashBoardMailLink" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1790, 948)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1560, 874)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	460
+			justify    	0
+			label      	"KETDashBoardMailLink")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"571596E80037"
+		    width      	478
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::groupware::company::Department" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(1289, 687)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1168, 612)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	242
+			justify    	0
+			label      	"Department")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6AB370285"
+		    width      	260
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::groupware::company::People" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(2283, 646)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(2168, 571)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	230
+			justify    	0
+			label      	"People")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6AB400089"
+		    width      	248
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @4
+		    location   	(1788, 665)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57159780022C"
+		    roleview_list 	(list RoleViews
+			(object RoleView "man" @5
+			    Parent_View 	@4
+			    location   	(-834, -222)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @6
+				Parent_View 	@5
+				location   	(2086, 696)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	108
+				justify    	0
+				label      	"+man"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571597810000"
+			    client     	@4
+			    supplier   	@3
+			    vertices   	(list Points
+				(1788, 665)
+				(2158, 651))
+			    line_style 	0
+			    label      	(object SegLabel @7
+				Parent_View 	@5
+				location   	(2119, 599)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "dept" @8
+			    Parent_View 	@4
+			    location   	(-834, -222)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @9
+				Parent_View 	@8
+				location   	(1496, 719)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	108
+				justify    	0
+				label      	"+dept"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571597810008"
+			    client     	@4
+			    supplier   	@2
+			    vertices   	(list Points
+				(1788, 665)
+				(1419, 680))
+			    line_style 	0
+			    label      	(object SegLabel @10
+				Parent_View 	@8
+				location   	(1455, 625)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object AssocAttachView "" @11
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@1
+		    supplier   	@4
+		    vertices   	(list Points
+			(1786, 862)
+			(1788, 665))
+		    line_style 	0)))))

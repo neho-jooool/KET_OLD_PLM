@@ -1,0 +1,54 @@
+/* extjs default font */
+.x-tree-node-text {
+	font-size:100%;
+	font-family: NanumGothic, "나눔고딕", Nanumgo, NanumBold, Malgun gothic, "맑은고딕", dotum, "돋음", Arial, tahoma, verdana;
+}
+.x-panel-header-text-default,
+.x-panel-header-text-default-framed {
+    font-size:100%;
+    font-family: NanumGothic, "나눔고딕", Nanumgo, NanumBold, Malgun gothic, "맑은고딕", dotum, "돋음", Arial, tahoma, verdana;
+}
+
+.x-tab-inner-default {
+	font-size:100%;
+    font-family: NanumGothic, "나눔고딕", Nanumgo, NanumBold, Malgun gothic, "맑은고딕", dotum, "돋음", Arial, tahoma, verdana;
+}
+
+.ket-accordion .x-panel-header {
+	padding: 7px 7px;
+}
+
+.ket-main-treePanel .x-panel-body{
+	background-color: '#e0edf7'!important;
+}
+
+.ketTreePanel .x-grid-row .x-grid-cell {
+	color: '#e0edf7';
+}
+
+/* tree node background color */
+.x-grid-td {
+    overflow: hidden;
+    border-width: 0;
+    vertical-align: top;
+    background-color: #e0edf7;
+}
+
+.ket-tab .x-panel-header {
+    height: 60px; padding: 5px;
+}
+
+.x-grid-item-selected {
+	background-color: blue !important;
+	cursor: pointer !important;
+}
+
+.x-grid-item-focused{
+    background-color: blue !important;
+    cursor: pointer !important;
+}
+
+.x-grid-item-over {
+	background-color: blue !important;
+    cursor: pointer !important;
+}

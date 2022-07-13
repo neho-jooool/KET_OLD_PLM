@@ -1,0 +1,958 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "moldPart"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4CC8D4DA0146"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "MoldPartManager"
+	    quid       	"4CC8B4AB00E8"
+	    documentation 	
+|금형부품관리	MoldPart
+|OwnCreator
+|dieNo		DieNo
+|ecoNo		EcoNo
+|levelType	단계구분
+|partUser(link)	부품공정
+|createType	등록구분
+|moldDate	출도일
+|planDate	부품 완료 예정일
+|levelMold	금형 제작, 1차 디버깅 1차 ~N차명
+|moldState	상태
+|sortNo		순서
+|endDate		실제 완료일
+	    
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CC8BBCA00B9"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "dieNo"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Index"
+			    value      	TRUE))
+		    quid       	"4CC8C2AD006B"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "ecoNo"
+		    quid       	"4CC8B51303D7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "levelType"
+		    quid       	"4CC8B51303E6"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "createType"
+		    quid       	"4CC8B51303E7"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "moldDate"
+		    quid       	"4CC8B514000D"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "planDate"
+		    quid       	"4CC8B514000E"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "levelMold"
+		    quid       	"4CC8B514001D"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "moldState"
+		    quid       	"4CC8B514001E"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "sortNo"
+		    quid       	"4CC8B514002D"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attr1"
+		    quid       	"4CC8B514002E"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attr2"
+		    quid       	"4CC8B514003C"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attr3"
+		    quid       	"4CC8B514003D"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "endDate"
+		    quid       	"4CFD8E2E01B5"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "cha"
+		    quid       	"4CCA728603B2"
+		    type       	"int"
+		    exportControl 	"Public")
+		(object ClassAttribute "subCha"
+		    quid       	"4CF76A620119"
+		    type       	"int"
+		    exportControl 	"Public")))
+	(object Class "MoldSubPart"
+	    quid       	"4CC8B53601C3"
+	    documentation 	
+|부품목록	MoldPartList
+|moldNo		금형 부품 번호
+|moldName	금형 부품 설명
+|ea		수량
+|material	재질
+|partClass	유형
+|partType	분류
+|endDate		완료일
+|mType		측정구분
+|actionType	불합격 조치 사항
+|transferDate	인계일
+|etcDesc		비고
+|subState	상태
+	    
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4CCDFC8A024D"
+		    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+		    quidu      	"3432A8740232"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "moldNo"
+		    quid       	"4CC8B57D01D2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "moldName"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "3000")))
+		    quid       	"4CC8B57D01D3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "ea"
+		    quid       	"4CC8B57D01E2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "material"
+		    quid       	"4CC8B57D01E3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "partClass"
+		    quid       	"4CC8B57D01F2"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "partType"
+		    quid       	"4CC8B57D01F3"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "endDate"
+		    quid       	"4CC8B57D0201"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "mType"
+		    quid       	"4CC8B57D0202"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "actionType"
+		    quid       	"4CC8B57D0211"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "transferDate"
+		    quid       	"4CC8B57D0212"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")
+		(object ClassAttribute "etcDesc"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"UpperLimit"
+			    value      	(value Text "3000")))
+		    quid       	"4CC8B57D0221"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "subState"
+		    quid       	"4CC8B57D0230"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attr1"
+		    quid       	"4CC8B57D0231"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attr2"
+		    quid       	"4CC8B57D0240"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "attr3"
+		    quid       	"4CC8B57D024F"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")))
+	(object Association "$UNNAMED$0"
+	    quid       	"4CC8BC1E01C3"
+	    roles      	(list role_list
+		(object Role "partUser"
+		    quid       	"4CC8BC1F00B9"
+		    label      	"partUser"
+		    supplier   	"Logical View::wnc::Foundation::wt::org::WTPrincipalReference"
+		    quidu      	"34907D9A032C"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$1"
+		    quid       	"4CC8BC1F00E8"
+		    supplier   	"Logical View::e3ps::project::moldPart::MoldPartManager"
+		    quidu      	"4CC8B4AB00E8"
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$2"
+	    quid       	"4CCA04930383"
+	    roles      	(list role_list
+		(object Role "manager"
+		    quid       	"4CCA0495023B"
+		    label      	"manager"
+		    supplier   	"Logical View::e3ps::project::moldPart::MoldPartManager"
+		    quidu      	"4CC8B4AB00E8"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$3"
+		    quid       	"4CCA0495024B"
+		    supplier   	"Logical View::e3ps::project::moldPart::MoldSubPart"
+		    quidu      	"4CC8B53601C3"
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$4"
+	    quid       	"4CCDF7C000F5"
+	    roles      	(list role_list
+		(object Role "project"
+		    quid       	"4CCDF7C10115"
+		    label      	"project"
+		    supplier   	"Logical View::e3ps::project::MoldProject"
+		    quidu      	"4C2B091D0156"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"4CCDF7C10124"
+		    supplier   	"Logical View::e3ps::project::moldPart::MoldPartManager"
+		    quidu      	"4CC8B4AB00E8"
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$6"
+	    quid       	"4CCE248A0365"
+	    roles      	(list role_list
+		(object Role "subParts"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Transient"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Persistent"
+			    value      	FALSE))
+		    quid       	"4CCE248D00A6"
+		    label      	"subParts"
+		    supplier   	"Logical View::3rd::Java::java::util::Vector"
+		    quidu      	"3784E5250138"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$7"
+		    quid       	"4CCE248D00A8"
+		    supplier   	"Logical View::e3ps::project::moldPart::MoldPartManager"
+		    quidu      	"4CC8B4AB00E8"
+		    is_aggregate 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "금형부품관리"
+	    quid       	"4CC8B48C01C3"
+	    title      	"금형부품관리"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	284
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::e3ps::common::impl::OwnPersistable" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1042, 735)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(886, 683)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	312
+			justify    	0
+			label      	"OwnPersistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(886, 633)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	312
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"41EDD9550362"
+		    width      	330
+		    height     	228
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2165, 546)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1984, 414)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"Persistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@2
+			location   	(1984, 364)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3432A8740232"
+		    compartment 	(object Compartment
+			Parent_View 	@2
+			location   	(1984, 519)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	4
+			max_width  	368
+			justify    	1)
+		    width      	380
+		    height     	388
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::org::WTPrincipalReference" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(1625, 2129)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(1408, 2055)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	434
+			justify    	0
+			label      	"WTPrincipalReference")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"34907D9A032C"
+		    width      	452
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::project::moldPart::MoldSubPart" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2232, 1596)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1978, 1165)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	508
+			justify    	0
+			label      	"MoldSubPart")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CC8B53601C3"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(1978, 1226)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	16
+			max_width  	506
+			justify    	1)
+		    width      	526
+		    height     	886
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @5
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCDFC8A024D"
+		    client     	@4
+		    supplier   	@2
+		    vertices   	(list Points
+			(2203, 1152)
+			(2176, 740))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::project::MoldProject" @6
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(306, 1570)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(77, 1316)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	458
+			justify    	0
+			label      	"MoldProject")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C2B091D0156"
+		    compartment 	(object Compartment
+			Parent_View 	@6
+			location   	(77, 1421)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	7
+			max_width  	465
+			justify    	1)
+		    width      	476
+		    height     	532
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::3rd::Java::java::util::Vector" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(303, 805)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(222, 730)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	162
+			justify    	0
+			label      	"Vector")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3784E5250138"
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::project::moldPart::MoldPartManager" @8
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1049, 1552)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(818, 1121)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	462
+			justify    	0
+			label      	"MoldPartManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CC8B4AB00E8"
+		    compartment 	(object Compartment
+			Parent_View 	@8
+			location   	(818, 1182)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	16
+			max_width  	468
+			justify    	1)
+		    width      	480
+		    height     	886
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @9
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CC8BBCA00B9"
+		    client     	@8
+		    supplier   	@1
+		    vertices   	(list Points
+			(1044, 1108)
+			(1042, 849))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @10
+		    location   	(1414, 1917)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CC8BC1E01C3"
+		    roleview_list 	(list RoleViews
+			(object RoleView "partUser" @11
+			    Parent_View 	@10
+			    location   	(399, 477)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @12
+				Parent_View 	@11
+				location   	(1434, 2038)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	181
+				justify    	0
+				label      	"+partUser"
+				pctDist    	0.557740
+				height     	72
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8BC1F00B9"
+			    client     	@10
+			    supplier   	@3
+			    vertices   	(list Points
+				(1414, 1917)
+				(1539, 2042))
+			    line_style 	0
+			    label      	(object SegLabel @13
+				Parent_View 	@11
+				location   	(1564, 1992)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "$UNNAMED$1" @14
+			    Parent_View 	@10
+			    location   	(399, 477)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8BC1F00E8"
+			    client     	@10
+			    supplier   	@8
+			    vertices   	(list Points
+				(1414, 1917)
+				(1289, 1792))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$2" @15
+		    location   	(1628, 1572)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCA04930383"
+		    roleview_list 	(list RoleViews
+			(object RoleView "manager" @16
+			    Parent_View 	@15
+			    location   	(-551, 29)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @17
+				Parent_View 	@16
+				location   	(1429, 1480)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	190
+				justify    	0
+				label      	"+manager"
+				pctDist    	0.598637
+				height     	86
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCA0495023B"
+			    client     	@15
+			    supplier   	@8
+			    vertices   	(list Points
+				(1628, 1572)
+				(1289, 1560))
+			    line_style 	0
+			    label      	(object SegLabel @18
+				Parent_View 	@16
+				location   	(1325, 1485)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.903488
+				height     	77
+				orientation 	1))
+			(object RoleView "$UNNAMED$3" @19
+			    Parent_View 	@15
+			    location   	(-551, 29)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCA0495024B"
+			    client     	@15
+			    supplier   	@4
+			    vertices   	(list Points
+				(1628, 1572)
+				(1968, 1585))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$4" @20
+		    location   	(676, 1560)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCDF7C000F5"
+		    roleview_list 	(list RoleViews
+			(object RoleView "project" @21
+			    Parent_View 	@20
+			    location   	(-258, 8)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @22
+				Parent_View 	@21
+				location   	(599, 1482)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	147
+				justify    	0
+				label      	"+project"
+				pctDist    	0.581544
+				height     	81
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCDF7C10115"
+			    client     	@20
+			    supplier   	@6
+			    vertices   	(list Points
+				(676, 1560)
+				(544, 1562))
+			    line_style 	0
+			    label      	(object SegLabel @23
+				Parent_View 	@21
+				location   	(579, 1604)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.745014
+				height     	42
+				orientation 	0))
+			(object RoleView "$UNNAMED$5" @24
+			    Parent_View 	@20
+			    location   	(-258, 8)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCDF7C10124"
+			    client     	@20
+			    supplier   	@8
+			    vertices   	(list Points
+				(676, 1560)
+				(808, 1557))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$6" @25
+		    location   	(599, 1101)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4CCE248A0365"
+		    roleview_list 	(list RoleViews
+			(object RoleView "subParts" @26
+			    Parent_View 	@25
+			    location   	(-451, -451)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @27
+				Parent_View 	@26
+				location   	(311, 976)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	203
+				justify    	0
+				label      	"+subParts"
+				pctDist    	0.990431
+				height     	116
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCE248D00A6"
+			    client     	@25
+			    supplier   	@7
+			    vertices   	(list Points
+				(599, 1101)
+				(390, 892))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$7" @28
+			    Parent_View 	@25
+			    location   	(-451, -451)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CCE248D00A8"
+			    client     	@25
+			    supplier   	@8
+			    vertices   	(list Points
+				(599, 1101)
+				(808, 1311))
+			    line_style 	0)))))))

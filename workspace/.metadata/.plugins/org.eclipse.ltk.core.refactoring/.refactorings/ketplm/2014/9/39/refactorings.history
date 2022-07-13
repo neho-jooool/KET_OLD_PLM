@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ketplm/codebase/extcore/jsp/inter&apos; to &apos;req&apos;" description="Rename resource &apos;inter&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="codebase/extcore/jsp/inter" name="req" stamp="1411520239426" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ketplm/codebase/extcore/jsp/req/CreateRequest.jsp&apos; to &apos;createRequest.jsp&apos;" description="Rename resource &apos;CreateRequest.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="codebase/extcore/jsp/req/CreateRequest.jsp" name="createRequest.jsp" stamp="1411623716940" updateReferences="true"/>
+</session>

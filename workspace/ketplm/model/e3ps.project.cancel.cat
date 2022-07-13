@@ -1,0 +1,443 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "cancel"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"51B6C2BB032E"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "CancelProject"
+	    quid       	"51B6C33502C0"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"51B6C3D000FB"
+		    supplier   	"Logical View::wnc::Foundation::wt::content::ContentHolder"
+		    quidu      	"348899BF0399")
+		(object Inheritance_Relationship
+		    quid       	"51B6C3D70253"
+		    supplier   	"Logical View::e3ps::common::impl::OwnPersistable"
+		    quidu      	"41EDD9550362"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "cancelHistory"
+		    quid       	"51B6C4B502FF"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "cancelType"
+		    quid       	"51B6C4E103BA"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "cancelDate"
+		    quid       	"51B6C5080224"
+		    type       	"Timestamp"
+		    quidu      	"378A30240219"
+		    exportControl 	"Public")))
+	(object Association "ProjectCancelLink"
+	    quid       	"51B7CD57013A"
+	    roles      	(list role_list
+		(object Role "cancle"
+		    quid       	"51B7CD5800CC"
+		    label      	"cancle"
+		    supplier   	"Logical View::e3ps::project::cancel::CancelProject"
+		    quidu      	"51B6C33502C0"
+		    client_cardinality 	(value cardinality "0..n")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE)
+		(object Role "project"
+		    quid       	"51B7CD5800CE"
+		    label      	"project"
+		    supplier   	"Logical View::e3ps::project::ProjectMaster"
+		    quidu      	"487315C703B8"
+		    client_cardinality 	(value cardinality "1")
+		    is_aggregate 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "CancelProject"
+	    quid       	"51B6C2C501A7"
+	    title      	"CancelProject"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::content::ContentHolder" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(744, 540)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(421, 383)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	646
+			justify    	0
+			label      	"ContentHolder")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(421, 333)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	646
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"348899BF0399"
+		    compartment 	(object Compartment
+			Parent_View 	@1
+			location   	(421, 488)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	5
+			max_width  	653
+			justify    	1)
+		    width      	664
+		    height     	438
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::common::impl::OwnPersistable" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1656, 648)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1500, 596)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	312
+			justify    	0
+			label      	"OwnPersistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@2
+			location   	(1500, 546)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	312
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"41EDD9550362"
+		    width      	330
+		    height     	228
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::project::ProjectMaster" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1741, 1446)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(1524, 1292)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	434
+			justify    	0
+			label      	"ProjectMaster")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"487315C703B8"
+		    compartment 	(object Compartment
+			Parent_View 	@3
+			location   	(1524, 1397)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	4
+			max_width  	440
+			justify    	1)
+		    width      	452
+		    height     	332
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::project::cancel::CancelProject" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(544, 1445)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(297, 1314)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	494
+			justify    	0
+			label      	"CancelProject")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"51B6C33502C0"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(297, 1375)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	4
+			max_width  	500
+			justify    	1)
+		    width      	512
+		    height     	286
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @5
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51B6C3D000FB"
+		    client     	@4
+		    supplier   	@1
+		    vertices   	(list Points
+			(575, 1301)
+			(694, 759))
+		    line_style 	0)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51B6C3D70253"
+		    client     	@4
+		    supplier   	@2
+		    vertices   	(list Points
+			(741, 1301)
+			(1494, 762))
+		    line_style 	0)
+		(object AssociationViewNew "ProjectCancelLink" @7
+		    location   	(1157, 1445)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object SegLabel @8
+			Parent_View 	@7
+			location   	(1157, 1386)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	TRUE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			anchor     	1
+			anchor_loc 	1
+			nlines     	1
+			max_width  	450
+			justify    	0
+			label      	"ProjectCancelLink"
+			pctDist    	0.500000
+			height     	60
+			orientation 	0)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"51B7CD57013A"
+		    roleview_list 	(list RoleViews
+			(object RoleView "cancle" @9
+			    Parent_View 	@7
+			    location   	(-584, -17)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(871, 1404)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	159
+				justify    	0
+				label      	"+cancle"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"51B7CD5800CC"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(1157, 1445)
+				(800, 1445))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(836, 1499)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "project" @12
+			    Parent_View 	@7
+			    location   	(-584, -17)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @13
+				Parent_View 	@12
+				location   	(1443, 1404)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	147
+				justify    	0
+				label      	"+project"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"51B7CD5800CE"
+			    client     	@7
+			    supplier   	@3
+			    vertices   	(list Points
+				(1157, 1445)
+				(1514, 1445))
+			    line_style 	0
+			    label      	(object SegLabel @14
+				Parent_View 	@12
+				location   	(1478, 1499)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))))))

@@ -1,0 +1,43 @@
+ResourceInfo.class=wt.tools.resource.MetadataResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+
+# Entry Contents
+
+OwnPersistable.value=Own Persistable
+
+OwnPersistable.owner.value=Owner
+
+OwnableTree.value=Ownable Tree
+
+OwnableTree.owner.value=Owner
+
+ParentChildLink.value=Parent Child Link
+
+ParentChildLink.child.value=Child
+
+ParentChildLink.parent.value=Parent
+
+Tree.value=Tree
+
+Tree.child.value=Child
+
+Tree.parent.value=Parent
+
+Tree.parentReference.value=Parent Reference
+
+Tree.treeIndex.value=Tree Index

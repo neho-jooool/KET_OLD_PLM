@@ -1,0 +1,142 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "common"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C73B86F01C5"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "code"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.common.code.cat"
+	    quid       	"4C73B8A50148")
+	(object Class_Category "impl"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.common.impl.cat"
+	    quid       	"4C73B8AA01F4")
+	(object Class_Category "content"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.common.content.cat"
+	    quid       	"4C9711940167")
+	(object Class_Category "service"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.common.service.cat"
+	    quid       	"4CCE8BE6005D"))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"4C73B8BC0177"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Logical View::e3ps::common::code" @1
+		    location   	(372, 515)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(228, 431)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"code")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B8A50148"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::common::impl" @2
+		    location   	(1216, 518)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1072, 434)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"impl")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B8AA01F4"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::common::content" @3
+		    location   	(797, 518)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(653, 434)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"content")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"41EB863302DD"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::common::service" @4
+		    location   	(1647, 522)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1503, 438)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"service")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CCE8BE6005D"
+		    width      	300
+		    height     	180)))))

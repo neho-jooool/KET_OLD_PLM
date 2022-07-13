@@ -1,0 +1,52 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+ACAD.value=AutoCAD
+ACAD.order=10
+ACAD.selectable=true
+
+PROE.value=Pro/ENGINEER
+PROE.shortDescription=Pro/Engineer
+PROE.order=20
+PROE.defaultValue=true
+PROE.selectable=true
+
+UG.value=Unigraphics
+UG.order=30
+UG.selectable=true
+
+ECAD.value=ECAD
+ECAD.order=40
+ECAD.selectable=true
+
+EXCESS.value=EXCESS
+EXCESS.order=50
+EXCESS.selectable=true
+
+CATIAV5.value=CATIA V5
+CATIAV5.order=60
+CATIAV5.selectable=true
+
+CATIA.value=CATIA V4
+CATIA.order=70
+CATIA.selectable=true
+

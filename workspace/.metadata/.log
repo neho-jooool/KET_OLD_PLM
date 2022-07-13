@@ -1,0 +1,313 @@
+!SESSION 2022-07-13 08:09:44.429 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file D:\ket\workspace\.metadata\.bak_0.log
+Created Time: 2022-07-13 08:10:27.962
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:27.963
+!MESSAGE loading file 'package.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:27.966
+!MESSAGE loading file 'production.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:27.975
+!MESSAGE loading file 'production.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:27.978
+!MESSAGE loading file 'testing.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:27.991
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:27.993
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.025
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.057
+!MESSAGE loading file 'development.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.099
+!MESSAGE loading file 'development.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.101
+!MESSAGE loading file 'ext.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.103
+!MESSAGE loading file 'native.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.123
+!MESSAGE loading file 'native.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.125
+!MESSAGE loading file 'package.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.128
+!MESSAGE loading file 'package.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.130
+!MESSAGE loading file 'production.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.132
+!MESSAGE loading file 'production.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.134
+!MESSAGE loading file 'testing.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.166
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.169
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.268
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.317
+!MESSAGE loading file 'development.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.320
+!MESSAGE loading file 'development.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.323
+!MESSAGE loading file 'ext.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.325
+!MESSAGE loading file 'native.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.328
+!MESSAGE loading file 'native.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.331
+!MESSAGE loading file 'package.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.344
+!MESSAGE loading file 'package.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.347
+!MESSAGE loading file 'production.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.361
+!MESSAGE loading file 'production.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.364
+!MESSAGE loading file 'testing.defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.394
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.396
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.461
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.484
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.499
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.538
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.582
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.598
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.617
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.655
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.659
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.709
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.779
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.806
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.829
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.839
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.841
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.849
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.854
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.894
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:28.962
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.010
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.012
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.024
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.034
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.036
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.078
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.128
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.133
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.147
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.190
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.201
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.232
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.241
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.245
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.266
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.285
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.290
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.309
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.345
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.349
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.376
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.413
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.418
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.490
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.514
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.517
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.556
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.602
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.604
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.612
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.620
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.623
+!MESSAGE loading file 'build.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.737
+!MESSAGE loading file 'defaults.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.754
+!MESSAGE loading file 'testing.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.758
+!MESSAGE loading file 'version.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.771
+!MESSAGE loading file 'bom.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.829
+!MESSAGE loading file 'aif.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.859
+!MESSAGE loading file 'aif_ko.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.860
+!MESSAGE loading file 'aif_ko_KR.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.863
+!MESSAGE loading file 'actions.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.875
+!MESSAGE loading file 'util.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.878
+!MESSAGE loading file 'util_ko.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.880
+!MESSAGE loading file 'util_ko_KR.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.884
+!MESSAGE loading file 'message.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.908
+!MESSAGE loading file 'docuinfo.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.927
+!MESSAGE loading file 'shared-message_en.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.940
+!MESSAGE loading file 'shared-message_ko.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.947
+!MESSAGE loading file 'shared-message_zh.properties'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2022-07-13 08:10:29.957
+!MESSAGE loading file 'context.properties'
+
+!ENTRY org.eclipse.ui 4 4 2022-07-13 10:34:35.985
+!MESSAGE Conflicting handlers for org.eclipse.compare.copyAllRightToLeft: {ActionHandler(org.eclipse.compare.contentmergeviewer.ContentMergeViewer$8@27ba7631)} vs {ActionHandler(org.eclipse.compare.contentmergeviewer.ContentMergeViewer$8@42a59f57)}

@@ -1,0 +1,2103 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "program"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"53C88C8201D7"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "entity"
+	    quid       	"53C4ED45029F"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "KETProgramMaster"
+		    attributes 	(list Attribute_Set)
+		    quid       	"53C4ED5F0276"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"53C4F50F0105"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocumentMaster"
+			    quidu      	"353FA84603CB")))
+		(object Class "KETProgramSchedule"
+		    attributes 	(list Attribute_Set)
+		    quid       	"53C4ED940250"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"53C4F54003C3"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+			    quidu      	"353FA84903E3"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "programName"
+			    quid       	"53E1E3E601DE"
+			    documentation 	"프로그램명"
+			    type       	"String"
+			    exportControl 	"Public")
+			(object ClassAttribute "startDate"
+			    quid       	"53D5921E039D"
+			    documentation 	"프로그램 시작일"
+			    type       	"Timestamp"
+			    exportControl 	"Public")
+			(object ClassAttribute "endDate"
+			    quid       	"53D5921E03B8"
+			    documentation 	"프로그램 종료일"
+			    type       	"Timestamp"
+			    exportControl 	"Public")
+			(object ClassAttribute "divisionCode"
+			    quid       	"53D5921E03C7"
+			    documentation 	"사업부코드"
+			    type       	"String"
+			    exportControl 	"Public")
+			(object ClassAttribute "isNotify"
+			    quid       	"53E1E43401E4"
+			    documentation 	"공지유무"
+			    type       	"Boolean"
+			    initv      	"false"
+			    exportControl 	"Public")))
+		(object Class "KETProgramEvent"
+		    attributes 	(list Attribute_Set)
+		    quid       	"53C4F78203DF"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"53D592C50268"
+			    supplier   	"Logical View::wnc::Foundation::wt::fc::WTObject"
+			    quidu      	"34240FF701C2"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "customerEventName"
+			    quid       	"53C4F7AD0204"
+			    documentation 	"고객 이벤트 명"
+			    type       	"String"
+			    exportControl 	"Public")
+			(object ClassAttribute "customerEventDate"
+			    quid       	"53C4F7BF032F"
+			    documentation 	"고객이벤트 일정"
+			    type       	"Timestamp"
+			    exportControl 	"Public")
+			(object ClassAttribute "eventOrder"
+			    quid       	"53C4F7CD004B"
+			    documentation 	"이벤트 순서"
+			    type       	"int"
+			    initv      	"0"
+			    exportControl 	"Public")))
+		(object Class "KETProgramEventLink"
+		    quid       	"53DAF306030C"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"53DAF3180172"
+			    supplier   	"Logical View::wnc::Foundation::wt::vc::ObjectToVersionLink"
+			    quidu      	"364B6D0301C5")))
+		(object Class "KETProgramProjectLink"
+		    quid       	"53FAE94602E4"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"53FB0F3101EA"
+			    supplier   	"Logical View::wnc::Foundation::wt::vc::ObjectToVersionLink"
+			    quidu      	"364B6D0301C5"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "isBase"
+			    quid       	"53FB0F4303E2"
+			    documentation 	"기준 프로그램"
+			    type       	"boolean"
+			    initv      	"false"
+			    exportControl 	"Public")
+			(object ClassAttribute "isCheckedEvent"
+			    quid       	"53FB11A7023E"
+			    documentation 	"일정 확인"
+			    type       	"Boolean"
+			    initv      	"false"
+			    exportControl 	"Public")))
+		(object Association "KETProgramScheduleLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1702)))
+		    quid       	"53C4EED503E7"
+		    roles      	(list role_list
+			(object Role "master"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"GenerateAccessors"
+				    value      	FALSE)
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"AutoNavigate"
+				    value      	TRUE))
+			    quid       	"53C4EED70396"
+			    label      	"master"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramMaster"
+			    quidu      	"53C4ED5F0276"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "iteration"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"WriteAccess"
+				    value      	("WriteAccess_Set" 4003))
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"GenerateAccessors"
+				    value      	FALSE))
+			    quid       	"53C4EED703A6"
+			    label      	"iteration"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    client_cardinality 	(value cardinality "1..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETOemPlanLink"
+		    quid       	"53CCF2C902E7"
+		    documentation 	"차종별 이벤트"
+		    roles      	(list role_list
+			(object Role "oemPlan"
+			    quid       	"53CCF2CA01BA"
+			    label      	"oemPlan"
+			    supplier   	"Logical View::e3ps::project::outputtype::OEMPlan"
+			    quidu      	"4AFCCB33011E"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "event"
+			    quid       	"53CCF2CA01D4"
+			    label      	"event"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramEvent"
+			    quidu      	"53C4F78203DF"
+			    client_cardinality 	(value cardinality "0..1")
+			    Containment 	"By Value"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$0"
+		    quid       	"53D280AE0080"
+		    documentation 	"고객처"
+		    roles      	(list role_list
+			(object Role "subContractor"
+			    quid       	"53D280AE0341"
+			    label      	"subContractor"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$1"
+			    quid       	"53D280AE0381"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$2"
+		    quid       	"53D281700233"
+		    documentation 	"최종사용처"
+		    roles      	(list role_list
+			(object Role "lastUsingBuyer"
+			    quid       	"53D2817101B6"
+			    label      	"lastUsingBuyer"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$3"
+			    quid       	"53D281710203"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$4"
+		    quid       	"53D281BE036D"
+		    documentation 	"형태"
+		    roles      	(list role_list
+			(object Role "formType"
+			    quid       	"53D281BF02DD"
+			    label      	"formType"
+			    supplier   	"Logical View::e3ps::common::code::NumberCode"
+			    quidu      	"4795C7D70323"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$5"
+			    quid       	"53D281BF032A"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$6"
+		    quid       	"53D28048032C"
+		    documentation 	"차종"
+		    roles      	(list role_list
+			(object Role "carType"
+			    quid       	"53D2804902B4"
+			    label      	"carType"
+			    supplier   	"Logical View::e3ps::project::outputtype::OEMProjectType"
+			    quidu      	"4AFA9E810335"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$7"
+			    quid       	"53D28049030D"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    is_aggregate 	TRUE)))
+		(object Association "KETProgramWTUserLink"
+		    quid       	"53D071EF0225"
+		    documentation 	"프로그램 관리자"
+		    roles      	(list role_list
+			(object Role "programAdmin"
+			    quid       	"53D071F00064"
+			    label      	"programAdmin"
+			    supplier   	"Logical View::wnc::Foundation::wt::org::WTUser"
+			    quidu      	"33F8A95400CA"
+			    client_cardinality 	(value cardinality "1")
+			    Containment 	"By Value"
+			    is_navigable 	TRUE)
+			(object Role "program"
+			    quid       	"53D071F00099"
+			    label      	"program"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$8"
+		    quid       	"53DAF367036F"
+		    roles      	(list role_list
+			(object Role "event"
+			    quid       	"53DAF3680220"
+			    label      	"event"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramEvent"
+			    quidu      	"53C4F78203DF"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)
+			(object Role "schedule"
+			    quid       	"53DAF368022B"
+			    label      	"schedule"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE))
+		    AssociationClass 	"Logical View::ext::ket::project::program::entity::KETProgramEventLink")
+		(object Association "$UNNAMED$9"
+		    quid       	"53C4F29F0364"
+		    roles      	(list role_list
+			(object Role "project"
+			    quid       	"53C4F2A0024A"
+			    label      	"project"
+			    supplier   	"Logical View::e3ps::project::ProductProject"
+			    quidu      	"4C2AE78703D6"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)
+			(object Role "program"
+			    quid       	"53C4F2A00269"
+			    label      	"program"
+			    supplier   	"Logical View::ext::ket::project::program::entity::KETProgramSchedule"
+			    quidu      	"53C4ED940250"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE))
+		    AssociationClass 	"Logical View::ext::ket::project::program::entity::KETProgramProjectLink"))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "프로그램 관리"
+		    quid       	"53C4ED55015D"
+		    title      	"프로그램 관리"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	119
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocumentMaster" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1168, 286)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(962, 237)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	412
+				justify    	0
+				label      	"WTDocumentMaster")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	12632256
+			    quidu      	"353FA84603CB"
+			    width      	430
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1871, 280)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1729, 231)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	284
+				justify    	0
+				label      	"WTDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	12632256
+			    quidu      	"353FA84903E3"
+			    width      	302
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::WTObject" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(637, 314)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(508, 286)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	258
+				justify    	0
+				label      	"WTObject")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@3
+				location   	(508, 236)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	256
+				justify    	0
+				label      	"<<Abstract>>")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	12632256
+			    quidu      	"34240FF701C2"
+			    width      	276
+			    height     	180
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::vc::ObjectToVersionLink" @4
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1290, 1755)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@4
+				location   	(1090, 1727)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	400
+				justify    	0
+				label      	"ObjectToVersionLink")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@4
+				location   	(1090, 1677)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	400
+				justify    	0
+				label      	"<<Abstract>>")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"364B6D0301C5"
+			    width      	418
+			    height     	180
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::project::program::entity::KETProgramEventLink" @5
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1291, 1399)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@5
+				location   	(1070, 1348)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	442
+				justify    	0
+				label      	"KETProgramEventLink")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"53DAF306030C"
+			    width      	460
+			    height     	126
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @6
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53DAF3180172"
+			    client     	@5
+			    supplier   	@4
+			    vertices   	(list Points
+				(1290, 1462)
+				(1290, 1664))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::e3ps::project::outputtype::OEMPlan" @7
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(638, 2013)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@7
+				location   	(512, 1964)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	252
+				justify    	0
+				label      	"OEMPlan")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4AFCCB33011E"
+			    width      	270
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::project::program::entity::KETProgramMaster" @8
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1169, 680)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@8
+				location   	(972, 628)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	394
+				justify    	0
+				label      	"KETProgramMaster")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"53C4ED5F0276"
+			    width      	412
+			    height     	128
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @9
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53C4F50F0105"
+			    client     	@8
+			    supplier   	@1
+			    vertices   	(list Points
+				(1168, 615)
+				(1168, 347))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::e3ps::project::outputtype::OEMProjectType" @10
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2174, 1998)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@10
+				location   	(1997, 1949)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	354
+				justify    	0
+				label      	"OEMProjectType")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4AFA9E810335"
+			    width      	372
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @11
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2685, 1851)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@11
+				location   	(2550, 1802)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @12
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(3117, 1580)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@12
+				location   	(2982, 1534)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::common::code::NumberCode" @13
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(3183, 1123)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@13
+				location   	(3048, 1077)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	270
+				justify    	0
+				label      	"NumberCode")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4795C7D70323"
+			    width      	288
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::org::WTUser" @14
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2580, 309)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@14
+				location   	(2488, 260)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	184
+				justify    	0
+				label      	"WTUser")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	12632256
+			    quidu      	"33F8A95400CA"
+			    width      	202
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::project::program::entity::KETProgramEvent" @15
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(638, 1124)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@15
+				location   	(315, 993)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	646
+				justify    	0
+				label      	"KETProgramEvent")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"53C4F78203DF"
+			    compartment 	(object Compartment
+				Parent_View 	@15
+				location   	(315, 1054)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	4
+				max_width  	650
+				justify    	1)
+			    width      	664
+			    height     	286
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "KETOemPlanLink" @16
+			    location   	(638, 1609)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @17
+				Parent_View 	@16
+				location   	(627, 1636)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	338
+				justify    	0
+				label      	"KETOemPlanLink"
+				pctDist    	0.333333
+				height     	27
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53CCF2C902E7"
+			    roleview_list 	(list RoleViews
+				(object RoleView "oemPlan" @18
+				    Parent_View 	@16
+				    location   	(71, 244)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @19
+					Parent_View 	@18
+					location   	(524, 1914)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	189
+					justify    	0
+					label      	"+oemPlan"
+					pctDist    	0.894737
+					height     	115
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53CCF2CA01BA"
+				    client     	@16
+				    supplier   	@7
+				    vertices   	(list Points
+					(638, 1609)
+					(638, 1951))
+				    line_style 	0
+				    label      	(object SegLabel @20
+					Parent_View 	@18
+					location   	(692, 1917)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "event" @21
+				    Parent_View 	@16
+				    location   	(71, 244)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @22
+					Parent_View 	@21
+					location   	(550, 1293)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	119
+					justify    	0
+					label      	"+event"
+					pctDist    	0.926901
+					height     	89
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53CCF2CA01D4"
+				    client     	@16
+				    supplier   	@15
+				    vertices   	(list Points
+					(638, 1609)
+					(638, 1267))
+				    line_style 	0
+				    label      	(object SegLabel @23
+					Parent_View 	@21
+					location   	(692, 1301)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))))
+			(object InheritView "" @24
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53D592C50268"
+			    client     	@15
+			    supplier   	@3
+			    vertices   	(list Points
+				(637, 980)
+				(637, 404))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::e3ps::project::ProductProject" @25
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1873, 2318)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@25
+				location   	(1725, 2269)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	296
+				justify    	0
+				label      	"ProductProject")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	8454016
+			    quidu      	"4C2AE78703D6"
+			    width      	314
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::ext::ket::project::program::entity::KETProgramSchedule" @26
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1871, 1126)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@26
+				location   	(1620, 945)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	502
+				justify    	0
+				label      	"KETProgramSchedule")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"53C4ED940250"
+			    compartment 	(object Compartment
+				Parent_View 	@26
+				location   	(1620, 1006)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	6
+				max_width  	512
+				justify    	1)
+			    width      	520
+			    height     	386
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @27
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53C4F54003C3"
+			    client     	@26
+			    supplier   	@2
+			    vertices   	(list Points
+				(1871, 932)
+				(1871, 341))
+			    line_style 	0)
+			(object AssociationViewNew "KETProgramScheduleLink" @28
+			    location   	(1440, 852)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @29
+				Parent_View 	@28
+				location   	(1411, 850)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	480
+				justify    	0
+				label      	"KETProgramScheduleLink"
+				pctDist    	0.033333
+				height     	3
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53C4EED503E7"
+			    roleview_list 	(list RoleViews
+				(object RoleView "master" @30
+				    Parent_View 	@28
+				    location   	(424, -314)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @31
+					Parent_View 	@30
+					location   	(1165, 773)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	186
+					justify    	0
+					label      	"+master"
+					pctDist    	1.362834
+					height     	80
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53C4EED70396"
+				    client     	@28
+				    supplier   	@8
+				    vertices   	(list Points
+					(1440, 852)
+					(1270, 744))
+				    line_style 	0
+				    label      	(object SegLabel @32
+					Parent_View 	@30
+					location   	(1354, 769)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.581402
+					height     	24
+					orientation 	1))
+				(object RoleView "iteration" @33
+				    Parent_View 	@28
+				    location   	(424, -314)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @34
+					Parent_View 	@33
+					location   	(1501, 971)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	203
+					justify    	0
+					label      	"+iteration"
+					pctDist    	0.572478
+					height     	67
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53C4EED703A6"
+				    client     	@28
+				    supplier   	@26
+				    vertices   	(list Points
+					(1440, 852)
+					(1610, 960))
+				    line_style 	0
+				    label      	(object SegLabel @35
+					Parent_View 	@33
+					location   	(1621, 907)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1..n"
+					pctDist    	0.904990
+					height     	51
+					orientation 	0))))
+			(object AssociationViewNew "$UNNAMED$6" @36
+			    location   	(2044, 1627)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53D28048032C"
+			    roleview_list 	(list RoleViews
+				(object RoleView "carType" @37
+				    Parent_View 	@36
+				    location   	(141, 839)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @38
+					Parent_View 	@37
+					location   	(2030, 1902)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	166
+					justify    	0
+					label      	"+carType"
+					pctDist    	0.776048
+					height     	105
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D2804902B4"
+				    client     	@36
+				    supplier   	@10
+				    vertices   	(list Points
+					(2044, 1627)
+					(2152, 1936))
+				    line_style 	0
+				    label      	(object SegLabel @39
+					Parent_View 	@37
+					location   	(2192, 1887)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "$UNNAMED$7" @40
+				    Parent_View 	@36
+				    location   	(141, 839)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D28049030D"
+				    client     	@36
+				    supplier   	@26
+				    vertices   	(list Points
+					(2044, 1627)
+					(1937, 1319))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$0" @41
+			    location   	(2351, 1554)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53D280AE0080"
+			    roleview_list 	(list RoleViews
+				(object RoleView "subContractor" @42
+				    Parent_View 	@41
+				    location   	(448, 766)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @43
+					Parent_View 	@42
+					location   	(2449, 1824)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	283
+					justify    	0
+					label      	"+subContractor"
+					pctDist    	0.713391
+					height     	138
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D280AE0341"
+				    client     	@41
+				    supplier   	@11
+				    vertices   	(list Points
+					(2351, 1554)
+					(2616, 1789))
+				    line_style 	0
+				    label      	(object SegLabel @44
+					Parent_View 	@42
+					location   	(2632, 1738)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.936190
+					height     	50
+					orientation 	0))
+				(object RoleView "$UNNAMED$1" @45
+				    Parent_View 	@41
+				    location   	(448, 766)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D280AE0381"
+				    client     	@41
+				    supplier   	@26
+				    vertices   	(list Points
+					(2351, 1554)
+					(2087, 1319))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$2" @46
+			    location   	(2551, 1373)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53D281700233"
+			    roleview_list 	(list RoleViews
+				(object RoleView "lastUsingBuyer" @47
+				    Parent_View 	@46
+				    location   	(648, 585)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @48
+					Parent_View 	@47
+					location   	(2803, 1583)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	303
+					justify    	0
+					label      	"+lastUsingBuyer"
+					pctDist    	0.687417
+					height     	111
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D2817101B6"
+				    client     	@46
+				    supplier   	@12
+				    vertices   	(list Points
+					(2551, 1373)
+					(2972, 1527))
+				    line_style 	0
+				    label      	(object SegLabel @49
+					Parent_View 	@47
+					location   	(2981, 1484)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.989698
+					height     	45
+					orientation 	0))
+				(object RoleView "$UNNAMED$3" @50
+				    Parent_View 	@46
+				    location   	(648, 585)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D281710203"
+				    client     	@46
+				    supplier   	@26
+				    vertices   	(list Points
+					(2551, 1373)
+					(2131, 1219))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$4" @51
+			    location   	(2584, 1124)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53D281BE036D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "formType" @52
+				    Parent_View 	@51
+				    location   	(681, 336)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @53
+					Parent_View 	@52
+					location   	(2947, 1165)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	188
+					justify    	0
+					label      	"+formType"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D281BF02DD"
+				    client     	@51
+				    supplier   	@13
+				    vertices   	(list Points
+					(2584, 1124)
+					(3038, 1123))
+				    line_style 	0
+				    label      	(object SegLabel @54
+					Parent_View 	@52
+					location   	(2992, 1070)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "$UNNAMED$5" @55
+				    Parent_View 	@51
+				    location   	(681, 336)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D281BF032A"
+				    client     	@51
+				    supplier   	@26
+				    vertices   	(list Points
+					(2584, 1124)
+					(2131, 1125))
+				    line_style 	0)))
+			(object AssociationViewNew "KETProgramWTUserLink" @56
+			    location   	(2280, 651)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53D071EF0225"
+			    roleview_list 	(list RoleViews
+				(object RoleView "programAdmin" @57
+				    Parent_View 	@56
+				    location   	(377, -137)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @58
+					Parent_View 	@57
+					location   	(2333, 405)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	302
+					justify    	0
+					label      	"+programAdmin"
+					pctDist    	0.591045
+					height     	123
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D071F00064"
+				    client     	@56
+				    supplier   	@14
+				    vertices   	(list Points
+					(2280, 651)
+					(2525, 370))
+				    line_style 	0
+				    label      	(object SegLabel @59
+					Parent_View 	@57
+					location   	(2541, 433)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))
+				(object RoleView "program" @60
+				    Parent_View 	@56
+				    location   	(377, -137)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @61
+					Parent_View 	@60
+					location   	(2054, 849)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	186
+					justify    	0
+					label      	"+program"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53D071F00099"
+				    client     	@56
+				    supplier   	@26
+				    vertices   	(list Points
+					(2280, 651)
+					(2036, 932))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$8" @62
+			    location   	(1290, 1124)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53DAF367036F"
+			    roleview_list 	(list RoleViews
+				(object RoleView "event" @63
+				    Parent_View 	@62
+				    location   	(-582, -2)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @64
+					Parent_View 	@63
+					location   	(1034, 1083)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	119
+					justify    	0
+					label      	"+event"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53DAF3680220"
+				    client     	@62
+				    supplier   	@15
+				    vertices   	(list Points
+					(1290, 1124)
+					(970, 1124))
+				    line_style 	0
+				    label      	(object SegLabel @65
+					Parent_View 	@63
+					location   	(1003, 1178)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "schedule" @66
+				    Parent_View 	@62
+				    location   	(-582, -2)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @67
+					Parent_View 	@66
+					location   	(1503, 1081)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	191
+					justify    	0
+					label      	"+schedule"
+					pctDist    	0.665199
+					height     	44
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53DAF368022B"
+				    client     	@62
+				    supplier   	@26
+				    vertices   	(list Points
+					(1290, 1124)
+					(1610, 1125))
+				    line_style 	0
+				    label      	(object SegLabel @68
+					Parent_View 	@66
+					location   	(1565, 1169)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.859806
+					height     	44
+					orientation 	1))))
+			(object AssocAttachView "" @69
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    client     	@5
+			    supplier   	@62
+			    vertices   	(list Points
+				(1290, 1336)
+				(1290, 1124))
+			    line_style 	0)
+			(object AssociationViewNew "$UNNAMED$9" @70
+			    location   	(1871, 1787)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @71
+				Parent_View 	@70
+				location   	(1871, 1728)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				hidden     	TRUE
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	""
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53C4F29F0364"
+			    roleview_list 	(list RoleViews
+				(object RoleView "project" @72
+				    Parent_View 	@70
+				    location   	(687, 909)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @73
+					Parent_View 	@72
+					location   	(1914, 2161)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	169
+					justify    	0
+					label      	"+project"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53C4F2A0024A"
+				    client     	@70
+				    supplier   	@25
+				    vertices   	(list Points
+					(1871, 1787)
+					(1872, 2256))
+				    line_style 	0
+				    label      	(object SegLabel @74
+					Parent_View 	@72
+					location   	(1819, 2208)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.900000
+					height     	54
+					orientation 	1))
+				(object RoleView "program" @75
+				    Parent_View 	@70
+				    location   	(687, 909)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @76
+					Parent_View 	@75
+					location   	(1913, 1414)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	194
+					justify    	0
+					label      	"+program"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"53C4F2A00269"
+				    client     	@70
+				    supplier   	@26
+				    vertices   	(list Points
+					(1871, 1787)
+					(1871, 1319))
+				    line_style 	0
+				    label      	(object SegLabel @77
+					Parent_View 	@75
+					location   	(1818, 1366)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))))
+			(object ClassView "Class" "Logical View::ext::ket::project::program::entity::KETProgramProjectLink" @78
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1288, 2079)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@78
+				location   	(955, 1973)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	666
+				justify    	0
+				label      	"KETProgramProjectLink")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"53FAE94602E4"
+			    compartment 	(object Compartment
+				Parent_View 	@78
+				location   	(955, 2034)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	13434879
+				anchor     	2
+				nlines     	3
+				max_width  	668
+				justify    	1)
+			    width      	684
+			    height     	236
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssocAttachView "" @79
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    client     	@78
+			    supplier   	@70
+			    vertices   	(list Points
+				(1504, 1960)
+				(1871, 1780))
+			    line_style 	0)
+			(object InheritView "" @80
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"53FB0F3101EA"
+			    client     	@78
+			    supplier   	@4
+			    vertices   	(list Points
+				(1288, 1960)
+				(1289, 1845))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"53C4FF78028B"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Logical View::ext::ket::project::program::entity" @81
+		    location   	(459, 340)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@81
+			location   	(315, 256)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"entity")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"53C4ED45029F"
+		    width      	300
+		    height     	180)))))

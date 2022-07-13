@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+@font-face {
+    font-family: Nanumgo;
+    src: url(<@host>/extcore/font/NanumGothic.eot);
+    src: local(※), url(<@host>/extcore/font/NanumGothic.woff)
+        format('woff')
+}
+
+@font-face {
+    font-family: NanumBold;
+    src: url(<@host>/extcore/font/NanumGothicBold.eot);
+    src: local(※), url(<@host>/extcore/font/NanumGothicBold.woff)
+        format('woff')
+}
+
+table {border-collapse: collapse;border-spacing:0;border:0 none}
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px
+}
+
+td {
+    Font-family: NanumGothic, "나눔고딕", Nanumgo, NanumBold, Dotum, 돋움, seoul,
+        arial, helvetica, Malgun gothic, "맑은고딕";
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px;
+}
+.box-size {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.mail-box {
+    margin: 30px auto;
+    width: 1000px;
+    border-radius: 10px;
+    border: 3px solid #8dbbd8;
+    position: relative;
+    padding: 40px 0 50px
+}
+
+.mail-box .back-right {
+    position: absolute;
+    top: -2px;
+    right: 0
+}
+
+.mail-box .mail-title {
+    font-size: 14px;
+    font-family: NanumBold !important;
+    color: #6594b1;
+    letter-spacing: -0.25px;
+    border-bottom: 1px dashed #6aa4c8
+}
+
+.sub-title-03 {
+    color: #4d8196;
+    font-size: 14pt;
+    font-family: NanumBold !important
+}
+.contents-wrap {position:relative;width:99%;Font-family: NanumGothic, "나눔고딕", Nanumgo, NanumBold, Dotum;color:#666;font-size: 12px;color:#666;margin-bottom:20px}
+
+.contents-wrap select {border:1px solid #779cb4;background-color:#fdfdfd;padding-left:2px}
+
+.l-space20 {margin-left:20px !important}
+
+.b-space5 {margin-bottom:5px !important}
+
+.b-space15 {margin-bottom:15px !important}
+
+.float-l {float:left !important}
+
+.b-space7 {margin-bottom:7px !important}
+
+.table-style-01 input {vertical-align:middle}
+.table-style-01 {border-top:2px solid #779cb4;width:100%}
+.table-style-01 td {background-color:#F7F7F7;border:1px solid #b7d1e2;height:32px;padding-left:5px;word-break:break-all;}
+.table-style-01 td.center {text-align:center;padding-left:0 !important}
+.table-style-01 td.right {text-align:right;padding-right:5px}
+.table-style-01 td.left {text-align:left;padding-left:20px !important}
+.table-style-01 td.bgcol {background-color:#e2edf4}
+.table-style-01 td.fontb {font-family: NanumBold !important;font-size: 13px;color: #34738d}
+.table-style-01 td.title {background-color:#e2edf4;border:1px solid #b7d1e2;padding-left: 25px;background: #e2edf4 url("../images/bul_table_td.png") no-repeat 15px 50%;
+                                color: #34738d;text-align: left;font-family: NanumBold !important;font-size: 13px;}
+.table-style-01 td.search-title-01 {height:40px;background-color:#e2edf4;color: #34738d;font-size:13px;font-family:NanumBold !important;text-align:left;padding-left:30px}
+.table-style-01 td.title02 {background-color:#e2edf4;border:1px solid #b7d1e2;color:#34738d;font-size:12px;text-align:center;font-family:NanumBold !important;padding-left:0 !important}
+.table-style-01 input[type="radio"] {vertical-align:text-bottom}
+.table-style-01 thead td {background-color:#e2edf4;border:1px solid #b7d1e2;color: #34738d;text-align:center;font-family: NanumBold !important;font-size: 13px;padding-left:0 !important}
+.table-style-01 tfoot td {background-color:#e2edf4;border:1px solid #b7d1e2;color: #34738d;text-align:center;font-family: NanumBold !important;font-size: 13px;padding-left:0 !important}
+.table-style-01 input[type="text"] {width:60%;color:#444;height:20px;border:1px solid #b3d1dc;background-color:#fff}
+.table-style-01 input[readonly] {width:60%;border:1px solid #d1d1d1;background-color:#efefef;height:20px}
+.table-style-01 textarea {width:95%;color:#444;height:80px;border:1px solid #b3d1dc;background-color:#fff;padding:8px;margin:10px 0;font-size:12px;font-family:NanumGothic, "나눔고딕", Nanumgo, NanumBold, Dotum;color:#666}
+.table-style-01 tr td:first-child {border-left:none !important}
+.table-style-01 tr td:last-child {border-right:none !important}
+.table-style-01 td.t-space {padding:5px 0 !important}
+
+.clearfix {*zoom:1}
+.clearfix:after {content:"";display:block;clear:both;height:0}
+
+.b-space10 {margin-bottom:10px !important}
+
+.r-space9 {margin-right:9px !important}
+
+a:link {
+    color: #4398BC;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4398BC;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1660c7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1660c7;
+    text-decoration: underline;
+}
+
+.mail-point-color {color:#529f00}
+.mail-point-color a:link {color:#529f00}
+.mail-point-color a:visited {color:#529f00}
+.mail-point-color a:hover {color:#77cc1b}
+.mail-point-color a:active {color:#529f00}
+
+.sub-title-02 {color:#4d4d4d;font-size:11pt;font-family:NanumBold !important}
+</style>
+</head>
+<body style="overflow-Y: hideen">
+    <div class="mail-box box-size">
+        <div class="back-right">
+            <img src="<@host>/portal/images/mail_logo.png" />
+        </div>
+        <div class="contents-wrap">
+            <div class="l-space20">
+                <div class="b-space5"></div>
+                <div class="sub-title-03 b-space15 float-l">
+                    <span class="r-space9"><img src="<@host>/portal/images/icon_4.png" /></span>Task 진행 현황
+                </div>
+                <p style="float: right; padding-right: 10px" class="b-space7">기준일 : <@Date></p>
+                <table cellpadding="0" class="table-style-01" summary=""
+                    style="table-layout: fixed;">
+                    <colgroup>
+                        <col width="25%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                        <col width="15%" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="center bgcol fontb">구분</td>
+                            <td class="center bgcol fontb">지연</td>
+                            <td class="center bgcol fontb">진행</td>
+                            <td class="center bgcol fontb">계획</td>
+                            <td class="center bgcol fontb">완료</td>
+                            <td class="center bgcol fontb">종합</td>
+                        </tr>
+                        <@taskPilotList>
+                    </tbody>
+                </table>
+
+                <div class="clearfix b-space10"></div>
+                
+                <div style="margin: auto; width: 350px" class="sub-title-02 b-space15">
+                    <!-- <span class="r-space9"><img src="<@host>/portal/icon/hand_point.png" /></span> -->
+                    <span class="mail-point-color"> <a href="<@goLinkURL>" onclick="window.open(this.href, '', 'width=50,height=50,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0'); return false;">
+                    PLM Dashboard 팀별 업무 현황 바로가기</a></span>
+                </div>
+
+                <div class="clearfix b-space10">
+                    <div class="sub-title-03 b-space15">
+                        <span class="r-space9"><img src="<@host>/portal/images/icon_4.png" /></span>기간별 상세 현황
+                    </div>
+                </div>
+
+                <div class="clearfix b-space5">
+                    <div class="float-l" style="width: 45%; margin-right: 2%">
+                        <div class="sub-title-02 b-space15 float-l">
+                            <span class="l-space7"><img src="<@host>/portal/images/icon_3.png" /></span>지연 Task
+                        </div>
+                        <div>
+                            <table cellpadding="0" class="table-style-01" summary="">
+                                <colgroup>
+                                    <col width="20%" />
+                                    <col width="16%" />
+                                    <col width="16%" />
+                                    <col width="16%" />
+                                    <col width="16%" />
+                                    <col width="16%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td class="center bgcol fontb">구분</td>
+                                        <td class="center bgcol fontb"><font color="#ff3300">14일 이상</font></td>
+                                        <td class="center bgcol fontb">7일 이상</td>
+                                        <td class="center bgcol fontb">3일 이상</td>
+                                        <td class="center bgcol fontb">1일 이상</td>
+                                        <td class="center bgcol fontb">전체</td>
+                                    </tr>
+                                </thead>
+                                <@taskDelayList>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="float-l" style="width: 53%">
+                        <div class="sub-title-02 b-space15 float-l">
+                            <span class="l-space7"><img src="<@host>/portal/images/icon_3.png" /></span>진행 Task
+                        </div>
+                        <div>
+                            <table cellpadding="0" class="table-style-01" summary="">
+                                <colgroup>
+                                    <col width="18%" />
+                                    <col width="12%" />
+                                    <col width="12%" />
+                                    <col width="12%" />
+                                    <col width="12%" />
+                                    <col width="12%" />
+                                    <col width="12%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td class="center bgcol fontb">구분</td>
+                                        <td class="center bgcol fontb"><font color="#ff3300">선행지연</font></td>
+                                        <td class="center bgcol fontb"><font color="#ff3300">1일 이하</font></td>
+                                        <td class="center bgcol fontb">3일 이하</td>
+                                        <td class="center bgcol fontb">7일 이하</td>
+                                        <td class="center bgcol fontb">7일 이상</td>
+                                        <td class="center bgcol fontb">전체</td>
+                                    </tr>
+                                </thead>
+                                <@taskProgressList>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

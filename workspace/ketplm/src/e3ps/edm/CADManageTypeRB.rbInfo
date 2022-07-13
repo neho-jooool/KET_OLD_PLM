@@ -1,0 +1,30 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.UUID=79e02281-cf1f-456a-8e15-a927f9f67da7
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+PRODUCT_DRAWING.value=Product Drawing
+PRODUCT_DRAWING.order=10
+PRODUCT_DRAWING.selectable=true
+
+MOLD_DRAWING.value=Mold Drawing
+MOLD_DRAWING.order=20
+MOLD_DRAWING.selectable=true

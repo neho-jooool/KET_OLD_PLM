@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE NmLoader SYSTEM "standardX10.dtd">
+<NmLoader>
+
+<csvProductContainer handler="wt.part.LoadPart.createProductContainer">
+	<csvuser></csvuser>
+   <csvname>KET</csvname>
+   <csvnumber>KET001</csvnumber>
+   <csvdescription><?loc-begin key="KET_PRODUCT"?>한국단자공업 기본 제품 컨테이너<?loc-end?></csvdescription>
+   <csvview>Design</csvview>
+   <csvsource>make</csvsource>
+   <csvdefaultUnit/>
+   <csvtype>separable</csvtype>
+   <csvcontainerTemplate>General Product</csvcontainerTemplate>
+   <csvorganizationName></csvorganizationName>
+   <csvorganizationID></csvorganizationID>
+</csvProductContainer>
+
+</NmLoader>

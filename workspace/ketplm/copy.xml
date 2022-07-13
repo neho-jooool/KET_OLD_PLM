@@ -1,0 +1,51 @@
+<project name="KET PLM Project"  default = "complete">
+	<description>Digitek - Kunhwamc PLM Project</description>
+	<!-- set global properties for this build -->
+	<property name="server_home" value="D:\ptc\Windchill_10.2\Windchill" />
+	<property name="windchill.codebase" value="${server_home}\codebase" />
+	<property name="windchill.src" value="${server_home}\src" />
+	<property name="windchill.src_gen" value="${server_home}\src_gen" />
+	<property name="windchill.wtCustom" value="${server_home}\wtCustom" />
+	<property name="work_home" value="." />
+	<property name="work.bin" value="${work_home}\bin" />
+	<property name="work.src" value="${work_home}\src" />
+	<property name="work.src_gen" value="${work_home}\src_gen" />
+	<property name="work.codebase" value="${work_home}\codebase" />
+	<property name="work.wtCustom" value="${work_home}\wtCustom" />
+		
+	<target name="init">
+		<mkdir dir="${server_home}\wtCustom"/>
+	</target>
+	
+	<target name="patch" depends="init" description="BackUp SourceCode" >	
+
+		<echo message="src Copy" />
+		<copy todir="${windchill.src}" overwrite="yes">
+			<fileset dir="${work.src}" casesensitive="no" excludes="**/*.xml, **/dbcp.properties" />
+		</copy>
+
+		<echo message="src_gen Copy" />
+		<copy todir="${windchill.src_gen}" overwrite="yes">
+			<fileset dir="${work.src_gen}" casesensitive="no" excludes="**/*.xml, **/dbcp.properties" />
+		</copy>
+		
+		<echo message="codebase Copy" />
+		<copy todir="${windchill.codebase}" overwrite="yes">
+			<fileset dir="${work.codebase}" casesensitive="no" excludes="**/*.xml, **/dbcp.properties" />
+		</copy>
+
+		<echo message="bin Copy" />
+		<copy todir="${windchill.codebase}" overwrite="yes">
+			<fileset dir="${work.bin}" casesensitive="no" excludes="**/*.xml, **/*.properties" />
+		</copy>
+
+		<echo message="wtCustom Copy" />
+		<copy todir="${windchill.wtCustom}" overwrite="yes">
+			<fileset dir="${work.wtCustom}" casesensitive="no" excludes="**/*.xml, **/*.properties" />
+		</copy>
+
+	</target>	
+	<target name="complete" depends="patch" description="Complete Message" >
+		<echo message="Project Real Patch complete !!" />		
+	</target>
+</project>

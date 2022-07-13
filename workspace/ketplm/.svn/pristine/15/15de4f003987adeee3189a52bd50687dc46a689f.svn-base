@@ -1,0 +1,907 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "service"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C739F72029F"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "StandardKETEcmService"
+	    quid       	"4C73B1C80148"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C73B1DC000F"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4C73B1EF00BB"
+		    supplier   	"Logical View::e3ps::ecm::service::KETEcmService"
+		    quidu      	"4C73B1DF033C"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4C73B239002E"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "KETEcmService"
+	    quid       	"4C73B1DF033C"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "createMoldPlan"
+		    quid       	"4C849C5703A9"
+		    parameters 	(list Parameters
+			(object Parameter "moldPlan"
+			    quid       	"4C84AEA7008C"
+			    type       	"Hashtable<String, String>")
+			(object Parameter "refDocs"
+			    quid       	"4C96FF5703C8"
+			    type       	"KETProjectDocument[]"
+			    quidu      	"4C7B57AF0027")
+			(object Parameter "attachFiles"
+			    quid       	"4C96FFF30109"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "modifyMoldPlan"
+		    quid       	"4C849D8600BB"
+		    parameters 	(list Parameters
+			(object Parameter "moldPlan"
+			    quid       	"4C84AEFE0213"
+			    type       	"Hashtable<String, String>")
+			(object Parameter "refDocs"
+			    quid       	"4C970020035B"
+			    type       	"KETProjectDocument[]"
+			    quidu      	"4C7B57AF0027")
+			(object Parameter "attachFiles"
+			    quid       	"4C970020037A"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "createMoldEcoBasicInfo"
+		    quid       	"4C86F560036B"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4C86F5AD0000"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"KETMoldChangeOrderVO "
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "createMoldEcoActivitycInfo"
+		    quid       	"4C86F6C00177"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4C86F6D00186"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"KETMoldChangeOrderVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD234D033C")
+		(object Operation "createMoldEcoInfo"
+		    quid       	"4C86F9F601F4"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4C86FA0400DA"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"KETMoldChangeOrderVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD234D033C")
+		(object Operation "updateMoldEcoBasicInfo"
+		    quid       	"4C86FA8703A9"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4C86FA9F00BB"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"KETMoldChangeOrderVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD234D033C")
+		(object Operation "updateMoldEcoActivityInfo"
+		    quid       	"4C86FBB6000F"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4C86FBC6009C"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"KETMoldChangeOrderVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD234D033C")
+		(object Operation "updateMoldEcoInfo"
+		    quid       	"4C86FC4102DE"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4C86FC4E0261"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"KETMoldChangeOrderVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD234D033C")
+		(object Operation "deleteMoldEcoInfo"
+		    quid       	"4CAA8723033E"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeOrderVO"
+			    quid       	"4CAA875000BD"
+			    type       	"KETMoldChangeOrderVO"
+			    quidu      	"4CAD234D033C"))
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getMoldPlan"
+		    quid       	"4CAA95FC0157"
+		    parameters 	(list Parameters
+			(object Parameter "planOid"
+			    quid       	"4CAA96270271"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"KETMoldChangePlan"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7F35700232")
+		(object Operation "deleteMoldPlan"
+		    quid       	"4CAC28210222"
+		    parameters 	(list Parameters
+			(object Parameter "planOid"
+			    quid       	"4CAC28880261"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "createMoldEcrInfo"
+		    quid       	"4CAD22BF0196"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeRequestVO"
+			    quid       	"4CAD22CB0399"
+			    type       	"KETMoldChangeRequestVO"
+			    quidu      	"4CAD235E0242"))
+		    result     	"KETMoldChangeRequestVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD235E0242")
+		(object Operation "updateMoldEcrInfo"
+		    quid       	"4CAD22F50222"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeRequestVO"
+			    quid       	"4CAD231002AF"
+			    type       	"KETMoldChangeRequestVO"
+			    quidu      	"4CAD235E0242"))
+		    result     	"KETMoldChangeRequestVO"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4CAD235E0242")
+		(object Operation "deleteMoldEcrInfo"
+		    quid       	"4CAD232600FA"
+		    parameters 	(list Parameters
+			(object Parameter "ketMoldChangeRequestVO"
+			    quid       	"4CAD233200EA"
+			    type       	"KETMoldChangeRequestVO"
+			    quidu      	"4CAD235E0242"))
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "createProdEcr"
+		    quid       	"4CBCF591037A"
+		    parameters 	(list Parameters
+			(object Parameter "reqData"
+			    quid       	"4CBCF5A1001F"
+			    type       	"Hashtable<String,String>")
+			(object Parameter "partList"
+			    quid       	"4CBCF5AB01F4"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "reqCommentList"
+			    quid       	"4CE3AF14029F"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "issueList"
+			    quid       	"4CBCF6440203"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "attachFiles"
+			    quid       	"4CBCF91503D8"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "modifyProdEcr"
+		    quid       	"4CBCFD0202BF"
+		    parameters 	(list Parameters
+			(object Parameter "reqData"
+			    quid       	"4CBCFD240148"
+			    type       	"Hashtable<String, String>")
+			(object Parameter "partHash"
+			    quid       	"4CE5001E02AF"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "issueHash"
+			    quid       	"4CE5006B031C"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "attachFiles"
+			    quid       	"4CBCFD2401E4"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "deleteProdEcr"
+		    quid       	"4CBCFD240128"
+		    parameters 	(list Parameters
+			(object Parameter "ecrOid"
+			    quid       	"4CBCFDA500AB"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getProdEcr"
+		    quid       	"4CBCFDB8030D"
+		    parameters 	(list Parameters
+			(object Parameter "ecrOid"
+			    quid       	"4CBCFDD201D4"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"KETProdChangeRequest"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C7D96A600EA")
+		(object Operation "createProdEco"
+		    quid       	"4CC7BF070251"
+		    parameters 	(list Parameters
+			(object Parameter "reqData"
+			    quid       	"4CC7BF680290"
+			    type       	"Hashtable<String,String>")
+			(object Parameter "refEcrList"
+			    quid       	"4CC7BF7A0222"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "refPartList"
+			    quid       	"4CC7BFC002DE"
+			    type       	"ArrayList<Hashtable<String,String>>")
+			(object Parameter "refEpmDocList"
+			    quid       	"4CEF5E8700FA"
+			    type       	"ArrayList<Hashtable<String, String>>")
+			(object Parameter "refBomList"
+			    quid       	"4CEF5EAA01F4"
+			    type       	"ArrayList<Hashtable<String, String>>")
+			(object Parameter "refDocList"
+			    quid       	"4CEF5ED2032C"
+			    type       	"ArrayList<Hashtable<String, String>>")
+			(object Parameter "attachFileList"
+			    quid       	"4CC7C00F0109"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "modifyProdEco"
+		    quid       	"4CC7C03B0186"
+		    parameters 	(list Parameters
+			(object Parameter "reqData"
+			    quid       	"4CC7C04B01A5"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "ecrList"
+			    quid       	"4D0F088F0186"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "addObjListHash"
+			    quid       	"4D0F02110203"
+			    type       	"Hashtable<String,ArrayList<Hashtable<String, String>>>")
+			(object Parameter "delObjListHash"
+			    quid       	"4D0F0586008C"
+			    type       	"Hashtable<String,ArrayList<String>>")
+			(object Parameter "attachFileList"
+			    quid       	"4CC7C0620232"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "reviseEpmDocInProdEco"
+		    quid       	"4D212B70033C"
+		    parameters 	(list Parameters
+			(object Parameter "prodEcoOid"
+			    quid       	"4D212BBF01E4"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "epmDocLinkOidList"
+			    quid       	"4D21501D0148"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "epmDocOidList"
+			    quid       	"4D212BBF0261"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "reviseChkFlagList"
+			    quid       	"4D212BEB0271"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "epmDocTypeList"
+			    quid       	"4D22F2960170"
+			    type       	"String[]"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "reviseBomInProdEco"
+		    quid       	"4D212EB7036B"
+		    parameters 	(list Parameters
+			(object Parameter "prodEcoOid"
+			    quid       	"4D212EDA0196"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "bomHeaderLinkOid"
+			    quid       	"4D2443C103C8"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "partNo"
+			    quid       	"4D2516EC0251"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "reviseChkFlag"
+			    quid       	"4D2443C2008C"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "massChgYn"
+			    quid       	"4D2443C200EA"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "parentPartListStr"
+			    quid       	"4D2443C20138"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "changeEpmDoc"
+		    quid       	"4D2162320203"
+		    parameters 	(list Parameters
+			(object Parameter "prodEcoOid"
+			    quid       	"4D2162620213"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "epmDocListLink"
+			    quid       	"4D2162620271"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "changeFlagList"
+			    quid       	"4D21626202CE"
+			    type       	"String[]"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "deleteProdEco"
+		    quid       	"4D2D368F0259"
+		    parameters 	(list Parameters
+			(object Parameter "ecoOid"
+			    quid       	"4D2D36A400E2"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "cancelReviseBom"
+		    quid       	"4D356E81000F"
+		    parameters 	(list Parameters
+			(object Parameter "partNo"
+			    quid       	"4D356EA202BF"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "cancelReviseBomInProdEco"
+		    quid       	"4D5CC7AD0139"
+		    parameters 	(list Parameters
+			(object Parameter "prodEcoOid"
+			    quid       	"4D5CC7B3035C"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "bomHeaderLinkOid"
+			    quid       	"4D5CC7B303CA"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "partNo"
+			    quid       	"4D5CC7B4003F"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "reviseChkFlag"
+			    quid       	"4D5CC7B4009D"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "massChgYn"
+			    quid       	"4D5CC7B400FB"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "parentPartListStr"
+			    quid       	"4D5CC7B40159"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "modifyProdEcoNotOwner"
+		    quid       	"4D5D063702EF"
+		    parameters 	(list Parameters
+			(object Parameter "ecoOid"
+			    quid       	"4D5D0E0700EB"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "addObjListHash"
+			    quid       	"4D5D065E033D"
+			    type       	"Hashtable<String,ArrayList<Hashtable<String, String>>>")
+			(object Parameter "delObjListHash"
+			    quid       	"4D5D0663007E"
+			    type       	"Hashtable<String,ArrayList<String>>")
+			(object Parameter "activityType"
+			    quid       	"4D5D271A03AA"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "createMoldEcoByProdEco"
+		    quid       	"4D6361A7008C"
+		    parameters 	(list Parameters
+			(object Parameter "ecoOid"
+			    quid       	"4D6361CD0232"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"KETMoldChangeOrder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"4C80618303C8")
+		(object Operation "cancelReviseEpmDocInProdEco"
+		    quid       	"4D7DBFC900AB"
+		    parameters 	(list Parameters
+			(object Parameter "prodEcoOid"
+			    quid       	"4D7DBFEA00EA"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "epmDocLinkOidList"
+			    quid       	"4D7DC34F03B9"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "epmDocOidList"
+			    quid       	"4D7DBFEA01C5"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "cancelChkFlagList"
+			    quid       	"4D7DBFEA0261"
+			    type       	"String[]"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "modifyProdEcoBasic"
+		    quid       	"4D91A48A02E0"
+		    parameters 	(list Parameters
+			(object Parameter "reqData"
+			    quid       	"4D91A4BA0234"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "ecrList"
+			    quid       	"4D91A4BA033E"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "refPartList"
+			    quid       	"4D91A59E0292"
+			    type       	"ArrayList<Hashtable<String, String>>")
+			(object Parameter "delObjListHash"
+			    quid       	"4D91AA00035D"
+			    type       	"Hashtable<String,ArrayList<String>>")
+			(object Parameter "attachFileList"
+			    quid       	"4D91A59E030F"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "completeRegistMoldEco"
+		    quid       	"4D93D4C1039C"
+		    parameters 	(list Parameters
+			(object Parameter "moldEco"
+			    quid       	"4D93D4E1015A"
+			    type       	"KETMoldChangeOrder"
+			    quidu      	"4C80618303C8")
+			(object Parameter "ketMoldECALinkVOList"
+			    quid       	"4D93D73E038C"
+			    type       	"ArrayList"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "saveMoldStdPartLine"
+		    quid       	"4DA3E95A03D1"
+		    parameters 	(list Parameters
+			(object Parameter "docLinkOid"
+			    quid       	"4DA3E9AF0141"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "partOidList"
+			    quid       	"4DA3E9B4019F"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "partNoList"
+			    quid       	"4DA3E9B502E7"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "chgTypeList"
+			    quid       	"4DA3E9B70112"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "descList"
+			    quid       	"4DA597BC00DA"
+			    type       	"String[]"
+			    quidu      	"3784E5160158")
+			(object Parameter "ecoOid"
+			    quid       	"4DA3E9B80170"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"ArrayList<Hashtable<String, String>>"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "updateDailyMoldPlanStatus"
+		    quid       	"4DF1AFE2017D"
+		    parameters 	(list Parameters
+			(object Parameter "plan"
+			    quid       	"4E029E260177"
+			    type       	"KETMoldChangePlan"
+			    quidu      	"4C7F35700232"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)))
+	(object Class "KETEcmHelper"
+	    quid       	"4C73B1F201D4")
+	(object Association "$UNNAMED$0"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4C73B20800FA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C73B20901A5"
+		    supplier   	"Logical View::e3ps::ecm::service::KETEcmHelper"
+		    quidu      	"4C73B1F201D4"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETEcmServiceFwd()")))
+		    quid       	"4C73B20901B5"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::ecm::service::KETEcmService"
+		    quidu      	"4C73B1DF033C"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "ECMService"
+	    quid       	"4C73A06900EA"
+	    title      	"ECMService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	206
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(490, 146)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(309, 71)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ecm::service::StandardKETEcmService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(490, 481)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(243, 400)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	494
+			justify    	0
+			label      	"StandardKETEcmService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B1C80148"
+		    width      	512
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73B1DC000F"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(490, 387)
+			(490, 233))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::ecm::service::KETEcmHelper" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3587, 475)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(3431, 424)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	312
+			justify    	0
+			label      	"KETEcmHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B1F201D4"
+		    width      	330
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::ecm::service::KETEcmService" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    ShowOperationSignature 	TRUE
+		    location   	(2858, 1799)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(10, 940)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	5696
+			justify    	0
+			label      	"KETEcmService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@5
+			location   	(10, 890)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	5696
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B1DF033C"
+		    width      	5714
+		    height     	1842
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73B1EF00BB"
+		    client     	@2
+		    supplier   	@5
+		    vertices   	(list Points
+			(658, 574)
+			(1205, 877))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(3456, 707)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73B20800FA"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @8
+			    Parent_View 	@7
+			    location   	(2224, 201)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73B20901A5"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(3456, 707)
+				(3550, 538))
+			    line_style 	0)
+			(object RoleView "service" @9
+			    Parent_View 	@7
+			    location   	(2224, 201)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(3374, 771)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.497297
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73B20901B5"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(3456, 707)
+				(3362, 877))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(3419, 887)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))

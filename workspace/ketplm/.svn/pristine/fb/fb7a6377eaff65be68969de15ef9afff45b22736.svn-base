@@ -1,0 +1,103 @@
+package ext.ket.yesone.entity;
+
+public class KETEduDTO extends KETYesoneBaseDTO {
+
+	private static final long serialVersionUID = 1L;
+
+	// Start Man Attribute(ManOxm.java)
+
+	// End Man Attribute(ManOxm.java)
+
+	// Start Data Attribute(DataOxm.java)
+
+	private String dat_cd;
+
+	private String busnid;
+
+	private String trade_nm;
+
+	private String edu_tp;
+
+	private String edu_cl;
+
+	// End Data Attribute(DataOxm.java)
+
+	// Start Data Field(DataOxm.java)
+
+	private String sum;
+
+	// End Data Field(DataOxm.java)
+
+	public void setDat_cd(String dat_cd) {
+
+		this.dat_cd = dat_cd;
+
+	}
+
+	public String getDat_cd() {
+
+		return dat_cd;
+
+	}
+
+	public void setBusnid(String busnid) {
+
+		this.busnid = busnid;
+
+	}
+
+	public String getBusnid() {
+
+		return busnid;
+
+	}
+
+	public void setTrade_nm(String trade_nm) {
+
+		this.trade_nm = trade_nm;
+
+	}
+
+	public String getTrade_nm() {
+
+		return trade_nm;
+
+	}
+
+	public void setEdu_tp(String edu_tp) {
+
+		this.edu_tp = edu_tp;
+
+	}
+
+	public String getEdu_tp() {
+
+		return edu_tp;
+
+	}
+
+	public void setEdu_cl(String edu_cl) {
+
+		this.edu_cl = edu_cl;
+
+	}
+
+	public String getEdu_cl() {
+
+		return edu_cl;
+
+	}
+
+	public void setSum(String sum) {
+
+		this.sum = sum;
+
+	}
+
+	public String getSum() {
+
+		return sum;
+
+	}
+
+}

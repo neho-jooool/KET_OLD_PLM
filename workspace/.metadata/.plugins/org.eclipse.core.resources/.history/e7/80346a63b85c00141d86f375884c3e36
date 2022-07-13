@@ -1,0 +1,121 @@
+package ext.ket.arm.service;
+
+import java.util.List;
+
+import wt.org.WTPrincipal;
+import wt.org.WTUser;
+import wt.services.StandardManager;
+import wt.session.SessionHelper;
+import wt.util.WTException;
+import e3ps.common.util.CommonUtil;
+import e3ps.common.util.DateUtil;
+import e3ps.common.util.ManageSequence;
+import e3ps.common.web.PageControl;
+import e3ps.groupware.company.PeopleData;
+import e3ps.project.outputtype.OEMProjectType;
+import ext.ket.arm.entity.KETAnalysisRequestDTO;
+import ext.ket.arm.entity.KETAnalysisRequestMaster;
+
+public class StandardKETAnalysisRequestService extends StandardManager implements KETAnalysisRequestService {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * Default factory for the class.
+     * 
+     * @return
+     * @throws WTException
+     * @메소드명 : newStandardSampleService
+     * @작성자 : hooni
+     * @작성일 : 2014. 10. 20.
+     * @설명 :
+     * @수정이력 - 수정일,수정자,수정내용
+     * 
+     */
+    public static StandardKETAnalysisRequestService newStandardKETAnalysisRequestService() throws WTException {
+	StandardKETAnalysisRequestService instance = new StandardKETAnalysisRequestService();
+	instance.initialize();
+	return instance;
+    }
+
+    @Override
+    public List<KETAnalysisRequestMaster> find(KETAnalysisRequestDTO paramObject) throws Exception {
+	// TODO Auto-generated method stub
+	return null;
+    }
+
+    @Override
+    public PageControl findPaging(KETAnalysisRequestDTO paramObject) throws Exception {
+	// TODO Auto-generated method stub
+	return null;
+    }
+
+    @Override
+    public KETAnalysisRequestMaster save(KETAnalysisRequestDTO paramObject) throws Exception {
+	// TODO Auto-generated method stub
+	KETAnalysisRequestMaster analysis = KETAnalysisRequestMaster.newKETAnalysisRequestMaster();
+	// 해석의뢰 Numbering
+	// analysis.setAnalysisRequestNo(getNewAnalysisNo(paramObject));
+	// 작성자
+	WTPrincipal principal = SessionHelper.manager.getPrincipal();
+	WTUser clientUser = (WTUser) principal;
+	// WTPrincipalReference wtref = WTPrincipalReference.newWTPrincipalReference(principal);
+	// analysis.setKetClientUser(clientUser);
+	// 작성자 부서
+	PeopleData people = new PeopleData(clientUser);
+	// analysis.setKetClientDepartment(people.department);
+	// 프로젝트No
+	// analysis.setProjectNo(paramObject.getProjectNo());
+	// 고객담당자
+	// analysis.setCustomerChargeName(paramObject.getCustomerChargeName());
+	// 고객처
+	// analysis.setCustomerDepartment((NumberCode) CommonUtil.getObject(paramObject.getCustomerDepartment()));
+	// 차종
+	System.out.println(paramObject.getCarType());
+	System.out.println((OEMProjectType) CommonUtil.getObject(paramObject.getCarType()));
+	// analysis.setCarType(paramObject.getCarType());
+	// 개발단계
+	// 해석용도
+	// 해석구분
+	// 의뢰부품
+	// System.out.println("");
+	// // 첨부파일 업로드
+	// KETContentHelper.service.updateContent(analysis, paramObject);
+	return analysis;
+    }
+
+    @Override
+    public KETAnalysisRequestMaster modify(KETAnalysisRequestDTO paramObject) throws Exception {
+	// TODO Auto-generated method stub
+	return null;
+    }
+
+    @Override
+    public KETAnalysisRequestMaster delete(KETAnalysisRequestDTO paramObject) throws Exception {
+	// TODO Auto-generated method stub
+	return null;
+    }
+
+    /**
+     * 신규 해석의뢰 No 생성
+     * 
+     * 1. C 2. 년도 구분(2자리) - 14(2014년 등록 프로그램) 3. 일년번호(3자리) - 001 4. 해석구분(5자리)
+     * 
+     * @return
+     * @throws Exception
+     * @메소드명 : getNewAnalysisNo
+     * @작성자 : Hooni
+     * @작성일 : 2014. 10. 21.
+     * @설명 :
+     * @수정이력 - 수정일,수정자,수정내용
+     * 
+     */
+    private String getNewAnalysisNo(KETAnalysisRequestDTO paramObject) throws Exception {
+	// 차종기준이 앞에 오도록 추가 필요
+	String newAnalysisNo = "C";
+	newAnalysisNo += DateUtil.getThisYear().substring(2);
+	newAnalysisNo += ManageSequence.getSeqNo(newAnalysisNo, "000", "WTDOCUMENTMASTERKEY", "WTKEY");
+	newAnalysisNo += "";
+	System.out.println(" :::::::: " + newAnalysisNo);
+	return newAnalysisNo;
+    }
+}

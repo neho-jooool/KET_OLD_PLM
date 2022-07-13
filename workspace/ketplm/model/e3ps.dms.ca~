@@ -1,0 +1,4339 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "dms"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C739E7F01E4"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "entity"
+	    quid       	"4C739F0E009C"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "KETDocumentCategory"
+		    quid       	"4C7B17C801CD"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4C7B18000354"
+			    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+			    quidu      	"3432A8740232"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "categoryCode"
+			    quid       	"4C7B35D002A8"
+			    documentation 	"분류식별자"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "categoryName"
+			    quid       	"4C7B36450344"
+			    documentation 	"분류 이름"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "docTypeCode"
+			    quid       	"4C7B367C03C1"
+			    documentation 	"문서번호 채번 시 앞 2자리 구분자로 사용"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "sortNo"
+			    quid       	"4C7B372D0066"
+			    documentation 	"분류체계 정렬순서"
+			    type       	"int"
+			    exportControl 	"Public")
+			(object ClassAttribute "categoryLevel"
+			    quid       	"4C7B379D0373"
+			    documentation 	"분류체계 레벨"
+			    type       	"int"
+			    exportControl 	"Public")
+			(object ClassAttribute "parentCategoryCode"
+			    quid       	"4C7B37FF018F"
+			    documentation 	"상위분류 식별자"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "isUsed"
+			    quid       	"4C7B383602C7"
+			    documentation 	"사용여부"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isAPQP"
+			    quid       	"4C7B3857021B"
+			    documentation 	"APQP대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isPSO10"
+			    quid       	"4C7B38BD0046"
+			    documentation 	"PSP10대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isESIR"
+			    quid       	"4C7B38E801DD"
+			    documentation 	"ESIR대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isISIRCar"
+			    quid       	"4C7B39650150"
+			    documentation 	"ISIR대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isISIRElec"
+			    quid       	"4CF2EC52038A"
+			    documentation 	"ISIR대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isANPQP"
+			    quid       	"4CF2ECC4005D"
+			    documentation 	"ANPQP대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isSYMC"
+			    quid       	"4CF2ECC602EE"
+			    documentation 	"SYMC대상여부 구분 값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "isDRCheckSheet"
+			    quid       	"4C7B397F01EC"
+			    documentation 	"DR CheckSheet 대상여부 구분값"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4C7B39A503A2"
+			    documentation 	"추가 속성 항목1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4C7B39CC0383"
+			    documentation 	"추가 속성 항목2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4C7B39E00383"
+			    documentation 	"추가 속성 항목3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4C7B3A1B02B7"
+			    documentation 	"추가 속성 항목4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4C7B3A3F0056"
+			    documentation 	"추가 속성 항목5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4C7B3A5A00A4"
+			    documentation 	"추가 속성 항목6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4C7B3A750112"
+			    documentation 	"추가 속성 항목7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4C7B3A8F02B7"
+			    documentation 	"추가 속성 항목8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4C7B3ABC024A"
+			    documentation 	"추가 속성 항목9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4C7B3AF20298"
+			    documentation 	"추가 속성 항목10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")))
+		(object Class "KETProjectDocument"
+		    quid       	"4C7B57AF0027"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4C7B57B902F6"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+			    quidu      	"353FA84903E3"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "documentNo"
+			    quid       	"4C7F565602CE"
+			    documentation 	"문서코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "documentDescription"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4C7F56C101B5"
+			    documentation 	"문서 설명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "divisionCode"
+			    quid       	"4C8D6DDB009C"
+			    documentation 	"사업부코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "deptName"
+			    quid       	"4C8D6DFE0290"
+			    documentation 	"등록부서명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "firstRegistrationStage"
+			    quid       	"4C8D6E1A029F"
+			    documentation 	"최초등록시점"
+			    type       	"int"
+			    exportControl 	"Public")
+			(object ClassAttribute "isBuyerSummit"
+			    quid       	"4C8D6E5702BF"
+			    documentation 	"고객제출자료여부"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "buyerCode"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4C8D6E730251"
+			    documentation 	"고객사코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "dRCheckPoint"
+			    quid       	"4C8D6E8F00EA"
+			    documentation 	"DR평가점수"
+			    type       	"int"
+			    exportControl 	"Public")
+			(object ClassAttribute "approvalResult"
+			    quid       	"4C8D6EAF0138"
+			    documentation 	"승인결과"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "lastApprovalComment"
+			    quid       	"4C8D6ECE037A"
+			    documentation 	"최종승인의견"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "security"
+			    quid       	"4D0E9D72006E"
+			    documentation 	"보안등급"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4C8D6EFF038A"
+			    documentation 	"기타1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4C8D6F160290"
+			    documentation 	"기타2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4C8D6F3A02BF"
+			    documentation 	"기타3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4C8D6F5001F4"
+			    documentation 	"기타4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4C8D6F6B01D4"
+			    documentation 	"기타5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4C8D6F8200BB"
+			    documentation 	"기타6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4C8D6F990177"
+			    documentation 	"기타7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4C8D6FB0038A"
+			    documentation 	"기타8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4C8D6FC6035B"
+			    documentation 	"기타9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4C8D6FDD000F"
+			    documentation 	"기타10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "webEditor"
+			    quid       	"51A8670102C4"
+			    documentation 	"Web Editor"
+			    type       	"Object"
+			    quidu      	"3784E518034B"
+			    exportControl 	"Public")
+			(object ClassAttribute "webEditorText"
+			    quid       	"51A867280137"
+			    type       	"Object"
+			    quidu      	"3784E518034B"
+			    exportControl 	"Public")))
+		(object Class "KETDevelopmentRequest"
+		    quid       	"4CC8B3CB02AF"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4CC8C15401A5"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+			    quidu      	"353FA84903E3"))
+		    used_nodes 	(list uses_relationship_list
+			(object Uses_Relationship
+			    quid       	"4CC8CB9D00FA"
+			    supplier   	"Logical View::e3ps::dms::entity::KETRequestPartList"
+			    quidu      	"4CC8C1B20232"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "projectOID"
+			    quid       	"4CC8B40700DA"
+			    documentation 	"프로젝트 식별자"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "divisionCode"
+			    quid       	"4CC8B40A029F"
+			    documentation 	"사업부코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "deptName"
+			    quid       	"4CC8B40C0177"
+			    documentation 	"등록부서명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "developmentStep"
+			    quid       	"4CC8B40D01F4"
+			    documentation 	"개발단계"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "requestBuyer"
+			    quid       	"4CC8B40E030D"
+			    documentation 	"개발검토의뢰처"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "requestBuyerManager"
+			    quid       	"4CC8B41001E4"
+			    documentation 	"개발검토의뢰처담당자"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "reception"
+			    quid       	"4D23F5CE005D"
+			    documentation 	"의뢰접수자"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "lastUsingBuyer"
+			    quid       	"4CC8B41101E4"
+			    documentation 	"최종고객사코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "lastUsingBuyerManager"
+			    quid       	"4CC8B4120280"
+			    documentation 	"최종고객사담당자"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "repCarType"
+			    quid       	"4CC8B413034B"
+			    documentation 	"대표차종"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "isDRRequest"
+			    quid       	"4CC8B4150213"
+			    documentation 	"DR요구일자여부"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "drRequestDate"
+			    quid       	"4CC8B5650203"
+			    documentation 	"DR요구일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "isProposalSubmit"
+			    quid       	"4CC8B56B0186"
+			    documentation 	"제안서제출여부"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "proposalSubmitDate"
+			    quid       	"4CC8B56C0261"
+			    documentation 	"제안서제출일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "isCostSubmit"
+			    quid       	"4CC8B56D02CE"
+			    documentation 	"개발원가제출여부"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "costSubmitDate"
+			    quid       	"4CC8B56F002E"
+			    documentation 	"개발원가제출일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "devProductName"
+			    quid       	"4CC8B57000EA"
+			    documentation 	"개발검토제품명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "devReviewTypeCode"
+			    quid       	"4CC8B57103B9"
+			    documentation 	"개발검토유형"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "devReviewTypeEtc"
+			    quid       	"4D3CFF5703B9"
+			    documentation 	"기타개발검토유형"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "devReviewDetailComment"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4CC8B57A001F"
+			    documentation 	"개발검토상세내용"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "productSaleFirstYear"
+			    quid       	"4CC8B57B00CB"
+			    documentation 	"제품판매최초년도"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "initialSampleSummitDate"
+			    quid       	"4CC8B57C01B5"
+			    documentation 	"초도품제출일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "eSIRDate"
+			    quid       	"4CC8B6A10148"
+			    documentation 	"ESIR일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "iSIRDate"
+			    quid       	"4CC8B6A201E4"
+			    documentation 	"ISIR일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "ketMassProductionDate"
+			    quid       	"4CC8B6A302BF"
+			    documentation 	"KET양산일자"
+			    type       	"Timestamp"
+			    quidu      	"378A30240219"
+			    exportControl 	"Public")
+			(object ClassAttribute "productCategoryCode"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4CC8B6A4037A"
+			    documentation 	"제품군코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "productTypeCode"
+			    quid       	"4D0811CA03D8"
+			    documentation 	"제품 Type"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "etcSpecification"
+			    quid       	"4CC8BC7C02FD"
+			    documentation 	"기타"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "tabSize"
+			    quid       	"4CC8BC7E0128"
+			    documentation 	"TabSize"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "materialSubMaterial"
+			    quid       	"4CC8BC7F02DE"
+			    documentation 	"원재료부자재"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "surfaceTreatmentCode"
+			    quid       	"4CC8BC8101A5"
+			    documentation 	"표면처리코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "applyedWire"
+			    quid       	"4CC8BC82035B"
+			    documentation 	"적용전선"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "primaryFunction"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4CC8BC8400AB"
+			    documentation 	"주요기능"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "outlook"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4CC8BC860167"
+			    documentation 	"향후전망"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "moldDepreciationTypeSale"
+			    quid       	"4CC8BC87030D"
+			    documentation 	"금형비감가기준판매"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "moldDepreciationTypeGeneral"
+			    quid       	"4CC8BE050157"
+			    documentation 	"금형비감가기준일반"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "moldDepreciationTypePayment"
+			    quid       	"4CC8BE070290"
+			    documentation 	"금형비감가기준지급"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "moldDepreciationTypePeriod"
+			    quid       	"4CC8BE0C008C"
+			    documentation 	"금형비감가기준감가기간"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "moldDepreciationTypeEtcInfo"
+			    quid       	"4CC8BE0D03A9"
+			    documentation 	"금형비감가기준기타사항"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "equipDepreciationTypeSale"
+			    quid       	"4CC8BE1000BB"
+			    documentation 	"설비감가기준판매"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "equipDepreciationTypePayment"
+			    quid       	"4CC8BE120232"
+			    documentation 	"설비감가기준지급"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "equipDepreciationTypePeriod"
+			    quid       	"4CC8BE140186"
+			    documentation 	"설비감가기준감가기간"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "equipDepreciationTypeEtcInfo"
+			    quid       	"4CC8BE160157"
+			    documentation 	"설비감가기준기타사항"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "deviceSpecification"
+			    quid       	"4CC8BE180222"
+			    documentation 	"Device사양"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "environmentalRegulationItem"
+			    quid       	"4CC8BE1A00EA"
+			    documentation 	"환경규제항목"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "buyerEtcRequirement"
+			    quid       	"4CC8BF3E01E4"
+			    documentation 	"고객요청기타사항"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "salesAdditionalRequirement"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4CC8BF400177"
+			    documentation 	"영업추가요구사항"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4CC8BF4103B9"
+			    documentation 	"기타1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4CC8BF430148"
+			    documentation 	"기타2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4CC8BF440251"
+			    documentation 	"기타3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4CC8BF45032C"
+			    documentation 	"기타4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4CC8BF47004E"
+			    documentation 	"기타5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4CC8BF480232"
+			    documentation 	"기타6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4CC8BF4A009C"
+			    documentation 	"기타7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4CC8BF4C0000"
+			    documentation 	"기타8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4CC8BF4D0177"
+			    documentation 	"기타9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4CC8BF4F003E"
+			    documentation 	"기타10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")))
+		(object Class "KETRequestPartList"
+		    quid       	"4CC8C1B20232"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4CC8C1C40196"
+			    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+			    quidu      	"3432A8740232"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "partName"
+			    quid       	"4CC8C2010177"
+			    documentation 	"제품명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "appliedRegion"
+			    quid       	"4CC8C2020251"
+			    documentation 	"적용부위"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "currentApplyedPart"
+			    quid       	"4CC8C203032C"
+			    documentation 	"현적용품"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "packTypeCode"
+			    quid       	"4CC8C205003E"
+			    documentation 	"포장사양코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "summitDestination"
+			    quid       	"4CC8C207005D"
+			    documentation 	"납입처"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "buyerAcceptPrice"
+			    quid       	"4CC8C20800FA"
+			    documentation 	"고객사인정예상가"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "ketTargetPrice"
+			    quid       	"4CC8C2090148"
+			    documentation 	"판매목표가"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "targetEarningRate"
+			    quid       	"4CC8C20A0271"
+			    documentation 	"목표수익율"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "targetInvestmentCost"
+			    quid       	"4CC8C20B02CE"
+			    documentation 	"목표투자비"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "isEtcCarType"
+			    quid       	"4CC8C20C033C"
+			    documentation 	"기타차종여부"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4CC8C20E005D"
+			    documentation 	"기타1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4CC8C20F0186"
+			    documentation 	"기타2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4CC8C2100232"
+			    documentation 	"기타3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4CC8C211032C"
+			    documentation 	"기타4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4CC8C21502FD"
+			    documentation 	"기타5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4CC8C2170128"
+			    documentation 	"기타6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4CC8C21A037A"
+			    documentation 	"기타7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4CC8C21D008C"
+			    documentation 	"기타8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4CC8C21F002E"
+			    documentation 	"기타9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4CC8C2200242"
+			    documentation 	"기타10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")))
+		(object Class "KETCarYearlyAmount"
+		    quid       	"4CC8C85A029F"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4CC8C873035B"
+			    supplier   	"Logical View::wnc::Foundation::wt::fc::Persistable"
+			    quidu      	"3432A8740232"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "carTypeCode"
+			    quid       	"4CC8C8B800DA"
+			    documentation 	"차종코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "carType"
+			    quid       	"4CC8C8B901B5"
+			    documentation 	"차종명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount1"
+			    quid       	"4CC8C8BA02FD"
+			    documentation 	"1년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount2"
+			    quid       	"4CC8C8BB035B"
+			    documentation 	"2년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount3"
+			    quid       	"4CC8C8BD003E"
+			    documentation 	"3년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount4"
+			    quid       	"4CC8C8BE031C"
+			    documentation 	"4년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount5"
+			    quid       	"4CC8C8BF03D8"
+			    documentation 	"5년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount6"
+			    quid       	"4CC8C8C100FA"
+			    documentation 	"6년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount7"
+			    quid       	"4CC8C8C201B5"
+			    documentation 	"7년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount8"
+			    quid       	"4CC8C8C3029F"
+			    documentation 	"8년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount9"
+			    quid       	"4CC8C8C5002E"
+			    documentation 	"9년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "yearAmount10"
+			    quid       	"4CC8C8C60138"
+			    documentation 	"10년차기획수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "applyedUsage"
+			    quid       	"4CC8C8C70222"
+			    documentation 	"적용수량"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "optionRate"
+			    quid       	"4CC8C8C802DE"
+			    documentation 	"옵션률"
+			    type       	"Double"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4CC8C8C903A9"
+			    documentation 	"기타1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4CC8C8CB0157"
+			    documentation 	"기타2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4CC8C8CD006D"
+			    documentation 	"기타3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4CC8C8CE0280"
+			    documentation 	"기타4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4CC8C8CF03B9"
+			    documentation 	"기타5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4CC8C8D100CB"
+			    documentation 	"기타6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4CC8C8D202DE"
+			    documentation 	"기타7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4CC8C8D401F4"
+			    documentation 	"기타8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4CC8C8D6008C"
+			    documentation 	"기타9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4CC8C8D7029F"
+			    documentation 	"기타10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")))
+		(object Class "KETTechnicalDocument"
+		    quid       	"4D081446006D"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4D0814760213"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+			    quidu      	"353FA84903E3"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "divisionCode"
+			    quid       	"4D0814B90213"
+			    documentation 	"사업부코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "deptName"
+			    quid       	"4D0814CD0251"
+			    documentation 	"등록부서명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "documentDescription"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4D0814CE03B9"
+			    documentation 	"문서설명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "security"
+			    quid       	"4D0E9DB60223"
+			    documentation 	"보안등급"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4D0814D00138"
+			    documentation 	"기타1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4D0814D103D8"
+			    documentation 	"기타2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4D0814D300DA"
+			    documentation 	"기타3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4D0814D40167"
+			    documentation 	"기타4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4D0814D6006D"
+			    documentation 	"기타5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4D0814D70232"
+			    documentation 	"기타6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4D0814D8031C"
+			    documentation 	"기타7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4D0814DA0119"
+			    documentation 	"기타8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4D0814DB0213"
+			    documentation 	"기타9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4D0814DC02CE"
+			    documentation 	"기타10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "webEditor"
+			    quid       	"51AC191E02DB"
+			    documentation 	"Web Editor"
+			    type       	"Object"
+			    quidu      	"3784E518034B"
+			    exportControl 	"Public")
+			(object ClassAttribute "webEditorText"
+			    quid       	"51AC195402C3"
+			    documentation 	"Web Editor Text"
+			    type       	"Object"
+			    quidu      	"3784E518034B"
+			    exportControl 	"Public")))
+		(object Class "KETStandardTemplate"
+		    quid       	"4D081983031C"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4D0819D203A9"
+			    supplier   	"Logical View::wnc::Foundation::wt::doc::WTDocument"
+			    quidu      	"353FA84903E3"))
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "divisionCode"
+			    quid       	"4D0819E803D8"
+			    documentation 	"사업부코드"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "templateDescription"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"UpperLimit"
+				    value      	(value Text "4000")))
+			    quid       	"4D0819EA030D"
+			    documentation 	"양식설명"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "deptCode"
+			    quid       	"4D0E9DEB034C"
+			    documentation 	"관리부서"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute1"
+			    quid       	"4D0819EC00BB"
+			    documentation 	"기타1"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute2"
+			    quid       	"4D0819ED0290"
+			    documentation 	"기타2"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute3"
+			    quid       	"4D0819EF0000"
+			    documentation 	"기타3"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute4"
+			    quid       	"4D0819F002DE"
+			    documentation 	"기타4"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute5"
+			    quid       	"4D0819F20128"
+			    documentation 	"기타5"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute6"
+			    quid       	"4D0819F3032C"
+			    documentation 	"기타6"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute7"
+			    quid       	"4D0819F50232"
+			    documentation 	"기타7"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute8"
+			    quid       	"4D0819F603B9"
+			    documentation 	"기타8"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute9"
+			    quid       	"4D0819F80271"
+			    documentation 	"기타9"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")
+			(object ClassAttribute "attribute10"
+			    quid       	"4D0819FA0280"
+			    documentation 	"기타10"
+			    type       	"String"
+			    quidu      	"3784E5160158"
+			    exportControl 	"Public")))
+		(object Association "KETFolderDocumentCategory"
+		    quid       	"4C7B1D750289"
+		    roles      	(list role_list
+			(object Role "folder"
+			    quid       	"4C7B1D76017F"
+			    label      	"folder"
+			    supplier   	"Logical View::wnc::Foundation::wt::folder::Folder"
+			    quidu      	"349D61BD01D4"
+			    is_navigable 	TRUE)
+			(object Role "documentCategory"
+			    quid       	"4C7B1D76018F"
+			    label      	"documentCategory"
+			    supplier   	"Logical View::e3ps::dms::entity::KETDocumentCategory"
+			    quidu      	"4C7B17C801CD"
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)))
+		(object Association "KETDocumentCategoryParentChild"
+		    quid       	"4C7B34C90315"
+		    roles      	(list role_list
+			(object Role "parent"
+			    quid       	"4C7B34CB0373"
+			    label      	"parent"
+			    supplier   	"Logical View::e3ps::dms::entity::KETDocumentCategory"
+			    quidu      	"4C7B17C801CD"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "child"
+			    quid       	"4C7B34CC0151"
+			    label      	"child"
+			    supplier   	"Logical View::e3ps::dms::entity::KETDocumentCategory"
+			    quidu      	"4C7B17C801CD"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETDocumentCategoryLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4C885F74037A"
+		    roles      	(list role_list
+			(object Role "documentCategory"
+			    quid       	"4C885F750203"
+			    label      	"documentCategory"
+			    supplier   	"Logical View::e3ps::dms::entity::KETDocumentCategory"
+			    quidu      	"4C7B17C801CD"
+			    client_cardinality 	(value cardinality "1..n")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "document"
+			    quid       	"4C885F750213"
+			    label      	"document"
+			    supplier   	"Logical View::e3ps::dms::entity::KETProjectDocument"
+			    quidu      	"4C7B57AF0027"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETDocumentProjectLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4CA2D2B50213"
+		    roles      	(list role_list
+			(object Role "document"
+			    quid       	"4CA2D2B60242"
+			    label      	"document"
+			    supplier   	"Logical View::e3ps::dms::entity::KETProjectDocument"
+			    quidu      	"4C7B57AF0027"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "project"
+			    quid       	"4CA2D2B60251"
+			    label      	"project"
+			    supplier   	"Logical View::e3ps::project::E3PSProject"
+			    quidu      	"47BEA53E008C"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETDocumentPartLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4CA2D60D037A"
+		    roles      	(list role_list
+			(object Role "document"
+			    quid       	"4CA2D60F004E"
+			    label      	"document"
+			    supplier   	"Logical View::e3ps::dms::entity::KETProjectDocument"
+			    quidu      	"4C7B57AF0027"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "part"
+			    quid       	"4CA2D60F005D"
+			    label      	"part"
+			    supplier   	"Logical View::wnc::Foundation::wt::part::WTPart"
+			    quidu      	"352B7B3D0196"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETRequestPartLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4CC8CBB302DE"
+		    roles      	(list role_list
+			(object Role "developmentRequest"
+			    quid       	"4CC8CBB40177"
+			    label      	"developmentRequest"
+			    supplier   	"Logical View::e3ps::dms::entity::KETDevelopmentRequest"
+			    quidu      	"4CC8B3CB02AF"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "RequestPart"
+			    quid       	"4CC8CBB40179"
+			    label      	"RequestPart"
+			    supplier   	"Logical View::e3ps::dms::entity::KETRequestPartList"
+			    quidu      	"4CC8C1B20232"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETPartCarLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4CC8CCD1002E"
+		    roles      	(list role_list
+			(object Role "RequestPart"
+			    quid       	"4CC8CCD10196"
+			    label      	"RequestPart"
+			    supplier   	"Logical View::e3ps::dms::entity::KETRequestPartList"
+			    quidu      	"4CC8C1B20232"
+			    client_cardinality 	(value cardinality "1")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "CarAmoumt"
+			    quid       	"4CC8CCD10198"
+			    label      	"CarAmoumt"
+			    supplier   	"Logical View::e3ps::dms::entity::KETCarYearlyAmount"
+			    quidu      	"4CC8C85A029F"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETDocumentOutputLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4D003B7100BB"
+		    roles      	(list role_list
+			(object Role "document"
+			    quid       	"4D003B7201B5"
+			    label      	"document"
+			    supplier   	"Logical View::e3ps::dms::entity::KETProjectDocument"
+			    quidu      	"4C7B57AF0027"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "output"
+			    quid       	"4D003B7201C5"
+			    label      	"output"
+			    supplier   	"Logical View::e3ps::project::ProjectOutput"
+			    quidu      	"47C0DF010082"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE)))
+		(object Association "KETTechnicalCategoryLink"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Storage"
+			    value      	("Storage_Set" 1701)))
+		    quid       	"4D08174F03C8"
+		    roles      	(list role_list
+			(object Role "documentCategory"
+			    quid       	"4D08175002CE"
+			    label      	"documentCategory"
+			    supplier   	"Logical View::e3ps::dms::entity::KETDocumentCategory"
+			    quidu      	"4C7B17C801CD"
+			    client_cardinality 	(value cardinality "1..n")
+			    is_navigable 	TRUE
+			    is_aggregate 	TRUE)
+			(object Role "technical"
+			    quid       	"4D08175002DF"
+			    label      	"technical"
+			    supplier   	"Logical View::e3ps::dms::entity::KETTechnicalDocument"
+			    quidu      	"4D081446006D"
+			    client_cardinality 	(value cardinality "0..n")
+			    is_navigable 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "DMSEntity"
+		    quid       	"4C73A01A03D8"
+		    title      	"DMSEntity"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list))
+		(object ClassDiagram "문서분류체계"
+		    quid       	"4C7B1753022B"
+		    title      	"문서분류체계"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	156
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1857, 218)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(1674, 86)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	366
+				justify    	0
+				label      	"Persistable")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@1
+				location   	(1674, 36)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	366
+				justify    	0
+				label      	"<<Interface>>")
+			    icon       	"Interface"
+			    icon_style 	"Label"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3432A8740232"
+			    width      	384
+			    height     	388
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::folder::Folder" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(575, 210)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(300, 103)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	550
+				justify    	0
+				label      	"Folder")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@2
+				location   	(300, 53)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	550
+				justify    	0
+				label      	"<<Interface>>")
+			    icon       	"Interface"
+			    icon_style 	"Label"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"349D61BD01D4"
+			    width      	568
+			    height     	338
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETProjectDocument" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(392, 1867)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(95, 1236)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	594
+				justify    	0
+				label      	"KETProjectDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4C7B57AF0027"
+			    width      	612
+			    height     	1286
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETDocumentCategory" @4
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1862, 1163)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@4
+				location   	(1576, 482)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	572
+				justify    	0
+				label      	"KETDocumentCategory")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4C7B17C801CD"
+			    width      	590
+			    height     	1386
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "KETFolderDocumentCategory" @5
+			    location   	(675, 1168)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @6
+				Parent_View 	@5
+				location   	(868, 837)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	541
+				justify    	0
+				label      	"KETFolderDocumentCategory"
+				pctDist    	3.733333
+				height     	332
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C7B1D750289"
+			    roleview_list 	(list RoleViews
+				(object RoleView "folder" @7
+				    Parent_View 	@5
+				    location   	(-1183, -53)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @8
+					Parent_View 	@7
+					location   	(502, 419)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	134
+					justify    	0
+					label      	"+folder"
+					pctDist    	0.955157
+					height     	74
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C7B1D76017F"
+				    client     	@5
+				    supplier   	@2
+				    vertices   	(list Points
+					(675, 1168)
+					(575, 1169)
+					(575, 379))
+				    line_style 	0)
+				(object RoleView "documentCategory" @9
+				    Parent_View 	@5
+				    location   	(-1183, -53)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @10
+					Parent_View 	@9
+					location   	(1365, 1114)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	367
+					justify    	0
+					label      	"+documentCategory"
+					pctDist    	0.774411
+					height     	51
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C7B1D76018F"
+				    client     	@5
+				    supplier   	@4
+				    vertices   	(list Points
+					(675, 1168)
+					(1566, 1163))
+				    line_style 	0)))
+			(object AssociationViewNew "KETDocumentCategoryParentChild" @11
+			    location   	(2489, 1600)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @12
+				Parent_View 	@11
+				location   	(2802, 1360)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	646
+				justify    	0
+				label      	"KETDocumentCategoryParentChild"
+				pctDist    	5.733333
+				height     	241
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C7B34C90315"
+			    roleview_list 	(list RoleViews
+				(object RoleView "parent" @13
+				    Parent_View 	@11
+				    location   	(630, 388)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @14
+					Parent_View 	@13
+					location   	(2111, 1605)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	141
+					justify    	0
+					label      	"+parent"
+					pctDist    	0.934166
+					height     	108
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C7B34CB0373"
+				    client     	@11
+				    supplier   	@4
+				    vertices   	(list Points
+					(2489, 1600)
+					(2489, 1870)
+					(2157, 1495))
+				    line_style 	0
+				    label      	(object SegLabel @15
+					Parent_View 	@13
+					location   	(2214, 1498)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.947787
+					height     	42
+					orientation 	1))
+				(object RoleView "child" @16
+				    Parent_View 	@11
+				    location   	(630, 388)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @17
+					Parent_View 	@16
+					location   	(2228, 1118)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	116
+					justify    	0
+					label      	"+child"
+					pctDist    	0.909043
+					height     	45
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C7B34CC0151"
+				    client     	@11
+				    supplier   	@4
+				    vertices   	(list Points
+					(2489, 1600)
+					(2489, 1161)
+					(2157, 1162))
+				    line_style 	0
+				    label      	(object SegLabel @18
+					Parent_View 	@16
+					location   	(2224, 1206)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.915019
+					height     	44
+					orientation 	0))))
+			(object InheritView "" @19
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C7B18000354"
+			    client     	@4
+			    supplier   	@1
+			    vertices   	(list Points
+				(1862, 1163)
+				(1857, 218))
+			    line_style 	0)
+			(object AssociationViewNew "KETDocumentCategoryLink" @20
+			    location   	(1132, 1511)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @21
+				Parent_View 	@20
+				location   	(997, 1412)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	552
+				justify    	0
+				label      	"KETDocumentCategoryLink"
+				pctDist    	-1.750000
+				height     	100
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C885F74037A"
+			    roleview_list 	(list RoleViews
+				(object RoleView "documentCategory" @22
+				    Parent_View 	@20
+				    location   	(753, -186)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @23
+					Parent_View 	@22
+					location   	(1359, 1303)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	367
+					justify    	0
+					label      	"+documentCategory"
+					pctDist    	0.611037
+					height     	91
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C885F750203"
+				    client     	@20
+				    supplier   	@4
+				    vertices   	(list Points
+					(1132, 1511)
+					(1566, 1303))
+				    line_style 	0
+				    label      	(object SegLabel @24
+					Parent_View 	@22
+					location   	(1509, 1380)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1..n"
+					pctDist    	0.827989
+					height     	45
+					orientation 	1))
+				(object RoleView "document" @25
+				    Parent_View 	@20
+				    location   	(753, -186)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @26
+					Parent_View 	@25
+					location   	(877, 1743)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	338
+					justify    	0
+					label      	"+document"
+					pctDist    	0.687385
+					height     	99
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C885F750213"
+				    client     	@20
+				    supplier   	@3
+				    vertices   	(list Points
+					(1132, 1511)
+					(698, 1718))
+				    line_style 	0
+				    label      	(object SegLabel @27
+					Parent_View 	@25
+					location   	(749, 1643)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.838249
+					height     	48
+					orientation 	1))))
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETTechnicalDocument" @28
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1317, 2729)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@28
+				location   	(1028, 2348)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	578
+				justify    	0
+				label      	"KETTechnicalDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4D081446006D"
+			    width      	596
+			    height     	786
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "KETTechnicalCategoryLink" @29
+			    location   	(1536, 2095)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @30
+				Parent_View 	@29
+				location   	(1795, 2126)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	496
+				justify    	0
+				label      	"KETTechnicalCategoryLink"
+				pctDist    	4.816667
+				height     	31
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4D08174F03C8"
+			    roleview_list 	(list RoleViews
+				(object RoleView "documentCategory" @31
+				    Parent_View 	@29
+				    location   	(69, -550)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @32
+					Parent_View 	@31
+					location   	(1833, 1906)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	367
+					justify    	0
+					label      	"+documentCategory"
+					pctDist    	1.098266
+					height     	218
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4D08175002CE"
+				    client     	@29
+				    supplier   	@4
+				    vertices   	(list Points
+					(1536, 2095)
+					(1618, 1856))
+				    line_style 	0
+				    label      	(object SegLabel @33
+					Parent_View 	@31
+					location   	(1531, 1884)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1..n"
+					pctDist    	0.787518
+					height     	75
+					orientation 	0))
+				(object RoleView "technical" @34
+				    Parent_View 	@29
+				    location   	(69, -550)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @35
+					Parent_View 	@34
+					location   	(1335, 2292)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	188
+					justify    	0
+					label      	"+technical"
+					pctDist    	0.993131
+					height     	127
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4D08175002DF"
+				    client     	@29
+				    supplier   	@28
+				    vertices   	(list Points
+					(1536, 2095)
+					(1451, 2335))
+				    line_style 	0
+				    label      	(object SegLabel @36
+					Parent_View 	@34
+					location   	(1544, 2299)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.753911
+					height     	74
+					orientation 	0))))))
+		(object ClassDiagram "개발산출문서"
+		    quid       	"4C7B575C00E3"
+		    title      	"개발산출문서"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	375
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @37
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1267, 290)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@37
+				location   	(1072, 36)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	390
+				justify    	0
+				label      	"WTDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"353FA84903E3"
+			    width      	408
+			    height     	532
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::project::E3PSProject" @38
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2399, 838)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@38
+				location   	(2177, 659)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	444
+				justify    	0
+				label      	"E3PSProject")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47BEA53E008C"
+			    width      	462
+			    height     	382
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::part::WTPart" @39
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(470, 1878)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@39
+				location   	(159, 1399)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	622
+				justify    	0
+				label      	"WTPart")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"352B7B3D0196"
+			    width      	640
+			    height     	982
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETProjectDocument" @40
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1300, 1296)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@40
+				location   	(1006, 665)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	588
+				justify    	0
+				label      	"KETProjectDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4C7B57AF0027"
+			    width      	606
+			    height     	1286
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @41
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C7B57B902F6"
+			    client     	@40
+			    supplier   	@37
+			    vertices   	(list Points
+				(1278, 652)
+				(1275, 556))
+			    line_style 	0)
+			(object AssociationViewNew "KETDocumentProjectLink" @42
+			    location   	(2131, 1291)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @43
+				Parent_View 	@42
+				location   	(2162, 1250)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	469
+				justify    	0
+				label      	"KETDocumentProjectLink"
+				pctDist    	1.016667
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CA2D2B50213"
+			    roleview_list 	(list RoleViews
+				(object RoleView "document" @44
+				    Parent_View 	@42
+				    location   	(-153, 120)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @45
+					Parent_View 	@44
+					location   	(1709, 1252)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	210
+					justify    	0
+					label      	"+document"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CA2D2B60242"
+				    client     	@42
+				    supplier   	@40
+				    vertices   	(list Points
+					(2131, 1291)
+					(1603, 1293))
+				    line_style 	0
+				    label      	(object SegLabel @46
+					Parent_View 	@44
+					location   	(1657, 1347)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "project" @47
+				    Parent_View 	@42
+				    location   	(-153, 120)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @48
+					Parent_View 	@47
+					location   	(2288, 1093)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	147
+					justify    	0
+					label      	"+project"
+					pctDist    	0.880064
+					height     	111
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CA2D2B60251"
+				    client     	@42
+				    supplier   	@38
+				    vertices   	(list Points
+					(2131, 1291)
+					(2397, 1290)
+					(2398, 1029))
+				    line_style 	0
+				    label      	(object SegLabel @49
+					Parent_View 	@47
+					location   	(2470, 1079)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.906231
+					height     	72
+					orientation 	1))))
+			(object AssociationViewNew "KETDocumentPartLink" @50
+			    location   	(683, 1293)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @51
+				Parent_View 	@50
+				location   	(427, 1219)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETDocumentPartLink"
+				pctDist    	-3.766667
+				height     	75
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CA2D60D037A"
+			    roleview_list 	(list RoleViews
+				(object RoleView "document" @52
+				    Parent_View 	@50
+				    location   	(213, -585)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @53
+					Parent_View 	@52
+					location   	(852, 1248)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	210
+					justify    	0
+					label      	"+document"
+					pctDist    	0.541254
+					height     	47
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CA2D60F004E"
+				    client     	@50
+				    supplier   	@40
+				    vertices   	(list Points
+					(683, 1293)
+					(996, 1294))
+				    line_style 	0
+				    label      	(object SegLabel @54
+					Parent_View 	@52
+					location   	(913, 1351)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.735974
+					height     	57
+					orientation 	1))
+				(object RoleView "part" @55
+				    Parent_View 	@50
+				    location   	(213, -585)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @56
+					Parent_View 	@55
+					location   	(382, 1345)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	105
+					justify    	0
+					label      	"+part"
+					pctDist    	0.868361
+					height     	82
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CA2D60F005D"
+				    client     	@50
+				    supplier   	@39
+				    vertices   	(list Points
+					(683, 1293)
+					(463, 1293)
+					(463, 1386))
+				    line_style 	0
+				    label      	(object SegLabel @57
+					Parent_View 	@55
+					location   	(532, 1343)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.485149
+					height     	50
+					orientation 	0))))
+			(object ClassView "Class" "Logical View::e3ps::project::ProjectOutput" @58
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2467, 2068)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@58
+				location   	(2193, 1689)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	548
+				justify    	0
+				label      	"ProjectOutput")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47C0DF010082"
+			    width      	566
+			    height     	782
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "KETDocumentOutputLink" @59
+			    location   	(1893, 1688)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @60
+				Parent_View 	@59
+				location   	(2080, 1607)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	469
+				justify    	0
+				label      	"KETDocumentOutputLink"
+				pctDist    	3.616667
+				height     	82
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4D003B7100BB"
+			    roleview_list 	(list RoleViews
+				(object RoleView "document" @61
+				    Parent_View 	@59
+				    location   	(-559, -339)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @62
+					Parent_View 	@61
+					location   	(1728, 1467)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	210
+					justify    	0
+					label      	"+document"
+					pctDist    	0.750274
+					height     	95
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4D003B7201B5"
+				    client     	@59
+				    supplier   	@40
+				    vertices   	(list Points
+					(1893, 1688)
+					(1603, 1497))
+				    line_style 	0
+				    label      	(object SegLabel @63
+					Parent_View 	@61
+					location   	(1649, 1570)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.780357
+					height     	37
+					orientation 	0))
+				(object RoleView "output" @64
+				    Parent_View 	@59
+				    location   	(-559, -339)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @65
+					Parent_View 	@64
+					location   	(2104, 1768)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	140
+					justify    	0
+					label      	"+output"
+					pctDist    	0.630629
+					height     	50
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4D003B7201C5"
+				    client     	@59
+				    supplier   	@58
+				    vertices   	(list Points
+					(1893, 1688)
+					(2183, 1879))
+				    line_style 	0
+				    label      	(object SegLabel @66
+					Parent_View 	@64
+					location   	(2128, 1890)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.885073
+					height     	39
+					orientation 	1))))))
+		(object ClassDiagram "개발검토의뢰"
+		    quid       	"4CC8B3B20196"
+		    title      	"개발검토의뢰"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	737
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @67
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(435, 349)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@67
+				location   	(240, 95)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	390
+				justify    	0
+				label      	"WTDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"353FA84903E3"
+			    compartment 	(object Compartment
+				Parent_View 	@67
+				location   	(240, 200)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	8
+				max_width  	400
+				justify    	1)
+			    width      	408
+			    height     	532
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @68
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1576, 322)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@68
+				location   	(1396, 190)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	360
+				justify    	0
+				label      	"Persistable")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@68
+				location   	(1396, 140)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	360
+				justify    	0
+				label      	"<<Interface>>")
+			    icon       	"Interface"
+			    icon_style 	"Label"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3432A8740232"
+			    compartment 	(object Compartment
+				Parent_View 	@68
+				location   	(1396, 295)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	4
+				max_width  	368
+				justify    	1)
+			    width      	378
+			    height     	388
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::fc::Persistable" @69
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2563, 315)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@69
+				location   	(2383, 183)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	360
+				justify    	0
+				label      	"Persistable")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@69
+				location   	(2383, 133)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	360
+				justify    	0
+				label      	"<<Interface>>")
+			    icon       	"Interface"
+			    icon_style 	"Label"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3432A8740232"
+			    compartment 	(object Compartment
+				Parent_View 	@69
+				location   	(2383, 288)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	4
+				max_width  	368
+				justify    	1)
+			    width      	378
+			    height     	388
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETDevelopmentRequest" @70
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(453, 2483)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@70
+				location   	(72, 1002)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	762
+				justify    	0
+				label      	"KETDevelopmentRequest")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4CC8B3CB02AF"
+			    compartment 	(object Compartment
+				Parent_View 	@70
+				location   	(72, 1063)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	58
+				max_width  	759
+				justify    	1)
+			    width      	780
+			    height     	2986
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @71
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8C15401A5"
+			    client     	@70
+			    supplier   	@67
+			    vertices   	(list Points
+				(439, 989)
+				(437, 615))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETRequestPartList" @72
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1579, 1400)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@72
+				location   	(1278, 844)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	602
+				justify    	0
+				label      	"KETRequestPartList")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4CC8C1B20232"
+			    compartment 	(object Compartment
+				Parent_View 	@72
+				location   	(1278, 905)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	21
+				max_width  	603
+				justify    	1)
+			    width      	620
+			    height     	1136
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @73
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8C1C40196"
+			    client     	@72
+			    supplier   	@68
+			    vertices   	(list Points
+				(1576, 831)
+				(1576, 516))
+			    line_style 	0)
+			(object AssociationViewNew "KETRequestPartLink" @74
+			    location   	(1055, 1900)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @75
+				Parent_View 	@74
+				location   	(1050, 1570)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETRequestPartLink"
+				pctDist    	0.433333
+				height     	331
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8CBB302DE"
+			    roleview_list 	(list RoleViews
+				(object RoleView "developmentRequest" @76
+				    Parent_View 	@74
+				    location   	(-524, 500)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @77
+					Parent_View 	@76
+					location   	(1107, 2090)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	412
+					justify    	0
+					label      	"+developmentRequest"
+					pctDist    	0.323541
+					height     	173
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CC8CBB40177"
+				    client     	@74
+				    supplier   	@70
+				    vertices   	(list Points
+					(1055, 1900)
+					(843, 2105))
+				    line_style 	0
+				    label      	(object SegLabel @78
+					Parent_View 	@76
+					location   	(890, 2014)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.671009
+					height     	35
+					orientation 	1))
+				(object RoleView "RequestPart" @79
+				    Parent_View 	@74
+				    location   	(-524, 500)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @80
+					Parent_View 	@79
+					location   	(1089, 1706)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	425
+					justify    	0
+					label      	"+RequestPart"
+					pctDist    	0.538127
+					height     	118
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CC8CBB40179"
+				    client     	@74
+				    supplier   	@72
+				    vertices   	(list Points
+					(1055, 1900)
+					(1268, 1695))
+				    line_style 	0
+				    label      	(object SegLabel @81
+					Parent_View 	@79
+					location   	(1221, 1798)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.643352
+					height     	42
+					orientation 	1))))
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETCarYearlyAmount" @82
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2557, 1495)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@82
+				location   	(2317, 839)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	480
+				justify    	0
+				label      	"KETCarYearlyAmount")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4CC8C85A029F"
+			    compartment 	(object Compartment
+				Parent_View 	@82
+				location   	(2317, 900)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				fill_color 	16777215
+				anchor     	2
+				nlines     	25
+				max_width  	484
+				justify    	1)
+			    width      	498
+			    height     	1336
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @83
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8C873035B"
+			    client     	@82
+			    supplier   	@69
+			    vertices   	(list Points
+				(2560, 826)
+				(2561, 509))
+			    line_style 	0)
+			(object AssociationViewNew "KETPartCarLink" @84
+			    location   	(2098, 1449)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @85
+				Parent_View 	@84
+				location   	(2113, 1253)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"KETPartCarLink"
+				pctDist    	0.750000
+				height     	197
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4CC8CCD1002E"
+			    roleview_list 	(list RoleViews
+				(object RoleView "RequestPart" @86
+				    Parent_View 	@84
+				    location   	(-459, -46)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @87
+					Parent_View 	@86
+					location   	(2018, 1486)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	250
+					justify    	0
+					label      	"+RequestPart"
+					pctDist    	0.367061
+					height     	44
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CC8CCD10196"
+				    client     	@84
+				    supplier   	@72
+				    vertices   	(list Points
+					(2098, 1449)
+					(1889, 1428))
+				    line_style 	0
+				    label      	(object SegLabel @88
+					Parent_View 	@86
+					location   	(1952, 1386)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.724859
+					height     	50
+					orientation 	1))
+				(object RoleView "CarAmoumt" @89
+				    Parent_View 	@84
+				    location   	(-459, -46)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @90
+					Parent_View 	@89
+					location   	(2176, 1409)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	241
+					justify    	0
+					label      	"+CarAmoumt"
+					pctDist    	0.348527
+					height     	48
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4CC8CCD10198"
+				    client     	@84
+				    supplier   	@82
+				    vertices   	(list Points
+					(2098, 1449)
+					(2307, 1469))
+				    line_style 	0
+				    label      	(object SegLabel @91
+					Parent_View 	@89
+					location   	(2270, 1507)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..n"
+					pctDist    	0.844925
+					height     	40
+					orientation 	1))))))
+		(object ClassDiagram "기술문서"
+		    quid       	"4D08130E0148"
+		    title      	"기술문서"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	956
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @92
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1281, 328)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@92
+				location   	(1083, 74)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	396
+				justify    	0
+				label      	"WTDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"353FA84903E3"
+			    width      	414
+			    height     	532
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETTechnicalDocument" @93
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1276, 1205)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@93
+				location   	(985, 749)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	582
+				justify    	0
+				label      	"KETTechnicalDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4D081446006D"
+			    width      	600
+			    height     	936
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @94
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4D0814760213"
+			    client     	@93
+			    supplier   	@92
+			    vertices   	(list Points
+				(1278, 736)
+				(1278, 594))
+			    line_style 	0)))
+		(object ClassDiagram "표준양식"
+		    quid       	"4D0818EB034B"
+		    title      	"표준양식"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::doc::WTDocument" @95
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1251, 406)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@95
+				location   	(1053, 152)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	396
+				justify    	0
+				label      	"WTDocument")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"353FA84903E3"
+			    width      	414
+			    height     	532
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::entity::KETStandardTemplate" @96
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1250, 1384)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@96
+				location   	(971, 1003)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	558
+				justify    	0
+				label      	"KETStandardTemplate")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4D081983031C"
+			    width      	576
+			    height     	786
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @97
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4D0819D203A9"
+			    client     	@96
+			    supplier   	@95
+			    vertices   	(list Points
+				(1250, 990)
+				(1250, 672))
+			    line_style 	0)))))
+	(object Class_Category "service"
+	    quid       	"4C739F1700BB"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "StandardKETDmsService"
+		    quid       	"4C73A0DA034B"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4C73A13901D4"
+			    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+			    quidu      	"342982E402DE")
+			(object Inheritance_Relationship
+			    quid       	"4C73A5750203"
+			    supplier   	"Logical View::e3ps::dms::service::KETDmsService"
+			    quidu      	"4C73A56003A9"))
+		    operations 	(list Operations
+			(object Operation "performStartupProcess"
+			    quid       	"4C73A1130222"
+			    exceptions 	"ManagerException[343BC97C0222]"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Protected"
+			    uid        	0)))
+		(object Class "KETDmsService"
+		    quid       	"4C73A56003A9"
+		    stereotype 	"RemoteInterface"
+		    operations 	(list Operations
+			(object Operation "selectDocCategoryForTree"
+			    attributes 	(list Attribute_Set)
+			    quid       	"4C7C808D00BB"
+			    result     	"ArrayList"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"378A63D00390")
+			(object Operation "makeTree"
+			    attributes 	(list Attribute_Set)
+			    quid       	"4C7C8134035B"
+			    parameters 	(list Parameters
+				(object Parameter "code"
+				    quid       	"4C7C815F0242"
+				    type       	"String"
+				    quidu      	"3784E5160158")
+				(object Parameter "list"
+				    quid       	"4C7C81770213"
+				    type       	"ArrayList"
+				    quidu      	"378A63D00390"))
+			    result     	"ArrayList"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"378A63D00390")
+			(object Operation "makeRoot"
+			    attributes 	(list Attribute_Set)
+			    quid       	"4C7C832E038A"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0)
+			(object Operation "selectDocCategory"
+			    quid       	"4C8035EB035B"
+			    parameters 	(list Parameters
+				(object Parameter "OID"
+				    quid       	"4C8036A5009C"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"KETDocumentCategory"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4C7B17C801CD")
+			(object Operation "insertDocCategory"
+			    attributes 	(list Attribute_Set)
+			    quid       	"4C7B5F5D0383"
+			    documentation 	"문서분류코드 등록"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4C7B5FE30315"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETDocumentCategory"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4C7B17C801CD")
+			(object Operation "updateDocCategory"
+			    quid       	"4C803612032C"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4C8036F8005D"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETDocumentCategory"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4C7B17C801CD")
+			(object Operation "deleteDocCategory"
+			    quid       	"4C803621008C"
+			    parameters 	(list Parameters
+				(object Parameter "OID"
+				    quid       	"4C803734001F"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"String"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E5160158")
+			(object Operation "selectCategoryPath"
+			    quid       	"4C80558A005D"
+			    parameters 	(list Parameters
+				(object Parameter "OID"
+				    quid       	"4C8055B5008C"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"String"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E5160158")
+			(object Operation "selectChildDocCategory"
+			    quid       	"4C8894AD004E"
+			    parameters 	(list Parameters
+				(object Parameter "code"
+				    quid       	"4C8894F80271"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"ArrayList"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"378636410351")
+			(object Operation "insertProjectDoc"
+			    quid       	"4C8DC70A0148"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4C8DC76E0213"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETProjectDocument"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4C7B57AF0027")
+			(object Operation "updateProjectDoc"
+			    quid       	"4C8DC789008C"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4C8DC7A3038A"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETProjectDocument"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4C7B57AF0027")
+			(object Operation "deleteProjectDoc"
+			    quid       	"4C8DC7CD03D8"
+			    parameters 	(list Parameters
+				(object Parameter "OID"
+				    quid       	"4C8DC80A01F4"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"String"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E5160158")
+			(object Operation "searchProjectDoc"
+			    quid       	"4C92B4BB00FA"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4C92B4BB00FB"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"Vector"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E5250138")
+			(object Operation "reviceProjectDoc"
+			    quid       	"4CAEAC8602BF"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4CAEAC870251"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETProjectDocument"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4C7B57AF0027")
+			(object Operation "insertDevRequest"
+			    quid       	"4CD0C6150242"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4CD0C6680157"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETDevelopmentRequest"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4CC8B3CB02AF")
+			(object Operation "updateDevRequest"
+			    quid       	"4CD0C6230261"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4CD0C6C7001F"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETDevelopmentRequest"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4CC8B3CB02AF")
+			(object Operation "deleteDevRequest"
+			    quid       	"4CD0C5EF007D"
+			    parameters 	(list Parameters
+				(object Parameter "OID"
+				    quid       	"4CD0C6FA0148"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"String"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E5160158")
+			(object Operation "createStandardTemplate"
+			    quid       	"4D081C5001A5"
+			    documentation 	"표준양식 등록"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4D081C8C029F"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C")
+				(object Parameter "files"
+				    quid       	"4D081C8E01E4"
+				    type       	"Vector"
+				    quidu      	"3784E5250138"))
+			    result     	"KETStandardTemplate"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4D081983031C")
+			(object Operation "updateStandardTemplate"
+			    quid       	"4D081C520203"
+			    documentation 	"표준양식 수정"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4D081CFB0148"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C")
+				(object Parameter "files"
+				    quid       	"4D081CFD001F"
+				    type       	"Vector"
+				    quidu      	"3784E5250138"))
+			    result     	"KETStandardTemplate"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4D081983031C")
+			(object Operation "deleteStandardTemplate"
+			    quid       	"4D081C540251"
+			    documentation 	"표준양식 삭제"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4D081D6402EE"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C")
+				(object Parameter "files"
+				    quid       	"4D081D6600BB"
+				    type       	"Vector"
+				    quidu      	"3784E5250138"))
+			    result     	"Boolean"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E79701E4")
+			(object Operation "insertTechDoc"
+			    quid       	"4D12D2BE037A"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4D12D2BE037B"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETTechnicalDocument"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4D081446006D")
+			(object Operation "updateTechDoc"
+			    quid       	"4D12D3100000"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4D12D3100001"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETTechnicalDocument"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4D081446006D")
+			(object Operation "deleteTechDoc"
+			    quid       	"4D12D33E029F"
+			    parameters 	(list Parameters
+				(object Parameter "OID"
+				    quid       	"4D12D33E02A0"
+				    type       	"String"
+				    quidu      	"3784E5160158"))
+			    result     	"String"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"3784E5160158")
+			(object Operation "reviceTechDoc"
+			    quid       	"4D23F8F2034B"
+			    parameters 	(list Parameters
+				(object Parameter "hash"
+				    quid       	"4D23F8F2034C"
+				    type       	"Hashtable"
+				    quidu      	"3784E526007C"))
+			    result     	"KETTechnicalDocument"
+			    concurrency 	"Sequential"
+			    opExportControl 	"Public"
+			    uid        	0
+			    quidu      	"4D081446006D")))
+		(object Class "KETDmsHelper"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"cg_style"
+			    value      	"Sequence"))
+		    quid       	"4C73A569036B")
+		(object Association "$UNNAMED$0"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C73A5A702FD"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$1"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"SupportedAPI"
+				    value      	("SupportedAPI_Set" 1102)))
+			    quid       	"4C73A5A8029F"
+			    supplier   	"Logical View::e3ps::dms::service::KETDmsHelper"
+			    quidu      	"4C73A569036B"
+			    is_aggregate 	TRUE)
+			(object Role "service"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"SupportedAPI"
+				    value      	("SupportedAPI_Set" 1102))
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"Final"
+				    value      	TRUE)
+				(object Attribute
+				    tool       	"Windchill"
+				    name       	"InitialValue"
+				    value      	(value Text "new KETDmsServiceFwd()")))
+			    quid       	"4C73A5A8035B"
+			    label      	"service"
+			    supplier   	"Logical View::e3ps::dms::service::KETDmsService"
+			    quidu      	"4C73A56003A9"
+			    client_cardinality 	(value cardinality "1")
+			    Containment 	"By Value"
+			    is_navigable 	TRUE
+			    static     	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "DMSService"
+		    quid       	"4C73A0230280"
+		    title      	"DMSService"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	306
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @98
+			    ShowCompartmentStereotypes 	TRUE
+			    location   	(515, 256)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@98
+				location   	(334, 181)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	362
+				justify    	0
+				label      	"StandardManager")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"342982E402DE"
+			    width      	380
+			    height     	174
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::service::StandardKETDmsService" @99
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(517, 644)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@99
+				location   	(270, 563)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	494
+				justify    	0
+				label      	"StandardKETDmsService")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4C73A0DA034B"
+			    width      	512
+			    height     	186
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @100
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A13901D4"
+			    client     	@99
+			    supplier   	@98
+			    vertices   	(list Points
+				(516, 550)
+				(515, 343))
+			    line_style 	0)
+			(object ClassView "Class" "Logical View::e3ps::dms::service::KETDmsHelper" @101
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(2582, 649)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@101
+				location   	(2428, 598)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	308
+				justify    	0
+				label      	"KETDmsHelper")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4C73A569036B"
+			    width      	326
+			    height     	126
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Logical View::e3ps::dms::service::KETDmsService" @102
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1537, 696)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@102
+				location   	(1258, 62)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	558
+				justify    	0
+				label      	"KETDmsService")
+			    stereotype 	(object ItemLabel
+				Parent_View 	@102
+				location   	(1258, 12)
+				fill_color 	13434879
+				anchor     	10
+				nlines     	1
+				max_width  	558
+				justify    	0
+				label      	"<<RemoteInterface>>")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4C73A56003A9"
+			    width      	576
+			    height     	1392
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @103
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A5750203"
+			    client     	@99
+			    supplier   	@102
+			    vertices   	(list Points
+				(773, 657)
+				(1248, 680))
+			    line_style 	0)
+			(object AssociationViewNew "$UNNAMED$0" @104
+			    location   	(2121, 668)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A5A702FD"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$1" @105
+				    Parent_View 	@104
+				    location   	(680, 119)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C73A5A8029F"
+				    client     	@104
+				    supplier   	@101
+				    vertices   	(list Points
+					(2121, 668)
+					(2418, 654))
+				    line_style 	0)
+				(object RoleView "service" @106
+				    Parent_View 	@104
+				    location   	(680, 119)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @107
+					Parent_View 	@106
+					location   	(1938, 638)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	172
+					justify    	0
+					label      	"+$service"
+					pctDist    	0.613836
+					height     	40
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4C73A5A8035B"
+				    client     	@104
+				    supplier   	@102
+				    vertices   	(list Points
+					(2121, 668)
+					(1825, 682))
+				    line_style 	0
+				    label      	(object SegLabel @108
+					Parent_View 	@106
+					location   	(1859, 735)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0)))))))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"4C739FA8031C"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Logical View::e3ps::dms::entity" @109
+		    location   	(734, 434)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@109
+			location   	(590, 350)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"entity")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C739F0E009C"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::dms::service" @110
+		    location   	(1213, 434)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@110
+			location   	(1069, 350)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"service")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C739F1700BB"
+		    width      	300
+		    height     	180)))))

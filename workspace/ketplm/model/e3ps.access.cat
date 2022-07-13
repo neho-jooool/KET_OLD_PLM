@@ -1,0 +1,784 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "access"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"486ACA56009C"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "AccessAuthority"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"CompositeIndex1"
+		    value      	(value Text "+objectID"))
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"CompositeIndex2"
+		    value      	(value Text "+objClassName")))
+	    quid       	"486ACABD003E"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"486ACAE00177"
+		    supplier   	"Logical View::wt::fc::Persistable"
+		    quidu      	"3432A8740232"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "accessName"
+		    quid       	"486ACE9700EA"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "objectID"
+		    quid       	"486AD3C403B9"
+		    type       	"long"
+		    exportControl 	"Public")
+		(object ClassAttribute "objClassName"
+		    quid       	"487565050261"
+		    type       	"String"
+		    quidu      	"3784E5160158"
+		    exportControl 	"Public")
+		(object ClassAttribute "isVR"
+		    quid       	"487E91250399"
+		    type       	"boolean"
+		    exportControl 	"Public")))
+	(object Class "AccessUserLink"
+	    quid       	"486AD017032C"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4875687403D8"
+		    supplier   	"Logical View::e3ps::access::AccessAuthLink"
+		    quidu      	"487566C00177")))
+	(object Class "AccessDeptLink"
+	    quid       	"486AD046005D"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"487568720232"
+		    supplier   	"Logical View::e3ps::access::AccessAuthLink"
+		    quidu      	"487566C00177")))
+	(object Class "AccessAuthLink"
+	    quid       	"487566C00177"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4875676E02CE"
+		    supplier   	"Logical View::wt::fc::ObjectToObjectLink"
+		    quidu      	"36095EC90148"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "isFull"
+		    quid       	"487566E60242"
+		    type       	"boolean"
+		    initv      	"false"
+		    exportControl 	"Public")
+		(object ClassAttribute "isWrite"
+		    quid       	"48756705037A"
+		    type       	"boolean"
+		    initv      	"false"
+		    exportControl 	"Public")
+		(object ClassAttribute "isModify"
+		    quid       	"487567160242"
+		    type       	"boolean"
+		    initv      	"false"
+		    exportControl 	"Public")
+		(object ClassAttribute "isDelete"
+		    quid       	"4875672D030D"
+		    type       	"boolean"
+		    initv      	"false"
+		    exportControl 	"Public")
+		(object ClassAttribute "isRead"
+		    quid       	"48756741009C"
+		    type       	"boolean"
+		    initv      	"false"
+		    exportControl 	"Public")))
+	(object Association "$UNNAMED$0"
+	    quid       	"486ACC660261"
+	    roles      	(list role_list
+		(object Role "access"
+		    quid       	"486ACC670177"
+		    label      	"access"
+		    supplier   	"Logical View::e3ps::access::AccessAuthority"
+		    quidu      	"486ACABD003E"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "dept"
+		    quid       	"486ACC670186"
+		    label      	"dept"
+		    supplier   	"Logical View::e3ps::groupware::company::Department"
+		    quidu      	"40B6AB370285"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE))
+	    AssociationClass 	"Logical View::e3ps::access::AccessDeptLink")
+	(object Association "$UNNAMED$1"
+	    quid       	"486ACD0A030D"
+	    roles      	(list role_list
+		(object Role "access"
+		    quid       	"486ACD0B038A"
+		    label      	"access"
+		    supplier   	"Logical View::e3ps::access::AccessAuthority"
+		    quidu      	"486ACABD003E"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "user"
+		    quid       	"486ACD0B038C"
+		    label      	"user"
+		    supplier   	"Logical View::wt::org::WTPrincipal"
+		    quidu      	"33F8A9760282"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE))
+	    AssociationClass 	"Logical View::e3ps::access::AccessUserLink"))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"486ACA8602AF"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wt::fc::Persistable" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(1041, 284)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(905, 256)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	272
+			justify    	0
+			label      	"Persistable")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(905, 206)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	269
+			justify    	0
+			label      	"<<Interface>>")
+		    icon       	"Interface"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3432A8740232"
+		    width      	290
+		    height     	180
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::groupware::company::Department" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1867, 909)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1746, 835)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	242
+			justify    	0
+			label      	"Department")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"40B6AB370285"
+		    width      	260
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::access::AccessAuthority" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1041, 912)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(811, 756)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	460
+			justify    	0
+			label      	"AccessAuthority")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"486ACABD003E"
+		    width      	478
+		    height     	336
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @4
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"486ACAE00177"
+		    client     	@3
+		    supplier   	@1
+		    vertices   	(list Points
+			(1041, 743)
+			(1041, 374))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @5
+		    location   	(1508, 909)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"486ACC660261"
+		    roleview_list 	(list RoleViews
+			(object RoleView "access" @6
+			    Parent_View 	@5
+			    location   	(-663, 303)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @7
+				Parent_View 	@6
+				location   	(1327, 869)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	177
+				justify    	0
+				label      	"+access"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"486ACC670177"
+			    client     	@5
+			    supplier   	@3
+			    vertices   	(list Points
+				(1508, 909)
+				(1280, 909))
+			    line_style 	0
+			    label      	(object SegLabel @8
+				Parent_View 	@6
+				location   	(1303, 964)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "dept" @9
+			    Parent_View 	@5
+			    location   	(-663, 303)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(1656, 831)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	233
+				justify    	0
+				label      	"+dept"
+				pctDist    	0.648059
+				height     	79
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"486ACC670186"
+			    client     	@5
+			    supplier   	@2
+			    vertices   	(list Points
+				(1508, 909)
+				(1736, 909))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(1713, 963)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object ClassView "Class" "Logical View::wt::org::WTPrincipal" @12
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(215, 914)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(72, 886)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	286
+			justify    	0
+			label      	"WTPrincipal")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@12
+			location   	(72, 836)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	283
+			justify    	0
+			label      	"<<Abstract>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"33F8A9760282"
+		    width      	304
+		    height     	180
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$1" @13
+		    location   	(584, 912)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"486ACD0A030D"
+		    roleview_list 	(list RoleViews
+			(object RoleView "access" @14
+			    Parent_View 	@13
+			    location   	(-1840, -269)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @15
+				Parent_View 	@14
+				location   	(758, 954)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	177
+				justify    	0
+				label      	"+access"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"486ACD0B038A"
+			    client     	@13
+			    supplier   	@3
+			    vertices   	(list Points
+				(584, 912)
+				(801, 912))
+			    line_style 	0
+			    label      	(object SegLabel @16
+				Parent_View 	@14
+				location   	(778, 859)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "user" @17
+			    Parent_View 	@13
+			    location   	(-1840, -269)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @18
+				Parent_View 	@17
+				location   	(410, 955)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	110
+				justify    	0
+				label      	"+user"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"486ACD0B038C"
+			    client     	@13
+			    supplier   	@12
+			    vertices   	(list Points
+				(584, 912)
+				(367, 913))
+			    line_style 	0
+			    label      	(object SegLabel @19
+				Parent_View 	@17
+				location   	(390, 860)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object ClassView "Class" "Logical View::e3ps::access::AccessUserLink" @20
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(570, 1430)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@20
+			location   	(399, 1379)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	342
+			justify    	0
+			label      	"AccessUserLink")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"486AD017032C"
+		    width      	360
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::access::AccessDeptLink" @21
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1516, 1408)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@21
+			location   	(1346, 1357)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	340
+			justify    	0
+			label      	"AccessDeptLink")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"486AD046005D"
+		    width      	358
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssocAttachView "" @22
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@5
+		    supplier   	@21
+		    vertices   	(list Points
+			(1505, 909)
+			(1514, 1345))
+		    line_style 	0)
+		(object AssocAttachView "" @23
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@13
+		    supplier   	@20
+		    vertices   	(list Points
+			(577, 912)
+			(565, 1367))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::access::AccessAuthLink" @24
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1064, 1895)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@24
+			location   	(806, 1739)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	516
+			justify    	0
+			label      	"AccessAuthLink")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"487566C00177"
+		    width      	534
+		    height     	336
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @25
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"487568720232"
+		    client     	@21
+		    supplier   	@24
+		    vertices   	(list Points
+			(1455, 1471)
+			(1219, 1726))
+		    line_style 	0)
+		(object InheritView "" @26
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4875687403D8"
+		    client     	@20
+		    supplier   	@24
+		    vertices   	(list Points
+			(636, 1493)
+			(884, 1726))
+		    line_style 	0)))
+	(object ClassDiagram "Auth Link"
+	    quid       	"487567BB0128"
+	    title      	"Auth Link"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	1147
+	    origin_y   	247
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::e3ps::access::AccessAuthLink" @27
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(977, 1055)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@27
+			location   	(719, 874)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	516
+			justify    	0
+			label      	"AccessAuthLink")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"487566C00177"
+		    width      	534
+		    height     	386
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::wt::fc::ObjectToObjectLink" @28
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(977, 415)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@28
+			location   	(782, 394)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	390
+			justify    	0
+			label      	"ObjectToObjectLink")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@28
+			location   	(782, 344)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	390
+			justify    	0
+			label      	"<<Abstract>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"36095EC90148"
+		    width      	408
+		    height     	167
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @29
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4875676E02CE"
+		    client     	@27
+		    supplier   	@28
+		    vertices   	(list Points
+			(977, 861)
+			(977, 498))
+		    line_style 	0)))))

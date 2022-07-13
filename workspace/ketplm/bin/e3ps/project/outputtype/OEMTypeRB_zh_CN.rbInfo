@@ -1,0 +1,34 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+#고객이벤트
+CUSTOMEREVENT.value=\u987e\u5ba2Evenet
+CUSTOMEREVENT.order=100
+
+#차종
+CARTYPE.value=\u8f66\u79cd
+CARTYPE.order=110
+
+#납입처
+PAYCONTRACTOR.value=\u7eb3\u54c1\u5904
+PAYCONTRACTOR.order=120

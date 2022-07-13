@@ -1,0 +1,1450 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "service"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C73976002AF"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "StandardKETBomService"
+	    quid       	"4C73A2B4029F"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C73A30100EA"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4C73A305038A"
+		    supplier   	"Logical View::e3ps::bom::service::KETBomService"
+		    quidu      	"4C73A2D60157"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4C73A35200FA"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "KETBomService"
+	    quid       	"4C73A2D60157"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "searchItem"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C7CA59C02BF"
+		    parameters 	(list Parameters
+			(object Parameter "searchAttrHash"
+			    quid       	"4C7CA59C02C0"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "searchDuplicationItem"
+		    quid       	"4C7CA59C02CE"
+		    parameters 	(list Parameters
+			(object Parameter "searchAttrHash"
+			    quid       	"4C7CA59C02CF"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "createBom"
+		    quid       	"4C7CA59C02EE"
+		    parameters 	(list Parameters
+			(object Parameter "createAttrHash"
+			    quid       	"4C7CA59C02EF"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "myBom"
+		    quid       	"4C7CA59C02FD"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C02FE"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "searchBom"
+		    quid       	"4C7CA59C031C"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C031D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "getBom"
+		    quid       	"4C7CA59C032C"
+		    parameters 	(list Parameters
+			(object Parameter "bomOid"
+			    quid       	"4C7CA59C032D"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "searchWorkList"
+		    quid       	"4C7CA59C034B"
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "removeBom"
+		    quid       	"4C7CA59C036B"
+		    parameters 	(list Parameters
+			(object Parameter "bomOid"
+			    quid       	"4C7CA59C036C"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setCoworkerCheckOut"
+		    quid       	"4C7CA59C036D"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C036E"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setCoworkerCheckIn"
+		    quid       	"4C7CA59C037A"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C037B"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setAllEndWorking"
+		    quid       	"4C7CA59C037C"
+		    parameters 	(list Parameters
+			(object Parameter "bomOid"
+			    quid       	"4C7CA59C037D"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "headerType"
+			    quid       	"4C7CA59C037E"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "getCheckOuter"
+		    quid       	"4C7CA59C038A"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C038B"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "changeEndWorkFlag"
+		    quid       	"4C7CA59C038C"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C038D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "getItemVersion"
+		    quid       	"4C7CA59C0399"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C039A"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "getBomEco"
+		    quid       	"4C7CA59C03CA"
+		    documentation 	"get LSISBOMECOHeader"
+		    parameters 	(list Parameters
+			(object Parameter "bomEcoOid"
+			    quid       	"4C7CA59C03CB"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "searchBomEco"
+		    quid       	"4C7CA59C03D8"
+		    documentation 	"search specific LSISBOMECOHeader"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59C03D9"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "searchBomEcoWorkList"
+		    quid       	"4C7CA59D0000"
+		    documentation 	"search my LSISBOMECOHeader"
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "searchParentItem"
+		    quid       	"4C7CA59D0001"
+		    parameters 	(list Parameters
+			(object Parameter "itemCode"
+			    quid       	"4C7CA59D0002"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "itemDesc"
+			    quid       	"4C7CA59D0003"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "orgCode"
+			    quid       	"4C7CA59D0004"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "manageCoworker"
+		    quid       	"4C7CA59D000F"
+		    parameters 	(list Parameters
+			(object Parameter "bomOid"
+			    quid       	"4C7CA59D0010"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "coworkers"
+			    quid       	"4C7CA59D0011"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "getItemOid"
+		    quid       	"4C7CA59D003E"
+		    parameters 	(list Parameters
+			(object Parameter "itemCode"
+			    quid       	"4C7CA59D003F"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "checkOutItem"
+		    quid       	"4C7CA59D004E"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D004F"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "checkInItem"
+		    quid       	"4C7CA59D005D"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D005E"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "cancelCheckOutItem"
+		    quid       	"4C7CA59D006D"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D006E"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "reviseItem"
+		    quid       	"4C7CA59D006F"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D0070"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "cancelReviseItem"
+		    quid       	"4C7CA59D007D"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D007E"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "myBomEco"
+		    quid       	"4C7CA59D008C"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D008D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "setCoworkerCancelCheckOut"
+		    quid       	"4C7CA59D009C"
+		    parameters 	(list Parameters
+			(object Parameter "inputParams"
+			    quid       	"4C7CA59D009D"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "checkAuthority"
+		    quid       	"4C7CA59D00AB"
+		    parameters 	(list Parameters
+			(object Parameter "itemCodeVec"
+			    quid       	"4C7CA59D00AC"
+			    type       	"Vector"
+			    quidu      	"3784E5250138"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")
+		(object Operation "setKetPartUsageLink"
+		    quid       	"4D08675C013C"
+		    parameters 	(list Parameters
+			(object Parameter "ht"
+			    quid       	"4D08677B017B"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "chk"
+			    quid       	"4D086794014C"
+			    type       	"Integer"
+			    quidu      	"3784E5AA0391"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "startProcess"
+		    quid       	"4D1D28E00251"
+		    parameters 	(list Parameters
+			(object Parameter "oid"
+			    quid       	"4D1D2901007D"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "master"
+			    quid       	"4D1D36C2033E"
+			    type       	"KETWfmApprovalMaster"
+			    quidu      	"4C91B0EA02FD"))
+		    result     	"boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getIsBomComponent"
+		    quid       	"4D6B036A019D"
+		    parameters 	(list Parameters
+			(object Parameter "strNumber"
+			    quid       	"4D6B03860045"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "createLine"
+		    quid       	"4D1D371901C7"
+		    parameters 	(list Parameters
+			(object Parameter "hashParam"
+			    quid       	"4D1D372703DA"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "updateMaster"
+		    quid       	"4D1D377A02D1"
+		    parameters 	(list Parameters
+			(object Parameter "oid"
+			    quid       	"4D1D37910225"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "agreementType"
+			    quid       	"4D1D379501D7"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "comment"
+			    quid       	"4D1D37A4030F"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "createMaster"
+		    quid       	"4D1D39E4031F"
+		    parameters 	(list Parameters
+			(object Parameter "hashParam"
+			    quid       	"4D1D3A400206"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Persistable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3432A8740232")
+		(object Operation "setWfKetPartUsageLink"
+		    quid       	"4D23C40B01BB"
+		    parameters 	(list Parameters
+			(object Parameter "vc"
+			    quid       	"4D23C4290342"
+			    type       	"Vector"
+			    quidu      	"3784E5250138")
+			(object Parameter "chk"
+			    quid       	"4D23C43A0370"
+			    type       	"Integer"
+			    quidu      	"3784E5AA0391"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "getBomInterface"
+		    quid       	"4D59E7A80290"
+		    parameters 	(list Parameters
+			(object Parameter "oid"
+			    quid       	"4D59E7D40280"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "updateItemMaster"
+		    quid       	"4D6E396502BF"
+		    parameters 	(list Parameters
+			(object Parameter "ecoHeaderNo"
+			    quid       	"4D6E39A401F4"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "ecoItemCode"
+			    quid       	"4D6E39AE0157"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "updateItemMasterERP"
+		    quid       	"4D7032090119"
+		    parameters 	(list Parameters
+			(object Parameter "hashUpdate"
+			    quid       	"4D703228038A"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "updateEndWorkingFlag"
+		    quid       	"4D70653B0242"
+		    parameters 	(list Parameters
+			(object Parameter "ecoHeaderNo"
+			    quid       	"4D70654A03B9"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "flag"
+			    quid       	"4D70654F02FD"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "updateEndWorkingFlagNew"
+		    quid       	"4D706566038A"
+		    parameters 	(list Parameters
+			(object Parameter "newBomCode"
+			    quid       	"4D7065700213"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "flag"
+			    quid       	"4D706575000F"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setWfKetPartUsageLinkEco"
+		    quid       	"4D888D8200B2"
+		    parameters 	(list Parameters
+			(object Parameter "vc"
+			    quid       	"4D888EC0013E"
+			    type       	"Vector"
+			    quidu      	"3784E5250138")
+			(object Parameter "chk"
+			    quid       	"4D888ECB01EA"
+			    type       	"Integer"
+			    quidu      	"3784E5AA0391"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "getBomEcoInterface"
+		    quid       	"4D88905E0063"
+		    parameters 	(list Parameters
+			(object Parameter "oid"
+			    quid       	"4D88908800E0"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "createPartUsageLink"
+		    quid       	"4D88AC8400B1"
+		    parameters 	(list Parameters
+			(object Parameter "ht"
+			    quid       	"4D88AD28039F"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "parentPart"
+			    quid       	"4D88AD3B018C"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196")
+			(object Parameter "childPart"
+			    quid       	"4D88AD3F0332"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196")
+			(object Parameter "childPartMaster"
+			    quid       	"4D88AD430219"
+			    type       	"WTPartMaster"
+			    quidu      	"352B7B360280")
+			(object Parameter "chk"
+			    quid       	"4D88AF22018C"
+			    type       	"Integer"
+			    quidu      	"3784E5AA0391")
+			(object Parameter "conn"
+			    quid       	"4D8F1F4D02DE"
+			    type       	"java.sql.Connection"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "updatePartUsageLink"
+		    quid       	"4D88AC8F00C1"
+		    parameters 	(list Parameters
+			(object Parameter "ht"
+			    quid       	"4D88AD7E00C1"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "parentPart"
+			    quid       	"4D88AD8202B5"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196")
+			(object Parameter "childPart"
+			    quid       	"4D88AD8600F0"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196")
+			(object Parameter "childPartMaster"
+			    quid       	"4D88AD890303"
+			    type       	"WTPartMaster"
+			    quidu      	"352B7B360280")
+			(object Parameter "chk"
+			    quid       	"4D88AF3300D1"
+			    type       	"Integer"
+			    quidu      	"3784E5AA0391")
+			(object Parameter "conn"
+			    quid       	"4D8F1F810177"
+			    type       	"java.sql.Connection"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "removePartUsageLink"
+		    quid       	"4D88AC970276"
+		    parameters 	(list Parameters
+			(object Parameter "ht"
+			    quid       	"4D88ADA80073"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "parentPart"
+			    quid       	"4D88ADAB0219"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196")
+			(object Parameter "childPart"
+			    quid       	"4D88ADAF0005"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196")
+			(object Parameter "childPartMaster"
+			    quid       	"4D88ADB2019C"
+			    type       	"WTPartMaster"
+			    quidu      	"352B7B360280")
+			(object Parameter "chk"
+			    quid       	"4D88AF3F0303"
+			    type       	"Integer"
+			    quidu      	"3784E5AA0391")
+			(object Parameter "conn"
+			    quid       	"4D8F1F9A01F4"
+			    type       	"java.sql.Connection"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "setTransKetPartUsageLinkEco"
+		    quid       	"4D9094430399"
+		    parameters 	(list Parameters
+			(object Parameter "bomOid"
+			    quid       	"4D90947A00BB"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")
+		(object Operation "setTransKetPartUsageLink"
+		    quid       	"4D909550004E"
+		    parameters 	(list Parameters
+			(object Parameter "bomOid"
+			    quid       	"4D909573029F"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Boolean"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E79701E4")))
+	(object Class "KETBomHelper"
+	    quid       	"4C73A2EE03D8")
+	(object Class "StandardKETPartService"
+	    quid       	"4C73E1E70196"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"4C73E1FE01E4"
+		    supplier   	"Logical View::wnc::Foundation::wt::services::StandardManager"
+		    quidu      	"342982E402DE")
+		(object Inheritance_Relationship
+		    quid       	"4C73E21A0196"
+		    supplier   	"Logical View::e3ps::bom::service::KETPartService"
+		    quidu      	"4C73E2020222"))
+	    operations 	(list Operations
+		(object Operation "performStartupProcess"
+		    quid       	"4C73E24002FD"
+		    exceptions 	"ManagerException[343BC97C0222]"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)))
+	(object Class "KETPartService"
+	    quid       	"4C73E2020222"
+	    stereotype 	"RemoteInterface"
+	    operations 	(list Operations
+		(object Operation "getPart"
+		    quid       	"4C900C010138"
+		    parameters 	(list Parameters
+			(object Parameter "number"
+			    quid       	"4C900D2C00CB"
+			    type       	"String"
+			    quidu      	"3784E5160158")
+			(object Parameter "version"
+			    quid       	"4C900F5F002E"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"WTPart"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"352B7B3D0196")
+		(object Operation "create"
+		    quid       	"4C900C13000F"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C900FA502CE"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "createByExcel"
+		    quid       	"4C900CAD0290"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C90100003A9"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "delete"
+		    quid       	"4C900CB5030D"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C901028029F"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "modify"
+		    quid       	"4C900CE4004E"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C90105102CE"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "getPart"
+		    quid       	"4C900F770280"
+		    parameters 	(list Parameters
+			(object Parameter "number"
+			    quid       	"4C900F83036B"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"WTPart"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"352B7B3D0196")
+		(object Operation "modify"
+		    quid       	"4C9010690290"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C90107F002E"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C")
+			(object Parameter "reviseFlag"
+			    quid       	"4C9010920271"
+			    type       	"Boolean"
+			    quidu      	"3784E79701E4"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "reviseUpdate"
+		    quid       	"4C9010A8001F"
+		    parameters 	(list Parameters
+			(object Parameter "befPart"
+			    quid       	"4C9010B30290"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196"))
+		    result     	"WTPart"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"352B7B3D0196")
+		(object Operation "reviseUpdate"
+		    quid       	"4C9010CD030D"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C9010D70000"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "getPartFolder"
+		    quid       	"4C9010F3000F"
+		    parameters 	(list Parameters
+			(object Parameter "folderPath"
+			    quid       	"4C9010FC0213"
+			    type       	"String"
+			    quidu      	"3784E5160158"))
+		    result     	"Folder"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getWorkingCopy"
+		    quid       	"4C90110C006D"
+		    parameters 	(list Parameters
+			(object Parameter "_part"
+			    quid       	"4C901117034B"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196"))
+		    result     	"WTPart"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"352B7B3D0196")
+		(object Operation "approval"
+		    quid       	"4C9011590119"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4C90116400CB"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Hashtable"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E526007C")
+		(object Operation "getLatestMapprovalState"
+		    quid       	"4C901196030D"
+		    parameters 	(list Parameters
+			(object Parameter "_part"
+			    quid       	"4C9011A0000F"
+			    type       	"WTPart"
+			    quidu      	"352B7B3D0196"))
+		    result     	"String"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5160158")
+		(object Operation "createSapPart"
+		    quid       	"4D0025E3030D"
+		    parameters 	(list Parameters
+			(object Parameter "hash"
+			    quid       	"4D00268202AF"
+			    type       	"Hashtable"
+			    quidu      	"3784E526007C"))
+		    result     	"Vector"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0
+		    quidu      	"3784E5250138")))
+	(object Class "KETPartHelper"
+	    quid       	"4C73E21E0213")
+	(object Association "$UNNAMED$0"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4C73A30803D8"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C73A309030D"
+		    supplier   	"Logical View::e3ps::bom::service::KETBomHelper"
+		    quidu      	"4C73A2EE03D8"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETBomServiceFwd()")))
+		    quid       	"4C73A30A00FA"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::bom::service::KETBomService"
+		    quidu      	"4C73A2D60157"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE)))
+	(object Association "$UNNAMED$2"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"Windchill"
+		    name       	"SupportedAPI"
+		    value      	("SupportedAPI_Set" 1102)))
+	    quid       	"4C73E22C01D4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$3"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102)))
+		    quid       	"4C73E22E01A5"
+		    supplier   	"Logical View::e3ps::bom::service::KETPartHelper"
+		    quidu      	"4C73E21E0213"
+		    is_aggregate 	TRUE)
+		(object Role "service"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"SupportedAPI"
+			    value      	("SupportedAPI_Set" 1102))
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"Final"
+			    value      	TRUE)
+			(object Attribute
+			    tool       	"Windchill"
+			    name       	"InitialValue"
+			    value      	(value Text "new KETPartServiceFwd()")))
+		    quid       	"4C73E22E01A7"
+		    label      	"service"
+		    supplier   	"Logical View::e3ps::bom::service::KETPartService"
+		    quidu      	"4C73E2020222"
+		    client_cardinality 	(value cardinality "1")
+		    Containment 	"By Value"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "BOMService"
+	    quid       	"4C7397970222"
+	    title      	"BOMService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(712, 612)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(531, 537)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::bom::service::StandardKETBomService" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(712, 1024)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(465, 943)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	494
+			justify    	0
+			label      	"StandardKETBomService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73A2B4029F"
+		    width      	512
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @3
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73A30100EA"
+		    client     	@2
+		    supplier   	@1
+		    vertices   	(list Points
+			(712, 930)
+			(712, 699))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::bom::service::KETBomHelper" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2729, 1032)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(2575, 981)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	308
+			justify    	0
+			label      	"KETBomHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73A2EE03D8"
+		    width      	326
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::bom::service::KETBomService" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1702, 1271)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1385, 62)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	634
+			justify    	0
+			label      	"KETBomService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@5
+			location   	(1385, 12)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	634
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73A2D60157"
+		    width      	652
+		    height     	2542
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73A305038A"
+		    client     	@2
+		    supplier   	@5
+		    vertices   	(list Points
+			(968, 1086)
+			(1375, 1188))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$0" @7
+		    location   	(2296, 1131)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73A30803D8"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @8
+			    Parent_View 	@7
+			    location   	(793, 625)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A309030D"
+			    client     	@7
+			    supplier   	@4
+			    vertices   	(list Points
+				(2296, 1131)
+				(2565, 1068))
+			    line_style 	0)
+			(object RoleView "service" @9
+			    Parent_View 	@7
+			    location   	(793, 625)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(2124, 1136)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.617544
+				height     	36
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73A30A00FA"
+			    client     	@7
+			    supplier   	@5
+			    vertices   	(list Points
+				(2296, 1131)
+				(2028, 1193))
+			    line_style 	0
+			    label      	(object SegLabel @11
+				Parent_View 	@9
+				location   	(2069, 1240)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))
+	(object ClassDiagram "PartService"
+	    quid       	"4C73E1C10242"
+	    title      	"PartService"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::wnc::Foundation::wt::services::StandardManager" @12
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(548, 168)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(367, 93)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"StandardManager")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"342982E402DE"
+		    width      	380
+		    height     	174
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::bom::service::StandardKETPartService" @13
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(547, 543)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@13
+			location   	(300, 462)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	494
+			justify    	0
+			label      	"StandardKETPartService")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73E1E70196"
+		    width      	512
+		    height     	186
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @14
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73E1FE01E4"
+		    client     	@13
+		    supplier   	@12
+		    vertices   	(list Points
+			(547, 449)
+			(547, 255))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::e3ps::bom::service::KETPartHelper" @15
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2108, 540)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@15
+			location   	(1958, 489)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	300
+			justify    	0
+			label      	"KETPartHelper")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73E21E0213"
+		    width      	318
+		    height     	126
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::e3ps::bom::service::KETPartService" @16
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1297, 543)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@16
+			location   	(1035, 159)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	524
+			justify    	0
+			label      	"KETPartService")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@16
+			location   	(1035, 109)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	524
+			justify    	0
+			label      	"<<RemoteInterface>>")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73E2020222"
+		    width      	542
+		    height     	892
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @17
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73E21A0196"
+		    client     	@13
+		    supplier   	@16
+		    vertices   	(list Points
+			(803, 543)
+			(1025, 543))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$2" @18
+		    location   	(1758, 540)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"4C73E22C01D4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$3" @19
+			    Parent_View 	@18
+			    location   	(461, -3)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73E22E01A5"
+			    client     	@18
+			    supplier   	@15
+			    vertices   	(list Points
+				(1758, 540)
+				(1948, 540))
+			    line_style 	0)
+			(object RoleView "service" @20
+			    Parent_View 	@18
+			    location   	(461, -3)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @21
+				Parent_View 	@20
+				location   	(1651, 495)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	172
+				justify    	0
+				label      	"+$service"
+				pctDist    	0.562118
+				height     	47
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4C73E22E01A7"
+			    client     	@18
+			    supplier   	@16
+			    vertices   	(list Points
+				(1758, 540)
+				(1568, 540))
+			    line_style 	0
+			    label      	(object SegLabel @22
+				Parent_View 	@20
+				location   	(1588, 595)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))

@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta http-equiv="Pragma" content="No-Cache" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>이노디터(InnoDitor) 제품 도움말</title>
+<link rel="stylesheet" type="text/css" href="./css/help.css" />
+
+<script language="javascript" type="text/javascript" src="./js/help.js"></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+nItemLength = 19;
+strItemClassName = "help_item";
+//]]>
+</script>
+</head>
+
+<body>
+
+<div class="outline" style="width:668px;">
+	<div style="height:5px;"></div>
+	<div>
+		<div class="help_item_space_8"></div>
+		<div id="helpItem_0" class="help_item_r" onmouseover="javascript:fnHelpItemOver(this,0);" onmouseout="javascript:fnHelpItemOut(this,0);">
+			<a href="javascript:fnHelpItemClick(0);">글꼴</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_1" class="help_item" onmouseover="javascript:fnHelpItemOver(this,1);" onmouseout="javascript:fnHelpItemOut(this,1);">
+			<a href="javascript:fnHelpItemClick(1);">글크기</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_2" class="help_item" onmouseover="javascript:fnHelpItemOver(this,2);" onmouseout="javascript:fnHelpItemOut(this,2);">
+			<a href="javascript:fnHelpItemClick(2);">굵게</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_3" class="help_item" onmouseover="javascript:fnHelpItemOver(this,3);" onmouseout="javascript:fnHelpItemOut(this,3);">
+			<a href="javascript:fnHelpItemClick(3);">기울림꼴</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_4" class="help_item" onmouseover="javascript:fnHelpItemOver(this,4);" onmouseout="javascript:fnHelpItemOut(this,4);">
+			<a href="javascript:fnHelpItemClick(4);">밑줄</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_5" class="help_item" onmouseover="javascript:fnHelpItemOver(this,5);" onmouseout="javascript:fnHelpItemOut(this,5);">
+			<a href="javascript:fnHelpItemClick(5);">전경색</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_6" class="help_item" onmouseover="javascript:fnHelpItemOver(this,6);" onmouseout="javascript:fnHelpItemOut(this,6);">
+			<a href="javascript:fnHelpItemClick(6);">배경색</a>
+		</div>
+	</div>
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space_8"></div>
+		<div id="helpItem_7" class="help_item" onmouseover="javascript:fnHelpItemOver(this,7);" onmouseout="javascript:fnHelpItemOut(this,7);">
+			<a href="javascript:fnHelpItemClick(7);">왼쪽 맞춤</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_8" class="help_item" onmouseover="javascript:fnHelpItemOver(this,8);" onmouseout="javascript:fnHelpItemOut(this,8);">
+			<a href="javascript:fnHelpItemClick(8);">가운데 맞춤</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_9" class="help_item" onmouseover="javascript:fnHelpItemOver(this,9);" onmouseout="javascript:fnHelpItemOut(this,9);">
+			<a href="javascript:fnHelpItemClick(9);">오른쪽 맞춤</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_10" class="help_item" onmouseover="javascript:fnHelpItemOver(this,10);" onmouseout="javascript:fnHelpItemOut(this,10);">
+			<a href="javascript:fnHelpItemClick(10);">번호매기기</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_11" class="help_item" onmouseover="javascript:fnHelpItemOver(this,11);" onmouseout="javascript:fnHelpItemOut(this,11);">
+			<a href="javascript:fnHelpItemClick(11);">글머리기호</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_12" class="help_item" onmouseover="javascript:fnHelpItemOver(this,12);" onmouseout="javascript:fnHelpItemOut(this,12);">
+			<a href="javascript:fnHelpItemClick(12);">글 간격</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_13" class="help_item" onmouseover="javascript:fnHelpItemOver(this,13);" onmouseout="javascript:fnHelpItemOut(this,13);">
+			<a href="javascript:fnHelpItemClick(13);">줄 간격</a>
+		</div>
+	</div>
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space_8"></div>
+		<div id="helpItem_14" class="help_item" onmouseover="javascript:fnHelpItemOver(this,14);" onmouseout="javascript:fnHelpItemOut(this,14);">
+			<a href="javascript:fnHelpItemClick(14);">취소선</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_15" class="help_item" onmouseover="javascript:fnHelpItemOver(this,15);" onmouseout="javascript:fnHelpItemOut(this,15);">
+			<a href="javascript:fnHelpItemClick(15);">아래첨자</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_16" class="help_item" onmouseover="javascript:fnHelpItemOver(this,16);" onmouseout="javascript:fnHelpItemOut(this,16);">
+			<a href="javascript:fnHelpItemClick(16);">위첨자</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_17" class="help_item" onmouseover="javascript:fnHelpItemOver(this,17);" onmouseout="javascript:fnHelpItemOut(this,17);">
+			<a href="javascript:fnHelpItemClick(17);">내어쓰기</a>
+		</div>
+		<div class="help_item_space"></div>
+		<div id="helpItem_18" class="help_item" onmouseover="javascript:fnHelpItemOver(this,18);" onmouseout="javascript:fnHelpItemOut(this,18);">
+			<a href="javascript:fnHelpItemClick(18);">들여쓰기</a>
+		</div>
+	</div>
+	<div style="height:5px;"></div>
+</div>
+
+<div style="height:10px;"></div>
+
+<div id="helpItemMain_0">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>글꼴</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 글꼴 콤보박스에서 원하시는 글꼴을 선택하시면 해당 글꼴로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_0.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_1" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>글크기</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 글크기 콤보박스에서 원하시는 크기를 선택하시면 해당 크기로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_1.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_2" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>굵게</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 굵게 버튼을 선택하시면 글이 굵게 변경됩니다.<br />
+			이미 글이 굵게 되어있는 경우 굵게 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_2.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_3" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>기울림꼴</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 기울림꼴 버튼을 선택하시면 글이 기울림꼴로 변경됩니다.<br />
+			이미 글이 기울림꼴로 되어있는 경우 기울림꼴 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_3.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_4" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>밑줄</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 밑줄 버튼을 선택하시면 글이 밑줄이 적용되어 변경됩니다.<br />
+			이미 글이 밑줄이 적용되어 있는 경우 밑줄 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_4.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_5" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>전경색</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 전경색 드랍다운 버튼을 선택하시어 원하시는 색상을 선택하면<br />
+			글의 전경색이 선택된 색상으로 적용됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_5.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_6" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>배경색</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 배경색 드랍다운 버튼을 선택하시어 원하시는 색상을 선택하면<br />
+			글의 배경색이 선택된 색상으로 적용됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_6.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_7" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>왼쪽 맞춤</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			맞춤을 적용하고자 하는 영역을 선택하고 왼쪽 맞춤 버튼을 선택하시면 글의 왼쪽 맞춤이 적용되어 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_7.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_8" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>가운데 맞춤</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			맞춤을 적용하고자 하는 영역을 선택하고 가운데 맞춤 버튼을 선택하시면 글의 가운데 맞춤이 적용되어 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_8.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_9" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>오른쪽 맞춤</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			맞춤을 적용하고자 하는 영역을 선택하고 오른쪽 맞춤 버튼을 선택하시면 글의 오른쪽 맞춤이 적용되어 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_9.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_10" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>번호매기기</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			글의 앞 부분에 자동으로 글 번호가 생성되도록 하고자 하는 경우 해당 영역을 선택하고 번호매기기 버튼을<br />
+			선택하시면 글의 앞부분에 자동으로 글 번호가 적용됩니다.<br />
+			이미 번호매기기가 적용되어 있는 경우 번호매기기 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_10.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_11" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>글머리기호</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			글의 앞 부분에 자동으로 글 머리기호가 생성되도록 하고자 하는 경우 해당 영역을 선택하고 글머리기호 버튼을<br />
+			선택하시면 글의 앞부분에 자동으로 글머리기호가 적용됩니다.<br />
+			이미 글머리기호가 적용되어 있는 경우 글머리기호 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_11.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_12" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>글 간격</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 글간격 드랍다운 버튼을 선택하시어 원하시는 글간격을 선택하면<br />
+			글의 간격이 선택된 간격으로 적용됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_12.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_13" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>줄 간격</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 줄간격 드랍다운 버튼을 선택하시어 원하시는 줄간격을 선택하면<br />
+			줄의 간격이 선택된 간격으로 적용됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_13.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_14" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>취소선</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 취소선 버튼을 선택하시면 글의 중간부분에 밑줄이 생성되는 취소선이 적용됩니다.<br />
+			이미 글이 취소선이 적용되어 있는 경우 취소선 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_14.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_15" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>아래첨자</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 아래첨자 버튼을 선택하시면 글의 하단부분에 첨자가 생성되는 아래첨자가<br />
+			적용됩니다. 이미 글이 아래첨자가 적용되어 있는 경우 아래첨자 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_15.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_16" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>위첨자</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 위첨자 버튼을 선택하시면 글의 상단부분에 첨자가 생성되는 위첨자가 적용됩니다.<br />
+			이미 글이 위첨자가 적용되어 있는 경우 위첨자 버튼을 다시 선택하시면 원래 상태로 변경됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_16.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_17" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>내어쓰기</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 내어쓰기 버튼을 선택하시면 글 라인의 앞 부분에 여백없이 글이 적용됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_17.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+<div id="helpItemMain_18" style="display:none">
+	<div>
+		<img src="./image/help_arrow.gif" alt="" /><div class="help_item_space_8"></div><b>들여쓰기</b>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:6px;"></div>
+
+	<div>
+		<div class="help_item_space_16"></div>
+		<div style="display:inline-block;">
+			변경하고자 하는 영역을 선택하고 들여쓰기 버튼을 선택하시면 글 라인의 앞 부분에 여백이 발생하여 글이 적용됩니다.
+		</div>
+	</div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div>
+		<div class="help_item_space"></div>
+		<div style="display:inline-block;"><img src="./image/ko/help_main_0_18.gif" alt="" /></div>
+	</div>
+	<div style="height:3px;"></div>
+
+	<div style="height:3px;"></div>
+	<div class="help_item_dot_line"></div>
+	<div style="height:3px;"></div>
+</div>
+
+</body>
+</html>

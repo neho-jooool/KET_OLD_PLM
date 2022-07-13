@@ -1,0 +1,352 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "e3ps"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C7394300399"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "bom"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.bom.cat"
+	    quid       	"4C73943B03B9")
+	(object Class_Category "dms"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.dms.cat"
+	    quid       	"4C739E7F01E4")
+	(object Class_Category "wfm"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.wfm.cat"
+	    quid       	"4C739E8A003E")
+	(object Class_Category "ews"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.ews.cat"
+	    quid       	"4C739F35030D")
+	(object Class_Category "ecm"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.ecm.cat"
+	    quid       	"4C739F510177")
+	(object Class_Category "edm"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.edm.cat"
+	    quid       	"4C73B0F00203")
+	(object Class_Category "common"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.common.cat"
+	    quid       	"4C73B86F01C5")
+	(object Class_Category "groupware"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.groupware.cat"
+	    quid       	"4C73B87802CE")
+	(object Class_Category "project"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.project.cat"
+	    quid       	"4C8DD89900EA")
+	(object Class_Category "lesson"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.lesson.cat"
+	    quid       	"52831E7A0112")
+	(object Class_Category "part"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.part.cat"
+	    quid       	"4CA54F6A01DD"))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"4C73BBD401E4"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Logical View::e3ps::bom" @1
+		    location   	(597, 300)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(453, 216)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"bom")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73943B03B9"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::common" @2
+		    location   	(1075, 297)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(931, 213)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"common")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B86F01C5"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::dms" @3
+		    location   	(1559, 284)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(1415, 200)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"dms")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C739E7F01E4"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::ecm" @4
+		    location   	(597, 631)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(453, 547)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"ecm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C739F510177"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::edm" @5
+		    location   	(1084, 643)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(940, 559)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"edm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B0F00203"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::ews" @6
+		    location   	(1563, 647)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1419, 563)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"ews")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C739F35030D"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::groupware" @7
+		    location   	(609, 990)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(465, 906)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"groupware")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B87802CE"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::wfm" @8
+		    location   	(1103, 1318)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(959, 1234)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"wfm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C739E8A003E"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::project" @9
+		    location   	(613, 1328)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(469, 1244)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"project")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C8DD89900EA"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::part" @10
+		    location   	(1578, 983)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@10
+			location   	(1434, 899)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"part")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CA54F6A01DD"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::lesson" @11
+		    location   	(1097, 1003)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@11
+			location   	(953, 919)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"lesson")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"52831E7A0112"
+		    width      	300
+		    height     	180)))))

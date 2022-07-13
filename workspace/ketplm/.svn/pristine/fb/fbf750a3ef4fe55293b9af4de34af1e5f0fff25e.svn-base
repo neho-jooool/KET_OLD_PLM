@@ -1,0 +1,14 @@
+.homeIcon {background-image:url(/plm/extcore/image/ico_house.png) !important;}
+.workspaceIcon {background-image:url(/plm/extcore/image/ico_gnb_01.png) !important;}
+.projectIcon {background-image:url(/plm/extcore/image/ico_gnb_02.png) !important;}
+.moldIcon {background-image:url(/plm/extcore/image/ico_gnb_08.png) !important;}
+.documentIcon {background-image:url(/plm/extcore/image/ico_gnb_03.png) !important;}
+.drawingsIcon {background-image:url(/plm/extcore/image/ico_gnb_04.png) !important;}
+.partIcon {background-image:url(/plm/extcore/image/ico_gnb_05.png) !important;}
+.ecmIcon {background-image:url(/plm/extcore/image/ico_gnb_06.png) !important;}
+.ewsIcon {background-image:url(/plm/extcore/image/ico_gnb_07.png) !important;}
+.developIcon {background-image:url(/plm/extcore/image/ico_gnb_09.png) !important;}
+.adminIcon {background-image:url(/plm/portal/images/icon_user.gif) !important;}
+.dashboardIcon {background-image:url(/plm/extcore/image/chart_curve.png) !important;}
+.costIcon {background-image:url(/plm/extcore/image/ico_gnb_10.png) !important;}
+.menuIcon {background-image:url(/plm/extcore/image/ico_menu.png) !important;}

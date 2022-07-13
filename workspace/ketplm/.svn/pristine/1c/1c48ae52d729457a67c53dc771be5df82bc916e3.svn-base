@@ -1,0 +1,71 @@
+<project name="Windchill Core lib copy" default="complete" basedir=".">
+	<description>Build ANT File</description>
+	<!-- set global properties for this build -->
+	<property name="server_home" value="D:\ptc\Windchill_10.2\Windchill\codebase" />
+	<property name="library_home" value="D:\ket\libtemp" />
+
+	<!-- ================================= 
+          target: init              
+         ================================= -->
+	<target name="init" depends="" description="init ant Windchill lib copy project">
+
+		<echo message="Create the library Directory" />
+		<mkdir dir="${library_home}\wt" />
+		<mkdir dir="${library_home}\com" />
+	</target>
+
+	<!-- ================================= 
+          target: libcopy              
+         ================================= -->
+	<target name="libcopy" depends="init" description="library copy to temp folder">
+		<echo message="Properties Copy wt" />		
+		<copy todir="${library_home}" overwrite="yes">
+			<fileset dir="${server_home}" casesensitive="no">
+				<include name="*.properties" />
+				<include name="tool/**/*.*" />
+			</fileset>
+		</copy>
+		<echo message="Java Class Copy wt" />		
+		<copy todir="${library_home}\wt" overwrite="yes">
+			<fileset dir="${server_home}\wt" casesensitive="no">
+				<include name="**/*.class" />
+				<include name="**/*.properties" />
+				<include name="**/*.ser" />
+				<include name="tool/**/*.*" />
+			</fileset>
+		</copy>
+		<echo message="Java Class Copy com" />
+		<copy todir="${library_home}\com" overwrite="yes">
+			<fileset dir="${server_home}\com" casesensitive="no">
+				<include name="**/*.class" />
+				<include name="**/*.properties" />
+				<include name="**/*.ser" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- ================================= 
+          target: makejar              
+         ================================= -->
+	<target name="makejar" depends="libcopy" description="make jar file">
+		<jar jarfile="${library_home}\wt10.2M020.jar" basedir="${library_home}" includes="wt/**/*,*.properties,tool/**/*" />
+		<jar jarfile="${library_home}\com10.2M020.jar" basedir="${library_home}" includes="com/**/*" />
+	</target>
+
+	<!-- ================================= 
+          target: clean              
+         ================================= -->
+	<target name="clean" depends="" description="clean temp folder">
+		<echo message="clean temp directory" />
+		<delete dir="${library_home}\wt" includes="**/*" />
+		<delete dir="${library_home}\com" includes="**/*" />
+	</target>
+
+	<!-- ================================= 
+          target: complete              
+         ================================= -->
+	<target name="complete" depends="makejar" description="complete ant project">
+		<echo message="complete ant Windchill lib copy project" />
+	</target>
+
+</project>

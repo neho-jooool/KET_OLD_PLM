@@ -1,0 +1,29 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+ONE_N_ONE.value=\uc77c\ud488\uc77c\ub3c4
+ONE_N_ONE.order=10
+ONE_N_ONE.selectable=true
+
+MANY_N_ONE.value=\ub2e4\ud488\uc77c\ub3c4
+MANY_N_ONE.order=20
+MANY_N_ONE.selectable=true

@@ -1,0 +1,9 @@
+[Version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Setup Hooks]				
+x_install=x_install
+
+[x_install]
+Run=%EXTRACT_DIR%\WiseGridU_Setup.exe /SILENT

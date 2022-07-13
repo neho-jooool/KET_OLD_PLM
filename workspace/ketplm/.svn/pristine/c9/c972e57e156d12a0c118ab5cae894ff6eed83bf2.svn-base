@@ -1,0 +1,217 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<html>
+<head>
+<link rel="stylesheet" href="./css/e3ps.css">
+
+<script language="javascript" src="./js/script.js"></script>
+<script>
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function focus() {
+	document.login.id.focus();
+}
+
+function enter() {
+ 	if(IsNullData(login.id.value)) {
+		alert("아이디를 입력하세요");
+		document.login.id.focus();
+		return;
+	}
+	if(IsNullData(login.pw.value)) {
+		alert("비밀번호를 입력하세요");
+		document.login.pw.focus();
+		return;
+	}
+	
+//	alert(document.forms[0].checkId.checked);
+//	if(document.forms[0].checkId.checked == true) {
+//		alert("createId()");
+		createId();
+//	} else {
+//		alert("Null");
+//	}
+    login.submit();
+ }
+  
+ function IsNullData(str) {
+	if(str.length == 0)
+		return true;
+	for(var i=0;i<str.length;i++)
+		if(str.charCodeAt(i) != 32)return false;
+	return true;
+}
+
+function onKeyPress() { 
+	var keycode; 
+	if (window.event) keycode = window.event.keyCode;
+	else if ( e ) keycode = e.which;
+	else return true;
+	if (keycode == 13) { 
+		enter();
+	return false
+	} 
+	return true
+}
+document.onkeypress = onKeyPress; 
+
+var cookieName = "";//"eCarID=";
+function readId() {
+    id = document.cookie
+    if(id.length>0 && id.indexOf( cookieName.substring(1, cookieName.length))>0)     {
+        idLength = id.length;
+        idEnd = id.indexOf(";");
+        if(idEnd > 1) idLength = idEnd;
+        id = id.substring( id.indexOf( cookieName )+ cookieName.length, idLength)
+
+		if(id == "; eCarID=") 		{
+			document.forms[0].id.value = "";
+			document.forms[0].id.focus();
+			document.forms[0].checkId.checked = false;
+		} else {
+			document.forms[0].id.value = id;
+			document.forms[0].pw.focus();
+			document.forms[0].checkId.checked = true;
+		}
+    } 
+}
+
+function createId() {
+     if(document.forms[0].checkId.checked == true) { 
+         var date = new Date();
+         document.cookie = cookieName+document.forms[0].id.value+";expires=Sun Jan 1 00:00:00 GMT " + (date.getFullYear() +1);
+     } else {
+      	 var date = new Date();
+     	 document.cookie = cookieName+" ;expires=Sun Jan 1 00:00:00 GMT " + (date.getFullYear() +1);
+     }
+}
+
+function getCookie( name ) {
+	var start = document.cookie.indexOf( name + "=" );
+	var len = start + name.length + 1;
+	if ( ( !start ) && ( name != document.cookie.substring( 0, name.length ) ) ) {
+		return null;
+	}
+	if ( start == -1 ) return null;
+	var end = document.cookie.indexOf( ";", len );
+	if ( end == -1 ) end = document.cookie.length;
+	return unescape( document.cookie.substring( len, end ) );
+}
+
+function setCookie( name, value, expires, path, domain, secure ) {
+	var today = new Date();
+	today.setTime( today.getTime() );
+	if ( expires ) {
+		expires = expires * 1000 * 60 * 60 * 24;
+	}
+	var expires_date = new Date( today.getTime() + (expires) );
+		document.cookie = name+"="+escape( value ) +
+		( ( expires ) ? ";expires="+expires_date.toGMTString() : "" ) + //expires.toGMTString()
+		( ( path ) ? ";path=" + path : "" ) +
+		( ( domain ) ? ";domain=" + domain : "" ) +
+		( ( secure ) ? ";secure" : "" );
+}
+
+function deleteCookie( name, path, domain ) {
+	if ( getCookie( name ) ) document.cookie = name + "=" +
+			( ( path ) ? ";path=" + path : "") +
+			( ( domain ) ? ";domain=" + domain : "" ) +
+			";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+}
+
+//-->
+</script>
+<LINK rel="stylesheet" type="text/css" href="css/e3ps.css">
+
+</head>
+<TITLE>E3PS PLM System</TITLE>
+<body onLoad="javascript:focus();">
+<form name="login" action="/plm/portal/index2.html" method="post">
+
+<TABLE width="685" height="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+<TR> 
+    <TD width="685" height="170"></TD>
+
+</TR>
+<TR>
+    <TD valign="top">
+	    <TABLE width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <TR>
+            <TD width="408" height="210"><!--  FLASH -->
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"  width="408" height="277">
+			<param name="movie" value="./images/img_default/intro/sss.jpg">
+			<param name="quality" value="high">
+			<embed src="" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  width="408" height="277"></embed>
+			</object> 
+			</TD>
+            <TD width="277">
+			    <TABLE width="100%" border="0" align="center" cellpadding="0" cellspacing="0" dwcopytype="CopyTableColumn">
+                <TR>
+                    <TD height="144" background="./images/img_default/intro/pic_login_bg.gif"> <IMG src="./images/img_default/intro/pic_logintop.gif" width="277" height="153"></TD>
+                </TR>
+                <TR>
+                    <TD height="58" background="./images/img_default/intro/pic_login_bg.gif">
+                    <!-- LOGIN TABLE -->
+                        <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <TR>
+                            <TD width="80" rowspan="3"><IMG src="./images/img_default/intro/pic_login_m_l.gif" width="80" height="61"></TD>
+                            <TD width="120" height="27"><input name="id" class="txt_field" size="15" engnum="engnum" tabindex="1" /></TD>
+                            <TD width="20">
+                            <input type="checkbox" name="checkId" value="checkbox">
+                            </TD>
+                            <TD width="44"><IMG src="./images/img_default/intro/pic_id_s.gif" width="38" height="14"></td>
+                            <TD width="16" rowspan="3"><IMG src="./images/img_default/intro/pic_login_m_r.gif" width="16" height="61"></td>
+                        </TR>
+                        <TR>
+                            <TD width="120" height="26"><input name="pw" class="txt_field" type="password" size="15" engnum="engnum" tabindex="2"/></td>
+                           <TD colspan="2" align="center"><a href=javascript:// onclick="enter();return false;"><IMG src="./images/img_default/intro/btn_login.gif" width="57" height="20" border="0" tabindex=3></a></td>
+                        </TR>
+                        <TR>
+                            <TD height="8" colspan="3"><IMG src="./images/img_default/intro/pic_login_m_d.gif" width="181" height="8"></td>
+                        </TR>
+                        </TABLE>
+                    <!-- LOGIN TABLE -->
+                    </TD>
+                </TR>
+                <TR>
+                    <TD height="8"><IMG src="./images/img_default/intro/map_logindown.gif" width="277" height="62" border="0" !usemap="#MapMap"></td>
+                </TR>
+                </TABLE>
+                <map name="MapMap">
+                <area shape="rect" coords="145,8,222,31" href="./authen.reg">
+                </map>
+            </TD>
+        </TR>
+        </TABLE>
+	    <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+        <TR>
+            <TD align="right">COPYRIGHT 2010 BY E3PS . ALL RIGHT RESERVED. </TD>
+        </TR>
+        </TABLE>    
+	</TD>
+</TR>
+</TABLE>
+</form>
+</body>
+</html>

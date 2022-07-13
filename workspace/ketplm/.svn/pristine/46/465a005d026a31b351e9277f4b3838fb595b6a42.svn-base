@@ -1,0 +1,85 @@
+rem <!-- 1.1 Timezone -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.method.timezone=JST"
+
+rem <!-- 1.2 Version Series -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.series.HarvardSeries.IntegerSeries.delimiter=."
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.series.HarvardSeries.IntegerSeries.depth=16"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.series.HarvardSeries.IntegerSeries.level.1=wt.series.IntegerSeries"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.series.HarvardSeries.seriesNames=MilSpec,IntegerSeries"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.series.IntegerSeries.min=0"
+
+rem <!-- 1.3 File Vaults -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.fv.forceContentToVault=true"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.fv.uploadtocache.revaultOnCommit=true"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.fv.purgeUnreferencedFvItemsOlderThan=10"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.fv.fvFileThreshold=5000"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.fv.useFvFileThreshold=true"
+
+rem <!-- 1.4 Calendar -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.calendar.calculateDefaults=false"
+
+rem <!-- 1.5 Added Services -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20010=e3ps.bom.service.KETBomService/e3ps.bom.service.StandardKETBomService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20020=e3ps.bom.service.KETPartService/e3ps.bom.service.StandardKETPartService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20030=e3ps.dms.service.KETDmsService/e3ps.dms.service.StandardKETDmsService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20040=e3ps.ecm.service.KETEcmService/e3ps.ecm.service.StandardKETEcmService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20050=e3ps.edm.EDMDocumentService/e3ps.edm.StandardEDMDocumentService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20060=e3ps.ews.service.KETEwsService/e3ps.ews.service.StandardKETEwsService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20070=e3ps.groupware.company.E3PSCompanyService/e3ps.groupware.company.StandardE3PSCompanyService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20080=e3ps.part.service.KETNewPartListService/e3ps.part.service.StandardKETNewPartListService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20090=e3ps.project.E3PSProjectService/e3ps.project.StandardE3PSProjectService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20100=e3ps.wfm.service.KETWfmService/e3ps.wfm.service.StandardKETWfmService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20110=e3ps.common.content.E3PSContentService/e3ps.common.content.StandardE3PSContentService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20200=ext.ket.shared.code.service.CodeService/ext.ket.shared.code.service.StandardCodeService"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.services.service.20300=ext.ket.wfm.service.KETWorkflowService/ext.ket.wfm.service.StandardKETWorkflowService"
+
+rem <!-- 1.6 CAD Publish -->
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "publish.service.filterepmdocumentpublishmethod=e3ps.publish.FilterPublish/FilterEPMDocumentPublish"
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "publish.service.filterpublishmethod=e3ps.publish.FilterPublish/FilterPublish"
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "publish.copyforwardallrepresentationsonrevise=false"
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "publish.cadconvert.PROE=com.ptc.wvs.server.publish.CadConvertPROE"
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "publish.service.publishqueuehelper.verbose=true"
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "publish.service.verbose=true"
+xconfmanager -t %WT_HOME%\codebase\WEB-INF\conf\wvs.properties -s "worker.exe.whitelist.prefixes=E:\|/|nohup /"
+
+rem <!-- NumberCode Cache size setting -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.cache.NumberCodeCache.size=200000"
+
+rem <!-- com.ptc.core.lwc.string.ColumnSizes -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "com.ptc.core.lwc.string.ColumnSizes=wt.part.WTPart\=1500"
+
+rem <!-- 10.x이전 Data Import 옵션 -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.ixb.import.allowCrossReleaseImport=true" 
+
+rem <!-- 1.7 mail host -->
+rem xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.mail.mailhost=mail.ket.com"
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.mail.enable=true"
+
+rem <!-- 1.9 UpgradeManager VM -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.upgrade.tools.java.args=-Xmx4096m"
+
+rem <!-- 2.0 cacheMasterStubName -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.cache.ha.cacheMasterStubName=본인아이디" 
+
+rem <!-- 2.2 Debug args -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.MethodServer.java.extra.args=\ -XX\:ParallelGCThreads\=2 $(wt.manager.cmd.MethodServer.gc.log.args) -Xnoagent -Xdebug -Xrunjdwp:transport=dt_socket,address=1818,server=y,suspend=n" 
+
+rem <!-- 2.2.1 Enabling AspectJ -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.MethodServer.debug.args=-javaagent:$(wt.home)$(dir.sep)srclib$(dir.sep)aspectjweaver.jar" 
+
+rem <!-- 2.3 Indexing Queue -->
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_0=$(wt.manager.cmd.BackgroundMethodServer)" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_0Launcher=$(wt.manager.cmd.BackgroundMethodServerLauncher)" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_0.singleton.enforce=true" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_0.param.4=$(wt.method.bg.maxHeap)" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_0.param.5=default" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_0.param.12=" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_1=$(wt.manager.cmd.BackgroundMethodServer)" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_1Launcher=$(wt.manager.cmd.BackgroundMethodServerLauncher)" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_1.singleton.enforce=true" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_1.param.4=$(wt.method.bg.maxHeap)" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.cmd.BackgroundMS_1.param.5=NoGroups" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.monitor.services=MethodServer BackgroundMS_0 BackgroundMS_1" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.monitor.start.BackgroundMS_0=1" 
+xconfmanager -t %WT_HOME%\codebase\wt.properties -s "wt.manager.monitor.start.BackgroundMS_1=1" 
+

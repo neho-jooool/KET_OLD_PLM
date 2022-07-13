@@ -1,0 +1,82 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	129)
+
+(object Class_Category "groupware"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"4C73B87802CE"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "company"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.groupware.company.cat"
+	    quid       	"4C73B886035B")
+	(object Class_Category "board"
+	    is_unit    	TRUE
+	    is_loaded  	FALSE
+	    file_name  	"D:\\ket\\workspace\\ketplm\\model\\e3ps.groupware.board.cat"
+	    quid       	"4CEC6B3300C1"))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"4C73B8CC032C"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Logical View::e3ps::groupware::company" @1
+		    location   	(363, 362)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(219, 278)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"company")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4C73B886035B"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Logical View::e3ps::groupware::board" @2
+		    location   	(741, 368)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(597, 284)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"board")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4CEC6B3300C1"
+		    width      	300
+		    height     	180)))))

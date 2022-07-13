@@ -1,0 +1,20 @@
+// 라이센스
+var g_arrDomainName = new Array();
+g_arrDomainName[0] = "localhost";
+g_arrDomainName[1] = "mjkimdev.ket.com";
+g_arrDomainName[2] = "omjae.ket.com";
+g_arrDomainName[3] = "bolee.ket.com";
+g_arrDomainName[4] = "jhkim.ket.com";
+g_arrDomainName[5] = "ketplmdev.ket.com";
+g_arrDomainName[6] = "plm.ket.com";
+
+
+var g_arrLicenseKey = new Array();
+g_arrLicenseKey[0] = "Mv5Oi$BZ+q3Pm/Lq4h@MX4Nh#AYs26EYo&@Tbq3Pm/Lhf+Ap7Y{D";
+g_arrLicenseKey[1] = "T1Lg#8}:Rj#?Umd+E]u3Le|Sf{7eVq1Lg#B[vku+>N_8Sfw/BSfw#I-mEvN!W/YD[t2Kd{9R#6}.PrAf>oGxyQbq#6GVgvEj+If$Eb}AyVq1Lg#B[v";
+g_arrLicenseKey[2] = "}x:W|XshRjAfs#4C<6nDuM~V.a7~%BYrrHYjOq8Z#Vw3DSds%8P7}?Xs3Ni";
+g_arrLicenseKey[3] = "~]lz/AUr4Qn-v5Oi$BZ&j{3F<6nDuM~V.a7~%BYrrHYjOq8Z#Vw3DSds%8P7}?Xs3Ni";
+g_arrLicenseKey[4] = "8}:Rj#?Um2Ndwo-F^v4Mnu1H^t0G]rXsnDuM~V.a7~%BYrrHYjOq8Z#Vw3DSds%8P7}?Xs3Ni";
+g_arrLicenseKey[5] = "J%BYrJj{3F{GI{@]hVp?r2M15[6n/SwBf/Sw5f>oGx/D[t2Kd{9RJj{3FgGI^5h?Rcr|]ySr2M";
+g_arrLicenseKey[6] = "R_|>VpeVq1Lg#B[v]-_yD[t2Kd{9R+1DUhy1?.Prp9Qbq#6GVgv9j+If$Eb}A&1Lg#";
+

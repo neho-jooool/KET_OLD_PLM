@@ -1,0 +1,158 @@
+package ext.ket.edm.service.base;
+
+import java.rmi.RemoteException;
+import java.util.HashMap;
+import java.util.Locale;
+
+import org.apache.commons.lang.StringUtils;
+
+import wt.clients.iba.container.NewValueCreator;
+import wt.epm.EPMDocument;
+import wt.fc.PersistenceHelper;
+import wt.fc.PersistenceServerHelper;
+import wt.iba.definition.StringDefinition;
+import wt.iba.definition.litedefinition.AttributeDefDefaultView;
+import wt.iba.value.DefaultAttributeContainer;
+import wt.iba.value.IBAHolder;
+import wt.iba.value.StringValue;
+import wt.iba.value.litevalue.AbstractValueView;
+import wt.iba.value.service.IBAValueHelper;
+import wt.services.StandardManager;
+import wt.util.WTException;
+import wt.vc.wip.WorkInProgressHelper;
+import e3ps.common.util.CommonUtil;
+import e3ps.edm.CADAppType;
+import e3ps.edm.beans.EDMHelper;
+import e3ps.edm.util.EDMAttributeUtil;
+import e3ps.edm.util.EDMAttributes;
+import ext.ket.edm.cad2bom.service.internal.EpmInfoUpadator;
+import ext.ket.edm.service.base.EpmBaseService;
+import ext.ket.edm.service.internal.EpmEcoValidator;
+import ext.ket.shared.log.Kogger;
+
+public class StandardEpmBaseService extends StandardManager implements EpmBaseService {
+    private static final long serialVersionUID = 1L;
+
+    public static StandardEpmBaseService newStandardEpmBaseService() throws WTException {
+	StandardEpmBaseService instance = new StandardEpmBaseService();
+	instance.initialize();
+	return instance;
+    }
+
+    @Override
+    public String validCheckoutInfoEpm(EPMDocument epmDoc) {
+	return new EpmEcoValidator().validCheckoutInfoEpm(epmDoc);
+    }
+
+    @Override
+    public void updateIbaCadApptype(EPMDocument epm) throws Exception {
+	// TODO Auto-generated method stub
+
+	IBAHolder ibaHolder = null;
+	DefaultAttributeContainer container = null;
+	CADAppType cadApp = null;
+	
+
+	try {
+	    ibaHolder = IBAValueHelper.service.refreshAttributeContainer(epm, null, null, null);
+	} catch (RemoteException e) {
+	    Kogger.error(getClass(), e);
+	    throw new WTException(e);
+	}
+	EDMAttributes edmAttributes = EDMAttributes.getInstance();
+	container = (DefaultAttributeContainer) ibaHolder.getAttributeContainer();
+
+	cadApp = CADAppType.toCADAppType(epm.getAuthoringApplication().toString());
+
+	AttributeDefDefaultView dv = (AttributeDefDefaultView) edmAttributes.getEPMAttribute(EDMHelper.IBA_CAD_APP_TYPE);
+	AbstractValueView avv = (AbstractValueView) NewValueCreator.createNewValueObject(dv);
+	try {
+	    String value = (String)EDMAttributeUtil.getConvertedValue(cadApp.getDisplay(Locale.KOREAN),avv.getClass().getDeclaredField("value").getType());
+
+
+	    EpmInfoUpadator updator = new EpmInfoUpadator();
+	    updator.callupdateIBAValue(epm, EDMHelper.IBA_CAD_APP_TYPE, value);
+	    
+
+	} catch (SecurityException e) {
+	    Kogger.error(getClass(), e);
+	} catch (NoSuchFieldException e) {
+	    Kogger.error(getClass(), e);
+	}
+
+	// if (!WorkInProgressHelper.isCheckedOut(epm)) {
+	// wt.vc.wip.Workable workable = (wt.vc.wip.Workable) epm;
+	// wt.vc.wip.CheckoutLink checkOutLink = null;
+	// wt.vc.wip.Workable workingCopy = null;
+	// wt.vc.wip.Workable orgCopy = null;
+	//
+	// try {
+	// wt.folder.Folder folder = wt.vc.wip.WorkInProgressHelper.service.getCheckoutFolder();
+	// // Folder folder = FolderHelper.service.getFolder("/Default");
+	// Kogger.debug(getClass(), "Folder is " + folder);
+	// Kogger.debug(getClass(), "++++++++++++++++++++++Document Check-out Started...");
+	// Kogger.debug(getClass(), "checkOutLink Is: " + workable + " and Folder is : " + folder);
+	// try {
+	// checkOutLink = (wt.vc.wip.CheckoutLink) wt.vc.wip.WorkInProgressHelper.service.checkout(workable, folder, "");
+	// } catch (wt.util.WTPropertyVetoException wtpve) {
+	// Kogger.debug(getClass(), "++++++++++++++++++++++Document Check-out wtpve error :" + wtpve.getLocalizedMessage());
+	// Kogger.error(getClass(), wtpve);
+	// }
+	// // get Original copy
+	// orgCopy = checkOutLink.getOriginalCopy();
+	//
+	// Kogger.debug(getClass(), "orgCopy is " + orgCopy);
+	// // get working copy
+	// workingCopy = checkOutLink.getWorkingCopy();
+	//
+	// Kogger.debug(getClass(), "workingCopy is " + workingCopy);
+	//
+	// epm = (EPMDocument) workingCopy;
+	// } catch (WTException wte) {
+	// Kogger.error(getClass(), wte);
+	//
+	// throw new WTException(wte.getMessage());
+	// }
+	// }
+	//
+	// IBAHolder ibaHolder = null;
+	// DefaultAttributeContainer container = null;
+	// CADAppType cadApp = null;
+	//
+	// try {
+	// ibaHolder = IBAValueHelper.service.refreshAttributeContainer(epm, null, null, null);
+	// } catch (RemoteException e) {
+	// Kogger.error(getClass(), e);
+	// throw new WTException(e);
+	// }
+	// EDMAttributes edmAttributes = EDMAttributes.getInstance();
+	// container = (DefaultAttributeContainer) ibaHolder.getAttributeContainer();
+	//
+	// cadApp = CADAppType.toCADAppType(epm.getAuthoringApplication().toString());
+	//
+	// AttributeDefDefaultView dv = (AttributeDefDefaultView) edmAttributes.getEPMAttribute(EDMHelper.IBA_CAD_APP_TYPE);
+	// AbstractValueView avv = (AbstractValueView) NewValueCreator.createNewValueObject(dv);
+	// try {
+	// EDMAttributeUtil.setValue(avv, EDMAttributeUtil.getConvertedValue(cadApp.getDisplay(Locale.KOREAN),
+	// avv.getClass().getDeclaredField("value").getType()));
+	// } catch (SecurityException e) {
+	// Kogger.error(getClass(), e);
+	// } catch (NoSuchFieldException e) {
+	// Kogger.error(getClass(), e);
+	// }
+	//
+	// container.addAttributeValue(avv);
+	// ibaHolder.setAttributeContainer(container);
+	// try {
+	// ibaHolder = IBAValueHelper.service.updateIBAHolder(ibaHolder, null, null, null);
+	// } catch (RemoteException e) {
+	// Kogger.error(getClass(), e);
+	// }
+	// // EDMAttributeUtil.updateIBAHolder(ibaHolder);
+	//
+	// WorkInProgressHelper.service.checkin(epm, "");
+	//
+	// PersistenceHelper.manager.refresh(epm);
+
+    }
+}

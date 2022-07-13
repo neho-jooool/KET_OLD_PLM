@@ -1,0 +1,804 @@
+ResourceInfo.class=wt.tools.resource.EnumResourceInfo
+ResourceInfo.customizable=true
+ResourceInfo.deprecated=false
+ResourceInfo.replacement=false
+ResourceInfo.UUID=8db111cc-5428-4d8b-b2e9-ed3a5b20baf0
+
+
+# Entry Format (values equal to default value are not included)
+# <key>.value=
+# <key>.category=
+# <key>.comment=
+# <key>.argComment<n>=
+# <key>.constant=
+# <key>.customizable=
+# <key>.deprecated=
+# <key>.abbreviatedDisplay=
+# <key>.fullDisplay=
+# <key>.shortDescription=
+# <key>.longDescription=
+# <key>.order=
+# <key>.defaultValue=
+# <key>.selectable=
+
+# Entry Contents
+
+COMPLETE_ACTIVITY.value=Complete Activity
+COMPLETE_ACTIVITY.shortDescription=Complete Activity
+COMPLETE_ACTIVITY.order=91330
+
+DECISION_LIFT.value=Decision Lift
+DECISION_LIFT.shortDescription=Decision Lift
+DECISION_LIFT.order=91394
+
+ECA_APPROVED.value=Eca Approved
+ECA_APPROVED.shortDescription=Eca Approved
+ECA_APPROVED.order=91458
+
+ESTABLISH_PLAN.value=Establish Plan
+ESTABLISH_PLAN.shortDescription=Establish Plan
+ESTABLISH_PLAN.order=91074
+
+EXECUTE_ACTIVITY.value=Execute Activity
+EXECUTE_ACTIVITY.shortDescription=Execute Activity
+EXECUTE_ACTIVITY.order=91266
+
+REFERENCE.value=Reference
+REFERENCE.shortDescription=Reference
+REFERENCE.order=1044
+
+REPORT_RESULT.value=Report Result
+REPORT_RESULT.shortDescription=Report Result
+REPORT_RESULT.order=91138
+
+REQUEST_LIFT.value=Request Lift
+REQUEST_LIFT.shortDescription=Report Result
+REQUEST_LIFT.order=91202
+
+REQUEST_RECEIVER.value=Requet Receiver
+REQUEST_RECEIVER.shortDescription=Requet Receiver
+REQUEST_RECEIVER.order=91522
+
+Team_ELECTRON01.value=Product Development
+Team_ELECTRON01.shortDescription=Product Development
+Team_ELECTRON01.order=90701
+
+Team_ELECTRON02.value=Cost
+Team_ELECTRON02.shortDescription=Cost
+Team_ELECTRON02.order=90702
+
+Team_ELECTRON03.value=Standard Cost
+Team_ELECTRON03.shortDescription=Standard Cost
+Team_ELECTRON03.order=90703
+
+Team_ELECTRON04.value=Mold Development(Mold)
+Team_ELECTRON04.shortDescription=Mold Development(Mold)
+Team_ELECTRON04.order=90704
+
+Team_ELECTRON05.value=Mold Development(Press)
+Team_ELECTRON05.shortDescription=Mold Development(Press)
+Team_ELECTRON05.order=90705
+
+Team_ELECTRON06.value=Manufacturing Technology
+Team_ELECTRON06.shortDescription=Manufacturing Technology
+Team_ELECTRON06.order=90706
+
+Team_ELECTRON07.value=Buy(Mold)
+Team_ELECTRON07.shortDescription=Buy(Mold)
+Team_ELECTRON07.order=90707
+
+Team_ELECTRON08.value=Buy(General)
+Team_ELECTRON08.shortDescription=Buy(General)
+Team_ELECTRON08.order=90708
+
+Team_ELECTRON09.value=Buy(Processing)
+Team_ELECTRON09.shortDescription=Buy(Processing)
+Team_ELECTRON09.order=90709
+
+Team_ELECTRON10.value=Leading Quality
+Team_ELECTRON10.shortDescription=Leading Quality
+Team_ELECTRON10.order=90710
+
+Team_ELECTRON11.value=Initial Flow Management
+Team_ELECTRON11.shortDescription=Initial Flow Management
+Team_ELECTRON11.order=90711
+
+Team_ELECTRON12.value=Quality Management
+Team_ELECTRON12.shortDescription=Quality Management
+Team_ELECTRON12.order=90712
+
+Team_ELECTRON13.value=Reliability Test
+Team_ELECTRON13.shortDescription=Reliability Test
+Team_ELECTRON13.order=90713
+
+Team_ELECTRON14.value=Business
+Team_ELECTRON14.shortDescription=Business
+Team_ELECTRON14.order=90714
+
+Team_ELECTRON15.value=Production Management
+Team_ELECTRON15.shortDescription=Production Management
+Team_ELECTRON15.order=90715
+
+Team_ELECTRON16.value=Facility maintenance
+Team_ELECTRON16.shortDescription=Facility maintenance
+Team_ELECTRON16.order=90716
+
+Team_ELECTRON17.value=Production
+Team_ELECTRON17.shortDescription=Production
+Team_ELECTRON17.order=90717
+
+Team_ELECTRON18.value=Buy(equipment)
+Team_ELECTRON18.shortDescription=Buy(equipment)
+Team_ELECTRON18.order=92718
+
+Team_ELECTRON19.value=investment order
+Team_ELECTRON19.shortDescription=investment order
+Team_ELECTRON19.order=92910
+
+Team_ELECTRON20.value=Production(M)
+Team_ELECTRON20.shortDescription=Production(M)
+Team_ELECTRON20.order=93294
+
+Team_ELECTRON21.value=Production(P)
+Team_ELECTRON21.shortDescription=Production(P)
+Team_ELECTRON21.order=93358
+
+Team_ELECTRON22.value=Analysis
+Team_ELECTRON22.shortDescription=Analysis
+Team_ELECTRON22.order=93359
+
+Team_ELECTRON23.value=QC(M)
+Team_ELECTRON23.shortDescription=QC(M)
+Team_ELECTRON23.order=93360
+
+Team_ELECTRON24.value=QC(P)
+Team_ELECTRON24.shortDescription=QC(P)
+Team_ELECTRON24.order=93361
+
+Team_ELECTRON25.value=QC(Assembly)
+Team_ELECTRON25.shortDescription=QC(Assembly)
+Team_ELECTRON25.order=93362
+
+Team_ELECTRON26.value=Product measurements
+Team_ELECTRON26.shortDescription=Product measurements
+Team_ELECTRON26.order=93363
+
+Team_ELECTRON27.value=PMO
+Team_ELECTRON27.shortDescription=PMO
+Team_ELECTRON27.order=93364
+
+Team_MOLD01.value=Mold Design
+Team_MOLD01.shortDescription=Mold Design
+Team_MOLD01.order=90901
+
+Team_MOLD02.value=Mold Part
+Team_MOLD02.shortDescription=Mold Part
+Team_MOLD02.order=90902
+
+Team_MOLD03.value=Mold Assembly
+Team_MOLD03.shortDescription=Mold Assembly
+Team_MOLD03.order=90903
+
+Team_MOLD04.value=Try Mold
+Team_MOLD04.shortDescription=Try Mold
+Team_MOLD04.order=90904
+
+Team_MOLD05.value=Buy Mold
+Team_MOLD05.shortDescription=Buy Mold
+Team_MOLD05.order=90905
+
+Team_MOLD06.value=Manufacturing Technology
+Team_MOLD06.shortDescription=Manufacturing Technology
+Team_MOLD06.order=90906
+
+Team_MOLD07.value=Quality Assurance(Preceding)
+Team_MOLD07.shortDescription=Quality Assurance(Preceding)
+Team_MOLD07.order=90907
+
+Team_MOLD08.value=Measurement
+Team_MOLD08.shortDescription=Measurement
+Team_MOLD08.order=90908
+
+Team_MOLD09.value=Quality Assurance(Production)
+Team_MOLD09.shortDescription=Quality Assurance(Production)
+Team_MOLD09.order=90909
+
+Team_MOLD10.value=Mold Measurement
+Team_MOLD10.shortDescription=Mold Measurement
+Team_MOLD10.order=90910
+
+Team_MOLD11.value=Quality Management
+Team_MOLD11.shortDescription=Quality Management
+Team_MOLD11.order=90911
+
+Team_MOLD12.value=Production Management
+Team_MOLD12.shortDescription=Production Management
+Team_MOLD12.order=90912
+
+Team_MOLD13.value=Analysis
+Team_MOLD13.shortDescription=Analysis
+Team_MOLD13.order=90913
+
+Team_MOLD14.value=Product Development
+Team_MOLD14.shortDescription=Product Development
+Team_MOLD14.order=90914
+
+Team_MOLD15.value=Mold repair
+Team_MOLD15.shortDescription=Mold repair
+Team_MOLD15.order=90994
+
+Team_MOLD16.value=Product Design
+Team_MOLD16.shortDescription=Product Design
+Team_MOLD16.order=90915
+
+Team_MOLD17.value=Development Purchase
+Team_MOLD17.shortDescription=Development Purchase
+Team_MOLD17.order=90916
+
+Team_MOLD18.value=Reliability evaluation
+Team_MOLD18.shortDescription=Reliability evaluation
+Team_MOLD18.order=90917
+
+Team_PRODUCT01.value=Product Development
+Team_PRODUCT01.shortDescription=Product Development
+Team_PRODUCT01.order=92010
+
+Team_PRODUCT02.value=Analysis
+Team_PRODUCT02.shortDescription=Analysis
+Team_PRODUCT02.order=92020
+
+Team_PRODUCT03.value=Equipment production
+Team_PRODUCT03.shortDescription=Equipment production
+Team_PRODUCT03.order=92030
+
+Team_PRODUCT04.value=Mold development(M)
+Team_PRODUCT04.shortDescription=Mold development(M)
+Team_PRODUCT04.order=92040
+
+Team_PRODUCT05.value=Mold development(P)
+Team_PRODUCT05.shortDescription=Mold development(P)
+Team_PRODUCT05.order=92050
+
+Team_PRODUCT06.value=Mold parts
+Team_PRODUCT06.shortDescription=Mold parts
+Team_PRODUCT06.order=92060
+
+Team_PRODUCT07.value=Cost calculation
+Team_PRODUCT07.shortDescription=Cost calculation
+Team_PRODUCT07.order=92070
+
+Team_PRODUCT08.value=Program
+Team_PRODUCT08.shortDescription=Program
+Team_PRODUCT08.order=92080
+
+Team_PRODUCT09.value=Sales
+Team_PRODUCT09.shortDescription=Sales
+Team_PRODUCT09.order=92090
+
+Team_PRODUCT10.value=QC(HS'G)
+Team_PRODUCT10.shortDescription=QC(HS'G)
+Team_PRODUCT10.order=92100
+
+Team_PRODUCT11.value=QC(TM'L)
+Team_PRODUCT11.shortDescription=QC(TM'L)
+Team_PRODUCT11.order=92110
+
+Team_PRODUCT12.value=QC(Assembly)
+Team_PRODUCT12.shortDescription=QC(Assembly)
+Team_PRODUCT12.order=92120
+
+Team_PRODUCT13.value=Product measurements
+Team_PRODUCT13.shortDescription=Product measurements
+Team_PRODUCT13.order=92130
+
+Team_PRODUCT14.value=Reliability evaluation
+Team_PRODUCT14.shortDescription=Reliability evaluation
+Team_PRODUCT14.order=92140
+
+Team_PRODUCT15.value=Leading quality assurance
+Team_PRODUCT15.shortDescription=Leading quality assurance
+Team_PRODUCT15.order=92150
+
+Team_PRODUCT16.value=Purchase(mold)
+Team_PRODUCT16.shortDescription=Purchase (mold)
+Team_PRODUCT16.order=92160
+
+Team_PRODUCT17.value=Purchase(etc)
+Team_PRODUCT17.shortDescription=Purchase(etc)
+Team_PRODUCT17.order=92170
+
+Team_PRODUCT18.value=Purchase(Equipment)
+Team_PRODUCT18.shortDescription=Purchase(Equipment)
+Team_PRODUCT18.order=92180
+
+Team_PRODUCT19.value=Purchase(Raw materials)
+Team_PRODUCT19.shortDescription=Purchase(Raw materials)
+Team_PRODUCT19.order=92190
+
+Team_PRODUCT20.value=Purchase(\uc77c\ubc18\ud488)
+Team_PRODUCT20.shortDescription=Purchase(\uc77c\ubc18\ud488)
+Team_PRODUCT20.order=92200
+
+Team_PRODUCT21.value=Purchase(Toll grinding)
+Team_PRODUCT21.shortDescription=Purchase(Toll grinding)
+Team_PRODUCT21.order=92210
+
+Team_PRODUCT22.value=\uc81c\ud488\ucd08\ub958\uad00\ub9ac
+Team_PRODUCT22.shortDescription=\uc81c\ud488\ucd08\ub958\uad00\ub9ac
+Team_PRODUCT22.order=92220
+
+Team_PRODUCT23.value=Facility preservation
+Team_PRODUCT23.shortDescription=Facility preservation
+Team_PRODUCT23.order=92230
+
+Team_PRODUCT24.value=Production management
+Team_PRODUCT24.shortDescription=Production management
+Team_PRODUCT24.order=92240
+
+Team_PRODUCT25.value=Production(M)
+Team_PRODUCT25.shortDescription=Production(M)
+Team_PRODUCT25.order=92250
+
+Team_PRODUCT26.value=Production(P)
+Team_PRODUCT26.shortDescription=Production(P)
+Team_PRODUCT26.order=92260
+
+Team_PRODUCT27.value=Production(Assembly)
+Team_PRODUCT27.shortDescription=Production(Assembly)
+Team_PRODUCT27.order=92270
+
+Team_PRODUCT28.value=Product development(H/W)
+Team_PRODUCT28.shortDescription=Product development(H/W)
+Team_PRODUCT28.order=92334
+
+Team_PRODUCT29.value=Product development(S/W)
+Team_PRODUCT29.shortDescription=Product development(S/W)
+Team_PRODUCT29.order=92398
+
+Team_PRODUCT30.value=Product development(W/H)
+Team_PRODUCT30.shortDescription=Product development(W/H)
+Team_PRODUCT30.order=92462
+
+Team_PRODUCT31.value=Configuration Management
+Team_PRODUCT31.shortDescription=Configuration Management
+Team_PRODUCT31.order=92526
+
+Team_PRODUCT32.value=IMDS
+Team_PRODUCT32.shortDescription=IMDS
+Team_PRODUCT32.order=92590
+
+Team_PRODUCT33.value=Production(Chinese subsidiary)
+Team_PRODUCT33.shortDescription=Production(Chinese subsidiary)
+Team_PRODUCT33.order=92654
+
+Team_PRODUCT34.value=Production BOM
+Team_PRODUCT34.shortDescription=Production BOM
+Team_PRODUCT34.order=92782
+
+Team_PRODUCT35.value=Investment order
+Team_PRODUCT35.shortDescription=Investment order
+Team_PRODUCT35.order=92846
+
+Team_PRODUCT36.value=Team_PRODUCT36
+Team_PRODUCT36.shortDescription=Team_PRODUCT36
+Team_PRODUCT36.order=92974
+
+Team_PRODUCT37.value=Team_PRODUCT37
+Team_PRODUCT37.shortDescription=Team_PRODUCT37
+Team_PRODUCT37.order=93038
+
+Team_PRODUCT38.value=Team_PRODUCT38
+Team_PRODUCT38.shortDescription=Team_PRODUCT38
+Team_PRODUCT38.order=93102
+
+Team_PRODUCT39.value=Team_PRODUCT39
+Team_PRODUCT39.shortDescription=Team_PRODUCT39
+Team_PRODUCT39.order=93166
+
+Team_PRODUCT40.value=Team_PRODUCT40
+Team_PRODUCT40.shortDescription=Team_PRODUCT40
+Team_PRODUCT40.order=93230
+
+Team_PRODUCT41.value=\uc0ac\uc591\uad00\ub9ac
+Team_PRODUCT41.shortDescription=\uc0ac\uc591\uad00\ub9ac
+Team_PRODUCT41.order=93300
+
+Team_PRODUCT42.value=\uc2dc\uc791\uac1c\ubc1c
+Team_PRODUCT42.shortDescription=\uc2dc\uc791\uac1c\ubc1c
+Team_PRODUCT42.order=93310
+
+Team_PRODUCT43.value=Facility preservation(Assembly)
+Team_PRODUCT43.shortDescription==Facility preservation(Assembly)
+Team_PRODUCT43.order=93320
+
+Team_PRODUCT44.value=Facility preservation(Press)
+Team_PRODUCT44.shortDescription=Facility preservation(Press)
+Team_PRODUCT44.order=93330
+
+Team_PRODUCT45.value=Facility preservation(Mold)
+Team_PRODUCT45.shortDescription=Facility preservation(Mold)
+Team_PRODUCT45.order=93340
+
+Team_PRODUCT46.value=Product Design
+Team_PRODUCT46.shortDescription=Product Design
+Team_PRODUCT46.order=93350
+
+Team_PRODUCT47.value=Manual Production Equipment
+Team_PRODUCT47.shortDescription=Manual Production Equipment
+Team_PRODUCT47.order=93360
+
+Team_PRODUCT48.value=Purchase(plated)
+Team_PRODUCT48.shortDescription=Purchase(plated)
+Team_PRODUCT48.order=93370
+
+Team_PRODUCT49.value=Leading quality manage
+Team_PRODUCT49.shortDescription=Leading quality manage
+Team_PRODUCT49.order=93380
+
+Team_PRODUCT50.value=CAMDS
+Team_PRODUCT50.shortDescription=CAMDS
+Team_PRODUCT50.order=93390
+
+Team_PRODUCT51.value=\uac1c\ubc1c\uc2dc\uc791\ud68c\uc758
+Team_PRODUCT51.shortDescription=\uac1c\ubc1c\uc2dc\uc791\ud68c\uc758
+Team_PRODUCT51.order=93400
+
+Team_PRODUCT52.value=Reliability evaluation(pressure)
+Team_PRODUCT52.shortDescription=Reliability evaluation(pressure)
+Team_PRODUCT52.order=93410
+
+Team_PRODUCT53.value=\uc0dd\uc0b0(\uae08\ud615)
+Team_PRODUCT53.shortDescription=\uc0dd\uc0b0(\uae08\ud615)
+Team_PRODUCT53.order=93420
+
+Team_PRODUCT54.value=\uae08\ud615\ucd08\ub958\uad00\ub9ac
+Team_PRODUCT54.shortDescription=\uae08\ud615\ucd08\ub958\uad00\ub9ac
+Team_PRODUCT54.order=93430
+
+Team_PRODUCT55.value=\uc0dd\uc0b0BOM(\u4e2d)
+Team_PRODUCT55.shortDescription=\uc0dd\uc0b0BOM(\u4e2d)
+Team_PRODUCT55.order=93440
+
+Team_PRODUCT56.value=\ud45c\uc900\uc6d0\uac00
+Team_PRODUCT56.shortDescription=\ud45c\uc900\uc6d0\uac00
+Team_PRODUCT56.order=93450
+
+Team_PRODUCT57.value=\uc790\uc7ac\uad00\ub9ac
+Team_PRODUCT57.shortDescription=\uc790\uc7ac\uad00\ub9ac
+Team_PRODUCT57.order=93460
+
+Team_REVIEW01.value=Product Development
+Team_REVIEW01.shortDescription=Product Development
+Team_REVIEW01.order=90801
+
+Team_REVIEW02.value=Analysis
+Team_REVIEW02.shortDescription=Analysis
+Team_REVIEW02.order=90803
+
+Team_REVIEW03.value=Mold Development(Press)
+Team_REVIEW03.shortDescription=Mold Development(Press)
+Team_REVIEW03.order=90805
+
+Team_REVIEW04.value=Mold Development(Mold)
+Team_REVIEW04.shortDescription=Mold Development(Mold)
+Team_REVIEW04.order=90804
+
+Team_REVIEW05.value=Part Process
+Team_REVIEW05.shortDescription=Part Process
+Team_REVIEW05.order=90813
+
+Team_REVIEW06.value=Leading quality
+Team_REVIEW06.shortDescription=Leading quality
+Team_REVIEW06.order=90811
+
+Team_REVIEW07.value=Quality Assurance
+Team_REVIEW07.shortDescription=Quality Assurance
+Team_REVIEW07.order=90814
+
+Team_REVIEW08.value=Quality Management(Press)
+Team_REVIEW08.shortDescription=Quality Management(Press)
+Team_REVIEW08.order=90815
+
+Team_REVIEW09.value=Quality Management(Mold)
+Team_REVIEW09.shortDescription=Quality Management(Mold)
+Team_REVIEW09.order=90816
+
+Team_REVIEW10.value=Reliability Test
+Team_REVIEW10.shortDescription=Reliability Test
+Team_REVIEW10.order=90812
+
+Team_REVIEW11.value=Business
+Team_REVIEW11.shortDescription=Business
+Team_REVIEW11.order=90802
+
+Team_REVIEW12.value=cost
+Team_REVIEW12.shortDescription=cost
+Team_REVIEW12.order=90809
+
+Team_REVIEW13.value=Patent
+Team_REVIEW13.shortDescription=Patent
+Team_REVIEW13.order=90817
+
+Team_REVIEW14.value=Manufacturing Technology
+Team_REVIEW14.shortDescription=Manufacturing Technology
+Team_REVIEW14.order=90818
+
+Team_REVIEW15.value=Production Management
+Team_REVIEW15.shortDescription=Production Management
+Team_REVIEW15.order=90810
+
+Team_REVIEW16.value=Production Facilities
+Team_REVIEW16.shortDescription=Production Facilities
+Team_REVIEW16.order=90806
+
+Team_REVIEW17.value=gate
+Team_REVIEW17.shortDescription=gate
+Team_REVIEW17.order=90819
+
+Team_REVIEW18.value=General
+Team_REVIEW18.shortDescription=General
+Team_REVIEW18.order=90807
+
+Team_REVIEW19.value=Raw materials(Press)
+Team_REVIEW19.shortDescription=Raw materials(Press)
+Team_REVIEW19.order=90820
+
+Team_REVIEW20.value=Raw materials(Mold)
+Team_REVIEW20.shortDescription=Raw materials(Mold)
+Team_REVIEW20.order=90821
+
+Team_REVIEW21.value=Mold
+Team_REVIEW21.shortDescription=Mold
+Team_REVIEW21.order=90822
+
+Team_REVIEW22.value=Production
+Team_REVIEW22.shortDescription=Production
+Team_REVIEW22.order=90823
+
+Team_REVIEW23.value=Buy(Process)
+Team_REVIEW23.shortDescription=Buy(Process)
+Team_REVIEW23.order=90808
+
+Team_REVIEW23.value=\uad6c\ub9e4(\uc784\uac00\uacf5)
+Team_REVIEW23.shortDescription=\uad6c\ub9e4(\uc784\uac00\uacf5)
+Team_REVIEW23.order=90808
+
+Team_REVIEW24.value=\uad6c\ub9e4(\uae08\ud615)
+Team_REVIEW24.shortDescription=\uad6c\ub9e4(\uae08\ud615)
+Team_REVIEW24.order=90824
+
+Team_REVIEW25.value=\uad6c\ub9e4(\uc120\ub3c4\uae08)
+Team_REVIEW25.shortDescription=\uad6c\ub9e4(\uc120\ub3c4\uae08)
+Team_REVIEW25.order=90825
+
+Team_REVIEW26.value=\uad6c\ub9e4(\ud6c4\ub3c4\uae08)
+Team_REVIEW26.shortDescription=\uad6c\ub9e4(\ud6c4\ub3c4\uae08)
+Team_REVIEW26.order=90826
+
+Team_REVIEW27.value=\uad6c\ub9e4(W/H)
+Team_REVIEW27.shortDescription=\uad6c\ub9e4(W/H)
+Team_REVIEW27.order=90827
+
+Team_REVIEW28.value=\uad6c\ub9e4(TurnKey)
+Team_REVIEW28.shortDescription=\uad6c\ub9e4(TurnKey)
+Team_REVIEW28.order=90828
+
+Team_REVIEW29.value=\uc911\uad6d\uae08\ud615
+Team_REVIEW29.shortDescription=\uc911\uad6d\uae08\ud615
+Team_REVIEW29.order=90829
+
+Team_REVIEW30.value=\uc81c\uc870\uae30\uc220
+Team_REVIEW30.shortDescription=\uc81c\uc870\uae30\uc220
+Team_REVIEW30.order=90830
+
+Team_REVIEW31.value=\ud45c\uc900\uc6d0\uac00
+Team_REVIEW31.shortDescription=\ud45c\uc900\uc6d0\uac00
+Team_REVIEW31.order=90831
+
+Team_REVIEW32.value=\uc790\uc7ac\uad00\ub9ac
+Team_REVIEW32.shortDescription=\uc790\uc7ac\uad00\ub9ac
+Team_REVIEW32.order=90832
+
+Team_REVIEW33.value=\uc2e0\ub8b0\uc131\ud3c9\uac00\ud300(JIG)
+Team_REVIEW33.shortDescription=\uc2e0\ub8b0\uc131\ud3c9\uac00\ud300(JIG)
+Team_REVIEW33.order=90833
+
+Team_REVIEW34.value=\uae08\ud615\uad00\ub9ac
+Team_REVIEW34.shortDescription=\uae08\ud615\uad00\ub9ac
+Team_REVIEW34.order=90834
+
+Team_REVIEW35.value=\uc2dc\uc791\uac1c\ubc1c
+Team_REVIEW35.shortDescription=\uc2dc\uc791\uac1c\ubc1c
+Team_REVIEW35.order=90835
+
+Team_PRODUCTWORK01.value=\uacbd\uc601\uae30\ud68d\ud300
+Team_PRODUCTWORK01.shortDescription=CODE001
+Team_PRODUCTWORK01.order=90832
+
+Team_PRODUCTWORK02.value=\uc7ac\ubb34\uae30\ud68d\ud300
+Team_PRODUCTWORK02.shortDescription=CODE001
+Team_PRODUCTWORK02.order=90833
+
+Team_PRODUCTWORK03.value=\uc720\ub7fd\ubc95\uc778TFT\uad00\ub9ac
+Team_PRODUCTWORK03.shortDescription=CODE001
+Team_PRODUCTWORK03.order=90834
+
+Team_PRODUCTWORK04.value=\uacbd\uc601\uc9c0\uc6d0\ud300
+Team_PRODUCTWORK04.shortDescription=CODE001
+Team_PRODUCTWORK04.order=90835
+
+Team_PRODUCTWORK05.value=\uc720\ub7fd\ubc95\uc778TFT\ud300\uc7a5
+Team_PRODUCTWORK05.shortDescription=CODE001
+Team_PRODUCTWORK05.order=90836
+
+Team_PRODUCTWORK06.value=KETN
+Team_PRODUCTWORK06.shortDescription=CODE001
+Team_PRODUCTWORK06.order=90837
+
+Team_PRODUCTWORK07.value=\ud488\uc9c8\uacbd\uc601\ud300
+Team_PRODUCTWORK07.shortDescription=CODE001
+Team_PRODUCTWORK07.order=90838
+
+Team_PRODUCTWORK08.value=\uacbd\uc601\uc815\ubcf4\ud300
+Team_PRODUCTWORK08.shortDescription=CODE001
+Team_PRODUCTWORK08.order=90839
+
+Team_PRODUCTWORK09.value=\uc5f0\uad6c\uc9c0\uc6d0\ud300
+Team_PRODUCTWORK09.shortDescription=CODE001
+Team_PRODUCTWORK09.order=90840
+
+Team_PRODUCTWORK10.value=CS\ud300
+Team_PRODUCTWORK10.shortDescription=CODE001
+Team_PRODUCTWORK10.order=90850
+
+Team_PRODUCTWORK11.value=\uc0dd\uc0b02\ud300
+Team_PRODUCTWORK11.shortDescription=CODE001
+Team_PRODUCTWORK11.order=90860
+
+Team_PRODUCTWORK12.value=\uad6c\ub9e4\uae30\ud68d\ud300
+Team_PRODUCTWORK12.shortDescription=CODE001
+Team_PRODUCTWORK12.order=90870
+
+Team_PRODUCTWORK13.value=\uc720\ub7fd\ubc95\uc778TFT\ud488\uc9c8
+Team_PRODUCTWORK13.shortDescription=CODE001
+Team_PRODUCTWORK13.order=90880
+
+Team_PRODUCTWORK14.value=\uc0dd\uc0b04\ud300
+Team_PRODUCTWORK14.shortDescription=CODE001
+Team_PRODUCTWORK14.order=90890
+
+Team_PRODUCTWORK15.value=\uc0ac\ucd9c\uae08\ud615\uac1c\ubc1c\ud300
+Team_PRODUCTWORK15.shortDescription=CODE001
+Team_PRODUCTWORK15.order=90900
+
+Team_PRODUCTWORK16.value=\ud488\uc9c8\uad00\ub9ac\ud300
+Team_PRODUCTWORK16.shortDescription=CODE001
+Team_PRODUCTWORK16.order=90901
+
+Team_PRODUCTWORK17.value=\uc81c\uc870\uae30\uc220\ud300
+Team_PRODUCTWORK17.shortDescription=CODE001
+Team_PRODUCTWORK17.order=90902
+
+Team_PRODUCTWORK18.value=\uac1c\ubc1c\uad6c\ub9e4\ud300
+Team_PRODUCTWORK18.shortDescription=CODE001
+Team_PRODUCTWORK18.order=90903
+
+Team_PRODUCTWORK19.value=\uc790\uc7ac\uad00\ub9ac\ud300
+Team_PRODUCTWORK19.shortDescription=CODE001
+Team_PRODUCTWORK19.order=90904
+
+Team_PRODUCTWORK20.value=\uc720\ub7fd\ubc95\uc778TFT\uc0dd\uc0b0
+Team_PRODUCTWORK20.shortDescription=CODE001
+Team_PRODUCTWORK20.order=90905
+
+Team_PRODUCTWORK21.value=IT\uc6b4\uc601\ud300
+Team_PRODUCTWORK21.shortDescription=CODE001
+Team_PRODUCTWORK21.order=90906
+
+Team_PRODUCTWORK22.value=\uacbd\uc601\ud601\uc2e0\ud300
+Team_PRODUCTWORK22.shortDescription=CODE001
+Team_PRODUCTWORK22.order=90907
+
+Team_PRODUCTWORK23.value=\uc0dd\uc0b05\ud300
+Team_PRODUCTWORK23.shortDescription=CODE001
+Team_PRODUCTWORK23.order=90908
+
+Team_PRODUCTWORK24.value=\ud488\uc9c8\ubcf4\uc99d\ud300
+Team_PRODUCTWORK24.shortDescription=CODE001
+Team_PRODUCTWORK24.order=90909
+
+Team_PRODUCTWORK25.value=\uc2e0\ub8b0\uc131\ud3c9\uac00\ud300
+Team_PRODUCTWORK25.shortDescription=CODE001
+Team_PRODUCTWORK25.order=90910
+
+Team_PRODUCTWORK26.value=\uc5f0\uad6c\uac1c\ubc1c\ud300
+Team_PRODUCTWORK26.shortDescription=CODE003
+Team_PRODUCTWORK26.order=90911
+
+Team_PRODUCTWORK27.value=\uae00\ub85c\ubc8c\uc0dd\uc0b0\uc9c0\uc6d0\ud300
+Team_PRODUCTWORK27.shortDescription=CODE003
+Team_PRODUCTWORK27.order=90912
+
+Team_PRODUCTWORK28.value=\uc0dd\uc0b0\uad00\ub9ac\ud300
+Team_PRODUCTWORK28.shortDescription=CODE003
+Team_PRODUCTWORK28.order=90913
+
+Team_PRODUCTWORK29.value=\uc0dd\uc0b0\uae30\uc220\uac1c\ubc1c\ud300
+Team_PRODUCTWORK29.shortDescription=CODE003
+Team_PRODUCTWORK29.order=90914
+
+Team_PRODUCTWORK30.value=\uc0dd\uc0b0\ud300
+Team_PRODUCTWORK30.shortDescription=CODE003
+Team_PRODUCTWORK30.order=90915
+
+Team_PRODUCTWORK31.value=\uc774\uad00\ucc98(\ud488\uc9c8)
+Team_PRODUCTWORK31.shortDescription=CODE003
+Team_PRODUCTWORK31.order=90916
+
+Team_PRODUCTWORK32.value=\uc774\uad00\ucc98(\uc0dd\uc0b0)
+Team_PRODUCTWORK32.shortDescription=CODE003
+Team_PRODUCTWORK32.order=90917
+
+Team_PRODUCTWORK33.value=\ud611\ub825\uc0ac\uad6c\ub9e4\ud300
+Team_PRODUCTWORK33.shortDescription=CODE003
+Team_PRODUCTWORK33.order=90918
+
+Team_PRODUCTWORK34.value=\uc774\uad00\ucc98(\uad00\ub9ac)
+Team_PRODUCTWORK34.shortDescription=CODE003
+Team_PRODUCTWORK34.order=90919
+
+Team_PRODUCTWORK35.value=\uae00\ub85c\ubc8c\ud488\uc9c8\uc9c0\uc6d0\ud300
+Team_PRODUCTWORK35.shortDescription=CODE003
+Team_PRODUCTWORK35.order=90920
+
+Team_PRODUCTWORK36.value=\uc120\ud589\ud488\uc9c8\uad00\ub9ac\ud300
+Team_PRODUCTWORK36.shortDescription=CODE003
+Team_PRODUCTWORK36.order=90921
+
+Team_PRODUCTWORK37.value=\uc120\ud589\ud488\uc9c8\ubcf4\uc99d\ud300
+Team_PRODUCTWORK37.shortDescription=CODE003
+Team_PRODUCTWORK37.order=90922
+
+Team_PRODUCTWORK38.value=\uc124\ube44\ubcf4\uc8041\ud300
+Team_PRODUCTWORK38.shortDescription=CODE003
+Team_PRODUCTWORK38.order=90923
+
+Team_PRODUCTWORK39.value=\uc124\ube44\ubcf4\uc8042\ud300
+Team_PRODUCTWORK39.shortDescription=CODE003
+Team_PRODUCTWORK39.order=90924
+
+Team_PRODUCTWORK40.value=\uc591\uc0b0\uad6c\ub9e4\ud300
+Team_PRODUCTWORK40.shortDescription=CODE003
+Team_PRODUCTWORK40.order=90925
+
+Team_PRODUCTWORK41.value=\uc601\uc5c5\uad00\ub9ac\ud300
+Team_PRODUCTWORK41.shortDescription=CODE003
+Team_PRODUCTWORK41.order=90926
+
+Team_PRODUCTWORK42.value=\uc778\uc0ac\ud300
+Team_PRODUCTWORK42.shortDescription=CODE003
+Team_PRODUCTWORK42.order=90927
+
+Team_PRODUCTWORK43.value=\ud504\ub85c\uc81d\ud2b8\uc6b4\uc601\ud300
+Team_PRODUCTWORK43.shortDescription=CODE003
+Team_PRODUCTWORK43.order=90928
+
+Team_PRODUCTWORK44.value=\ub2f4\ub2f91
+Team_PRODUCTWORK44.shortDescription=CODE003
+Team_PRODUCTWORK44.order=90929
+
+Team_PRODUCTWORK45.value=\ub2f4\ub2f92
+Team_PRODUCTWORK45.shortDescription=CODE003
+Team_PRODUCTWORK45.order=90930
+
+Team_PRODUCTWORK46.value=\ub2f4\ub2f93
+Team_PRODUCTWORK46.shortDescription=CODE003
+Team_PRODUCTWORK46.order=90931
+
+Team_PRODUCTWORK47.value=\ub2f4\ub2f94
+Team_PRODUCTWORK47.shortDescription=CODE003
+Team_PRODUCTWORK47.order=90932
+
+Team_PRODUCTWORK48.value=\ub2f4\ub2f95
+Team_PRODUCTWORK48.shortDescription=CODE003
+Team_PRODUCTWORK48.order=90933

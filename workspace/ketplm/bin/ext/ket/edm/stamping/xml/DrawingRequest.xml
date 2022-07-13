@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- XML 작성 기준 -->
+<!-- root 아래 정보를 입력한다. -->
+<!-- 모든 Tag는 영문 소문자를 원칙으로 한다. -->
+<!-- 속성에 들어갈 값이 없거나 NULL인 경우 None로 입력한다. -->
+<root>
+
+  <!-- ########################################## -->
+  <!-- ## 폴더 위치관련 ( 한글 모두 제외)         ## -->
+  <!-- ## xml, 변환파일, Stamping 파일 모두 존재  ## -->
+  <!-- ## ex) E:\Stamping\2014\07\23\10001\01  ## -->
+  <!-- ########################################## -->
+  
+  <!-- 폴더 위치관련 파일 구분자 -->
+  <fileSeperator><![CDATA[\]]></fileSeperator>
+  <!-- 폴더 위치 관련 정보 : 아래 순서대로 내려간 폴더에 xml 및 도면 파일, 로그 파일 저장 -->
+  <!-- 서버 최상위 폴더 위치 -->
+  <foldDefaultPath><![CDATA[E:\Stamping]]></foldDefaultPath>
+  <!-- 년도 폴더 명 -->
+  <foldYear>2014</foldYear>
+  <!-- 월 폴더 명 -->
+  <foldMonth>07</foldMonth>
+  <!-- 일 폴더 명 -->
+  <foldDay>23</foldDay>
+  <!-- 도면 배포 요청서 No 폴더 명 -->
+  <foldRequestNo>10001</foldRequestNo>
+  <!-- 실행횟수 폴더 명(오류시 관리자가 재실행할 때마다 숫자가 증가 됨) -->
+  <executeNo>01</executeNo>
+  
+  <!-- ####################################################### -->
+  <!-- ## 변환 파일명 규칙                                         ## -->
+  <!-- ## 변환 파일 및 변환 로그파일 정의                          ## -->
+  <!-- ####################################################### -->
+ 
+  <!-- ## 변환 Cad File 명 규칙 ## -->
+  <!-- case 1 sheet   1장  : [도번]_[CAD유형 구분자]_t.dwg          ex) ap_jb565038_creo_t.dwg -->
+  <!-- case 2 sheet 여러장 : [도번]_[Sheet명]_[CAD유형 구분자]_t.dwg ex) ap_jb565038_PanelLeft01_nx_t.dwg   -->
+  <!-- []안의 들어가는 것에 대한 설명  -->
+  <!-- [도번] : 도면 번호  -->
+  <!-- [CAD유형 구분자] : Nx, creo 둘 중 하나  -->
+  <!-- [Sheet명] : 2D도면 내의 Sheet의 명 -->
+  
+  <!-- Nx 변환 파일명 Suffix -->
+  <transNxFileSuffix>_nx_t</transNxFileSuffix>
+  
+  <!-- creo 변환 파일명 Suffix -->
+  <transCreoFileSuffix>_creo_t</transCreoFileSuffix>
+  
+  <!-- ## Log File 명 규칙 ## -->
+  <!-- case 1 개발자 log + sheet 1장      : [도번]_[CAD유형 구분자]_t.log              ex) ap_jb565038_creo_t.log -->
+  <!-- case 2 개발자 log + sheet 여러장   : [도번]_[Sheet명]_[CAD유형 구분자]_t.log    ex) ap_jb565038_panelleft01_nx_t.log -->
+  <!-- case 3 에러유형 log + sheet 1장    : [도번]_[CAD유형 구분자]_t_e.xml            ex) ap_jb565038_creo_t_e.xml -->
+  <!-- case 4 에러유형 log + sheet 여러장 : [도번]_[Sheet명]_[CAD유형 구분자]_t_e.xml  ex) ap_jb565038_panelleft01_nx_t_e.xml -->
+  <!-- 에러유형 log 에는 아래와 같은 xml 양식으로 로그를 부탁합니다.  -->
+  <!-- 에러유형 log는 DB에 저장되어 관리자 조회화면에서 보여질 수 있습니다. -->
+  <!-- <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <!-- <root>  -->
+  <!--    <errorInfo>  --> 
+  <!--       <errorType>E01</errorType>  --> 
+  <!--       <errorShortDesc><![CDATA[License 오류]]></errorShortDesc>  -->
+  <!--       <errorFullDesc><![CDATA[License Exception:~~~]]></errorFullDesc>  -->
+  <!--    </errorInfo>   -->
+  <!-- </root>   -->
+  <!-- [Sheet명] : 2D도면 내의 Sheet의 명으로 한글은 제외되며, 영문은 소문자로 변환 -->
+  
+  <!-- 변환 Log 파일명 확장자 -->
+  <transLogFileExt>log</transLogFileExt>
+  <!-- 변환 에러 유형 로그 파일명 Suffix -->
+  <transErrFileSuffix>_e</transErrFileSuffix>
+  
+  
+  <!-- ####################################################### -->
+  <!-- ## Stamping 파일명 규칙 ( 한글 제외, 영문은 모두 소문자)  ## -->
+  <!-- ## Stamping 파일 및 Stamping 로그파일 정의                ## -->
+  <!-- ####################################################### -->
+  
+  <!-- ## Stamping File 명 규칙 ## -->
+  <!-- case 1 변환 않된 도면                 : [도번]_s.dwg                             ex) ap_jb565038_s.dwg, ap_jb565038_s.pdf -->
+  <!-- case 2 변환 도면 + sheet 1장         : [도번]_[CAD유형 구분자]_s.dwg             ex) ap_jb565038_nx_t_s.dwg, ap_jb565038_nx_t_s.pdf -->
+  <!-- case 3 변환 도면 + sheet 여러장      : [도번]_[Sheet명]_[CAD유형 구분자]_s.dwg   ex) ap_jb565038_panelleft01_nx_t_s.dwg, ap_jb565038_panelleft01_nx_t_s.pdf -->
+ 
+  <!-- Stamping 변환 파일명 Suffix -->
+  <stampFileSuffix>_s</stampFileSuffix>
+  
+  <!-- ## Log File 명 규칙 ## -->
+  <!-- case 1 변환 않된 도면                : [도번]_[CAD유형 구분자]_t.log             ex) ap_jb565038_s.log -->
+  <!-- case 2 개발자 log + sheet 1장      : [도번]_[CAD유형 구분자]_t.log             ex) ap_jb565038_creo_t_s.log -->
+  <!-- case 3 개발자 log + sheet 여러장   : [도번]_[Sheet명]_[CAD유형 구분자]_t.log   ex) ap_jb565038_panelleft01_nx_t_s.log -->
+  <!-- case 4 에러유형 log + sheet 1장    : [도번]_[CAD유형 구분자]_t_e.xml           ex) ap_jb565038_creo_t_s_e.xml -->
+  <!-- case 5 에러유형 log + sheet 여러장 : [도번]_[Sheet명]_[CAD유형 구분자]_t_e.xml  ex) ap_jb565038_panelleft01_nx_t_s_e.xml -->
+  <!-- 에러유형 log 에는 아래와 같은 xml 양식으로 로그를 부탁합니다.  -->
+  <!-- 에러유형 log는 DB에 저장되어 관리자 조회화면에서 보여질 수 있습니다. -->
+  <!-- <?xml version="1.0"?> -->
+  <!-- <root>  -->
+  <!--   <errorinfo>  -->
+  <!--     <errortype>E01</errortype>  -->
+  <!--     <errorshortdesc><![CDATA[License 오류]]></errorshortdesc> -->
+  <!--     <errorfulldesc><![CDATA[License Exception:~~~]]></errorfulldesc> -->
+  <!--   <errorinfo>  -->
+  <!-- </root>  -->
+  
+  <!-- <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <!-- <root>  -->
+  <!--    <errorInfo>  --> 
+  <!--       <errorType>E01</errorType>  --> 
+  <!--       <errorShortDesc><![CDATA[License 오류]]></errorShortDesc>  -->
+  <!--       <errorFullDesc><![CDATA[License Exception:~~~]]></errorFullDesc>  -->
+  <!--    </errorInfo>   -->
+  <!-- </root>   -->
+ 
+  <!-- [Sheet명] : 2D도면 내의 Sheet의 명으로 한글은 제외되며, 영문은 소문자로 변환 -->
+  
+  <!-- 변환 Log 파일명 확장자 -->
+  <stampLogFileExt>log</stampLogFileExt>
+  <!-- 변환 에러 유형 로그 파일명 Suffix -->
+  <stampErrFileSuffix>_e</stampErrFileSuffix>  
+   
+  <!-- ########################### -->
+  <!-- ## Stamping 전역 공통      ## -->
+  <!-- ########################### -->
+  
+  <!-- stamping 영문 회사명 : Not Empty -->
+  <stampCompanyName><![CDATA[KOREA ELECTRIC TERMINAL CO., LTD.]]></stampCompanyName>
+  
+  
+  <!-- ############################# -->
+  <!-- ## 도면 배포 요청서 상세 정보 ## -->
+  <!-- ############################# -->
+  
+  <!-- 도면 배포 요청서 배치 정보 -->  
+  <requestDrawingList>
+    
+    <!-- ########################################################### -->
+    <!-- ## 도면 정보 - NX 도면변환(Cadiance만 해당) 및 Stamping 예제 ## -->
+    <!-- ########################################################### -->
+    
+    <!-- 도면 개별 정보 1건별 Drawing Tag 하나로 여러 도면 존재 가능함 -->
+    <drawing>
+    
+      <!-- CadAppType : CREO, AUTOCAD, NX 3개 중 하나, Not Empty -->
+      <cadType>NX</cadType>
+    
+      <!-- 2D 도면 변환 유무 : Y, N 중 하나, Not Empty -->
+      <transRequest>Y</transRequest>
+      
+      <!-- id : 2D 포함 3D 확인용 object id -->
+      <cadOid>15318445</cadOid>
+      
+      <!-- 도면 Number : 도면 Number, Not Empty -->
+      <drawingNumber>23034000-L013_PRT</drawingNumber>
+      
+      <!-- 도면 Version : 도면 버전, Not Empty -->
+      <drawingVersion>3.12</drawingVersion>
+      
+      <!-- 도면 CadFileName : 도면 파일 명, Not Empty -->
+      <drawingFileName><![CDATA[23034000-L013.prt]]></drawingFileName>
+      
+      <!-- 2D 포함 3D CAD Number[참고용] : 3D번호, None 중 하나, Not Empty -->
+      <transThreedCadNo>23034000-L013_PRT</transThreedCadNo>
+     
+      <!-- 2D 포함 3D CAD Oid[참고용] : Oid, None 중 하나, Not Empty -->
+      <transThreedCadOid>test:1558</transThreedCadOid>
+      
+      <!-- 2D 포함 3D CAD Version[참고용] : 3D버전, None 중 하나, Not Empty -->
+      <transThreedCadVersion>3.12</transThreedCadVersion>
+      
+      <!-- 2D 포함 3D CAD FileName[참고용] : 3D파일명, None 중 하나, Not Empty -->
+      <transThreedCadFileName><![CDATA[23034000-L013.prt]]></transThreedCadFileName>
+            
+      <!-- NX 도면변환 관련 Active Sheet vs 전체 Sheet : Active, All, None 3개 중 하나, Not Empty -->
+      <transNxSelectedSheet>Active</transNxSelectedSheet>
+       
+      <!-- stamping 영문 유형 (발송, 승인, 출도, 출도(가공수정), 검토 : ex) APPROVAL 등, Not Empty -->
+      <stampType>APPROVAL</stampType>
+      
+      <!-- stamping 요청 승인일 : ex) 2014-07-02, Not Empty -->
+      <stampAprovedDate>2014-07-02</stampAprovedDate>
+            
+      <!-- stamping 영문 부서명 : Not Empty -->
+      <stampTeamName><![CDATA[R&D CENTER DEVELOPMENT 2 TEAM]]></stampTeamName>
+      
+      <!-- stamping 요청 : Y, N 중 하나,Not Empty -->
+      <stampRequest>Y</stampRequest>
+      
+      <!-- step 요청 : Y, N 중 하나,Not Empty -->
+      <stepRequest>N</stepRequest>
+      
+    </drawing>
+    
+    
+    <!-- ############################################### -->
+    <!-- ## 도면 정보 - CREO 도면변환 및 Stamping 예제   ## -->
+    <!-- ############################################### -->
+     
+    <drawing>
+    
+      <!-- CadAppType : CREO, AUTOCAD, NX 3개 중 하나, Not Empty -->
+      <cadType>CREO</cadType>
+      
+      <!-- 2D 도면 변환 유무 : Y, N 중 하나, Not Empty -->
+      <transRequest>Y</transRequest>
+      
+      <!-- id : 도면 프로그램 확인용 object id -->
+      <cadOid>56318963</cadOid>
+      
+      <!-- Number : 도면 Number, Not Empty -->
+      <drawingNumber>MG675612-43_2D</drawingNumber>
+      
+      <!-- Version : 도면 버전, Not Empty -->
+      <drawingVersion>0.5</drawingVersion>
+      
+      <!-- CadFileName : 도면 파일 명, Not Empty -->
+      <drawingFileName><![CDATA[mg675612-43_060_12p_spacer.drw]]></drawingFileName>
+            
+      <!-- NX 도면변환 관련 Active Sheet vs 전체 Sheet : Active, All, None 3개 중 하나, Not Empty -->
+      <transNxSelectedSheet>None</transNxSelectedSheet>
+      
+      <!-- 2D 연관 3D CAD Number[참고용] : 3D번호, None 중 하나, Not Empty -->
+      <transThreedCadNo>MG675612-41_3D</transThreedCadNo>
+      
+      <!-- 2D 연관 3D CAD Version[참고용] : 3D버전, None 중 하나, Not Empty -->
+      <transThreedCadVersion>0.10</transThreedCadVersion>
+      
+      <!-- 2D 포함 3D CAD Oid[참고용] : Oid, None 중 하나, Not Empty -->
+      <transThreedCadOid>test:1559</transThreedCadOid>
+      
+      <!-- 2D 포함 3D CAD FileName[참고용] : 3D파일명, None 중 하나, Not Empty -->
+      <transThreedCadFileName><![CDATA[mg675612-41_060_12p_spacer.prt]]></transThreedCadFileName>
+      
+      <!-- stamping 영문 유형 (발송, 승인, 출도, 출도(가공수정), 검토 : ex) APPROVAL 등, Not Empty -->
+      <stampType>APPROVAL</stampType>
+      
+      <!-- stamping 요청 승인일 : ex) 2014-07-02, Not Empty -->
+      <stampAprovedDate>2014-07-03</stampAprovedDate>
+      
+      <!-- stamping 영문 부서명 : Not Empty -->
+      <stampTeamName><![CDATA[R&D CENTER DEVELOPMENT 1 TEAM]]></stampTeamName>
+      
+      <!-- stamping 요청 : Y, N 중 하나,Not Empty -->
+      <stampRequest>Y</stampRequest>
+      
+      <!-- step 요청 : Y, N 중 하나,Not Empty -->
+      <stepRequest>N</stepRequest>
+      
+    </drawing>
+    
+    
+    <!-- ####################################### -->
+    <!-- ## 도면 정보 - AutoCad Stamping 예제   ## -->
+    <!-- ####################################### -->
+     
+    <drawing>
+      
+      <!-- CadAppType : CREO, AUTOCAD, NX 3개 중 하나, Not Empty -->
+      <cadType>AUTOCAD</cadType>
+      
+      <!-- 2D 도면 변환 유무 : Y, N 중 하나, Not Empty -->
+      <transRequest>N</transRequest>
+    
+      <!-- id : 도면 프로그램 확인용 object id -->
+      <cadOid>345365842</cadOid>
+      
+      <!-- Number : 도면 Number, Not Empty -->
+      <drawingNumber>23582000-S090_DWG</drawingNumber>
+      
+      <!-- Version : 도면 버전, Not Empty -->
+      <drawingVersion>1.0</drawingVersion>
+      
+      <!-- CadFileName : 도면 파일 명, Not Empty -->
+      <drawingFileName><![CDATA[23582000-S090_DWG.dwg]]></drawingFileName>
+            
+      <!-- NX 도면변환 관련 Active Sheet vs 전체 Sheet : Active, All, None 3개 중 하나, Not Empty -->
+      <transNxSelectedSheet>None</transNxSelectedSheet>
+      
+      <!-- 2D 연관 3D CAD Number[참고용] : 3D번호, None 중 하나, Not Empty -->
+      <transThreedCadNo>None</transThreedCadNo>
+      
+      <!-- 2D 연관 3D CAD Version[참고용] : 3D버전, None 중 하나, Not Empty -->
+      <transThreedCadVersion>None</transThreedCadVersion>
+      
+      <!-- 2D 포함 3D CAD Oid[참고용] : Oid, None 중 하나, Not Empty -->
+      <transThreedCadOid>None</transThreedCadOid>
+      
+      <!-- 2D 포함 3D CAD FileName[참고용] : 3D파일명, None 중 하나, Not Empty -->
+      <transThreedCadFileName>None</transThreedCadFileName>
+      
+      <!-- stamping 영문 유형 (발송, 승인, 출도, 출도(가공수정), 검토 : ex) APPROVAL 등, Not Empty -->
+      <stampType>APPROVAL</stampType>
+      
+      <!-- stamping 요청 승인일 : ex) 2014-07-02, Not Empty -->
+      <stampAprovedDate>2014-07-28</stampAprovedDate>
+      
+      <!-- stamping 영문 부서명 : Not Empty -->
+      <stampTeamName><![CDATA[R&D CENTER DEVELOPMENT 3 TEAM]]></stampTeamName>
+      
+      <!-- stamping 요청 : Y, N 중 하나,Not Empty -->
+      <stampRequest>Y</stampRequest>
+      
+      <!-- step 요청 : Y, N 중 하나,Not Empty -->
+      <stepRequest>N</stepRequest>
+      
+    </drawing>
+    
+  </requestDrawingList>
+  
+</root>

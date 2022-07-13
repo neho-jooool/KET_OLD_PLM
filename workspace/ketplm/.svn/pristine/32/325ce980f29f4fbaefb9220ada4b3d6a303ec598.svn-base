@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: To use, place this or a similar XML file (see other examples and combine
+     as needed) in the target JVM's classpath at META-INF/aop.xml and add
+     -javaagent:pathto/aspectjweaver.jar to the target JVM's command line options. -->
+<!-- LTW(Load-Time Weaving)을 위한 AOP 설정 -->     
+<aspectj>
+	<!-- Uncomment next element while debugging/perfecting/troubleshooting pointcut	expressions -->
+	<weaver><!-- <weaver options="-debug -verbose -showWeaveInfo"> -->
+		<include within="ext.ket..service.*Service" />
+		<exclude within="e3ps..*" />
+	</weaver>
+	
+	<aspects>
+		<!-- Transaction을 위한 aop 설정 -->
+		<concrete-aspect name="ext.ket.Transaction" extends="ext.ket.shared.aspect.TransactionAspect">
+			<pointcut name="scope" expression="(execution(* create*(..))
+                                             || execution(* save*(..))
+                                             || execution(* store*(..))
+                                             || execution(* update*(..))
+                                             || execution(* change*(..))
+                                             || execution(* modify*(..))
+                                             || execution(* remove*(..))
+                                             || execution(* delete*(..))
+                                             || execution(* revise*(..))
+			)" />
+		</concrete-aspect>
+	</aspects>
+</aspectj>

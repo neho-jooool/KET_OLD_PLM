@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration threshold="debug" debug="false" xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="ketFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="D:/ptc/Windchill_10.2/logs/ket.log"/>
+		<param name="DatePattern" value="'.'yyyy-MM-dd-HH"/>
+		<layout class="ext.ket.shared.log4j.KetPatternLayout">
+			<param name="TimeZone" value="Asia/Seoul"/>
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss}: %t: %m%n"/>
+		</layout>
+	</appender>
+
+	<appender name="migrationFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="D:/ptc/Windchill_10.2/logs/migration.log"/>
+  	<param name="DatePattern" value="'.'yyyy-MM-dd-HH"/>
+		<layout class="ext.ket.shared.log4j.KetPatternLayout">
+			<param name="TimeZone" value="Asia/Seoul"/>
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss}: %t: %m%n"/>
+		</layout>
+	</appender>
+	
+	<logger name="ket">
+		<level value="INFO"/>
+		<appender-ref ref="ketFile"/>
+	</logger>
+
+	<logger name="migration">
+		<level value="DEBUG"/>
+		<appender-ref ref="migrationFile"/>
+	</logger>
+
+</log4j:configuration>
